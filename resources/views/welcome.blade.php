@@ -21,7 +21,7 @@
     <link rel="stylesheet" type="text/css" media="all" href="css/semantic/semantic.css">
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/magic/magic.min.css">
-    <link rel="stylesheet" type="text/css" href="/angular/bower_components/flag-icon-css/css/flag-icon.min.css">
+    <link rel="stylesheet" type="text/css" href="css/flag-icon.min.css">
     <link rel="stylesheet" type="text/css" href="css/lightgallery/lightgallery.css">
     <link rel="stylesheet" type="text/css" media="all" href="css/core.css">
 
