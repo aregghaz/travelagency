@@ -1043,7 +1043,7 @@
 <script src="js/angular.min.js"></script>
 <script src="js/lightgallery.js"></script>
 <script src="/angular/bower_components/angular-route/angular-route.min.js"></script>
-<script src="/angular/bower_components/angular-resource/angular-resource.min.js"></script>
+<script src="js/angular-resource.min.js"></script>
 
 <script src="/angular/app/scripts/prefix/app.js"></script>
 <script src="js/app.js"></script>
