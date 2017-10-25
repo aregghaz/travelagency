@@ -116,7 +116,7 @@ menu li a {
   display: flex;
 }
 .container {
-  width: 1180px;
+  width: 92%;
   margin: 0 auto;
   position: relative;
 }
