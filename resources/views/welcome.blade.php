@@ -19,7 +19,7 @@
     <link rel="stylesheet" type="text/css" media="all" href="css/slick/slick-theme.css">
 
     <link rel="stylesheet" type="text/css" media="all" href="css/semantic/semantic.css">
-    <link rel="stylesheet" type="text/css" href="/angular/bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/magic/magic.min.css">
     <link rel="stylesheet" type="text/css" href="/angular/bower_components/flag-icon-css/css/flag-icon.min.css">
     <link rel="stylesheet" type="text/css" href="css/lightgallery/lightgallery.css">
@@ -1038,7 +1038,7 @@
 
     }
 </script>
-<script src="/angular/bower_components/lodash/dist/lodash.min.js"></script>
+<script src="js/lodash.js"></script>
 <script src="js/jquery.js"></script>
 <script src="/angular/bower_components/angular/angular.min.js"></script>
 <script src="js/lightgallery.js"></script>
@@ -1046,7 +1046,7 @@
 <script src="/angular/bower_components/angular-resource/angular-resource.min.js"></script>
 
 <script src="/angular/app/scripts/prefix/app.js"></script>
-<script src="/bundles/damain/js/angular/app.js"></script>
+<script src="js/app.js"></script>
 <script src="/angular/bower_components/angular-simple-logger/dist/angular-simple-logger.min.js"></script>
 <script src="/angular/bower_components/angular-google-maps/dist/angular-google-maps.min.js"></script>
 
