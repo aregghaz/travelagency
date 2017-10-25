@@ -1052,7 +1052,7 @@
 
 
 <script src="js/semantic.js"></script>
-<script src="/bundles/damain/js/init.js"></script>
+<script src="js/init.js"></script>
 
 <script src="js/slick.min.js"></script>
 
