@@ -1040,7 +1040,7 @@
 </script>
 <script src="js/lodash.js"></script>
 <script src="js/jquery.js"></script>
-<script src="/angular/bower_components/angular/angular.min.js"></script>
+<script src="js/angular.min.js"></script>
 <script src="js/lightgallery.js"></script>
 <script src="/angular/bower_components/angular-route/angular-route.min.js"></script>
 <script src="/angular/bower_components/angular-resource/angular-resource.min.js"></script>
