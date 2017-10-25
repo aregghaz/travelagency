@@ -173,9 +173,7 @@ header {
 header .logo {
   margin-top: 15px;
 }
-header .general_menu {
-  margin-left: 45px;
-}
+
 header .general_menu menu > li {
   float: left;
   border-left: 1px solid #e8e8e8;
