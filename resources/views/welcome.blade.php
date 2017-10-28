@@ -24,8 +24,9 @@
     <link rel="stylesheet" type="text/css" href="css/flag-icon.min.css">
     <link rel="stylesheet" type="text/css" href="css/lightgallery/lightgallery.css">
     <link rel="stylesheet" type="text/css" media="all" href="css/core.css">
+    <script src="js/jquery.js"></script>
 
-
+    <script src="js/slick.min.js"></script>
 
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
 </head>
@@ -107,227 +108,147 @@
         </div>
         <div class="general_menu left_block">
             <menu id="top_menu">
-
-                <li class="dropdown first">                        <span>
-                    <img alt="" src="/bundles/damain/images/accommodation.png" class="" style="margin-left: -15.5px;">
-                <span>            Accommodation
-    </span>
-    </span>
+                <li class="dropdown first">
+                    <span>
+                        <img alt="" src="/bundles/damain/images/accommodation.png" class="" style="margin-left: -15.5px;">
+                        <span>Accommodation</span>
+                    </span>
                     <ul class="sub-menu clear menu_level_1" style="display: none; opacity: 1;">
-
-                        <li class="first"><a href="/en/hotels.html">
-                <span>            Hotels
-    </span>
+                        <li class="first">
+                            <a href="/en/hotels.html">
+                                <span>Hotels</span>
                             </a>
-
                         </li>
-
-
-                        <li><a href="/en/accommodation/apartment.html">
-                <span>            Apartment
-    </span>
+                        <li>
+                            <a href="/en/accommodation/apartment.html">
+                                <span>Apartment</span>
                             </a>
-
                         </li>
-
-
-                        <li class="last"><a href="/en/accommodation/villa.html">
-                <span>            Villa
-    </span>
+                        <li class="last">
+                            <a href="/en/accommodation/villa.html">
+                                <span>Villa</span>
                             </a>
-
                         </li>
-
-
                     </ul>
-
                 </li>
-
-
-                <li class="dropdown">                        <span>
-                    <img alt="" src="/bundles/damain/images/transport.png" class="" style="margin-left: -20px;">
-                <span>            Transport
-    </span>
-    </span>
+                <li class="dropdown">
+                    <span>
+                        <img alt="" src="/bundles/damain/images/transport.png" class="" style="margin-left: -20px;">
+                        <span>Transport</span>
+                    </span>
                     <ul class="sub-menu clear menu_level_1" style="display: none; opacity: 1;">
-
-                        <li class="first"><a href="/en/transport/car-with-driver.html">
-                <span>            Car with driver
-    </span>
+                        <li class="first">
+                            <a href="/en/transport/car-with-driver.html">
+                                <span>Car with driver</span>
                             </a>
-
                         </li>
-
-
-                        <li class="last"><a href="/en/transport/car-rent.html">
-                <span>            Car rent
-    </span>
+                        <li class="last">
+                            <a href="/en/transport/car-rent.html">
+                                <span>Car rent</span>
                             </a>
-
                         </li>
-
-
                     </ul>
-
                 </li>
-
-
-                <li><a href="/en/excursion.html">
+                <li>
+                    <a href="/en/excursion.html">
                         <img alt="" src="/bundles/damain/images/excursion.png" class="" style="margin-left: -16px;">
-                        <span>            Excursion
-    </span>
+                        <span>Excursion</span>
                     </a>
-
                 </li>
-
-
-                <li><a href="/en/tours.html">
+                <li>
+                    <a href="/en/tours.html">
                         <img alt="" src="/bundles/damain/images/tours.png" class="" style="margin-left: 0px;">
-                        <span>            Tours
-    </span>
+                        <span>Tours</span>
                     </a>
-
                 </li>
-
-
-                <li class="dropdown">                        <span>
+                <li class="dropdown">
+                    <span>
                     <img alt="" src="/bundles/damain/images/services.png" class="" style="margin-left: 0px;">
-                <span>            Services
-    </span>
-    </span>
+                        <span>Services</span>
+                    </span>
                     <ul class="sub-menu clear menu_level_1" style="display: none; opacity: 1;">
-
-                        <li class="first"><a href="/en/service/riestorany.html">
-                <span>            Restaurants
-    </span>
+                        <li class="first">
+                            <a href="/en/service/riestorany.html">
+                                <span>Restaurants</span>
                             </a>
-
                         </li>
-
-
-                        <li><a href="/en/service/orghanizatsiia-mieropriiatii.html">
-                <span>            Organization of Events
-    </span>
+                        <li>
+                            <a href="/en/service/orghanizatsiia-mieropriiatii.html">
+                                <span>Organization of Events</span>
                             </a>
-
                         </li>
-
-
-                        <li class="last"><a href="/en/service/other.html">
-                <span>            Others
-    </span>
+                        <li class="last">
+                            <a href="/en/service/other.html">
+                                <span>Others</span>
                             </a>
-
                         </li>
-
-
                     </ul>
-
                 </li>
-
-
-                <li class="dropdown">                        <span>
-                    <img alt="" src="/bundles/damain/images/armenia.png" class="" style="margin-left: 0px;">
-                <span>            Armenia
-    </span>
-    </span>
+                <li class="dropdown">
+                    <span>
+                        <img alt="" src="/bundles/damain/images/armenia.png" class="" style="margin-left: 0px;">
+                            <span>Armenia</span>
+                    </span>
                     <ul class="sub-menu clear menu_level_1" style="display: none; opacity: 1;">
-
-                        <li class="first"><a href="/en/armenia/culture.html">
-                <span>            Culture
-    </span>
+                        <li class="first">
+                            <a href="/en/armenia/culture.html">
+                                <span>Cultur</span>
                             </a>
-
                         </li>
-
-
-                        <li><a href="/en/armenia/armenia.html">
-                <span>            Armenia
-    </span>
+                        <li>
+                            <a href="/en/armenia/armenia.html">
+                                <span>Armenia</span>
                             </a>
-
                         </li>
-
-
-                        <li><a href="/en/armenia/did-you-know-that.html">
-                <span>            Did you know that...
-    </span>
+                        <li>
+                            <a href="/en/armenia/did-you-know-that.html">
+                                <span>Did you know that...</span>
                             </a>
-
                         </li>
-
-
-                        <li><a href="/en/armenia/5-interesting-facts-about-armenia-that-you-should-know.html">
-                <span>            5 Interesting Facts About Armenia That You Should Know
-    </span>
+                        <li>
+                            <a href="/en/armenia/5-interesting-facts-about-armenia-that-you-should-know.html">
+                                <span>5 Interesting Facts About Armenia That You Should Know</span>
                             </a>
-
                         </li>
-
-
-                        <li><a href="/en/armenia/taj-mahal-armenian-girl-as-a-soul-of-indian-symbol.html">
-                <span>            Taj Mahal:Armenian girl as a soul of Indian symbol.
-    </span>
+                        <li>
+                            <a href="/en/armenia/taj-mahal-armenian-girl-as-a-soul-of-indian-symbol.html">
+                                <span>Taj Mahal:Armenian girl as a soul of Indian symbol.</span>
                             </a>
-
                         </li>
-
-
-                        <li><a href="/en/armenia/duduk-is-the-soul-of-armenian-nation.html">
-                <span>            Duduk is the soul of Armenian nation
-    </span>
+                        <li>
+                            <a href="/en/armenia/duduk-is-the-soul-of-armenian-nation.html">
+                                <span>Duduk is the soul of Armenian nation</span>
                             </a>
-
                         </li>
-
-
-                        <li><a href="/en/armenia/yerevan-traveling-for-gourmet.html">
-                <span>            Yerevan: Traveling for gourmet
-    </span>
+                        <li>
+                            <a href="/en/armenia/yerevan-traveling-for-gourmet.html">
+                                <span>Yerevan: Traveling for gourmet</span>
                             </a>
-
                         </li>
-
-
-                        <li><a href="/en/armenia/armenians-for-all-the-world.html">
-                <span>            Armenians for All The World
-    </span>
+                        <li>
+                            <a href="/en/armenia/armenians-for-all-the-world.html">
+                                <span>Armenians for All The World</span>
                             </a>
-
                         </li>
-
-
-                        <li class="last"><a href="/en/armenia/armenian-people.html">
-                <span>            Armenian people
-    </span>
+                        <li class="last">
+                            <a href="/en/armenia/armenian-people.html">
+                                <span>Armenian people</span>
                             </a>
-
                         </li>
-
-
                     </ul>
-
                 </li>
-
-
-                <li><a href="/en/company.html">
+                <li>
+                    <a href="/en/company.html">
                         <img alt="" src="/bundles/damain/images/company.png" class="" style="margin-left: 0px;">
-                        <span>            Company
-    </span>
+                        <span>Company</span>
                     </a>
-
                 </li>
-
-
-                <li class="last"><a href="/en/contact.html">
+                <li class="last">
+                    <a href="/en/contact.html">
                         <img alt="" src="/bundles/damain/images/contact.png" class="" style="margin-left: 0px;">
-                        <span>            Contact
-    </span>
+                        <span>Contact</span>
                     </a>
-
                 </li>
-
-
             </menu>
         </div>
         <div class="right_block">
@@ -335,15 +256,14 @@
                 <a href="/en/register/">
                     For tour-operator
                 </a>
-
             </div>
             <div class="group_block clear">
                 <div class="currency_block">
                     <ul>
                         <li class="current">
-        <span>
-            <span>USD</span>
-        </span>
+                            <span>
+                                <span>USD</span>
+                            </span>
                             <ul class="sub_currency">
                                 <li>
                                     <a href="/soap/RUB">
@@ -360,12 +280,11 @@
                     </ul>
                 </div>
                 <div class="languages_block">
-
                     <ul>
                         <li class="current">
-            <span>
-                <span class="flag-icon flag-icon-gb"></span>
-            </span>
+                            <span>
+                                <span class="flag-icon flag-icon-gb"></span>
+                            </span>
                             <ul class="sub_lang">
                                 <li>
                                     <a href="/ru"><span class="flag-icon flag-icon-ru"></span>
@@ -386,237 +305,156 @@
         </div>
         <div class="res_menu left_block">
             <div class="burger">
-                            <span>
-                                <i class="fa fa-bars"></i>
-                            </span>
+                <span>
+                    <i class="fa fa-bars"></i>
+                </span>
             </div>
             <menu id="top_menu_res">
-
-                <li class="dropdown first">                        <span>
-                    <img alt="" src="/bundles/damain/images/accommodation.png">
-                <span>            Accommodation
-    </span>
-    </span>
+                <li class="dropdown first">
+                    <span>
+                        <img alt="" src="/bundles/damain/images/accommodation.png">
+                        <span>Accommodation</span>
+                    </span>
                     <ul class="sub-menu clear menu_level_1">
-
-                        <li class="first"><a href="/en/hotels.html">
-                <span>            Hotels
-    </span>
+                        <li class="first">
+                            <a href="/en/hotels.html">
+                                <span>Hotels</span>
                             </a>
-
                         </li>
-
-
-                        <li><a href="/en/accommodation/apartment.html">
-                <span>            Apartment
-    </span>
+                        <li>
+                            <a href="/en/accommodation/apartment.html">
+                                <span>Apartment</span>
                             </a>
-
                         </li>
-
-
-                        <li class="last"><a href="/en/accommodation/villa.html">
-                <span>            Villa
-    </span>
+                        <li class="last">
+                            <a href="/en/accommodation/villa.html">
+                                <span>Villa</span>
                             </a>
-
                         </li>
-
-
                     </ul>
-
                 </li>
-
-
-                <li class="dropdown">                        <span>
-                    <img alt="" src="/bundles/damain/images/transport.png">
-                <span>            Transport
-    </span>
-    </span>
+                <li class="dropdown">
+                    <span>
+                        <img alt="" src="/bundles/damain/images/transport.png">
+                        <span>Transport</span>
+                    </span>
                     <ul class="sub-menu clear menu_level_1">
-
-                        <li class="first"><a href="/en/transport/car-with-driver.html">
-                <span>            Car with driver
-    </span>
+                        <li class="first">
+                            <a href="/en/transport/car-with-driver.html">
+                                <span>Car with driver</span>
                             </a>
-
                         </li>
-
-
-                        <li class="last"><a href="/en/transport/car-rent.html">
-                <span>            Car rent
-    </span>
+                        <li class="last">
+                            <a href="/en/transport/car-rent.html">
+                                <span>Car rent</span>
                             </a>
-
                         </li>
-
-
                     </ul>
-
                 </li>
-
-
-                <li><a href="/en/excursion.html">
+                <li>
+                    <a href="/en/excursion.html">
                         <img alt="" src="/bundles/damain/images/excursion.png">
-                        <span>            Excursion
-    </span>
+                        <span>Excursion</span>
                     </a>
-
                 </li>
-
-
-                <li><a href="/en/tours.html">
+                <li>
+                    <a href="/en/tours.html">
                         <img alt="" src="/bundles/damain/images/tours.png">
-                        <span>            Tours
-    </span>
+                        <span>Tours</span>
                     </a>
-
                 </li>
-
-
-                <li class="dropdown">                        <span>
-                    <img alt="" src="/bundles/damain/images/services.png">
-                <span>            Services
-    </span>
-    </span>
+                <li class="dropdown">
+                    <span>
+                        <img alt="" src="/bundles/damain/images/services.png">
+                        <span>Services</span>
+                    </span>
                     <ul class="sub-menu clear menu_level_1">
-
-                        <li class="first"><a href="/en/service/riestorany.html">
-                <span>            Restaurants
-    </span>
+                        <li class="first">
+                            <a href="/en/service/riestorany.html">
+                                <span>Restaurants</span>
                             </a>
-
                         </li>
-
-
-                        <li><a href="/en/service/orghanizatsiia-mieropriiatii.html">
-                <span>            Organization of Events
-    </span>
+                        <li>
+                            <a href="/en/service/orghanizatsiia-mieropriiatii.html">
+                                <span>Organization of Events</span>
                             </a>
-
                         </li>
-
-
-                        <li class="last"><a href="/en/service/other.html">
-                <span>            Others
-    </span>
+                        <li class="last">
+                            <a href="/en/service/other.html">
+                                <span>Others</span>
                             </a>
-
                         </li>
-
-
                     </ul>
-
                 </li>
-
-
-                <li class="dropdown">                        <span>
-                    <img alt="" src="/bundles/damain/images/armenia.png">
-                <span>            Armenia
-    </span>
-    </span>
+                <li class="dropdown">
+                    <span>
+                        <img alt="" src="/bundles/damain/images/armenia.png">
+                        <span>Armenia</span>
+                    </span>
                     <ul class="sub-menu clear menu_level_1">
-
-                        <li class="first"><a href="/en/armenia/culture.html">
-                <span>            Culture
-    </span>
+                        <li class="first">
+                            <a href="/en/armenia/culture.html">
+                                <span>Culture</span>
                             </a>
-
                         </li>
-
-
-                        <li><a href="/en/armenia/armenia.html">
-                <span>            Armenia
-    </span>
+                        <li>
+                            <a href="/en/armenia/armenia.html">
+                                <span>Armenia</span>
                             </a>
-
                         </li>
-
-
-                        <li><a href="/en/armenia/did-you-know-that.html">
-                <span>            Did you know that...
-    </span>
+                        <li>
+                            <a href="/en/armenia/did-you-know-that.html">
+                                <span>Did you know that...</span>
                             </a>
-
                         </li>
-
-
-                        <li><a href="/en/armenia/5-interesting-facts-about-armenia-that-you-should-know.html">
-                <span>            5 Interesting Facts About Armenia That You Should Know
-    </span>
+                        <li>
+                            <a href="/en/armenia/5-interesting-facts-about-armenia-that-you-should-know.html">
+                                <span>5 Interesting Facts About Armenia That You Should Know</span>
                             </a>
-
                         </li>
-
-
-                        <li><a href="/en/armenia/taj-mahal-armenian-girl-as-a-soul-of-indian-symbol.html">
-                <span>            Taj Mahal:Armenian girl as a soul of Indian symbol.
-    </span>
+                        <li>
+                            <a href="/en/armenia/taj-mahal-armenian-girl-as-a-soul-of-indian-symbol.html">
+                                <span>Taj Mahal:Armenian girl as a soul of Indian symbol.</span>
                             </a>
-
                         </li>
-
-
-                        <li><a href="/en/armenia/duduk-is-the-soul-of-armenian-nation.html">
-                <span>            Duduk is the soul of Armenian nation
-    </span>
+                        <li>
+                            <a href="/en/armenia/duduk-is-the-soul-of-armenian-nation.html">
+                                <span>Duduk is the soul of Armenian nation</span>
                             </a>
-
                         </li>
-
-
-                        <li><a href="/en/armenia/yerevan-traveling-for-gourmet.html">
-                <span>            Yerevan: Traveling for gourmet
-    </span>
+                        <li>
+                            <a href="/en/armenia/yerevan-traveling-for-gourmet.html">
+                                <span>Yerevan: Traveling for gourmet</span>
                             </a>
-
                         </li>
-
-
-                        <li><a href="/en/armenia/armenians-for-all-the-world.html">
-                <span>            Armenians for All The World
-    </span>
+                        <li>
+                            <a href="/en/armenia/armenians-for-all-the-world.html">
+                                <span>Armenians for All The World</span>
                             </a>
-
                         </li>
-
-
-                        <li class="last"><a href="/en/armenia/armenian-people.html">
-                <span>            Armenian people
-    </span>
+                        <li class="last">
+                            <a href="/en/armenia/armenian-people.html">
+                                <span>Armenian people</span>
                             </a>
-
                         </li>
-
-
                     </ul>
-
                 </li>
-
-
-                <li><a href="/en/company.html">
+                <li>
+                    <a href="/en/company.html">
                         <img alt="" src="/bundles/damain/images/company.png">
-                        <span>            Company
-    </span>
+                        <span>Company</span>
                     </a>
-
                 </li>
-
-
-                <li class="last"><a href="/en/contact.html">
+                <li class="last">
+                    <a href="/en/contact.html">
                         <img alt="" src="/bundles/damain/images/contact.png">
-                        <span>            Contact
-    </span>
+                        <span>Contact</span>
                     </a>
-
                 </li>
-
-
             </menu>
         </div>
     </div>
 </header>
-
 <div class="home_slider_block">
     <div class="home_slider clear slick-initialized slick-slider slick-dotted" role="toolbar">
         <button type="button" data-role="none" class="slick-prev slick-arrow" aria-label="Previous" role="button"
@@ -697,7 +535,6 @@
                 </div>
             </div>
         </div>
-
 
         <button type="button" data-role="none" class="slick-next slick-arrow" aria-label="Next" role="button" style="">
             Next
@@ -903,73 +740,47 @@
         <div class="container">
             <div class="footer_menu">
                 <ul>
-
-                    <li class="first"><a href="/en/hotels.html">
-                <span>            Hotels
-    </span>
+                    <li class="first">
+                        <a href="/en/hotels.html">
+                            <span>Hotels</span>
                         </a>
-
                     </li>
-
-
-                    <li><a href="/en/hotels.html?slug=villa">
-                <span>            Villa
-    </span>
+                    <li>
+                        <a href="/en/hotels.html?slug=villa">
+                            <span>Villa</span>
                         </a>
-
                     </li>
-
-
-                    <li><a href="/en/transport/car-with-driver.html">
-                <span>            Car with driver
-    </span>
+                    <li>
+                        <a href="/en/transport/car-with-driver.html">
+                            <span>Car with driver</span>
                         </a>
-
                     </li>
-
-
-                    <li><a href="/en/transport/car-rent.html">
-                <span>            Car rent
-    </span>
+                    <li>
+                        <a href="/en/transport/car-rent.html">
+                            <span>Car rent</span>
                         </a>
-
                     </li>
-
-
-                    <li><a href="/en/excursion.html">
-                <span>            Excursion
-    </span>
+                    <li>
+                        <a href="/en/excursion.html">
+                            <span>Excursion</span>
                         </a>
-
                     </li>
-
-
-                    <li><a href="/en/tours.html">
-                <span>            Tours
-    </span>
+                    <li>
+                        <a href="/en/tours.html">
+                            <span>Tours</span>
                         </a>
-
                     </li>
-
-
-                    <li><a href="/en/company.html">
-                <span>            Company
-    </span>
+                    <li>
+                        <a href="/en/company.html">
+                            <span>Company</span>
                         </a>
-
                     </li>
-
-
-                    <li class="last"><a href="/en/contact.html">
-                <span>            Contact
-    </span>
+                    <li class="last">
+                        <a href="/en/contact.html">
+                            <span>Contact</span>
                         </a>
-
                     </li>
-
-
                 </ul>
-
             </div>
         </div>
     </div>
@@ -994,25 +805,35 @@
             </div>
             <div class="social left_block">
                 <ul>
-                    <li class="fb"><a target="_blank"
+                    <li class="fb">
+                        <a target="_blank"
                                       href="https://www.facebook.com/discoverarmenia.tours/?ref=page_internal"><i
-                                    class="fa fa-facebook"></i></a></li>
-                    <li class="tw"><a target="_blank"
+                                    class="fa fa-facebook">
+                            </i>
+                        </a>
+                    </li>
+                    <li class="tw">
+                        <a target="_blank"
                                       href="https://www.linkedin.com/company/discover-armenia?report.success=dmlMA1Q47aS8ToQIim5aWNBodLCdy9EDleA1Ef19dLAdNLyxHCuacnSaEIrOLlgJlR21E51Bdp8zLIgYl-uicbDaNX6ovLGxxCuncbwakpzzWI2_GkC2"><i
-                                    class="fa fa-linkedin"></i></a></li>
-                    <li class="inst"><a target="_blank" href="https://www.instagram.com/discover_armenia/"><i
-                                    class="fa fa-instagram"></i></a></li>
-                    <li class="yu"><a target="_blank" href="https://www.youtube.com/channel/UCHHjZqspS7OftTtL5H7jkcg"><i
-                                    class="fa fa-youtube"></i></a></li>
+                                    class="fa fa-linkedin"></i>
+                        </a>
+                    </li>
+                    <li class="inst">
+                        <a target="_blank" href="https://www.instagram.com/discover_armenia/"><i
+                                    class="fa fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li class="yu">
+                        <a target="_blank" href="https://www.youtube.com/channel/UCHHjZqspS7OftTtL5H7jkcg"><i
+                                    class="fa fa-youtube"></i>
+                        </a>
+                    </li>
                 </ul>
             </div>
-            <div class="r_b_block right_block">
-                <a href="http://rbpartners.am/" target="_blank">
-                    <img src="/bundles/damain/images/r_b.jpg" alt="R &amp; B partners">
-                </a>
-            </div>
+
         </div>
     </div>
+
     <a style="display: block" href="http://travelarmenia.am/"></a>
 </footer>
 
@@ -1042,13 +863,13 @@
 <script src="js/jquery.js"></script>
 <script src="js/angular.min.js"></script>
 <script src="js/lightgallery.js"></script>
-<script src="/angular/bower_components/angular-route/angular-route.min.js"></script>
+<script src="js/angular-route.min.js"></script>
 <script src="js/angular-resource.min.js"></script>
 
-<script src="/angular/app/scripts/prefix/app.js"></script>
+<script src="js/app2.js"></script>
 <script src="js/app.js"></script>
-<script src="/angular/bower_components/angular-simple-logger/dist/angular-simple-logger.min.js"></script>
-<script src="/angular/bower_components/angular-google-maps/dist/angular-google-maps.min.js"></script>
+<script src="js/angular-simple-logger.js"></script>
+<script src="js/angular-google-maps.min.js"></script>
 
 
 <script src="js/semantic.js"></script>
