@@ -72,7 +72,7 @@ class PostController extends Controller
                 $filename3 = time()+3..'.jpg';
                 $request->img3->storeAs('turs', $filename3, "uploads");
                 $post->img3 = $filename3;
-            }if ($request->has('img1')) {
+            }if ($request->has('img4')) {
                 $filename4 = time()+4..'.jpg';
                 $request->img4->storeAs('turs', $filename4, "uploads");
                 $post->img4 = $filename4;
