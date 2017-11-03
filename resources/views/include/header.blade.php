@@ -186,7 +186,7 @@
                             </span>
                             <ul class="sub_lang">
                                 <li>
-                                    <a href="/ru"><span class="flag-icon flag-icon-ru"></span>
+                                    <a href="{{ route('homeRu') }}"><span class="flag-icon flag-icon-ru"></span>
                                     </a>
                                 </li>
                             </ul>

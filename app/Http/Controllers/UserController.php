@@ -1,4 +1,5 @@
 <?php
+
 namespace App\Http\Controllers;
 
 
@@ -7,25 +8,43 @@ use App\Posts;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 
-class UserController extends Controller {
+class UserController extends Controller
+{
 
+
+    public function homeEn()
+    {
+        $posts = Posts::all();
+
+        return view('homeEn', ['posts' => $posts]);
+    }
+
+    public function homeRu()
+    {
+        $posts = Posts::all();
+
+        return view('homeRu', ['posts' => $posts]);
+    }
 
     public function user_posts($id)
     {
         //
-        $posts = Posts::where('author_id',$id)->where('active','1')->orderBy('created_at','desc')->paginate(5);
+        $posts = Posts::where('author_id', $id)->where('active', '1')->orderBy('created_at', 'desc')->paginate(5);
         $title = User::find($id)->name;
         return view('home')->withPosts($posts)->withTitle($title);
     }
-  public function login() {
-      return view('auth.login');
+
+    public function login()
+    {
+        return view('auth.login');
     }
 
-    public function auth(Request $request) {
+    public function auth(Request $request)
+    {
         $email = $request['email'];
         $password = $request['password'];
         if (Auth::attempt(['email' => $email, 'password' => $password])) {
-            $posts = Posts::where('active','1')->orderBy('created_at','desc')->paginate(5);
+            $posts = Posts::where('active', '1')->orderBy('created_at', 'desc')->paginate(5);
             $title = 'Latest Posts';
             return view('admin.home')->withPosts($posts)->withTitle($title);;
 
@@ -38,7 +57,7 @@ class UserController extends Controller {
     {
 
         $user = $request->user();
-        $posts = Posts::where('author_id',$user->id)->orderBy('created_at','desc')->paginate(5);
+        $posts = Posts::where('author_id', $user->id)->orderBy('created_at', 'desc')->paginate(5);
         $title = $user->name;
         return view('home')->withPosts($posts)->withTitle($title);
     }
@@ -47,7 +66,7 @@ class UserController extends Controller {
     {
 
         $user = $request->user();
-        $posts = Posts::where('author_id',$user->id)->where('active','0')->orderBy('created_at','desc')->paginate(5);
+        $posts = Posts::where('author_id', $user->id)->where('active', '0')->orderBy('created_at', 'desc')->paginate(5);
         $title = $user->name;
         return view('home')->withPosts($posts)->withTitle($title);
     }
@@ -61,7 +80,7 @@ class UserController extends Controller {
         if (!$data['user'])
             return redirect('/');
 
-        if ($request -> user() && $data['user'] -> id == $request -> user() -> id) {
+        if ($request->user() && $data['user']->id == $request->user()->id) {
             $data['author'] = true;
         } else {
             $data['author'] = null;

@@ -70,7 +70,19 @@
                 <textarea required="required" placeholder="Enter body in English" name = "bodyEn" class="form-control"></textarea>
             </div>
             <div class="form-group">
-                <input type="file" required="required" multiple="multiple" placeholder="img" name="img1" class="form-control">
+                <input type="file" required="required" multiple="multiple" placeholder="image 1" name="img1" class="form-control">
+            </div><div class="form-group">
+                <input type="file" required="required" multiple="multiple" placeholder="image 2" name="img2" class="form-control">
+            </div><div class="form-group">
+                <input type="file" required="required" multiple="multiple" placeholder="image 3" name="img3" class="form-control">
+            </div><div class="form-group">
+                <input type="file" required="required" multiple="multiple" placeholder="image 4" name="img4" class="form-control">
+            </div><div class="form-group">
+                <input type="file" required="required" multiple="multiple" placeholder="image 5" name="img5" class="form-control">
+            </div><div class="form-group">
+                <input type="file" required="required" multiple="multiple" placeholder="image 6" name="img6" class="form-control">
+            </div><div class="form-group">
+                <input type="file" required="required" multiple="multiple" placeholder="image 7" name="img7" class="form-control">
             </div>
             <input type="submit" name='post_comment' class="btn btn-success" value = "Post"/>
         </form>
