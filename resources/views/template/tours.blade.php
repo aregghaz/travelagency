@@ -75,19 +75,19 @@
                                 @if(!empty($posts->img5))
                                     <a href="/images/turs/{{ $posts->img5 }}">
                                         <div class="img"
-                                             style="background: url('{{  URL::to("/images/turs/$post->img5") }}') no-repeat;background-size: cover;background-position: center;"></div>
+                                             style="background: url('{{  URL::to("/images/turs/$posts->img5") }}') no-repeat;background-size: cover;background-position: center;"></div>
                                     </a>
                                 @endif
                                 @if(!empty($posts->img6))
                                     <a href="/images/turs/{{ $posts->img6 }}">
                                         <div class="img"
-                                             style="background: url('{{  URL::to("/images/turs/$post->img6") }}') no-repeat;background-size: cover;background-position: center;"></div>
+                                             style="background: url('{{  URL::to("/images/turs/$posts->img6") }}') no-repeat;background-size: cover;background-position: center;"></div>
                                     </a>
                                 @endif
                                 @if(!empty($posts->img7))
                                     <a href="/images/turs/{{ $posts->img7 }}">
                                         <div class="img"
-                                             style="background: url('{{  URL::to("/images/turs/$post->img7") }}') no-repeat;background-size: cover;background-position: center;"></div>
+                                             style="background: url('{{  URL::to("/images/turs/$posts->img7") }}') no-repeat;background-size: cover;background-position: center;"></div>
                                     </a>
                                 @endif
 
