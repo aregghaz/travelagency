@@ -58,7 +58,7 @@ class PostController extends Controller
         $post->author_id = $request->user()->id;
         if ($request->has('save')) {
             $post->active = 0;
-            $message = 'Post saved successfully';
+
         } else {
             if ($request->has('img1')) {
                 $filename1 = time()+1..'.jpg';
@@ -91,7 +91,7 @@ class PostController extends Controller
             }
 
             $post->active = 1;
-            $message = 'Post published successfully';
+
         }
         $posts = Posts::where('active', '1')->orderBy('created_at', 'desc')->paginate(5);
         $title = 'Latest Posts';

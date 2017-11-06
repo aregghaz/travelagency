@@ -25,6 +25,13 @@ class UserController extends Controller
 
         return view('homeRu', ['posts' => $posts]);
     }
+ public function tours(Request $request)
+    {
+        $id = $request['id'];
+        $posts = Posts::findOrFail($id);
+
+        return view('template.tours', ['posts' => $posts]);
+    }
 
     public function user_posts($id)
     {
