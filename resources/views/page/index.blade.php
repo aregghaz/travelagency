@@ -51,17 +51,21 @@
 
 
 <script src="{{ URL::to('js/lodash.js')}}"></script>
-<script src="{{ URL::to('js/jquery.js')}}"></script>
+
 <script src="{{ URL::to('js/angular.min.js')}}"></script>
 <script src="{{ URL::to('js/lightgallery.js')}}"></script>
 <script src="{{ URL::to('js/angular-route.min.js')}}"></script>
 <script src="{{ URL::to('js/angular-resource.min.js')}}"></script>
 <script src="{{ URL::to('js/app2.js')}}"></script>
 <script src="{{ URL::to('js/app.js')}}"></script>
+
+<script src="{{ URL::to('js/semantic.js')}}"></script>
+
+<script src="{{ URL::to('js/slick.min.js')}}"></script>
 <script src="{{ URL::to('js/angular-simple-logger.js')}}"></script>
 <script src="{{ URL::to('js/angular-google-maps.min.js')}}"></script>
-<script src="{{ URL::to('js/semantic.js')}}"></script>
-<script src="{{ URL::to('js/init.js')}}"></script>
-<script src="{{ URL::to('js/slick.min.js')}}"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="//cdn.jsdelivr.net/jquery.mcustomscrollbar/3.0.6/jquery.mCustomScrollbar.concat.min.js"></script>
+
 
 </html>
