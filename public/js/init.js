@@ -1,4 +1,4 @@
-$(document).ready(function () {
+$(window).on("load", function () {
     var prefix = $("body").attr('data-prefix');
     var locale = $("body").attr('data-locale');
     /* header -------------------------------- */
