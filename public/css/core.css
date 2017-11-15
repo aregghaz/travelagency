@@ -484,7 +484,7 @@ header .right_block .group_block .chart_block img {
 }
 .info_block {
   background: #eeeeee;
-  border-bottom: 10px solid orange;
+  border-bottom: 10px solid #fca955;
 }
 .info_block .container .image {
   width: 25%;
@@ -1306,7 +1306,7 @@ header .right_block .group_block .chart_block img {
 /* ==================== Tours ==================== */
 .tours_block {
   padding-bottom: 20px;
-  border-bottom: 10px solid orange;
+  border-bottom: 10px solid #fca955;
 }
 .tours_block > .title {
   padding-top: 30px;
