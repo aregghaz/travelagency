@@ -57,23 +57,23 @@
                 <h2>Discover the land of mystery with us</h2>
 
                 <div id="post">
-<span class="expanded collapsed">
-<p>Armenia is situated at a cultural, historical, and religious intersection and located at the crossroads between Europe and Asia. The
+<p class="expanded collapsed">
+Armenia is situated at a cultural, historical, and religious intersection and located at the crossroads between Europe and Asia. The
                     <a href="http://google-maps.pro/satellite/Armenia">country</a> spans 29,743 square kilometers of mountainous terrain centered on the Ararat Valley, the heart of the Armenian nation since biblical times. Ancient geographers called the Armenian Highlands the "Island of Mountains" or the "Rooftop of Asia Minor." In fact, the average altitude of the country is over a mile high, at about 1800 meters above sea level. Presently, the country is landlocked and has no navigable waterways, in contrast to
                     <a href="https://en.wikipedia.org/wiki/Armenia">Historic Armenia</a>, which at its height under King Tigran the Great, stretched from the Caspian Sea to the Mediterranean Sea and was more than ten times the current size of the present day Republic. Armenia has borders with Georgia to the north, with Turkey to the west and south, with Azerbaijan to the east and southwest, and with Iran to the south.
                     Armenia's landscapes offer boundless beauty. Seven main landscape types are represented across the different altitudinal zones of Armenia. Across these desert, semi desert, dry steppe, steppe, woodland, sub alpine and alpine zones is geography as diverse as high mountain peaks, fertile valleys, picturesque land formations, basalt columns, rock sculptures, and waterfalls. More than 200 rivers and streams traverse Armenia, with steep falls, rapids and swift currents. Armenia has 5 scenic canyons. In addition, there are over 200 therapeutic mineral springs, differing in composition and temperature.
                     The Armenians, an ancient people living on an ancient land, call Armenia "Hayastan" and themselves “Hay." Oral history explains the lineage of the Armenian people as being the direct descendants of Noah's son Habeth. The indigenous people of the land of Ararat, Armenians forged their national identity with the rise of powerful Armenian kingdoms, the adoption of Christianity as Armenia's state religion, and the creation of the Armenian alphabet, which spurred the development of literature, philosophy, and science.
-                </p>
- <a href="javascript:void(0)">Less</a>
-</span>
 
-                    <span class="collapsed">
-<p>Armenia is situated at a cultural, historical, and religious intersection and located at the crossroads between Europe and Asia. The
+ <a href="javascript:void(0)">Less</a>
+</p>
+
+                    <p class="collapsed">
+Armenia is situated at a cultural, historical, and religious intersection and located at the crossroads between Europe and Asia. The
                     <a href="http://google-maps.pro/satellite/Armenia">country</a> spans 29,743 square kilometers of mountainous terrain centered on the Ararat Valley, the heart of the Armenian nation since biblical times. Ancient geographers called the Armenian Highlands the "Island of Mountains" or the "Rooftop of Asia Minor." In fact, the average altitude of the country is over a mile high, at about 1800 meters above sea level. Presently, the country is landlocked and has no navigable waterways, in contrast to
                     <a href="https://en.wikipedia.org/wiki/Armenia">Historic Armenia</a>, which at its height under King Tigran the Great, stretched from the Caspian Sea to the Mediterranean Sea and was more than ten times the current size of the present day Republic. Armenia has borders with Georgia to the north, with Turkey to the west and south, with Azerbaijan to the east and southwest, and with Iran to the south.
-                    Armenia's landscapes offer boundless beauty. Seven main landscape types are represented across the different altitudinal zones of Armenia. Across these desert, semi desert, dry steppe, steppe, woodland, sub alpine and alpine zones is geography as diverse as high mountain peaks, fertile valleys, picturesque land formations, basalt columns, rock sculptures, and waterfalls.                </p>
+                    Armenia's landscapes offer boundless beauty. Seven main landscape types are represented across the different altitudinal zones of Armenia. Across these desert, semi desert, dry steppe, steppe, woodland, sub alpine and alpine zones is geography as diverse as high mountain peaks, fertile valleys, picturesque land formations, basalt columns, rock sculptures, and waterfalls.
  <a href="javascript:void(0)">READ MORE</a>
-</span>
+</p>
                 </div>
 
 
