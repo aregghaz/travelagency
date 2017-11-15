@@ -123,7 +123,7 @@ Armenia is situated at a cultural, historical, and religious intersection and lo
         $(document).ready(function() {
             $(".expanded").hide();
 
-            $(".expanded a, .collapsed a").click(function(eve) {
+            $(".expanded .read-more, .collapsed .read-more").click(function(eve) {
                 var $container = $(this).parents("div");
                 eve.preventDefault();
                 $container.children(".expanded, .collapsed").toggle();
