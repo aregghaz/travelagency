@@ -277,7 +277,7 @@
                     <img src="{{  URL::to("/images/turs/".$post->img1) }}" alt="">
                     <div class="overlay">
                         <div class="icon">
-                            <a href="single-property.html"><i class="icon-link left"></i></a>
+                            <a href="{{ route('toursEn',['id' => $post->id]) }}"><i class="icon-link left"></i></a>
                             <a  data-toggle="modal" data-target=".{{$post->id}}" ><i class="icon-eye right"></i></a>
                         </div>
                     </div>
