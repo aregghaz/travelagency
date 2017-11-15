@@ -6719,12 +6719,14 @@ button.close {
     }
 }
 .read-more {
-    border: 1px solid orange;
+    width: 20%;
+    /* border: 1px solid orange; */
     padding: 10px 15px;
-    margin-bottom: 10px;
-    display: inline-block;
-    margin-top: 10px;
+    /* margin-bottom: 10px; */
+    display: block;
+    /* margin-top: 10px; */
     background-color: orange;
     color: white;
-    font-size: 19px
+    font-size: 19px;
+    margin: 10px auto;
 }
