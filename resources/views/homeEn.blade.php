@@ -232,7 +232,7 @@
         <div class="accommodation_block excursion_block">
             <div class="container clear excursion_slider slick-initialized slick-slider">
                 <div aria-live="polite" class="slick-list">
-                    <div class="slick-track" style="opacity: 1; width: 0px; transform: translate3d(0px, 0px, 0px);"
+                    <div class="slick-track" style="opacity: 1; width: 0px; transform: translate3d(0px, 0px, 0px);display: -webkit-box;"
                          role="listbox"></div>
                 </div>
             </div>

@@ -394,9 +394,7 @@ header .right_block .group_block .chart_block img {
 }
 /* ==================== Header ==================== */
 /* ==================== Home page ==================== */
-.home_slider_block {
-  max-height: 600px;
-}
+
 .home_slider_block .home_slider {
   height: 100%;
   position: relative;
