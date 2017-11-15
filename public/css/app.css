@@ -6730,6 +6730,6 @@ button.close {
     font-size: 19px;
     margin: 10px auto;
 }
-.read-more:focus {
+.read-more:focus,.read-more:hover {
     color: white;
 }
