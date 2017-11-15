@@ -1,4 +1,4 @@
-@extends('page.index')
+﻿@extends('page.index')
 @section('title')
 
 @endsection
@@ -65,7 +65,7 @@
             <div aria-live="polite" class="slick-list">
                 <div class="slick-track" style="opacity: 1; width: 5380px;" role="listbox">
                     <div class="slide slick-slide slick-current slick-active"
-                         style="background: url(&quot;/uploads/media/3f2264cfdb110fbf5cd00c2befc5cf49ebe65c07.gif&quot;) center center / cover no-repeat; width: 27%; position: relative; left: 0px; top: 0px; z-index: 999; opacity: 1;"
+                         style="background: url(&quot;/uploads/media/3f2264cfdb110fbf5cd00c2befc5cf49ebe65c07.gif&quot;) center center / cover no-repeat; width: 30%; position: relative; left: 0px; top: 0px; z-index: 999; opacity: 1;"
                          data-slick-index="0" aria-hidden="false" tabindex="-1" role="option"
                          aria-describedby="slick-slide00">
                         <div class="container">
@@ -85,7 +85,7 @@
                         </div>
                     </div>
                     <div class="slide slick-slide"
-                         style="background: url(&quot;/uploads/media/736e8ed8adba0d7d66ef8b600a74e7a896817314.gif&quot;) center center / cover no-repeat; width: 27%; position: relative; left: -1345px; top: 0px; z-index: 998; opacity: 0;"
+                         style="background: url(&quot;/uploads/media/736e8ed8adba0d7d66ef8b600a74e7a896817314.gif&quot;) center center / cover no-repeat; width: 30%; position: relative; left: -1345px; top: 0px; z-index: 998; opacity: 0;"
                          data-slick-index="1" aria-hidden="true" tabindex="-1" role="option"
                          aria-describedby="slick-slide01">
                         <div class="container">
@@ -107,7 +107,7 @@
                         </div>
                     </div>
                     <div class="slide slick-slide"
-                         style="background: url('uploads/media/f8f4c5a552a9b17879e95070348e771a4d73a2bd.gif') center center / cover no-repeat; width: 27%; position: relative; left: -2690px; top: 0px; z-index: 998; opacity: 0;"
+                         style="background: url('uploads/media/f8f4c5a552a9b17879e95070348e771a4d73a2bd.gif') center center / cover no-repeat; width: 30%; position: relative; left: -2690px; top: 0px; z-index: 998; opacity: 0;"
                          data-slick-index="2" aria-hidden="true" tabindex="-1" role="option"
                          aria-describedby="slick-slide02">
                         <div class="container">
@@ -125,7 +125,7 @@
                         </div>
                     </div>
                     <div class="slide slick-slide"
-                         style="background: url(&quot;/uploads/media/93a3b697462def3a1a0e5839087bf209f8761149.gif&quot;) center center / cover no-repeat; width: 27%; position: relative; left: -4035px; top: 0px; z-index: 998; opacity: 0;"
+                         style="background: url(&quot;/uploads/media/93a3b697462def3a1a0e5839087bf209f8761149.gif&quot;) center center / cover no-repeat; width: 30%; position: relative; left: -4035px; top: 0px; z-index: 998; opacity: 0;"
                          data-slick-index="3" aria-hidden="true" tabindex="-1" role="option"
                          aria-describedby="slick-slide03">
                         <div class="container">
