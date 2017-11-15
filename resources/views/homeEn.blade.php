@@ -62,16 +62,16 @@
                         <a href="http://google-maps.pro/satellite/Armenia" target="_blank">country</a> spans 29,743 square kilometers of mountainous terrain centered on the Ararat Valley, the heart of the Armenian nation since biblical times. Ancient geographers called the Armenian Highlands the "Island of Mountains" or the "Rooftop of Asia Minor." In fact, the average altitude of the country is over a mile high, at about 1800 meters above sea level. Presently, the country is landlocked and has no navigable waterways, in contrast to
                         <a href="https://en.wikipedia.org/wiki/Armenia" target="_blank">Historic Armenia</a>, which at its height under King Tigran the Great, stretched from the Caspian Sea to the Mediterranean Sea and was more than ten times the current size of the present day Republic. Armenia has borders with Georgia to the north, with Turkey to the west and south, with Azerbaijan to the east and southwest, and with Iran to the south.
                         Armenia's landscapes offer boundless beauty. Seven main landscape types are represented across the different altitudinal zones of Armenia. Across these desert, semi desert, dry steppe, steppe, woodland, sub alpine and alpine zones is geography as diverse as high mountain peaks, fertile valleys, picturesque land formations, basalt columns, rock sculptures, and waterfalls.
-                    <p class="collapsed1">
+                        <p class="collapsed1">
                         asad
                         <a class="read-more1" href="javascript:void(0)">READ MORE</a>
-                    </p>
-                    <p class="expanded1 collapsed1">
+                        </p>
+                        <p class="expanded1 collapsed1">
                         a
                         <a class="read-more1" href="javascript:void(0)">Less</a>
-                    </p>
+                        </p>
                         <a class="read-more" href="javascript:void(0)">READ MORE</a>
-
+                    </p>
 <p class="expanded collapsed">
 Armenia is situated at a cultural, historical, and religious intersection and located at the crossroads between Europe and Asia. The
                     <a href="http://google-maps.pro/satellite/Armenia" target="_blank">country</a> spans 29,743 square kilometers of mountainous terrain centered on the Ararat Valley, the heart of the Armenian nation since biblical times. Ancient geographers called the Armenian Highlands the "Island of Mountains" or the "Rooftop of Asia Minor." In fact, the average altitude of the country is over a mile high, at about 1800 meters above sea level. Presently, the country is landlocked and has no navigable waterways, in contrast to
