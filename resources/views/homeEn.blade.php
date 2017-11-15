@@ -71,38 +71,38 @@ Armenia is situated at a cultural, historical, and religious intersection and lo
                     <a href="https://en.wikipedia.org/wiki/Armenia" target="_blank">Historic Armenia</a>, which at its height under King Tigran the Great, stretched from the Caspian Sea to the Mediterranean Sea and was more than ten times the current size of the present day Republic. Armenia has borders with Georgia to the north, with Turkey to the west and south, with Azerbaijan to the east and southwest, and with Iran to the south.
                     Armenia's landscapes offer boundless beauty. Seven main landscape types are represented across the different altitudinal zones of Armenia. Across these desert, semi desert, dry steppe, steppe, woodland, sub alpine and alpine zones is geography as diverse as high mountain peaks, fertile valleys, picturesque land formations, basalt columns, rock sculptures, and waterfalls. More than 200 rivers and streams traverse Armenia, with steep falls, rapids and swift currents. Armenia has 5 scenic canyons. In addition, there are over 200 therapeutic mineral springs, differing in composition and temperature.
                     The Armenians, an ancient people living on an ancient land, call Armenia "Hayastan" and themselves “Hay." Oral history explains the lineage of the Armenian people as being the direct descendants of Noah's son Habeth. The indigenous people of the land of Ararat, Armenians forged their national identity with the rise of powerful Armenian kingdoms, the adoption of Christianity as Armenia's state religion, and the creation of the Armenian alphabet, which spurred the development of literature, philosophy, and science.
+                    <div id="post1">
+<span class="collapsed">
+ <a href="javascript:void(0)"> READ MORE>></a>
+</span>
 
+                        <span class="expanded">
+ <a href="javascript:void(0)">Less>></a>
+</span>
+                    </div>
+                    <div id="post2">
+<span class="collapsed">
+ <a href="javascript:void(0)"> READ MORE>></a>
+</span>
+
+                        <span class="expanded">
+ <a href="javascript:void(0)">Less>></a>
+</span>
+                    </div>
+                    <div id="post3">
+<span class="collapsed">
+ <a href="javascript:void(0)"> READ MORE>></a>
+</span>
+
+                        <span class="expanded">
+ <a href="javascript:void(0)">Less>></a>
+</span>
+                    </div>
  <a class="read-more" href="javascript:void(0)">Less</a>
 </p>
 
                 </div>
-                <div id="post1">
-<span class="collapsed">
- <a href="javascript:void(0)"> READ MORE>></a>
-</span>
 
-                    <span class="expanded">
- <a href="javascript:void(0)">Less>></a>
-</span>
-                </div>
-                <div id="post2">
-<span class="collapsed">
- <a href="javascript:void(0)"> READ MORE>></a>
-</span>
-
-                    <span class="expanded">
- <a href="javascript:void(0)">Less>></a>
-</span>
-                </div>
-                <div id="post3">
-<span class="collapsed">
- <a href="javascript:void(0)"> READ MORE>></a>
-</span>
-
-                    <span class="expanded">
- <a href="javascript:void(0)">Less>></a>
-</span>
-                </div>
 
             </div>
         </div>
