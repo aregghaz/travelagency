@@ -14,7 +14,7 @@
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
@@ -22,42 +22,22 @@
 
 
 <div class="container">
-    @if (Session::has('message'))
-        <div class="flash alert-info">
-            <p class="panel-body">
-                {{ Session::get('message') }}
-            </p>
-        </div>
-    @endif
-    @if ($errors->any())
-        <div class='flash alert-danger'>
-            <ul class="panel-body">
-                @foreach ( $errors->all() as $error )
-                    <li>
-                        {{ $error }}
-                    </li>
-                @endforeach
-            </ul>
-        </div>
-    @endif
+
+
     <div class="row">
         <div class="col-md-10 col-md-offset-1">
             <div class="panel panel-default">
-                <div class="panel-heading">
+
                     <h2>@yield('title')</h2>
                     @yield('title-meta')
-                </div>
+
                 <div class="panel-body">
                     @yield('content')
                 </div>
             </div>
         </div>
     </div>
-    <div class="row">
-        <div class="col-md-10 col-md-offset-1">
-            <p>Copyright &copy; 2015 | <a href="http://www.findalltogether.com">Find All Together</a></p>
-        </div>
-    </div>
+
 </div>
 
 <!-- Scripts -->

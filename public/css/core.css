@@ -173,6 +173,7 @@ header {
 }
 header .logo {
   margin-top: 15px;
+  margin-right: 18px;
 }
 
 header .general_menu menu > li {
@@ -2847,4 +2848,17 @@ footer .bottom_block .social ul li a i {
   .tours_block .container .link_button {
     width: 100%;
   }
+}
+.btn-primary {
+  color: #fff;
+
+ background-color: #4d669a !important;
+  margin: 0 auto;
+  display: block;
+  padding: 10px 40px;
+}
+.panel-heading {
+  background-color: #4d669a !important;
+  background-image: none!important;
+  color: white!important;
 }

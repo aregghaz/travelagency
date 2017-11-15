@@ -55,7 +55,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="/en/tours.html">
+                    <a href="{{ route('allToursEn') }}">
                         <img alt="" src="/bundles/damain/images/tours.png" class="" style="margin-left: 0px;">
                         <span>Tours</span>
                     </a>

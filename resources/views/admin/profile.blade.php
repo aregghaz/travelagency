@@ -1,4 +1,4 @@
-@extends('app')
+@extends('page.app')
 
 @section('title')
 {{ $user->name }}

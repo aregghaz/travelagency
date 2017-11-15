@@ -5,42 +5,42 @@
                 <ul>
                     <li class="first">
                         <a href="/en/hotels.html">
-                            <span>Hotels</span>
+                            <span>Отели</span>
                         </a>
                     </li>
                     <li>
                         <a href="/en/hotels.html?slug=villa">
-                            <span>Villa</span>
+                            <span>Вилла</span>
                         </a>
                     </li>
                     <li>
                         <a href="/en/transport/car-with-driver.html">
-                            <span>Car with driver</span>
+                            <span>Автомобиль с водителем</span>
                         </a>
                     </li>
                     <li>
                         <a href="/en/transport/car-rent.html">
-                            <span>Car rent</span>
+                            <span>Прокат автомобилей</span>
                         </a>
                     </li>
                     <li>
                         <a href="/en/excursion.html">
-                            <span>Excursion</span>
+                            <span>Экскурсия</span>
                         </a>
                     </li>
                     <li>
-                        <a href="/en/tours.html">
-                            <span>Tours</span>
+                        <a href="{{ route('allToursRu') }}">
+                            <span>Туры</span>
                         </a>
                     </li>
                     <li>
                         <a href="/en/company.html">
-                            <span>Company</span>
+                            <span>Компании</span>
                         </a>
                     </li>
                     <li class="last">
                         <a href="/en/contact.html">
-                            <span>Contact</span>
+                            <span>контакт</span>
                         </a>
                     </li>
                 </ul>
@@ -54,13 +54,15 @@
                     <img src="/bundles/damain/images/logo_f.png" alt="Discover Armenia">
                 </a>
                 <br>
-                <sapn>2017 all rights reserved</sapn>
+                <sapn>2017 все права защищены</sapn>
             </div>
             <div class="address_info left_block">
                 <ul>
                     <li>
-                        <p>Yerevan</p>
+                        <p>Ереван-0076, пр. Гая 37</p>
                         <p>Discover Armenia</p>
+                        <p>+7 (958) 401 28 44</p>
+                        <p>+374 55 42 54 52</p>
                         <p>+374 94 12 19 88</p>
                         <p>contact@discoverarmenia.tours</p>
                     </li>

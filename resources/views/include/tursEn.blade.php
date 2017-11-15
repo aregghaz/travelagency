@@ -8,7 +8,7 @@
             @foreach($posts as $post)
                 <div class="tours_box"
                      style="background: url('{{  URL::to("/images/turs/$post->img1") }}') no-repeat;background-size: cover;background-position: center center;">
-                    <a href="{{ route('tours', ['id'=> $post->id]) }}">
+                    <a href="{{ route('toursEn', ['id'=> $post->id]) }}">
                         <div class="overlay">
                             <div class="see_more home">
                                 <p>{{$post->titleEn}}</p>
@@ -31,7 +31,7 @@
             @endforeach
             @endif
             <div class="link_button">
-                <a href="/en/tours.html">See all tours</a>
+                <a href="{{ route('allToursEn') }}">See all tours</a>
             </div>
         </div>
     </div>

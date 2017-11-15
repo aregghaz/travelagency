@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
+    <title>Discover Armenia</title>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -16,12 +17,14 @@
     <meta name="description" content="Armenia is pleased to welcome you. Armenia is a cultural developed and hospitable country known for its extraordinary and individual culinary products. You will nowhere find such kind of dolma, khashlama, khorovats (barbeque) and khash like in Armenia. Due to the mountainous relief of Armenia, the air is crystally clear which allows you to feel the breath of nature.">
     <meta name="keywords" content="Home,  travel to armenia, Armenia, Tours, Discover Armenia, Tours to Armenia, ancient country, armenian women,">
 
-    <title>Discover Armenia</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
 
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="stylesheet" type="text/css" media="all" href="{{ URL::to('css/slick/slick.css')}}">
     <link rel="stylesheet" type="text/css" media="all" href="{{ URL::to('css/slick/slick-theme.css')}}">
-
+    <link rel="stylesheet" type="text/css" media="all" href="{{ URL::to('css/app.css')}}">
     <link rel="stylesheet" type="text/css" media="all" href="{{ URL::to('css/semantic/semantic.css')}}">
     <link rel="stylesheet" type="text/css" href="{{ URL::to('css/font-awesome.min.css')}}">
     <link rel="stylesheet" type="text/css" href="{{ URL::to('css/magic/magic.min.css')}}">
@@ -31,41 +34,36 @@
 
 
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
+
+    <script type="text/javascript" async="" src="https://mc.yandex.ru/metrika/watch.js"></script>
+    <script async="" src="https://www.google-analytics.com/analytics.js"></script>
+    <!-- Latest compiled and minified CSS -->
+
+    <!-- Optional theme -->
 </head>
 
 <body>
-<script type="text/javascript" async="" src="https://mc.yandex.ru/metrika/watch.js"></script>
-<script async="" src="https://www.google-analytics.com/analytics.js"></script>
-@include('include.header')
+
+@include('include.headerEn')
 
     @yield('content')
 
 
 
-@include('include.footer')
+@include('include.footerEn')
 </body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>﻿
 
 
-<script src="{{ URL::to('js/lodash.js')}}"></script>
 
-<script src="{{ URL::to('js/angular.min.js')}}"></script>
-<script src="{{ URL::to('js/lightgallery.js')}}"></script>
-<script src="{{ URL::to('js/angular-route.min.js')}}"></script>
-<script src="{{ URL::to('js/angular-resource.min.js')}}"></script>
-<script src="{{ URL::to('js/app2.js')}}"></script>
-<script src="{{ URL::to('js/app.js')}}"></script>
 
-<script src="{{ URL::to('js/semantic.js')}}"></script>
+<script src="{{ URL::to('js/init.js')}}"></script>
+<script src="{{ URL::to('js/jquery.js')}}"></script>
 
-<script src="{{ URL::to('js/slick.min.js')}}"></script>
-<script src="{{ URL::to('js/angular-simple-logger.js')}}"></script>
-<script src="{{ URL::to('js/angular-google-maps.min.js')}}"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="//cdn.jsdelivr.net/jquery.mcustomscrollbar/3.0.6/jquery.mCustomScrollbar.concat.min.js"></script>
 
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 </html>
