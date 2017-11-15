@@ -115,8 +115,8 @@ menu li a {
 .flex_container {
   display: flex;
 }
-.container {
-  width: 92%;
+.container {  
+  width: 83%;
   margin: 0 auto;
   position: relative;
 }
