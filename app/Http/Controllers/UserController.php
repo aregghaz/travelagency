@@ -30,7 +30,7 @@ class UserController extends Controller
         $id = $request['id'];
         $posts = Posts::findOrFail($id);
 
-        return view('template.tours', ['posts' => $posts]);
+        return view('template.toursEn', ['posts' => $posts]);
     }
 
     public function user_posts($id)
