@@ -43,7 +43,7 @@
                     <div class="general_image">
                         <img src="/images/turs/{{ $posts->img1 }}" alt="">
                     </div>
-                    <div class="image_thumb_block">
+                    <div class="image_thumb_block"  style="    margin-top: 25px;">
                         <div class="gallery_carousel clear">
                             <div class="slide" style="width: 1910px;">
                                 <a data-toggle="modal" data-target=".{{$posts->id}}" >
