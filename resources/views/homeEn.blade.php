@@ -7,7 +7,6 @@
 @section('content')
 
 
-<?php  die('asdsad'); ?>
 
     @include('script.script')
     @include('include.social')
