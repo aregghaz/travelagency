@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5de2cfac-8cab-4768-a5e3-ebca016406dc" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/homeEn.blade.php" afterPath="$PROJECT_DIR$/resources/views/homeEn.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/slick/slick-theme.css" afterPath="$PROJECT_DIR$/public/css/slick/slick-theme.css" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -60,11 +60,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="slick-theme.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="slick-theme.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/css/slick/slick-theme.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2193">
-              <caret line="129" column="1" lean-forward="false" selection-start-line="129" selection-start-column="1" selection-end-line="129" selection-end-column="3" />
+            <state relative-caret-position="170">
+              <caret line="125" column="4" lean-forward="false" selection-start-line="125" selection-start-column="4" selection-end-line="125" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -90,7 +90,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="homeEn.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="homeEn.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/homeEn.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
@@ -140,6 +140,7 @@
       <find>tour</find>
       <find>gallery_carousel</find>
       <find>mCustomScrollBar</find>
+      <find>slick-trac</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/resources/views/include</dir>
@@ -181,8 +182,8 @@
         <option value="$PROJECT_DIR$/resources/views/admin/home.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/PostController.php" />
         <option value="$PROJECT_DIR$/.env" />
-        <option value="$PROJECT_DIR$/public/css/slick/slick-theme.css" />
         <option value="$PROJECT_DIR$/resources/views/homeEn.blade.php" />
+        <option value="$PROJECT_DIR$/public/css/slick/slick-theme.css" />
       </list>
     </option>
   </component>
@@ -193,7 +194,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="y" value="27" />
     <option name="width" value="1360" />
     <option name="height" value="741" />
@@ -375,15 +376,15 @@
       <workItem from="1510734167498" duration="597000" />
       <workItem from="1510731183090" duration="36000" />
       <workItem from="1510731304987" duration="7053000" />
-      <workItem from="1510733543294" duration="563000" />
+      <workItem from="1510733543294" duration="1059000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67566000" />
+    <option name="totallyTimeSpent" value="68062000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
+    <frame x="-8" y="-8" width="1456" height="876" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.260745" sideWeight="0.48653197" order="0" side_tool="false" content_ui="combo" />
@@ -769,14 +770,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/slick/slick-theme.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2193">
-          <caret line="129" column="1" lean-forward="false" selection-start-line="129" selection-start-column="1" selection-end-line="129" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/include/tursEn.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -793,6 +786,14 @@
             <element signature="e#2336#2391#0#HTML" expanded="true" />
             <element signature="e#12898#12968#0#HTML" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/slick/slick-theme.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="125" column="4" lean-forward="false" selection-start-line="125" selection-start-column="4" selection-end-line="125" selection-end-column="4" />
+          <folding />
         </state>
       </provider>
     </entry>
