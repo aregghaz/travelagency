@@ -12,7 +12,7 @@
                         <div class="overlay">
                             <div class="see_more home">
                                 <p>{{$post->titleRu}}</p>
-                                <p>{{$post->days}} days / {{$post->night}} ночьей</p>
+                                <p>{{$post->days}} дней / {{$post->night}} ночьей</p>
                                 <p>{{$post->bodyRu}}</p>
                             </div>
                             <div class="tours_title_block clear">

@@ -8,17 +8,9 @@
         <div class="container clear">
             <div class="left_block">
                 <h1>  {{ $posts->titleRu }}</h1>
-                <div class="excursion_info">
-                    <div class="top_block clear">
-                        <ul class="left_block">
-                            <li> Ticket</li>
-                            <li> Transport</li>
-                        </ul>
 
-                    </div>
-                </div>
                 <div class="price">
-                    <span>Price: </span>
+                    <span>Цена: </span>
                     {{ $posts->price }}$
                 </div>
                 <div class="description">
@@ -29,13 +21,13 @@
                 </div>
                 <div class="request_form_block clear">
                     <div class="input_block">
-                        <label for="setFrom">Set from</label>
+                        <label for="setFrom">Набор из</label>
                         <div class="ui calendar" id="setFrom">
                             <input type="text" placeholder="Date/Time">
                         </div>
                     </div>
                     <div class="input_block">
-                        <label for="setFrom">Visitors</label>
+                        <label for="setFrom">Посетители</label>
                         <div class="ui" id="visitors">
                             <input type="number" min="1" name="visitors" title="">
                         </div>
@@ -43,7 +35,7 @@
                     <div class="add_cart_block">
                         <button class="add_to_cart" data-type="excursion" data-id="11" data-price="37000"
                                 data-name="The history of Armenian Cognac">
-                            Add to cart
+                            Добавить в корзину
                         </button>
                     </div>
                 </div>
