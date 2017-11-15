@@ -78,31 +78,40 @@
                           class="form-control"></textarea>
             </div>
             <div class="form-group">
-                <input type="file" required="required" multiple="multiple" placeholder="image 1" name="img1"
+                <label for="img1">upload image 1</label>
+                <input type="file" required="required" multiple="multiple" placeholder="image 1" id="img1git pull p" name="img1"
                        class="form-control">
             </div>
             <div class="form-group">
-                <input type="file" multiple="multiple" placeholder="image 2" name="img2" class="form-control">
+                <label for="img2">upload image 2</label>
+                <input type="file" multiple="multiple" placeholder="image 2" name="img2" id="img2" class="form-control">
             </div>
             <div class="form-group">
-                <input type="file" multiple="multiple" placeholder="image 3" name="img3" class="form-control">
+                <label for="img3">upload image 3</label>
+                <input type="file" multiple="multiple" placeholder="image 3" name="img3" id="img3" class="form-control">
             </div>
             <div class="form-group">
-                <input type="file" multiple="multiple" placeholder="image 4" name="img4" class="form-control">
+                <label for="img4">upload image 4</label>
+                <input type="file" multiple="multiple" placeholder="image 4" name="img4" id="img4" class="form-control">
             </div>
             <div class="form-group">
-                <input type="file" multiple="multiple" placeholder="image 5" name="img5" class="form-control">
+                <label for="img5">upload image 5</label>
+                <input type="file" multiple="multiple" placeholder="image 5" name="img5" id="img5" class="form-control">
             </div>
             <div class="form-group">
-                <input type="file" multiple="multiple" placeholder="image 6" name="img6" class="form-control">
+                <label for="img6">upload image 6 </label>
+                <input type="file" id="img6" multiple="multiple" placeholder="image 6" name="img6" class="form-control">
             </div>
             <div class="form-group">
-                <input type="file" multiple="multiple" placeholder="image 7" name="img7" class="form-control">
+                <label for="img7">upload image 7</label>
+                <input type="file" multiple="multiple" placeholder="image 7" id="img7" name="img7" class="form-control">
             </div>
             <div class="form-group">
-                <input type="file" multiple="multiple" placeholder="pdf file in ENglish" name="fileEn" class="form-control">
+                <label for="fileEn">upload PDF file in English</label>
+                <input type="file" multiple="multiple" placeholder="pdf file in ENglish" id="fileEn" name="fileEn" class="form-control">
             </div>   <div class="form-group">
-                <input type="file" multiple="multiple" placeholder="pdf file in Russian" name="fileRu" class="form-control">
+                <label for="fileRu">upload PDF file in Russian</label>
+                <input type="file" id="fileRu" multiple="multiple" placeholder="pdf file in Russian" name="fileRu" class="form-control">
             </div>
             <input type="submit" name='post_comment' class="btn btn-success" value="Post"/>
         </form>
