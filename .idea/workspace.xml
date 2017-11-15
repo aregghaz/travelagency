@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1f91ed67-ff40-4aa6-b0d9-69a9b7fa3635" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/app.css" afterPath="$PROJECT_DIR$/public/css/app.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/homeEn.blade.php" afterPath="$PROJECT_DIR$/resources/views/homeEn.blade.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -110,8 +111,8 @@
       <file leaf-file-name="app.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/css/app.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="333">
-              <caret line="6729" column="1" lean-forward="true" selection-start-line="6729" selection-start-column="1" selection-end-line="6729" selection-end-column="1" />
+            <state relative-caret-position="197">
+              <caret line="6721" column="4" lean-forward="false" selection-start-line="6721" selection-start-column="4" selection-end-line="6721" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -149,8 +150,8 @@
         <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/resources/views/include/headerEn.blade.php" />
         <option value="$PROJECT_DIR$/public/css/core.css" />
-        <option value="$PROJECT_DIR$/public/css/app.css" />
         <option value="$PROJECT_DIR$/resources/views/homeEn.blade.php" />
+        <option value="$PROJECT_DIR$/public/css/app.css" />
       </list>
     </option>
   </component>
@@ -321,12 +322,12 @@
       <workItem from="1510731337573" duration="2474000" />
       <workItem from="1510731509508" duration="1597000" />
       <workItem from="1510733193670" duration="1778000" />
-      <workItem from="1510731601714" duration="921000" />
+      <workItem from="1510731601714" duration="1071000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9834000" />
+    <option name="totallyTimeSpent" value="9984000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
@@ -726,8 +727,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/css/app.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="6729" column="1" lean-forward="true" selection-start-line="6729" selection-start-column="1" selection-end-line="6729" selection-end-column="1" />
+        <state relative-caret-position="197">
+          <caret line="6721" column="4" lean-forward="false" selection-start-line="6721" selection-start-column="4" selection-end-line="6721" selection-end-column="4" />
           <folding />
         </state>
       </provider>
