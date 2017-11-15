@@ -268,140 +268,37 @@
                 <!-- End Portfolio Controls -->
             </div>
         </div>
+
         <!-- Portfolio Recent Projects -->
         <div id="portfolio-list">
+            @foreach($posts as $post)
             <div class="col-md-3 col-sm-6 col-xs-12 mix living bedroom" style="display: inline-block;">
                 <div class="portfolio-item">
-                    <img src="/uploads/media/0a61afd5d2d42ad7f975a0ca94b2d5eaa80e48a0.jpeg" alt="">
+                    <img src="{{  URL::to("/images/turs/$posts->img1") }}" alt="">
                     <div class="overlay">
                         <div class="icon">
                             <a href="single-property.html"><i class="icon-link left"></i></a>
-                            <a  data-toggle="modal" data-target=".bs-example-modal-sm" ><i class="icon-eye right"></i></a>
+                            <a  data-toggle="modal" data-target=".{{$posts->img1}}" ><i class="icon-eye right"></i></a>
                         </div>
                     </div>
                     <div class="content">
-                        <h3><a href="#">Beautiful House</a></h3>
+                        <h3><a href="#">{{ $post->titleEn }}</a></h3>
                         <p>Apartment, cottage, Retail</p>
                     </div>
                 </div>
             </div>
 
+                <div class="modal fade {{$posts->img1}}" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                    <div class="modal-dialog modal-lg" role="document">
 
-            <div class="col-md-3 col-sm-6 col-xs-12 mix kitchen driveway" style="display: inline-block;">
-                <div class="portfolio-item">
-                    <img src="/uploads/media/0a61afd5d2d42ad7f975a0ca94b2d5eaa80e48a0.jpeg" alt="">
-                    <div class="overlay">
-                        <div class="icon">
-                            <a href="single-property.html"><i class="icon-link left"></i></a>
-                            <a href="/uploads/media/0a61afd5d2d42ad7f975a0ca94b2d5eaa80e48a0.jpeg" class="lightbox"><i class="icon-eye right"></i></a>
-                        </div>
-                    </div>
-                    <div class="content">
-                        <h3><a href="#">House bedroom</a></h3>
-                        <p>Apartment, Retail</p>
+                        <img src="{{  URL::to("/images/turs/$posts->img5") }}" alt="">
+
                     </div>
                 </div>
-            </div>
-            <div class="col-md-3 col-sm-6 col-xs-12 mix living garage" style="display: inline-block;">
-                <div class="portfolio-item">
-                    <img src="/uploads/media/0a61afd5d2d42ad7f975a0ca94b2d5eaa80e48a0.jpeg" alt="">
-                    <div class="overlay">
-                        <div class="icon">
-                            <a href="single-property.html"><i class="icon-link left"></i></a>
-                            <a href="/uploads/media/0a61afd5d2d42ad7f975a0ca94b2d5eaa80e48a0.jpeg" class="lightbox"><i class="icon-eye right"></i></a>
-                        </div>
-                    </div>
-                    <div class="content">
-                        <h3><a href="#">Grand Avenue</a></h3>
-                        <p>Cottage, Retail</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6 col-xs-12 mix driveway" style="display: inline-block;">
-                <div class="portfolio-item">
-                    <img src="/uploads/media/0a61afd5d2d42ad7f975a0ca94b2d5eaa80e48a0.jpeg" alt="">
-                    <div class="overlay">
-                        <div class="icon">
-                            <a href="single-property.html"><i class="icon-link left"></i></a>
-                            <a href="/uploads/media/0a61afd5d2d42ad7f975a0ca94b2d5eaa80e48a0.jpeg" class="lightbox"><i class="icon-eye right"></i></a>
-                        </div>
-                    </div>
-                    <div class="content">
-                        <h3><a href="#">Anastasia Avenue</a></h3>
-                        <p>Industrial, Retail, Villa</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6 col-xs-12 mix kitchen bedroom" style="display: inline-block;">
-                <div class="portfolio-item">
-                    <img src="/uploads/media/0a61afd5d2d42ad7f975a0ca94b2d5eaa80e48a0.jpeg" alt="">
-                    <div class="overlay">
-                        <div class="icon">
-                            <a href="single-property.html"><i class="icon-link left"></i></a>
-                            <a href="/uploads/media/0a61afd5d2d42ad7f975a0ca94b2d5eaa80e48a0.jpeg" class="lightbox"><i class="icon-eye right"></i></a>
-                        </div>
-                    </div>
-                    <div class="content">
-                        <h3><a href="#">Luxury House</a></h3>
-                        <p>Apartment, Retail</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6 col-xs-12 mix living garage" style="display: inline-block;">
-                <div class="portfolio-item">
-                    <img src="/uploads/media/0a61afd5d2d42ad7f975a0ca94b2d5eaa80e48a0.jpeg" alt="">
-                    <div class="overlay">
-                        <div class="icon">
-                            <a href="single-property.html"><i class="icon-link left"></i></a>
-                            <a href="/uploads/media/0a61afd5d2d42ad7f975a0ca94b2d5eaa80e48a0.jpeg" class="lightbox"><i class="icon-eye right"></i></a>
-                        </div>
-                    </div>
-                    <div class="content">
-                        <h3><a href="#">Living Room</a></h3>
-                        <p>Apartment, Industrial, Land, Office</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6 col-xs-12 mix driveway garage" style="display: inline-block;">
-                <div class="portfolio-item">
-                    <img src="/uploads/media/0a61afd5d2d42ad7f975a0ca94b2d5eaa80e48a0.jpeg" alt="">
-                    <div class="overlay">
-                        <div class="icon">
-                            <a href="single-property.html"><i class="icon-link left"></i></a>
-                            <a href="/uploads/media/0a61afd5d2d42ad7f975a0ca94b2d5eaa80e48a0.jpeg" class="lightbox"><i class="icon-eye right"></i></a>
-                        </div>
-                    </div>
-                    <div class="content">
-                        <h3><a href="#">Peaceful Home</a></h3>
-                        <p>Cottage, Industrial,Land</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6 col-xs-12 mix kitchen garage" style="display: inline-block;">
-                <div class="portfolio-item">
-                    <img src="/uploads/media/0a61afd5d2d42ad7f975a0ca94b2d5eaa80e48a0.jpeg" alt="">
-                    <div class="overlay">
-                        <div class="icon">
-                            <a href="/uploads/media/0a61afd5d2d42ad7f975a0ca94b2d5eaa80e48a0.jpeg"><i class="icon-link left"></i></a>
-                            <a href="/uploads/media/0a61afd5d2d42ad7f975a0ca94b2d5eaa80e48a0.jpeg" class="lightbox"><i class="icon-eye right"></i></a>
-                        </div>
-                    </div>
-                    <div class="content">
-                        <h3><a href="#">Ancient Villa</a></h3>
-                        <p>Cottage, Industrial,Land, Office</p>
-                    </div>
-                </div>
-            </div>
+            @endforeach
         </div>
         <!-- End Portfolio  -->
 
-        <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-            <div class="modal-dialog modal-lg" role="document">
-
-                    <img src="/uploads/media/0a61afd5d2d42ad7f975a0ca94b2d5eaa80e48a0.jpeg" alt="">
-
-            </div>
-        </div>
 
 
     </section>
