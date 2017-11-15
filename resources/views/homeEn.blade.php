@@ -63,7 +63,7 @@
                     style="">Previous
             </button>
             <div aria-live="polite" class="slick-list">
-                <div class="slick-track" style="opacity: 1; width: 5380px;" role="listbox">
+                <div class="slick-track" style="opacity: 1; width: 5380px;display: -webkit-box;" role="listbox">
                     <div class="slide slick-slide slick-current slick-active"
                          style="background: url(&quot;/uploads/media/3f2264cfdb110fbf5cd00c2befc5cf49ebe65c07.gif&quot;) center center / cover no-repeat; width: 30%; position: relative; left: 0px; top: 0px; z-index: 999; opacity: 1;"
                          data-slick-index="0" aria-hidden="false" tabindex="-1" role="option"
@@ -232,7 +232,7 @@
         <div class="accommodation_block excursion_block">
             <div class="container clear excursion_slider slick-initialized slick-slider">
                 <div aria-live="polite" class="slick-list">
-                    <div class="slick-track" style="opacity: 1; width: 0px; transform: translate3d(0px, 0px, 0px);display: -webkit-box;"
+                    <div class="slick-track" style="opacity: 1; width: 0px; transform: translate3d(0px, 0px, 0px);"
                          role="listbox"></div>
                 </div>
             </div>
