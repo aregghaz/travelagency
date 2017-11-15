@@ -155,6 +155,14 @@ Armenia is situated at a cultural, historical, and religious intersection and lo
                 eve.preventDefault();
                 $container.children(".expanded, .collapsed").toggle();
             });
+        }); $(document).ready(function() {
+            $(".expanded").hide();
+
+            $(".expanded a, .collapsed a").click(function(eve) {
+                var $container = $(this).parents("div");
+                eve.preventDefault();
+                $container.children(".expanded, .collapsed").toggle();
+            });
         });
     </script>
 
