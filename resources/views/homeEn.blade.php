@@ -72,29 +72,29 @@ Armenia is situated at a cultural, historical, and religious intersection and lo
                     Armenia's landscapes offer boundless beauty. Seven main landscape types are represented across the different altitudinal zones of Armenia. Across these desert, semi desert, dry steppe, steppe, woodland, sub alpine and alpine zones is geography as diverse as high mountain peaks, fertile valleys, picturesque land formations, basalt columns, rock sculptures, and waterfalls. More than 200 rivers and streams traverse Armenia, with steep falls, rapids and swift currents. Armenia has 5 scenic canyons. In addition, there are over 200 therapeutic mineral springs, differing in composition and temperature.
                     The Armenians, an ancient people living on an ancient land, call Armenia "Hayastan" and themselves “Hay." Oral history explains the lineage of the Armenian people as being the direct descendants of Noah's son Habeth. The indigenous people of the land of Ararat, Armenians forged their national identity with the rise of powerful Armenian kingdoms, the adoption of Christianity as Armenia's state religion, and the creation of the Armenian alphabet, which spurred the development of literature, philosophy, and science.
                     <div id="post1">
-<span class="collapsed">
+<span class="collapsed1">
  <a href="javascript:void(0)"> READ MORE>></a>
 </span>
 
-                        <span class="expanded">
+                        <span class="expanded1">
  <a href="javascript:void(0)">Less>></a>
 </span>
                     </div>
                     <div id="post2">
-<span class="collapsed">
+<span class="collapsed1">
  <a href="javascript:void(0)"> READ MORE>></a>
 </span>
 
-                        <span class="expanded">
+                        <span class="expanded1">
  <a href="javascript:void(0)">Less>></a>
 </span>
                     </div>
                     <div id="post3">
-<span class="collapsed">
+<span class="collapsed1">
  <a href="javascript:void(0)"> READ MORE>></a>
 </span>
 
-                        <span class="expanded">
+                        <span class="expanded1">
  <a href="javascript:void(0)">Less>></a>
 </span>
                     </div>
@@ -156,9 +156,9 @@ Armenia is situated at a cultural, historical, and religious intersection and lo
                 $container.children(".expanded, .collapsed").toggle();
             });
         }); $(document).ready(function() {
-            $(".expanded").hide();
+            $(".expanded1").hide();
 
-            $(".expanded a, .collapsed a").click(function(eve) {
+            $(".expanded1 a, .collapsed1 a").click(function(eve) {
                 var $container = $(this).parents("div");
                 eve.preventDefault();
                 $container.children(".expanded, .collapsed").toggle();
