@@ -7,37 +7,37 @@
 /* ===> Colors <=== */
 @font-face {
   font-family: 'AvantGardeCTT-Bold';
-  src: url('../../bundles/damain/fonts/AvantGardeCTT-Bold.eot?#iefix') format('embedded-opentype'), url('../../bundles/damain/fonts/AvantGardeCTT-Bold.woff') format('woff'), url('../../bundles/damain/fonts/AvantGardeCTT-Bold.ttf') format('truetype'), url('../../bundles/damain/fonts/AvantGardeCTT-Bold.svg#AvantGardeCTT-Bold') format('svg');
+  src: url('fonts/AvantGardeCTT-Bold.eot?#iefix') format('embedded-opentype'), url('fonts/AvantGardeCTT-Bold.woff') format('woff'), url('fonts/AvantGardeCTT-Bold.ttf') format('truetype'), url('fonts/AvantGardeCTT-Bold.svg#AvantGardeCTT-Bold') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'Fregat-Bold';
-  src: url('../../bundles/damain/fonts/Fregat-Bold.eot?#iefix') format('embedded-opentype'), url('../../bundles/damain/fonts/Fregat-Bold.otf') format('opentype'), url('../../bundles/damain/fonts/Fregat-Bold.woff') format('woff'), url('../../bundles/damain/fonts/Fregat-Bold.ttf') format('truetype'), url('../../bundles/damain/fonts/Fregat-Bold.svg#Fregat-Bold') format('svg');
+  src: url('fonts/Fregat-Bold.eot?#iefix') format('embedded-opentype'), url('fonts/Fregat-Bold.otf') format('opentype'), url('fonts/Fregat-Bold.woff') format('woff'), url('fonts/Fregat-Bold.ttf') format('truetype'), url('fonts/Fregat-Bold.svg#Fregat-Bold') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'Fregat-BoldItalic';
-  src: url('../../bundles/damain/fonts/Fregat-BoldItalic.eot?#iefix') format('embedded-opentype'), url('../../bundles/damain/fonts/Fregat-BoldItalic.otf') format('opentype'), url('../../bundles/damain/fonts/Fregat-BoldItalic.woff') format('woff'), url('../../bundles/damain/fonts/Fregat-BoldItalic.ttf') format('truetype'), url('../../bundles/damain/fonts/Fregat-BoldItalic.svg#Fregat-BoldItalic') format('svg');
+  src: url('/fonts/Fregat-BoldItalic.eot?#iefix') format('embedded-opentype'), url('fonts/Fregat-BoldItalic.otf') format('opentype'), url('fonts/Fregat-BoldItalic.woff') format('woff'), url('fonts/Fregat-BoldItalic.ttf') format('truetype'), url('fonts/Fregat-BoldItalic.svg#Fregat-BoldItalic') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'Fregat';
-  src: url('../../bundles/damain/fonts/Fregat.eot?#iefix') format('embedded-opentype'), url('../../bundles/damain/fonts/Fregat.otf') format('opentype'), url('../../bundles/damain/fonts/Fregat.woff') format('woff'), url('../../bundles/damain/fonts/Fregat.ttf') format('truetype'), url('../../bundles/damain/fonts/Fregat.svg#Fregat') format('svg');
+  src: url('fonts/Fregat.eot?#iefix') format('embedded-opentype'), url('fonts/Fregat.otf') format('opentype'), url('fonts/Fregat.woff') format('woff'), url('fonts/Fregat.ttf') format('truetype'), url('fonts/Fregat.svg#Fregat') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'Fregat-Italic';
-  src: url('../../bundles/damain/fonts/Fregat-Italic.eot?#iefix') format('embedded-opentype'), url('../../bundles/damain/fonts/Fregat-Italic.otf') format('opentype'), url('../../bundles/damain/fonts/Fregat-Italic.woff') format('woff'), url('../../bundles/damain/fonts/Fregat-Italic.ttf') format('truetype'), url('../../bundles/damain/fonts/Fregat-Italic.svg#Fregat') format('svg');
+  src: url('fonts/Fregat-Italic.eot?#iefix') format('embedded-opentype'), url('fonts/Fregat-Italic.otf') format('opentype'), url('fonts/Fregat-Italic.woff') format('woff'), url('fonts/Fregat-Italic.ttf') format('truetype'), url('fonts/Fregat-Italic.svg#Fregat') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'Tahoma';
-  src: url('../../bundles/damain/fonts/Tahoma.eot?#iefix') format('embedded-opentype'), url('../../bundles/damain/fonts/Tahoma.woff') format('woff'), url('../../bundles/damain/fonts/Tahoma.ttf') format('truetype'), url('../../bundles/damain/fonts/Tahoma.svg#Tahoma') format('svg');
+  src: url('fonts/Tahoma.eot?#iefix') format('embedded-opentype'), url('fonts/Tahoma.woff') format('woff'), url('fonts/Tahoma.ttf') format('truetype'), url('fonts/Tahoma.svg#Tahoma') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -589,7 +589,7 @@ header .right_block .group_block .chart_block img {
   border: none;
   min-width: 160px;
   padding: 8px 15px 8px 10px;
-  min-height: auto;
+
   z-index: 100;
 }
 .filter_block .container .selection.active.dropdown:hover,
@@ -2325,10 +2325,7 @@ footer .bottom_block .social ul li a i {
   background-color: #000;
   background-color: rgba(0, 0, 0, 0.4);
 }
-.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
-  background-color: #fff;
-  background-color: #4b659d;
-}
+
 /*.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar{
     background-color: #fff; background-color: rgba(255,255,255,0.85);
     filter: "alpha(opacity=85)"; -ms-filter: "alpha(opacity=85)";
@@ -2342,7 +2339,7 @@ footer .bottom_block .social ul li a i {
 .mCSB_scrollTools .mCSB_buttonDown,
 .mCSB_scrollTools .mCSB_buttonLeft,
 .mCSB_scrollTools .mCSB_buttonRight {
-  background-image: url(../../bundles/damain/images/mCSB_buttons.png);
+  background-image: url(../bundles/damain/images/mCSB_buttons.png);
   /* css sprites */
   background-repeat: no-repeat;
   background-color: transparent;
@@ -2626,9 +2623,7 @@ footer .bottom_block .social ul li a i {
     font-size: 33px;
     line-height: 33px;
   }
-  .home_slider_block .home_slider .slick-dots {
-    right: calc((100% - 99opx) / 2);
-  }
+
 }
 @media all and (max-width: 1024px) {
   .home_slider_block .home_slider .slick-dots {
