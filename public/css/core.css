@@ -169,7 +169,7 @@ margin-bottom: 7.9%
 header {
   width: 100%;
   background: #ffffff;
-  border-top: 5px solid #fca955;
+  border-bottom: 5px solid #fca955;
 }
 header .logo {
   margin-top: 15px;

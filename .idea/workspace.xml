@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="5af971c7-6aad-4555-8308-b0854263003a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/core.css" afterPath="$PROJECT_DIR$/public/css/core.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/include/tursRu.blade.php" afterPath="$PROJECT_DIR$/resources/views/include/tursRu.blade.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,10 +23,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="core.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="core.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/css/core.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
+            <state relative-caret-position="18479">
               <caret line="1237" column="0" lean-forward="false" selection-start-line="1237" selection-start-column="0" selection-end-line="1237" selection-end-column="0" />
               <folding />
             </state>
@@ -65,13 +63,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="toursEn.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="toursEn.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/template/toursEn.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="168">
-              <caret line="57" column="50" lean-forward="true" selection-start-line="57" selection-start-column="50" selection-end-line="57" selection-end-column="50" />
+              <caret line="57" column="80" lean-forward="true" selection-start-line="57" selection-start-column="50" selection-end-line="57" selection-end-column="80" />
               <folding>
-                <element signature="e#2289#2311#0#HTML" expanded="true" />
+                <element signature="e#2180#2209#0#HTML" expanded="true" />
+                <element signature="e#2319#2341#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -80,11 +79,11 @@
       <file leaf-file-name="toursRu.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/template/toursRu.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="415">
-              <caret line="143" column="26" lean-forward="false" selection-start-line="143" selection-start-column="26" selection-end-line="143" selection-end-column="26" />
+            <state relative-caret-position="335">
+              <caret line="45" column="81" lean-forward="false" selection-start-line="45" selection-start-column="81" selection-end-line="45" selection-end-column="81" />
               <folding>
-                <element signature="e#1897#8371#0#HTML" expanded="false" />
-                <element signature="e#2037#2059#0#HTML" expanded="true" />
+                <element signature="e#1929#1958#0#HTML" expanded="true" />
+                <element signature="e#2068#2090#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -122,6 +121,11 @@
       </file>
     </leaf>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>image_thumb_block</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -129,10 +133,10 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/resources/views/template/allToursRu.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/template/toursEn.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/template/toursRu.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/include/tursRu.blade.php" />
         <option value="$PROJECT_DIR$/public/css/core.css" />
+        <option value="$PROJECT_DIR$/resources/views/template/toursEn.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/template/toursRu.blade.php" />
       </list>
     </option>
   </component>
@@ -256,12 +260,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1510731651244</updated>
-      <workItem from="1510731663663" duration="1123000" />
+      <workItem from="1510731663663" duration="1419000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1123000" />
+    <option name="totallyTimeSpent" value="1419000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
@@ -370,17 +374,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/template/toursRu.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="143" column="26" lean-forward="false" selection-start-line="143" selection-start-column="26" selection-end-line="143" selection-end-column="26" />
-          <folding>
-            <element signature="e#1897#8371#0#HTML" expanded="false" />
-            <element signature="e#2037#2059#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/homeEn.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-408">
@@ -413,21 +406,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/core.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="1237" column="0" lean-forward="false" selection-start-line="1237" selection-start-column="0" selection-end-line="1237" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/template/toursEn.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
-          <caret line="57" column="50" lean-forward="true" selection-start-line="57" selection-start-column="50" selection-end-line="57" selection-end-column="50" />
+          <caret line="57" column="80" lean-forward="true" selection-start-line="57" selection-start-column="50" selection-end-line="57" selection-end-column="80" />
           <folding>
-            <element signature="e#2289#2311#0#HTML" expanded="true" />
+            <element signature="e#2180#2209#0#HTML" expanded="true" />
+            <element signature="e#2319#2341#0#HTML" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/template/toursRu.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="45" column="81" lean-forward="false" selection-start-line="45" selection-start-column="81" selection-end-line="45" selection-end-column="81" />
+          <folding>
+            <element signature="e#1929#1958#0#HTML" expanded="true" />
+            <element signature="e#2068#2090#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/core.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18479">
+          <caret line="1237" column="0" lean-forward="false" selection-start-line="1237" selection-start-column="0" selection-end-line="1237" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
