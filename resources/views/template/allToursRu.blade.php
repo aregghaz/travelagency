@@ -283,7 +283,7 @@
                         </div>
                         <div class="content">
                             <h3><a href="#">{{ $post->titleRu }}</a></h3>
-                            <p>Price: {{ $post->price }}$,  {{$post->days}} days / {{$post->night}} nights</p>
+                            <p>{{$post->days}} days / {{$post->night}} nights <br> Price: {{ $post->price }}$</p>
                         </div>
                     </div>
                 </div>
