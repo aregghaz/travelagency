@@ -274,7 +274,7 @@
             @foreach($posts as $post)
             <div class="col-md-3 col-sm-6 col-xs-12 mix living bedroom" style="display: inline-block;">
                 <div class="portfolio-item">
-                    <img src="{{  URL::to("/images/turs/$posts->img1") }}" alt="">
+                    <img src="{{  URL::to("/images/turs/".$posts->img1) }}" alt="">
                     <div class="overlay">
                         <div class="icon">
                             <a href="single-property.html"><i class="icon-link left"></i></a>
