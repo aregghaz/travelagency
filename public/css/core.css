@@ -2859,3 +2859,13 @@ footer .bottom_block .social ul li a i {
   background-image: none!important;
   color: white!important;
 }
+.read-more {
+  border: 1px solid orange;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  display: inline-block;
+  margin-top: 10px;
+  background-color: orange;
+  color: white;
+  font-size: 19px
+}
