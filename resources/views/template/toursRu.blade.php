@@ -17,7 +17,7 @@
                     {{ $posts->bodyRu }}
                 </div>
                 <div class="description">
-                    <a href="/images/turs/{{ $posts->linkRu }}">Узнайте больше об этих турах</a>
+                    <a href="/images/turs/{{ $posts->linkRu }}" target="_blank">Узнайте больше об этих турах</a>
                 </div>
                 <div class="request_form_block clear">
                     <div class="input_block">

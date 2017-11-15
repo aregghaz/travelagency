@@ -27,7 +27,7 @@
 
                 </div>
                 <div class="description">
-                    <a href="/images/turs/{{ $posts->linkEn }}">Read more about this tours</a>
+                    <a href="/images/turs/{{ $posts->linkEn }}" target="_blank">Read more about this tours</a>
 
                 </div>
                 <div class="request_form_block clear">
