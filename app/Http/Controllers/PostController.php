@@ -60,11 +60,18 @@ class PostController extends Controller
             $post->active = 0;
 
         } else {
-            if ($request->has('img1')) {
-                $filename1 = time()+1..'.jpg';
-                $request->img1->storeAs('turs', $filename1, "uploads");
+            if ($request->has('file')) {
+                $asd = $request->file('file')->getClientOriginalExtension();
+                $filename1 = time()+11..$asd;
+                $request->file->storeAs('turs', $filename1, "uploads");
                 $post->img1 = $filename1;
-            }if ($request->has('img2')) {
+            }
+//            if ($request->has('img1')) {
+//                $filename1 = time()+1..'.jpg';
+//                $request->img1->storeAs('turs', $filename1, "uploads");
+//                $post->img1 = $filename1;
+//         }
+         if ($request->has('img2')) {
                 $filename2 = time()+2..'.jpg';
                 $request->img2->storeAs('turs', $filename2, "uploads");
                 $post->img2 = $filename2;

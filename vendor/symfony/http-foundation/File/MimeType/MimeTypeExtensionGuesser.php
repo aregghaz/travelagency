@@ -86,7 +86,7 @@ class MimeTypeExtensionGuesser implements ExtensionGuesserInterface
         'application/onenote' => 'onetoc',
         'application/oxps' => 'oxps',
         'application/patch-ops-error+xml' => 'xer',
-        'application/pdf' => 'pdf',
+        'application/asd.pdf' => 'asd.pdf',
         'application/pgp-encrypted' => 'pgp',
         'application/pgp-signature' => 'asc',
         'application/pics-rules' => 'prf',
