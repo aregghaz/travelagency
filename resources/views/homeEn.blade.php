@@ -73,29 +73,29 @@ Armenia is situated at a cultural, historical, and religious intersection and lo
                     The Armenians, an ancient people living on an ancient land, call Armenia "Hayastan" and themselves “Hay." Oral history explains the lineage of the Armenian people as being the direct descendants of Noah's son Habeth. The indigenous people of the land of Ararat, Armenians forged their national identity with the rise of powerful Armenian kingdoms, the adoption of Christianity as Armenia's state religion, and the creation of the Armenian alphabet, which spurred the development of literature, philosophy, and science.
                     <div id="post1">
 <span class="collapsed1">
- <a href="javascript:void(0)"> READ MORE>></a>
+ <a class="read-more1" href="javascript:void(0)"> READ MORE>></a>
 </span>
 
                         <span class="expanded1">
- <a href="javascript:void(0)">Less>></a>
+ <a class="read-more1" href="javascript:void(0)">Less>></a>
 </span>
                     </div>
                     <div id="post2">
 <span class="collapsed1">
- <a href="javascript:void(0)"> READ MORE>></a>
+ <a class="read-more1" href="javascript:void(0)"> READ MORE>></a>
 </span>
 
                         <span class="expanded1">
- <a href="javascript:void(0)">Less>></a>
+ <a class="read-more1" href="javascript:void(0)">Less>></a>
 </span>
                     </div>
                     <div id="post3">
 <span class="collapsed1">
- <a href="javascript:void(0)"> READ MORE>></a>
+ <a class="read-more1" href="javascript:void(0)"> READ MORE>></a>
 </span>
 
                         <span class="expanded1">
- <a href="javascript:void(0)">Less>></a>
+ <a class="read-more1" href="javascript:void(0)">Less>></a>
 </span>
                     </div>
  <a class="read-more" href="javascript:void(0)">Less</a>
@@ -158,10 +158,10 @@ Armenia is situated at a cultural, historical, and religious intersection and lo
         }); $(document).ready(function() {
             $(".expanded1").hide();
 
-            $(".expanded1 a, .collapsed1 a").click(function(eve) {
+            $(".expanded1 .read-more1, .collapsed1 .read-more1").click(function(eve) {
                 var $container = $(this).parents("div");
                 eve.preventDefault();
-                $container.children(".expanded, .collapsed").toggle();
+                $container.children(".expanded1, .collapsed1").toggle();
             });
         });
     </script>
