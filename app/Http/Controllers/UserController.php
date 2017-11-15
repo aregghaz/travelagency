@@ -14,7 +14,9 @@ class UserController extends Controller
 
     public function homeEn()
     {
+
         $posts = Posts::all();
+
         return View::make('homeEn',['posts' => $posts]);
 
     }
@@ -26,7 +28,7 @@ class UserController extends Controller
         return view('homeRu', ['posts' => $posts]);
     }
 
-    public function toursEn(Request $request)
+    public function  En(Request $request)
     {
         $id = $request['id'];
         $posts = Posts::findOrFail($id);

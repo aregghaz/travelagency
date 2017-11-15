@@ -1,13 +1,13 @@
 ﻿@extends('page.index')
 
 @section('title')
-   
+
 @endsection
 
 @section('content')
 
 
-
+<?php  die('asdsad'); ?>
 
     @include('script.script')
     @include('include.social')
@@ -56,24 +56,12 @@
             </div>
             <div class="right_block content">
                 <h2>Discover the land of mystery with us</h2>
-                <p>Armenia is pleased to welcome you. Armenia is a cultural developed and hospitable country known for
-                    its
-                    extraordinary and individual culinary products. You will nowhere find such kind of dolma, khashlama,
-                    khorovats (barbeque) and khash like in Armenia.
-                    Due to the mountainous relief of Armenia, the air is crystally clear which allows you to feel the
-                    breath
-                    of nature. Visiting Armenia, it is impossible not to notice all the charm, as well as historical and
-                    cultural attractions of Yerevan - one of the oldest cities in the world, the capital of the first
-                    Christian country.
-                    Armenia is a country rich of cultural and natural monuments. That’s why Armenia is called an
-                    “open-air
-                    museum. A pagan temple of Garni, monastery complex Gegard, ancient Tatev historical Khor Virap,
-                    Noravanq
-                    - all these are alive history of one of the oldest countries in the world.
-                    Armenia is especially rich of monuments belonging to the Christian architecture. Among the natural
-                    monuments we should differentiate the ski resort Tsaghkadzor, wooded Dilijan, unique lake Sevan,
-                    waterfall in Jermuk, lake Parz, rocks of Khndzoresk. For the true connoisseurs of alcoholic drinks,
-                    Armenia provides an opportunity to enjoy the legendary Armenian cognac.</p>
+                <p>Armenia is situated at a cultural, historical, and religious intersection and located at the crossroads between Europe and Asia. The
+                    <a href="http://google-maps.pro/satellite/Armenia">country</a> spans 29,743 square kilometers of mountainous terrain centered on the Ararat Valley, the heart of the Armenian nation since biblical times. Ancient geographers called the Armenian Highlands the "Island of Mountains" or the "Rooftop of Asia Minor." In fact, the average altitude of the country is over a mile high, at about 1800 meters above sea level. Presently, the country is landlocked and has no navigable waterways, in contrast to
+                    <a href="https://en.wikipedia.org/wiki/Armenia">Historic Armenia</a>, which at its height under King Tigran the Great, stretched from the Caspian Sea to the Mediterranean Sea and was more than ten times the current size of the present day Republic. Armenia has borders with Georgia to the north, with Turkey to the west and south, with Azerbaijan to the east and southwest, and with Iran to the south.
+                    Armenia's landscapes offer boundless beauty. Seven main landscape types are represented across the different altitudinal zones of Armenia. Across these desert, semi desert, dry steppe, steppe, woodland, sub alpine and alpine zones is geography as diverse as high mountain peaks, fertile valleys, picturesque land formations, basalt columns, rock sculptures, and waterfalls. More than 200 rivers and streams traverse Armenia, with steep falls, rapids and swift currents. Armenia has 5 scenic canyons. In addition, there are over 200 therapeutic mineral springs, differing in composition and temperature.
+                    The Armenians, an ancient people living on an ancient land, call Armenia "Hayastan" and themselves “Hay." Oral history explains the lineage of the Armenian people as being the direct descendants of Noah's son Habeth. The indigenous people of the land of Ararat, Armenians forged their national identity with the rise of powerful Armenian kingdoms, the adoption of Christianity as Armenia's state religion, and the creation of the Armenian alphabet, which spurred the development of literature, philosophy, and science.
+                </p>
             </div>
         </div>
     </div>
@@ -119,4 +107,4 @@
         }
     </script>
 
-@stop
+@endsection

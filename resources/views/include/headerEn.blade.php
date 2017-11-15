@@ -257,7 +257,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="/en/tours.html">
+                    <a href="">
                         <img alt="" src="/bundles/damain/images/tours.png">
                         <span>Tours</span>
                     </a>
