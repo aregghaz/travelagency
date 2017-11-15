@@ -1,4 +1,4 @@
-@extends('page.index')
+@extends('page.indexRu')
 @section('title')
 
 @endsection
