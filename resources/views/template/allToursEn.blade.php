@@ -274,11 +274,11 @@
             @foreach($posts as $post)
             <div class="col-md-3 col-sm-6 col-xs-12 mix living bedroom" style="display: inline-block;">
                 <div class="portfolio-item">
-                    <img src="{{  URL::to("/images/turs/".$posts->img1) }}" alt="">
+                    <img src="{{  URL::to("/images/turs/".$post->img1) }}" alt="">
                     <div class="overlay">
                         <div class="icon">
                             <a href="single-property.html"><i class="icon-link left"></i></a>
-                            <a  data-toggle="modal" data-target=".{{$posts->img1}}" ><i class="icon-eye right"></i></a>
+                            <a  data-toggle="modal" data-target=".{{$post->img1}}" ><i class="icon-eye right"></i></a>
                         </div>
                     </div>
                     <div class="content">
@@ -288,10 +288,10 @@
                 </div>
             </div>
 
-                <div class="modal fade {{$posts->img1}}" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                <div class="modal fade {{$post->img1}}" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
                     <div class="modal-dialog modal-lg" role="document">
 
-                        <img src="{{  URL::to("/images/turs/$posts->img5") }}" alt="">
+                        <img src="{{  URL::to("/images/turs/$post->img1") }}" alt="">
 
                     </div>
                 </div>
