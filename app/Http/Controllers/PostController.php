@@ -1,10 +1,8 @@
 <?php namespace App\Http\Controllers;
 
 use App\Posts;
-use App\User;
-use Redirect;
-use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Redirect;
 
 
 class PostController extends Controller
@@ -60,39 +58,50 @@ class PostController extends Controller
             $post->active = 0;
 
         } else {
-            if ($request->has('file')) {
-                $asd = $request->file('file')->getClientOriginalExtension();
-                $filename1 = time()+11..$asd;
-                $request->file->storeAs('turs', $filename1, "uploads");
+            if ($request->has('fileEn')) {
+
+                $filename1 = time() + 11 .'.pdf';
+                $request->fileEn->storeAs('turs', $filename1, "uploads");
+                $post->linkEn = $filename1;
+            }
+            if ($request->has('fileRu')) {
+
+                $filename1 = time() + 12 .'.pdf';
+                $request->fileRu->storeAs('turs', $filename1, "uploads");
+                $post->linkRu = $filename1;
+            }
+            if ($request->has('img1')) {
+                $filename1 = time() + 1. . '.jpg';
+                $request->img1->storeAs('turs', $filename1, "uploads");
                 $post->img1 = $filename1;
             }
-//            if ($request->has('img1')) {
-//                $filename1 = time()+1..'.jpg';
-//                $request->img1->storeAs('turs', $filename1, "uploads");
-//                $post->img1 = $filename1;
-//         }
-         if ($request->has('img2')) {
-                $filename2 = time()+2..'.jpg';
+            if ($request->has('img2')) {
+                $filename2 = time() + 2. . '.jpg';
                 $request->img2->storeAs('turs', $filename2, "uploads");
                 $post->img2 = $filename2;
-            }if ($request->has('img3')) {
-                $filename3 = time()+3..'.jpg';
+            }
+            if ($request->has('img3')) {
+                $filename3 = time() + 3. . '.jpg';
                 $request->img3->storeAs('turs', $filename3, "uploads");
                 $post->img3 = $filename3;
-            }if ($request->has('img4')) {
-                $filename4 = time()+4..'.jpg';
+            }
+            if ($request->has('img4')) {
+                $filename4 = time() + 4. . '.jpg';
                 $request->img4->storeAs('turs', $filename4, "uploads");
                 $post->img4 = $filename4;
-            }if ($request->has('img4')) {
-                $filename5 = time()+5..'.jpg';
+            }
+            if ($request->has('img5')) {
+                $filename5 = time() + 5. . '.jpg';
                 $request->img5->storeAs('turs', $filename5, "uploads");
                 $post->img5 = $filename5;
-            }if ($request->has('img6')) {
-                $filename6 = time()+6..'.jpg';
+            }
+            if ($request->has('img6')) {
+                $filename6 = time() + 6. . '.jpg';
                 $request->img6->storeAs('turs', $filename6, "uploads");
                 $post->img6 = $filename6;
-            }if ($request->has('img7')) {
-                $filename7 = time()+7..'.jpg';
+            }
+            if ($request->has('img7')) {
+                $filename7 = time() + 7. . '.jpg';
                 $request->img7->storeAs('turs', $filename7, "uploads");
                 $post->img7 = $filename7;
             }

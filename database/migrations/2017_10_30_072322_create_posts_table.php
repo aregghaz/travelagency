@@ -21,11 +21,13 @@ class CreatePostsTable extends Migration
                 ->onDelete('cascade');
             $table->string('titleRu')->unique();
             $table->string('titleEn')->unique();
-            $table->text('bodyRu');
-            $table->text('bodyEn');
-            $table->integer('days');
-            $table->integer('night');
-            $table->integer('price');
+            $table->string('linkEn')->nullable();
+            $table->string('linkRu')->nullable();
+            $table->text('bodyRu')->nullable();
+            $table->text('bodyEn')->nullable();
+            $table->integer('days')->nullable();
+            $table->integer('night')->nullable();
+            $table->integer('price')->nullable();
             $table->string('slug')->unique();
             $table->string('img1')->nullable();
             $table->string('img2')->nullable();

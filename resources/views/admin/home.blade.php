@@ -100,7 +100,9 @@
                 <input type="file" multiple="multiple" placeholder="image 7" name="img7" class="form-control">
             </div>
             <div class="form-group">
-                <input type="file" multiple="multiple" placeholder="pdf file" name="file" class="form-control">
+                <input type="file" multiple="multiple" placeholder="pdf file in ENglish" name="fileEn" class="form-control">
+            </div>   <div class="form-group">
+                <input type="file" multiple="multiple" placeholder="pdf file in Russian" name="fileRu" class="form-control">
             </div>
             <input type="submit" name='post_comment' class="btn btn-success" value="Post"/>
         </form>
