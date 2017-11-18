@@ -3,10 +3,10 @@
 namespace App\Http\Controllers;
 
 
-use App\User;
 use App\Posts;
-use Illuminate\Support\Facades\Auth;
+use App\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class UserController extends Controller
 {
@@ -25,13 +25,39 @@ class UserController extends Controller
 
         return view('homeRu', ['posts' => $posts]);
     }
- public function tours(Request $request)
+
+    public function toursEn(Request $request)
     {
         $id = $request['id'];
         $posts = Posts::findOrFail($id);
 
-        return view('template.tours', ['posts' => $posts]);
+        return view('template.toursEn', ['posts' => $posts]);
     }
+
+    public function toursRu(Request $request)
+    {
+        $id = $request['id'];
+        $posts = Posts::findOrFail($id);
+
+        return view('template.toursRu', ['posts' => $posts]);
+    }
+    public function allToursRu()
+    {
+
+        $posts = Posts::all();
+
+        return view('template.allToursRu', ['posts' => $posts]);
+    }
+
+    public function allToursEn()
+    {
+
+        $posts = Posts::all();
+
+        return view('template.allToursEn', ['posts' => $posts]);
+    }
+
+
 
     public function user_posts($id)
     {

@@ -16,7 +16,10 @@ Route::get('/homeRu', ['as' => 'homeRu', 'uses' => 'UserController@homeRu']);
 Route::get('/home',['as' => 'home', 'uses' => 'PostController@index']);
 Route::get('/login',['as' => 'login', 'uses' => 'UserController@login']);
 Route::post('/auth',['as' => 'auth', 'uses' => 'UserController@auth']);
-Route::get('/tours',['as' => 'tours', 'uses' => 'UserController@tours']);
+Route::get('/toursEn',['as' => 'toursEn', 'uses' => 'UserController@toursEn']);
+Route::get('/toursRu',['as' => 'toursRu', 'uses' => 'UserController@toursRu']);
+Route::get('/allToursRu',['as' => 'allToursRu', 'uses' => 'UserController@allToursRu']);
+Route::get('/allToursEn', ['as' => 'allToursEn', 'uses' => 'UserController@allToursEn']);
 
 
 

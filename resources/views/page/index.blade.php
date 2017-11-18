@@ -21,7 +21,7 @@
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="stylesheet" type="text/css" media="all" href="{{ URL::to('css/slick/slick.css')}}">
     <link rel="stylesheet" type="text/css" media="all" href="{{ URL::to('css/slick/slick-theme.css')}}">
-
+    <link rel="stylesheet" type="text/css" media="all" href="{{ URL::to('css/app.css')}}">
     <link rel="stylesheet" type="text/css" media="all" href="{{ URL::to('css/semantic/semantic.css')}}">
     <link rel="stylesheet" type="text/css" href="{{ URL::to('css/font-awesome.min.css')}}">
     <link rel="stylesheet" type="text/css" href="{{ URL::to('css/magic/magic.min.css')}}">
@@ -30,6 +30,10 @@
     <link rel="stylesheet" type="text/css" media="all" href="{{ URL::to('css/core.css')}}">
 
 
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>﻿
 
 
 </head>
@@ -45,27 +49,25 @@
 
 @include('include.footer')
 </body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>﻿
 
 
 <script src="{{ URL::to('js/lodash.js')}}"></script>
 
 <script src="{{ URL::to('js/angular.min.js')}}"></script>
-<script src="{{ URL::to('js/lightgallery.js')}}"></script>
+
 <script src="{{ URL::to('js/angular-route.min.js')}}"></script>
 <script src="{{ URL::to('js/angular-resource.min.js')}}"></script>
 <script src="{{ URL::to('js/app2.js')}}"></script>
 <script src="{{ URL::to('js/app.js')}}"></script>
 
 <script src="{{ URL::to('js/semantic.js')}}"></script>
-
+<script src="{{ URL::to('js/bootstrap.min-3.3.1.js')}}"></script>
+<script src="{{ URL::to('js/init.js')}}"></script>
+<script src="{{ URL::to('js/lightgallery.js')}}"></script>
 <script src="{{ URL::to('js/slick.min.js')}}"></script>
 <script src="{{ URL::to('js/angular-simple-logger.js')}}"></script>
 <script src="{{ URL::to('js/angular-google-maps.min.js')}}"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="//cdn.jsdelivr.net/jquery.mcustomscrollbar/3.0.6/jquery.mCustomScrollbar.concat.min.js"></script>
+
 
 
 </html>

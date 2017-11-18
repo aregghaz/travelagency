@@ -8,7 +8,7 @@
             @foreach($posts as $post)
                 <div class="tours_box"
                      style="background: url('{{  URL::to("/images/turs/$post->img1") }}') no-repeat;background-size: cover;background-position: center center;">
-                    <a href="">
+                    <a href="{{ route('toursEn', ['id'=> $post->id]) }}">
                         <div class="overlay">
                             <div class="see_more home">
                                 <p>{{$post->titleRu}}</p>
