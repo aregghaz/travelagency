@@ -2849,3 +2849,16 @@ footer .bottom_block .social ul li a i {
     width: 100%;
   }
 }
+.btn-primary {
+  color: #fff;
+
+ background-color: #4d669a !important;
+  margin: 0 auto;
+  display: block;
+  padding: 10px 40px;
+}
+.panel-heading {
+  background-color: #4d669a !important;
+  background-image: none!important;
+  color: white!important;
+}

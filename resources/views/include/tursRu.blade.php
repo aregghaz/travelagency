@@ -31,7 +31,7 @@
             @endforeach
             @endif
                 <div class="link_button">
-                <a href="/en/tours.html">See all tours</a>
+                <a href="{{ route('allToursRu') }}">See all tours</a>
             </div>
         </div>
     </div>

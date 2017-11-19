@@ -82,10 +82,11 @@ class UserController extends Controller
         if (Auth::attempt(['email' => $email, 'password' => $password])) {
             $posts = Posts::where('active', '1')->orderBy('created_at', 'desc')->paginate(5);
             $title = 'Latest Posts';
-            return view('admin.home')->withPosts($posts)->withTitle($title);;
+            return view('admin.home')->withPosts($posts)->withTitle($title);
 
         }
-        return view('welcome');
+        $errors['errors'] = 'Whoops! please try again';
+        return view('auth.login', ['errors'=> $errors]);
     }
 
 

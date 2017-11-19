@@ -408,16 +408,7 @@
 
     <script type="text/javascript" src="{{ URL::to('assets/js/main.js') }}"></script>
     <script type="text/javascript" src="{{ URL::to('assets/js/jquery.mixitup.min.js') }}"></script>
-    <script type="text/javascript" src="{{ URL::to('assets/js/test.js') }}"></script>
-
-
-
-
     <script type="text/javascript" src="{{ URL::to('assets/js/jquery.themepunch.revolution.min.js') }}"></script>
-
     <script type="text/javascript" src="{{ URL::to('assets/js/jquery.slicknav.js') }}"></script>
     <script src="{{ URL::to('assets/js/bootstrap-select.min.js') }}"></script>
-
-
-
 @endsection

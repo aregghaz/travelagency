@@ -21,7 +21,7 @@
             <div aria-live="polite" class="slick-list">
                 <div class="slick-track" style="opacity: 1; display: -webkit-box;" role="listbox">
                     <div class="slide slick-slide slick-current slick-active"
-                         style="background: url('/uploads/media/3f2264cfdb110fbf5cd00c2befc5cf49ebe65c07.gif') center center / cover no-repeat; width: 100%;"
+                         style="background: url('/uploads/media/3f2264cfdb110fbf5cd00c2befc5cf49ebe65c07.gif') center center / cover no-repeat; width: 100%; position: relative; left: 0px; top: 0px; z-index: 999; opacity: 1;"
                          data-slick-index="0" aria-hidden="false" tabindex="-1" role="option"
                          aria-describedby="slick-slide00">
                         <div class="container">
