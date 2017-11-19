@@ -1,7 +1,9 @@
-﻿﻿@extends('page.index')
-@section('title')
+﻿@extends('page.index')
 
+@section('title')
+   
 @endsection
+
 @section('content')
 
 
@@ -41,10 +43,7 @@
                 </div>
             </div>
 
-            <button type="button" data-role="none" class="slick-next slick-arrow" aria-label="Next" role="button"
-                    style="">
-                Next
-            </button>
+
 
         </div>
 
@@ -120,4 +119,4 @@
         }
     </script>
 
-@endsection
+@stop

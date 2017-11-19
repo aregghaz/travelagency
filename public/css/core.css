@@ -173,6 +173,7 @@ header {
 }
 header .logo {
   margin-top: 15px;
+  margin-right: 18px;
 }
 
 header .general_menu menu > li {

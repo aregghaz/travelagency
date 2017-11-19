@@ -7,7 +7,7 @@ use App\Posts;
 use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-
+use View;
 class UserController extends Controller
 {
 
@@ -15,8 +15,8 @@ class UserController extends Controller
     public function homeEn()
     {
         $posts = Posts::all();
+        return View::make('homeEn',['posts' => $posts]);
 
-        return view('homeEn', ['posts' => $posts]);
     }
 
     public function homeRu()
