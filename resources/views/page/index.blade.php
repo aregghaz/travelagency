@@ -46,13 +46,13 @@
 
 <body>
 
-  @include('include.header')
+  @include('include.headerEn')
 
     @yield('content')
 
 
 
-@include('include.footer')
+@include('include.footerEn')
 </body>
 
 

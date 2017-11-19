@@ -29,7 +29,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="/en/tours.html">
+                        <a href="{{ route('allToursEn') }}">
                             <span>Tours</span>
                         </a>
                     </li>
