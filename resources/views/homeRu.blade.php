@@ -1,4 +1,4 @@
-@extends('page.index')
+@extends('page.indexRu')
 
 @section('title')
 
@@ -26,16 +26,11 @@
                          aria-describedby="slick-slide00">
                         <div class="container">
                             <div class="description_block">
-                                <div class="sldie_title">Tours</div>
-                                <div class="description">We are engaged in creating individual and group tours. We offer
-                                    you
-                                    classical, pilgrim, extreme, cooking tours etc. During the tours you will discover
-                                    Armenia from different sides. You will get acquanted with the culture and traditions
-                                    of
-                                    the country.
+                                <div class="sldie_title">Туры</div>
+                                <div class="description">Мы занимаемся индивидуальными и групповыми турами. Мы предлагаем вы классический, паломнический, экстремальный, кулинарные туры и т. д. Во время туров вы обнаружите Армения с разных сторон. Вы приобретете культуру и традиции из страны.
                                 </div>
                                 <div class="link_button">
-                                    <a href="{{ route('allToursRu') }}" tabindex="0">Read more</a>
+                                    <a href="{{ route('allToursRu') }}" tabindex="0">Читать дальше</a>
                                 </div>
                             </div>
                         </div>
@@ -59,25 +54,8 @@
                 <img src="/bundles/damain/images/info_img.png" alt="Discover Armenia">
             </div>
             <div class="right_block content">
-                <h2>Discover the land of mystery with us</h2>
-                <p>Armenia is pleased to welcome you. Armenia is a cultural developed and hospitable country known for
-                    its
-                    extraordinary and individual culinary products. You will nowhere find such kind of dolma, khashlama,
-                    khorovats (barbeque) and khash like in Armenia.
-                    Due to the mountainous relief of Armenia, the air is crystally clear which allows you to feel the
-                    breath
-                    of nature. Visiting Armenia, it is impossible not to notice all the charm, as well as historical and
-                    cultural attractions of Yerevan - one of the oldest cities in the world, the capital of the first
-                    Christian country.
-                    Armenia is a country rich of cultural and natural monuments. That’s why Armenia is called an
-                    “open-air
-                    museum. A pagan temple of Garni, monastery complex Gegard, ancient Tatev historical Khor Virap,
-                    Noravanq
-                    - all these are alive history of one of the oldest countries in the world.
-                    Armenia is especially rich of monuments belonging to the Christian architecture. Among the natural
-                    monuments we should differentiate the ski resort Tsaghkadzor, wooded Dilijan, unique lake Sevan,
-                    waterfall in Jermuk, lake Parz, rocks of Khndzoresk. For the true connoisseurs of alcoholic drinks,
-                    Armenia provides an opportunity to enjoy the legendary Armenian cognac.</p>
+                <h2>Откройте для себя землю тайны с нами</h2>
+                <p>Армения рада приветствовать вас. Армения - культурно развитая и гостеприимная страна, известная ег экстраординарные и индивидуальные кулинарные изделия. Вы больше не найдете такой дольмы, хэшламы хоровац (барбекю) и хаш, как в Армении. Из-за горного рельефа Армении воздух кристально чистый, что позволяет вам почувствовать дыхани природы. Посещая Армению, невозможно заметить все очарование, а также исторические культурные достопримечательности Еревана - один из старейших городов мира, столица первог Христианская страна. Армения - страна, богатая культурными и природными памятниками. Вот почему Армения называетс «Под открытым небом музей. Языческий храм Гарни, монастырский комплекс Гегард, древний Тартевский исторический Хор Вирап, Нораван - все это живая история одной из старейших стран мира. Армения особенно богата памятниками христианской архитектуры. Среди естественны памятники Мы бы разделили горнолыжный курорт Цахкадзор, лесистый Дилижан, уникальное озеро Севан водопад в Джермуке, озеро Парз, скалы Хндзореска. Для настоящих ценителей алкогольных напитков Армения предоставляет возможность насладиться легендарным армянским коньяком.</p>
             </div>
         </div>
     </div>
@@ -86,7 +64,7 @@
 
     <div class="popular_excursion_block">
         <div class="title">
-            Popular excursion
+            Популярная экскурсия
         </div>
         <div class="accommodation_block excursion_block">
             <div class="container clear excursion_slider slick-initialized slick-slider">

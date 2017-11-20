@@ -1,6 +1,6 @@
 <div class="tours_block">
     <div class="title">
-        Popular author tours
+        Популярные авторские туры
     </div>
     <div class="tour_block">
         <div class="container clear">
@@ -12,13 +12,13 @@
                         <div class="overlay">
                             <div class="see_more home">
                                 <p>{{$post->titleRu}}</p>
-                                <p>{{$post->days}} days / {{$post->night}} nights</p>
+                                <p>{{$post->days}} days / {{$post->night}} ночьей</p>
                                 <p>{{$post->bodyRu}}</p>
                             </div>
                             <div class="tours_title_block clear">
                                 <div class="left_block">
                                     <p>{{$post->titleRu}}</p>
-                                    <p>{{$post->days}} days / {{$post->night}} nights</p>
+                                    <p>{{$post->days}} дней / {{$post->night}} ночьей</p>
 
                                 </div>
                                 <div class="right_block">
@@ -31,7 +31,7 @@
             @endforeach
             @endif
                 <div class="link_button">
-                <a href="{{ route('allToursRu') }}">See all tours</a>
+                <a href="{{ route('allToursRu') }}">Посмотреть все туры</a>
             </div>
         </div>
     </div>
