@@ -161,7 +161,7 @@
                     <ul>
                         <li class="current">
                             <span>
-                                <span>USD</span>
+                                <span>RUB</span>
                             </span>
                             <ul class="sub_currency">
                                 <li>
@@ -170,7 +170,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="/soap/EUR">
+                                    <a href="">
                                         <span>EUR</span>
                                     </a>
                                 </li>
@@ -182,12 +182,13 @@
                     <ul>
                         <li class="current">
                             <span>
-                                <span class="flag-icon flag-icon-gb"></span>
+
+                                <a href=""><span class="flag-icon flag-icon-ru"></span>
+                                    </a>
                             </span>
                             <ul class="sub_lang">
                                 <li>
-                                    <a href="{{ route('homeRu') }}"><span class="flag-icon flag-icon-ru"></span>
-                                    </a>
+                                    <a href="{{ route('homeEn') }}"><span class="flag-icon flag-icon-gb"></span></a>
                                 </li>
                             </ul>
                         </li>

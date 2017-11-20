@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/', ['uses' => 'UserController@homeEn']);
+Route::get('/', ['as' => 'homeEn', 'uses' => 'UserController@homeEn']);
 Route::get('/homeRu', ['as' => 'homeRu', 'uses' => 'UserController@homeRu']);
 Route::get('/home',['as' => 'home', 'uses' => 'PostController@index']);
 Route::get('/login',['as' => 'login', 'uses' => 'UserController@login']);
