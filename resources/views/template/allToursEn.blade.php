@@ -172,7 +172,7 @@
             bottom: 30px;
             left: 0;
             opacity: 1;
-            margin: 0px auto;
+            margin: -20px auto;
             padding: 10px 22px;
             text-align: center;
             -webkit-transform: translateY(90px);
