@@ -6718,3 +6718,18 @@ button.close {
         display: none !important
     }
 }
+.read-more {
+    width: 20%;
+    /* border: 1px solid orange; */
+    padding: 10px 15px;
+    /* margin-bottom: 10px; */
+    display: block;
+    /* margin-top: 10px; */
+    background-color: orange;
+    color: white;
+    font-size: 19px;
+    margin: 10px auto;
+}
+.read-more:focus,.read-more:hover {
+    color: white;
+}
