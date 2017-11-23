@@ -826,6 +826,7 @@ header .right_block .group_block .chart_block img {
   font-family: 'AvantGardeCTT-Bold';
   text-transform: uppercase;
   margin-bottom: 10px;
+  line-height: 1;
 }
 .accommodation .container > .left_block .description {
   font-family: 'Fregat';
