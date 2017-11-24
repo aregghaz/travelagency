@@ -134,6 +134,7 @@
                         different altitudinal zones of Armenia. Across these desert, semi desert, dry steppe, steppe,
                         woodland, sub alpine and alpine zones is geography as diverse as high mountain peaks, fertile
                         valleys, picturesque land formations, basalt columns, rock sculptures, and waterfalls.
+                        <br>
                         <div class="read-more-target ">
                             More than 200 rivers and streams traverse Armenia, with steep falls,
                             rapids and swift currents. Armenia has 5 scenic canyons. In addition,there are over 200 therapeutic
@@ -143,21 +144,21 @@
                             Armenians forged their national identity with the rise of powerful Armenian kingdoms, the adoption of Christianity as
                             Armenia's state religion, and the creation of the Armenian alphabet, which spurred the development of literature, philosophy,
                             and science. <br>
-                            <div class="more1">
+                            <div class="more1"> <br>
                                 <i style="font-size: 25px">What to do in Armenia</i><br>
                                 This question asks every tourist that visits Armenia. We have good news for everyone. Armenia has a huge variety of things to offer to any kind of tourists. Whether you like architecture, literature, sightseeing, art, science, IT, spa resorts, etc., everything can be satisfied.
                                 One of the preferences of tourists is of course the nightlife. Clubs, bars, booze, parties, and new people this becomes extremely interesting, especially when you visit other countries. In Armenia, nightlife is an inseparable part of young and not young people’s lives.
                                 All clubs, bars and pubs are mostly located in the city center, so Armenian capital does not sleep that early. Clubs are usually full at night a hour, that’s why their number is growing day by day.
                                 Here, you’ll meet quite a large variety of venues which will never let you get bored and you will definitely know what to do in Armenia, especially Armenia nightlife. We’ve collected the top clubs of Yerevan that is worth visiting and partying. So, be ready for sleepless nights and cool hangouts!
-                            </div>
-                            <div class="more2">
-                                <i style="font-size: 25px">Gastronomy</i><br>
+                            </div><br>
+                            <div class="more2"><br>
+                                <i style="font-size: 25px">Gastronomy</i> <br>
                                 This question asks every tourist that visits Armenia. We have good news for everyone. Armenia has a huge variety of things to offer to any kind of tourists. Whether you like architecture, literature, sightseeing, art, science, IT, spa resorts, etc., everything can be satisfied.
                                 One of the preferences of tourists is of course the nightlife. Clubs, bars, booze, parties, and new people this becomes extremely interesting, especially when you visit other countries. In Armenia, nightlife is an inseparable part of young and not young people’s lives.
                                 All clubs, bars and pubs are mostly located in the city center, so Armenian capital does not sleep that early. Clubs are usually full at night a hour, that’s why their number is growing day by day.
                                 Here, you’ll meet quite a large variety of venues which will never let you get bored and you will definitely know what to do in Armenia, especially Armenia nightlife. We’ve collected the top clubs of Yerevan that is worth visiting and partying. So, be ready for sleepless nights and cool hangouts!
                             </div>
-                            <div class="more">
+                            <div class="more"><br>
                                  <i style="font-size: 25px">History</i><br>From ancient times, Armenians have cherished their artistic traditions, which reflect a unique culture and landscape. Aspects of everyday life are expressed in the most artistic fashion, in needlework, embellishments, carvings and design.
                                 Architecture is one of the most interesting art forms in Armenia, as, for example, churches bear artistic illustrations in frescoes and reliefs. Sculpting is everywhere - in nearly every city, town, and village in Armenia.
                                 Armenians love music, and they have been creating exquisite compositions for centuries. Sharakans are traditional Armenian liturgical songs, which are experiencing a revival today. Distinctive musical instruments are used to play Armenian folk songs. Sayat Nova, Komitas, and Aram Khachaturian are among Armenia's best-known musicians and composers. Contemporary music comes in the forms of jazz and pop.
@@ -248,7 +249,7 @@ $('#block-style').removeClass('block-style');
                     var c = content.substr(0, showChar);
                     var h = content.substr(showChar, content.length - showChar);
 
-                    var html = c + '<span class="moreellipses">' + ellipsestext + '&nbsp;</span><span class="morecontent"><span>' + h + '</span>&nbsp;&nbsp;<a href="" class="morelink">' + moretext + '</a></span>';
+                    var html = c + '<div class="moreellipses">' + ellipsestext + '&nbsp;</div><div class="morecontent"><span>' + h + '</span>&nbsp;&nbsp;<a href="" class="morelink">' + moretext + '</a></div>';
 
                     $(this).html(html);
                 }
@@ -289,7 +290,7 @@ $('#block-style').removeClass('block-style');
                     var c = content.substr(0, showChar1);
                     var h = content.substr(showChar1, content.length - showChar1);
 
-                    var html = c + '<span class="moreellipses">' + ellipsestext1 + '&nbsp;</span><span class="morecontent"><span>' + h + '</span>&nbsp;&nbsp;<a href="" class="morelink1">' + moretext1 + '</a></span>';
+                    var html = c + '<div class="moreellipses">' + ellipsestext1 + '&nbsp;</div><div class="morecontent"><span>' + h + '</span>&nbsp;&nbsp;<a href="" class="morelink1">' + moretext1 + '</a></div>';
 
                     $(this).html(html);
                 }
@@ -326,7 +327,7 @@ $('#block-style').removeClass('block-style');
                     var c1 = content.substr(0, showChar2);
                     var h1= content.substr(showChar2, content.length - showChar2);
 
-                    var html = c1 + '<span class="moreellipses">' + ellipsestext2 + '&nbsp;</span><span class="morecontent"><span>' + h1 + '</span>&nbsp;&nbsp;<a href="" class="morelink2">' + moretext2 + '</a></span>';
+                    var html = c1 + '<div class="moreellipses">' + ellipsestext2 + '&nbsp;</div><div class="morecontent"><span>' + h1 + '</span>&nbsp;&nbsp;<a href="" class="morelink2">' + moretext2 + '</a></div>';
 
                     $(this).html(html);
                 }
