@@ -6733,3 +6733,6 @@ button.close {
 .read-more:focus,.read-more:hover {
     color: white;
 }
+.hotels-table {
+    margin-top: 30px;
+}

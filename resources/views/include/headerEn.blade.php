@@ -14,7 +14,7 @@
                     </span>
                     <ul class="sub-menu clear menu_level_1" style="display: none; opacity: 1;">
                         <li class="first">
-                            <a href="/en/hotels.html">
+                            <a href="{{ route('hotelsEn') }}">
                                 <span>Hotels</span>
                             </a>
                         </li>

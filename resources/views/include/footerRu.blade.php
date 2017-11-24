@@ -4,7 +4,7 @@
             <div class="footer_menu">
                 <ul>
                     <li class="first">
-                        <a href="/en/hotels.html">
+                        <a href="{{ route('hotelsRu') }}">
                             <span>Отели</span>
                         </a>
                     </li>

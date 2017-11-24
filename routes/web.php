@@ -20,6 +20,8 @@ Route::get('/toursEn', ['as' => 'toursEn', 'uses' => 'UserController@toursEn']);
 Route::get('/toursRu', ['as' => 'toursRu', 'uses' => 'UserController@toursRu']);
 Route::get('/allToursRu', ['as' => 'allToursRu', 'uses' => 'UserController@allToursRu']);
 Route::get('/allToursEn', ['as' => 'allToursEn', 'uses' => 'UserController@allToursEn']);
+Route::get('/hotelsEn', ['as' => 'hotelsEn', 'uses' => 'UserController@hotelsEn']);
+Route::get('/hotelsRu', ['as' => 'hotelsRu', 'uses' => 'UserController@hotelsRu']);
 
 
 // show new post form

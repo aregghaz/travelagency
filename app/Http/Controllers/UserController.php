@@ -8,6 +8,7 @@ use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use View;
+use DB;
 class UserController extends Controller
 {
 
@@ -26,6 +27,18 @@ class UserController extends Controller
         $posts = Posts::all();
 
         return view('homeRu', ['posts' => $posts]);
+    }
+    public function hotelsEn()
+    {
+        $hotels =  DB::table('hotels')->get();
+
+        return view('template.hotelsEn', ['hotels' => $hotels]);
+    }
+ public function hotelsRu()
+    {
+        $hotels =  DB::table('hotels')->get();
+
+        return view('template.hotelsRu', ['hotels' => $hotels]);
     }
 
     public function  toursEn(Request $request)
