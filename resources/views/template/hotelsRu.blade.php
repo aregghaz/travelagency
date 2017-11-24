@@ -23,7 +23,7 @@
                         <th>{{$hotel->id}}</th>
                         <th>{{$hotel->name}}</th>
                         <th>{{$hotel->star}}</th>
-                        <th>{{$hotel->id}}</th>
+                        <th><a href="{{ $hotel->description}}" target="_blank">Link</a></th>
                     </tr>
 
 

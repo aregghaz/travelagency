@@ -50,7 +50,7 @@ Route::get('my-drafts', 'UserController@user_posts_draft');
 Route::get('user/{id}', 'UserController@profile')->where('id', '[0-9]+');
 
 // display list of posts
-Route::get('user/{id}/posts', 'UserController@user_posts')->where('id', '[0-9]+');
+//Route::get('user/{id}/posts', 'UserController@user_posts')->where('id', '[0-9]+');
 
 //// display single post
 //Route::get('/{slug}',['as' => 'post', 'uses' => 'PostController@show'])->where('slug', '[A-Za-z0-9-_]+');
