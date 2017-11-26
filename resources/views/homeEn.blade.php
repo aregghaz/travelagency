@@ -23,9 +23,23 @@
             font-size: inherit;
             max-height: 999em;
         }
+        .gastronomy
+        {
+
+            text-align: center;
+            display: list-item;
+            /* text-decoration: none; */
+            list-style-type: none;
+
+            line-height: 23px;
+            font-size: 32px;
+            font-family: 'AvantGardeCTT-Bold';
+            color: #fca955;
+            margin-bottom: 13px;
+        }
 .read-more-wrap {
     font-size: 20px;
-
+    text-align: justify;
 
     color: #878787;
 
@@ -118,48 +132,63 @@
                     <input type="checkbox" class="read-more-state" id="post-1"/>
                     <div class="read-more-wrap">
                         Armenia is situated at a cultural, historical, and religious intersection and located at the
-                        crossroads between Europe and Asia. The <a href="http://google-maps.pro/satellite/Armenia"
-                                                                   target="_blank">country</a> spans 29,743 square
-                        kilometers of mountainous
+                        crossroads between Europe and Asia. The country spans 29,743 square kilometers of mountainous
                         terrain centered on the Ararat Valley, the heart of the Armenian nation since biblical times.
-                        Ancient geographers called the Armenian Highlands the "Island of Mountains" or the "Rooftop of
-                        Asia Minor." In fact, the average altitude of the country is over a mile high, at about 1800
-                        meters above sea level. Presently, the country is landlocked and has no navigable waterways, in
-                        contrast to <a href="https://en.wikipedia.org/wiki/Armenia" target="_blank">Historic Armenia</a>,
-                        which at its height under King Tigran the Great, stretched from
-                        the Caspian Sea to the Mediterranean Sea and was more than ten times the current size of the
-                        present day Republic. Armenia has borders with Georgia to the north, with Turkey to the west and
-                        south, with Azerbaijan to the east and southwest, and with Iran to the south. Armenia's
-                        landscapes offer boundless beauty. Seven main landscape types are represented across the
-                        different altitudinal zones of Armenia. Across these desert, semi desert, dry steppe, steppe,
-                        woodland, sub alpine and alpine zones is geography as diverse as high mountain peaks, fertile
-                        valleys, picturesque land formations, basalt columns, rock sculptures, and waterfalls.
+                        Ancient geographers called the Armenian Highlands the "Island of Mountains" or the "Rooftop of Asia
+                        Minor." Armenia lies in the highlands surrounding the mountains of Ararat, which was historically
+                        part of Armenia and is the highest mountain in the region. Now located in Turkey, but clearly
+                        visible from Armenia, it is regarded by the Armenians as a symbol of their land. Because of this,
+                        the mountain is present on the Armenian national emblem today.
+                        The Armenians, an ancient people living on an ancient land, call Armenia "Hayastan" and themselves
+                        “Hay." Oral history explains the lineage of the Armenian people as being the direct descendants of
+                        Noah's son Habeth. The indigenous people of the land of Ararat, Armenians forged their national
+                        identity with the rise of powerful Armenian kingdoms, the adoption of Christianity as Armenia's
+                        state religion, and the creation of the Armenian alphabet, which spurred the development of
+                        literature, philosophy, and science.
                         <br>
                         <div class="read-more-target ">
-                            More than 200 rivers and streams traverse Armenia, with steep falls,
-                            rapids and swift currents. Armenia has 5 scenic canyons. In addition,there are over 200 therapeutic
-                            mineral springs, differing in composition and temperature. The Armenians, an ancient people living
-                            on an ancient land, call Armenia "Hayastan" and themselves “Hay." Oral history explains the lineage
-                            of the Armenian people as being the direct descendants of Noah's son Habeth. The indigenous people of the land of Ararat,
-                            Armenians forged their national identity with the rise of powerful Armenian kingdoms, the adoption of Christianity as
-                            Armenia's state religion, and the creation of the Armenian alphabet, which spurred the development of literature, philosophy,
-                            and science. <br>
+                            There is evidence of an early civilization in Armenia in the Bronze Age and earlier, dating to about
+                            4000 BC. Archaeological surveys have resulted in the discovery of the world's earliest known leather
+                            shoe, skirt, and wine-producing facility.
+                            Presently, the country is landlocked and has no navigable waterways, in contrast to Historic
+                            Armenia, which at its height under King Tigran the Great, stretched from the Caspian Sea to the
+                            Mediterranean Sea and was more than ten times the current size of the present day Republic. Armenia
+                            has borders with Georgia to the north, with Turkey to the west and south, with Azerbaijan to the
+                            east and southwest, and with Iran to the south.
+                            Russian is widely known in Armenia as well as English is increasingly gaining prominence, followed
+                            by French, Spanish and several oriental languages.
+                            Armenia has a relatively large external diaspora (8 million by some estimates, greatly exceeding the
+                            3 million population of Armenia itself), with communities existing across the globe. The largest
+                            Armenian communities outside of Armenia can be found in Russia, France, Iran, Georgia, Ukraine,
+                            Poland, Brazil, Canada, Greece, Cyprus, the United States, etc.
+                            Armenia's landscapes offer boundless beauty. Geographically it is very diverse from high mountain
+                            peaks, fertile valleys, picturesque land formations to basalt columns, rock sculptures, and
+                            waterfalls. More than 200 rivers and streams traverse Armenia, with steep falls, rapids and swift
+                            currents. Armenia has 5 scenic canyons. In addition, there are over 200 therapeutic mineral springs,
+                            differing in composition and temperature.
+                            The climate in Armenia is markedly continental. Summers are dry and sunny, lasting from June to
+                            mid-September. The temperature fluctuates between 22 and 36 °C (72 and 97 °F). However, the low
+                            humidity level mitigates the effect of high temperatures. Evening breezes blowing down the mountains
+                            provide a welcome refreshing and cooling effect. Springs are short, while autumns are long. Autumns
+                            are known for their vibrant and colourful foliage. Winters are quite cold with plenty of snow.
+                            Winter sports enthusiasts enjoy skiing down the hills of Tsakhkadzor, located thirty minutes outside
+                            Yerevan. <br>
                             <div class="more1"> <br>
-                                <i style="font-size: 25px">What to do in Armenia</i><br>
+                                <i class="gastronomy">What to do in Armenia</i><br>
                                 This question asks every tourist that visits Armenia. We have good news for everyone. Armenia has a huge variety of things to offer to any kind of tourists. Whether you like architecture, literature, sightseeing, art, science, IT, spa resorts, etc., everything can be satisfied.
                                 One of the preferences of tourists is of course the nightlife. Clubs, bars, booze, parties, and new people this becomes extremely interesting, especially when you visit other countries. In Armenia, nightlife is an inseparable part of young and not young people’s lives.
                                 All clubs, bars and pubs are mostly located in the city center, so Armenian capital does not sleep that early. Clubs are usually full at night a hour, that’s why their number is growing day by day.
                                 Here, you’ll meet quite a large variety of venues which will never let you get bored and you will definitely know what to do in Armenia, especially Armenia nightlife. We’ve collected the top clubs of Yerevan that is worth visiting and partying. So, be ready for sleepless nights and cool hangouts!
                             </div><br>
                             <div class="more2"><br>
-                                <i style="font-size: 25px">Gastronomy</i> <br>
+                                <i class="gastronomy">Gastronomy</i> <br>
                                 This question asks every tourist that visits Armenia. We have good news for everyone. Armenia has a huge variety of things to offer to any kind of tourists. Whether you like architecture, literature, sightseeing, art, science, IT, spa resorts, etc., everything can be satisfied.
                                 One of the preferences of tourists is of course the nightlife. Clubs, bars, booze, parties, and new people this becomes extremely interesting, especially when you visit other countries. In Armenia, nightlife is an inseparable part of young and not young people’s lives.
                                 All clubs, bars and pubs are mostly located in the city center, so Armenian capital does not sleep that early. Clubs are usually full at night a hour, that’s why their number is growing day by day.
                                 Here, you’ll meet quite a large variety of venues which will never let you get bored and you will definitely know what to do in Armenia, especially Armenia nightlife. We’ve collected the top clubs of Yerevan that is worth visiting and partying. So, be ready for sleepless nights and cool hangouts!
                             </div>
                             <div class="more"><br>
-                                 <i style="font-size: 25px">History</i><br>From ancient times, Armenians have cherished their artistic traditions, which reflect a unique culture and landscape. Aspects of everyday life are expressed in the most artistic fashion, in needlework, embellishments, carvings and design.
+                                 <i class="gastronomy">History</i><br>From ancient times, Armenians have cherished their artistic traditions, which reflect a unique culture and landscape. Aspects of everyday life are expressed in the most artistic fashion, in needlework, embellishments, carvings and design.
                                 Architecture is one of the most interesting art forms in Armenia, as, for example, churches bear artistic illustrations in frescoes and reliefs. Sculpting is everywhere - in nearly every city, town, and village in Armenia.
                                 Armenians love music, and they have been creating exquisite compositions for centuries. Sharakans are traditional Armenian liturgical songs, which are experiencing a revival today. Distinctive musical instruments are used to play Armenian folk songs. Sayat Nova, Komitas, and Aram Khachaturian are among Armenia's best-known musicians and composers. Contemporary music comes in the forms of jazz and pop.
                                 Literature has always played a vital role in Armenia's cultural and national identity. Christian culture and the invention of the Armenian alphabet by Mesrop Mashtots gave new stimuli to the development of unique cultural traditions. There is no better place to view this literary and artistic history than Yerevan's unique Matenadaran (Institute of Ancient Manuscripts), which houses an extraordinary collection of 14,000 complete manuscripts, fragments and miniatures.
