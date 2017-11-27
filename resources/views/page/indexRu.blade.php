@@ -35,6 +35,7 @@
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" media="all" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/components/icon.css">
 
 
     <script type="text/javascript" async="" src="https://mc.yandex.ru/metrika/watch.js"></script>

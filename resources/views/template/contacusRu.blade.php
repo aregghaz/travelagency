@@ -81,7 +81,7 @@
                             <div class="info-title">
                                 <i class="location arrow icon"></i>
 
-                                <span>Ереван-0076, пр. Гая 37</span>
+                                <span>Ереван 0076, пр. Гая 37</span>
                             </div>
                         </div>
                     </div>
