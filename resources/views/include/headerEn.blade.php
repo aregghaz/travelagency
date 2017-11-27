@@ -143,7 +143,7 @@
                     </a>
                 </li>
                 <li class="last">
-                    <a href="/en/contact.html">
+                    <a href="{{route('contacusEn')}}">
                         <img alt="" src="/bundles/damain/images/contact.png" class="" style="margin-left: 0px;">
                         <span>Contact</span>
                     </a>
@@ -345,7 +345,7 @@
                     </a>
                 </li>
                 <li class="last">
-                    <a href="/en/contact.html">
+                    <a href="{{ route('contacusEn') }}">
                         <img alt="" src="/bundles/damain/images/contact.png">
                         <span>Contact</span>
                     </a>

@@ -63,6 +63,20 @@ class UserController extends Controller
 
         return view('template.allToursRu', ['posts' => $posts]);
     }
+ public function contacusEn()
+    {
+
+
+
+        return view('template.contacusEn');
+    }
+ public function contacusRu()
+    {
+
+
+
+        return view('template.contacusRu');
+    }
 
     public function allToursEn()
     {
