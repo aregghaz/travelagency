@@ -26,6 +26,7 @@
     <link rel="stylesheet" type="text/css" media="all" href="{{ URL::to('css/slick/slick-theme.css')}}">
     <link rel="stylesheet" type="text/css" media="all" href="{{ URL::to('css/app.css')}}">
     <link rel="stylesheet" type="text/css" media="all" href="{{ URL::to('css/semantic/semantic.css')}}">
+
     <link rel="stylesheet" type="text/css" href="{{ URL::to('css/font-awesome.min.css')}}">
     <link rel="stylesheet" type="text/css" href="{{ URL::to('css/magic/magic.min.css')}}">
     <link rel="stylesheet" type="text/css" href="{{ URL::to('css/flag-icon.min.css')}}">
@@ -35,7 +36,7 @@
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-
+    <link rel="stylesheet" type="text/css" media="all" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/components/icon.css">
 
     <script type="text/javascript" async="" src="https://mc.yandex.ru/metrika/watch.js"></script>
     <script async="" src="https://www.google-analytics.com/analytics.js"></script>

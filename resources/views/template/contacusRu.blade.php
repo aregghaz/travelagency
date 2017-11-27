@@ -20,6 +20,7 @@
             box-shadow: 1px 1px 3px 1px #e3e4e7;
             padding: 20px 80px;
             margin-top: 20px;
+            height: 100px;
         }
         .section {
             padding: 60px 0;
@@ -33,11 +34,11 @@
 
         }
         .btn-common {
-            background: #4caf50;
+            background: #fca955;
             position: relative;
         }
         .support-inner .support-info .info-title i {
-            color: #4caf50;
+            color: #fca955;
             font-size: 30px;
             left: 25px;
             position: absolute;
@@ -47,6 +48,7 @@
             display: block;
             text-align: center;
             line-height: 48px;
+
         }
         .support-inner .support-info .info-title {
             color: #333;
@@ -65,7 +67,7 @@
                         <h4>Звонок по телефону</h4>
                         <div class="support-info">
                             <div class="info-title">
-                                <i class="icon-phone"></i>
+                                <i class="volume control phone icon"></i>
                                 +7(958) 401 28 44<br>
                                 +374 55 42 54 52<br>
                                 +374 94 12 19 88<br>
@@ -77,7 +79,7 @@
                         <h4>Адрес местонахождения</h4>
                         <div class="support-info">
                             <div class="info-title">
-                                <i class="icon-location-pin"></i>
+                                <i class="location arrow icon"></i>
 
                                 <span>Ереван-0076, пр. Гая 37</span>
                             </div>
@@ -87,7 +89,7 @@
                         <h4>Location Address</h4>
                         <div class="support-info">
                             <div class="info-title">
-                                <i class="icon-envelope"></i>
+                                <i class="mail outline icon"></i>
                                 contact@discoverarmenia.tours
                                 <span>Помогите нам улучшить!</span>
                             </div>
@@ -146,7 +148,7 @@
                                 </div>
                             </div>
                             <div class="col-md-12">
-                                <button type="submit" id="submit" class="btn btn-common disabled" style="pointer-events: all; cursor: pointer;">Отправить сообщение</button>
+                                <button type="submit" id="submit" class="btn btn-common disabled" style="pointer-events: all;cursor: pointer;color: white;opacity: 1;">Отправить сообщение</button>
                                 <div id="msgSubmit" class="h3 text-center hidden"></div>
                                 <div class="clearfix"></div>
                             </div>
