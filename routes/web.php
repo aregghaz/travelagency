@@ -24,6 +24,7 @@ Route::get('/hotelsEn', ['as' => 'hotelsEn', 'uses' => 'UserController@hotelsEn'
 Route::get('/hotelsRu', ['as' => 'hotelsRu', 'uses' => 'UserController@hotelsRu']);
 Route::get('/contacusEn', ['as' => 'contacusEn', 'uses' => 'UserController@contacusEn']);
 Route::get('/contacusRu', ['as' => 'contacusRu', 'uses' => 'UserController@contacusRu']);
+Route::get('/carRentEn', ['as' => 'carRentEn', 'uses' => 'UserController@carRentEn']);
 
 
 // show new post form

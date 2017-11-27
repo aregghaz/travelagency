@@ -42,7 +42,7 @@
                             </a>
                         </li>
                         <li class="last">
-                            <a href="/en/transport/car-rent.html">
+                            <a href="{{ route('carRentEn') }}">
                                 <span>Car rent</span>
                             </a>
                         </li>

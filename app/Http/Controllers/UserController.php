@@ -39,6 +39,13 @@ class UserController extends Controller
         $hotels =  DB::table('hotels')->get();
 
         return view('template.hotelsRu', ['hotels' => $hotels]);
+    }public function carRentEn()
+    { $carsRent =  DB::table('car_rent')->get();
+
+       // $carsRent['price_list'];
+        var_dump();
+        die;
+        return view('template.carRentEn',['carsRent'=> $carsRent]);
     }
 
     public function  toursEn(Request $request)
