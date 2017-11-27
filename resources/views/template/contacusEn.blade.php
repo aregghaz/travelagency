@@ -62,12 +62,14 @@
             <div class="row">
                 <div class="support-inner">
                     <div class="col-md-4 col-sm-6 col-xs-12">
-                        <h4>Book By Phone</h4>
+                        <h4>Call By Phone</h4>
                         <div class="support-info">
                             <div class="info-title">
                                 <i class="icon-phone"></i>
-                                1-234-567-478-2214
-                                <span>Booking time: 0900 – 2000 hrs</span>
+                                +7(958) 401 28 44<br>
+                                +374 55 42 54 52<br>
+                                +374 94 12 19 88<br>
+
                             </div>
                         </div>
                     </div>
@@ -76,8 +78,8 @@
                         <div class="support-info">
                             <div class="info-title">
                                 <i class="icon-location-pin"></i>
-                                Address
-                                <span>63130-4899 St. Louis, Missouri</span>
+
+                                <span>Yerevan-0076 37 Gay Ave.</span>
                             </div>
                         </div>
                     </div>
@@ -86,7 +88,7 @@
                         <div class="support-info">
                             <div class="info-title">
                                 <i class="icon-envelope"></i>
-                                Feedback@property.com
+                                contact@discoverarmenia.tours
                                 <span>Help Us improve!</span>
                             </div>
                         </div>
