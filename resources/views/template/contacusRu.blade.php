@@ -62,14 +62,24 @@
             <div class="row">
                 <div class="support-inner">
                     <div class="col-md-4 col-sm-6 col-xs-12">
-                        <h4>Book By Phone</h4>
+                        <h4>Звонок по телефону</h4>
                         <div class="support-info">
                             <div class="info-title">
                                 <i class="icon-phone"></i>
-                                +7(958) 401 28 44
-                                +374 55 42 54 52
-                                +374 94 12 19 88
+                                +7(958) 401 28 44<br>
+                                +374 55 42 54 52<br>
+                                +374 94 12 19 88<br>
 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <h4>Адрес местонахождения</h4>
+                        <div class="support-info">
+                            <div class="info-title">
+                                <i class="icon-location-pin"></i>
+
+                                <span>Ереван-0076, пр. Гая 37</span>
                             </div>
                         </div>
                     </div>
@@ -77,19 +87,9 @@
                         <h4>Location Address</h4>
                         <div class="support-info">
                             <div class="info-title">
-                                <i class="icon-location-pin"></i>
-                                Address
-                                <span>Yerevan-0076 37 Gay Ave.</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 col-xs-12">
-                        <h4>Give Your Feedback</h4>
-                        <div class="support-info">
-                            <div class="info-title">
                                 <i class="icon-envelope"></i>
                                 contact@discoverarmenia.tours
-                                <span>Help Us improve!</span>
+                                <span>Помогите нам улучшить!</span>
                             </div>
                         </div>
                     </div>
@@ -102,7 +102,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <h2 class="section-title">
-                        SEND US A MESSAGE
+                        ОТПРАВИТЬ СООБЩЕНИЕ
                     </h2>
                     <!-- Form -->
                     <form id="contactForm" class="contact-form" data-toggle="validator" novalidate="true">
@@ -111,25 +111,25 @@
                                 <div class="row">
                                     <div class="col-md-12">
                                         <div class="form-group">
-                                            <input type="text" class="form-control" id="name" name="name" placeholder="Full Name" required="" data-error="Please enter your name">
+                                            <input type="text" class="form-control" id="name" name="name" placeholder="Пожалуйста, введите Ваше имя" required="" data-error="Пожалуйста, введите Ваше имя">
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div>
                                     <div class="col-md-12">
                                         <div class="form-group">
-                                            <input type="email" class="form-control" id="email" placeholder="mail@sitename.com" required="" data-error="Please enter your email">
+                                            <input type="email" class="form-control" id="email" placeholder="Введите адрес электронной почты" required="" data-error="Введите адрес электронной почты">
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div>
                                     <div class="col-md-12">
                                         <div class="form-group">
-                                            <input type="text" class="form-control" id="msg_phone" name="phone" placeholder="Phone" required="" data-error="Please enter your Phone Number">
+                                            <input type="text" class="form-control" id="msg_phone" name="phone" placeholder="Пожалуйста введите ваш номер телефона" required="" data-error="Пожалуйста введите ваш номер телефона">
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div>
                                     <div class="col-md-12">
                                         <div class="form-group">
-                                            <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required="" data-error="Please enter your subject">
+                                            <input type="text" class="form-control" id="subject" name="subject" placeholder="Пожалуйста, введите свой вопрос" required="" data-error="Пожалуйста, введите свой вопрос">
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div>
@@ -139,14 +139,14 @@
                                 <div class="row">
                                     <div class="col-md-12">
                                         <div class="form-group">
-                                            <textarea class="form-control" placeholder="Massage" rows="10" data-error="Write your message" required=""></textarea>
+                                            <textarea class="form-control" placeholder="сообщение" rows="10" data-error="Write your message" required=""></textarea>
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-12">
-                                <button type="submit" id="submit" class="btn btn-common disabled" style="pointer-events: all; cursor: pointer;">Send Message</button>
+                                <button type="submit" id="submit" class="btn btn-common disabled" style="pointer-events: all; cursor: pointer;">Отправить сообщение</button>
                                 <div id="msgSubmit" class="h3 text-center hidden"></div>
                                 <div class="clearfix"></div>
                             </div>
