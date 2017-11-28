@@ -19,7 +19,7 @@
                 </div>
                 <div class="price">
                     <span>Price: </span>
-                    {{ $posts->price }} amd
+                    {{ $posts->price }} AMD
                 </div>
                 <div class="description">
 

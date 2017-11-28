@@ -22,7 +22,7 @@
 
                                 </div>
                                 <div class="right_block">
-                                    <p class="USD">{{$post->price}} amd</p>
+                                    <p class="USD">{{$post->price}} AMD</p>
                                 </div>
                             </div>
                         </div>

@@ -283,7 +283,7 @@
                         </div>
                         <div class="content">
                             <h3><a href="#">{{ $post->titleRu }}</a></h3>
-                            <p>{{$post->days}} дней / {{$post->night}} ночьей <br> Цена: {{ $post->price }}$</p>
+                            <p>{{$post->days}} дней / {{$post->night}} ночьей <br> Цена: {{ $post->price }} AMD</p>
                         </div>
                     </div>
                 </div>

@@ -11,7 +11,7 @@
 
                 <div class="price">
                     <span>Цена: </span>
-                    {{ $posts->price }} амд
+                    {{ $posts->price }} AMD
                 </div>
                 <div class="description">
 
