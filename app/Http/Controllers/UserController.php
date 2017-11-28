@@ -31,10 +31,7 @@ class UserController extends Controller
     public function hotelsEn()
     {
         $hotels =  DB::table('hotels')->get();
-        $vowels = array("a", "e", "i", "o", "u", "A", "E", "I", "O", "U");
-        $onlyconsonants = str_replace($vowels, "", "Hello World of PHP");
-        var_dump($onlyconsonants);
-        die;
+
         return view('template.hotelsEn', ['hotels' => $hotels]);
     }
  public function hotelsRu()
@@ -43,10 +40,20 @@ class UserController extends Controller
 
 
         return view('template.hotelsRu', ['hotels' => $hotels]);
-    }public function carRentEn()
+    }
+
+
+
+    public function carRentEn()
     {
         $carsRents=  DB::table('car_rent')->pluck('price_list');
 
+        // $hotels =  DB::table('hotels')->get();
+        $vowels = array(';;');
+        $onlyconsonants = str_replace($vowels, "", $carsRents);
+        $only = json_decode($onlyconsonants);
+        $onl = $only[0];
+        var_dump($onl);
         return view('template.carRentEn',['carsRent'=> json_encode($carsRents)]);
     }
 

@@ -11,7 +11,7 @@
 
                 <div class="price">
                     <span>Цена: </span>
-                    {{ $posts->price }}$
+                    {{ $posts->price }}амд
                 </div>
                 <div class="description">
                     {{ $posts->bodyRu }}
@@ -19,26 +19,7 @@
                 <div class="description">
                     <a href="/images/turs/{{ $posts->linkRu }}" target="_blank">Узнайте больше об этих турах</a>
                 </div>
-                <div class="request_form_block clear">
-                    <div class="input_block">
-                        <label for="setFrom">Набор из</label>
-                        <div class="ui calendar" id="setFrom">
-                            <input type="text" placeholder="Date/Time">
-                        </div>
-                    </div>
-                    <div class="input_block">
-                        <label for="setFrom">Посетители</label>
-                        <div class="ui" id="visitors">
-                            <input type="number" min="1" name="visitors" title="">
-                        </div>
-                    </div>
-                    <div class="add_cart_block">
-                        <button class="add_to_cart" data-type="excursion" data-id="11" data-price="37000"
-                                data-name="The history of Armenian Cognac">
-                            Добавить в корзину
-                        </button>
-                    </div>
-                </div>
+
                 <div class="gallery_block">
                     <div class="general_image">
                         <img src="/images/turs/{{ $posts->img1 }}" alt="">

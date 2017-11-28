@@ -66,7 +66,7 @@
         <script>
             var string = '{{ $carsRent }}';
 
-     console.log(string);
+
 
             var pass = string.replace(',',':');
             var arr = pass.split(':');
@@ -77,7 +77,7 @@
                     empty[el] = arr[i+1];
                 }
             });
-            console.log(empty)
+
         </script>
         <?php die; ?>
         <div class="col-md-3">
