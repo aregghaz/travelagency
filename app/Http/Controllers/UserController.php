@@ -31,21 +31,23 @@ class UserController extends Controller
     public function hotelsEn()
     {
         $hotels =  DB::table('hotels')->get();
-
+        $vowels = array("a", "e", "i", "o", "u", "A", "E", "I", "O", "U");
+        $onlyconsonants = str_replace($vowels, "", "Hello World of PHP");
+        var_dump($onlyconsonants);
+        die;
         return view('template.hotelsEn', ['hotels' => $hotels]);
     }
  public function hotelsRu()
     {
         $hotels =  DB::table('hotels')->get();
 
+
         return view('template.hotelsRu', ['hotels' => $hotels]);
     }public function carRentEn()
-    { $carsRent =  DB::table('car_rent')->get();
+    {
+        $carsRents=  DB::table('car_rent')->pluck('price_list');
 
-       // $carsRent['price_list'];
-        var_dump();
-        die;
-        return view('template.carRentEn',['carsRent'=> $carsRent]);
+        return view('template.carRentEn',['carsRent'=> json_encode($carsRents)]);
     }
 
     public function  toursEn(Request $request)

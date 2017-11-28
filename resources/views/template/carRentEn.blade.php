@@ -63,6 +63,23 @@
         }
     </style>
     <div class="row">
+        <script>
+            var string = '{{ $carsRent }}';
+
+     console.log(string);
+
+            var pass = string.replace(',',':');
+            var arr = pass.split(':');
+            var empty = {};
+            arr.forEach(function(el,i){
+                var b = i + 1, c = b/2, e = c.toString();
+                if(e.indexOf('.') != -1 ) {
+                    empty[el] = arr[i+1];
+                }
+            });
+            console.log(empty)
+        </script>
+        <?php die; ?>
         <div class="col-md-3">
 
         </div>
