@@ -46,12 +46,10 @@ class PostController extends Controller
         $post->days = $request->get('days');
         $post->night = $request->get('night');
         $post->price = $request->get('price');
-        $post->slug = str_slug($post->titleEn);
 
-        $duplicate = Posts::where('slug', $post->slug)->first();
-        if ($duplicate) {
-            return redirect('new-post')->withErrors('Title already exists.')->withInput();
-        }
+
+
+
 
         $post->author_id = $request->user()->id;
         if ($request->has('save')) {

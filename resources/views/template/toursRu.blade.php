@@ -17,7 +17,7 @@
 
                 </div>
                 <div class="description">
-                    <a href="/images/turs/{{ $posts->linkRu }}" target="_blank">Узнайте больше об этих турах</a>
+                    <a href="/images/turs/{{ $posts->linkRu }}" target="_blank">Узнайте больше об этом туре</a>
                 </div>
 
                 <div class="gallery_block">
