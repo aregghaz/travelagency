@@ -19,11 +19,10 @@
                 </div>
                 <div class="price">
                     <span>Price: </span>
-                    {{ $posts->price }}amd
+                    {{ $posts->price }} amd
                 </div>
                 <div class="description">
 
-                   {{ $posts->bodyEn }}
 
                 </div>
                 <div class="description">

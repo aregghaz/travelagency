@@ -11,10 +11,10 @@
 
                 <div class="price">
                     <span>Цена: </span>
-                    {{ $posts->price }}амд
+                    {{ $posts->price }} амд
                 </div>
                 <div class="description">
-                    {{ $posts->bodyRu }}
+
                 </div>
                 <div class="description">
                     <a href="/images/turs/{{ $posts->linkRu }}" target="_blank">Узнайте больше об этих турах</a>
