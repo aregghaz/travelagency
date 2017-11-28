@@ -13,7 +13,7 @@
                             <div class="see_more home">
                                 <p>{{$post->titleEn}}</p>
                                 <p>{{$post->days}} days / {{$post->night}} nights</p>
-                                <p>{{$post->bodyEn}}</p>
+
                             </div>
                             <div class="tours_title_block clear">
                                 <div class="left_block">
@@ -22,7 +22,7 @@
 
                                 </div>
                                 <div class="right_block">
-                                    <p class="USD">{{$post->price}}$</p>
+                                    <p class="USD">{{$post->price}} amd</p>
                                 </div>
                             </div>
                         </div>

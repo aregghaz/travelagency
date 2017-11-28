@@ -13,7 +13,7 @@
                             <div class="see_more home">
                                 <p>{{$post->titleRu}}</p>
                                 <p>{{$post->days}} дней / {{$post->night}} ночьей</p>
-                                <p>{{$post->bodyRu}}</p>
+
                             </div>
                             <div class="tours_title_block clear">
                                 <div class="left_block">
@@ -22,7 +22,7 @@
 
                                 </div>
                                 <div class="right_block">
-                                    <p class="USD">{{$post->price}}$</p>
+                                    <p class="USD">{{$post->price}} амд</p>
                                 </div>
                             </div>
                         </div>
