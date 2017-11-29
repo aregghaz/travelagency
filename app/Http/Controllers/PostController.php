@@ -41,8 +41,7 @@ class PostController extends Controller
         $post = new Posts();
         $post->titleRu = $request->get('titleRu');
         $post->titleEn = $request->get('titleEn');
-        $post->bodyRu = $request->get('bodyRu');
-        $post->bodyEn = $request->get('bodyEn');
+
         $post->days = $request->get('days');
         $post->night = $request->get('night');
         $post->price = $request->get('price');
@@ -72,36 +71,6 @@ class PostController extends Controller
                 $filename1 = time() + 1. . '.jpg';
                 $request->img1->storeAs('turs', $filename1, "uploads");
                 $post->img1 = $filename1;
-            }
-            if ($request->has('img2')) {
-                $filename2 = time() + 2. . '.jpg';
-                $request->img2->storeAs('turs', $filename2, "uploads");
-                $post->img2 = $filename2;
-            }
-            if ($request->has('img3')) {
-                $filename3 = time() + 3. . '.jpg';
-                $request->img3->storeAs('turs', $filename3, "uploads");
-                $post->img3 = $filename3;
-            }
-            if ($request->has('img4')) {
-                $filename4 = time() + 4. . '.jpg';
-                $request->img4->storeAs('turs', $filename4, "uploads");
-                $post->img4 = $filename4;
-            }
-            if ($request->has('img5')) {
-                $filename5 = time() + 5. . '.jpg';
-                $request->img5->storeAs('turs', $filename5, "uploads");
-                $post->img5 = $filename5;
-            }
-            if ($request->has('img6')) {
-                $filename6 = time() + 6. . '.jpg';
-                $request->img6->storeAs('turs', $filename6, "uploads");
-                $post->img6 = $filename6;
-            }
-            if ($request->has('img7')) {
-                $filename7 = time() + 7. . '.jpg';
-                $request->img7->storeAs('turs', $filename7, "uploads");
-                $post->img7 = $filename7;
             }
 
             $post->active = 1;

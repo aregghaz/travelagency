@@ -69,43 +69,13 @@
                 <input required="required" value="{{ old('price') }}" placeholder="price" type="text" name="price"
                        class="form-control"/>
             </div>
-            <div class="form-group">
-                <textarea required="required" placeholder="Enter body in Russian" name="bodyRu"
-                          class="form-control"></textarea>
-            </div>
-            <div class="form-group">
-                <textarea required="required" placeholder="Enter body in English" name="bodyEn"
-                          class="form-control"></textarea>
-            </div>
+
             <div class="form-group">
                 <label for="img1">upload image 1</label>
                 <input type="file" required="required" multiple="multiple" placeholder="image 1" id="img1git pull p" name="img1"
                        class="form-control">
             </div>
-            <div class="form-group">
-                <label for="img2">upload image 2</label>
-                <input type="file" multiple="multiple" placeholder="image 2" name="img2" id="img2" class="form-control">
-            </div>
-            <div class="form-group">
-                <label for="img3">upload image 3</label>
-                <input type="file" multiple="multiple" placeholder="image 3" name="img3" id="img3" class="form-control">
-            </div>
-            <div class="form-group">
-                <label for="img4">upload image 4</label>
-                <input type="file" multiple="multiple" placeholder="image 4" name="img4" id="img4" class="form-control">
-            </div>
-            <div class="form-group">
-                <label for="img5">upload image 5</label>
-                <input type="file" multiple="multiple" placeholder="image 5" name="img5" id="img5" class="form-control">
-            </div>
-            <div class="form-group">
-                <label for="img6">upload image 6 </label>
-                <input type="file" id="img6" multiple="multiple" placeholder="image 6" name="img6" class="form-control">
-            </div>
-            <div class="form-group">
-                <label for="img7">upload image 7</label>
-                <input type="file" multiple="multiple" placeholder="image 7" id="img7" name="img7" class="form-control">
-            </div>
+
             <div class="form-group">
                 <label for="fileEn">upload PDF file in English</label>
                 <input type="file" multiple="multiple" placeholder="pdf file in ENglish" id="fileEn" name="fileEn" class="form-control">
