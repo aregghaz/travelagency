@@ -34,7 +34,7 @@ Route::get('/carRentEn', ['as' => 'carRentEn', 'uses' => 'UserController@carRent
 Route::post('new-post', ['uses' => 'PostController@store', 'as' => 'new-post']);
 
 // edit post form
-Route::get('edit/{slug}', 'PostController@edit');
+Route::get('edit/{id}', 'PostController@edit');
 
 // update post
 Route::post('update', 'PostController@update');
@@ -53,7 +53,7 @@ Route::get('my-drafts', 'UserController@user_posts_draft');
 Route::get('user/{id}', 'UserController@profile')->where('id', '[0-9]+');
 
 // display list of posts
-//Route::get('user/{id}/posts', 'UserController@user_posts')->where('id', '[0-9]+');
+Route::get('user/{id}/posts', 'UserController@user_posts')->where('id', '[0-9]+');
 
 //// display single post
 //Route::get('/{slug}',['as' => 'post', 'uses' => 'PostController@show'])->where('slug', '[A-Za-z0-9-_]+');

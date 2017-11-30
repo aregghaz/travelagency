@@ -97,11 +97,12 @@ class PostController extends Controller
     }
 
 
-    public function edit(Request $request, $slug)
+    public function edit(Request $request)
     {
-        $post = Posts::where('slug', $slug)->first();
-        if ($post && ($request->user()->id == $post->author_id || $request->user()->is_admin()))
-            return view('posts.edit')->with('post', $post);
+        $id = $request['id'];
+        $posts = Posts::where('id', $id)->first();
+        if ($posts)
+            return view('posts.edit')->with('posts', $posts);
         else {
             return redirect('/')->withErrors('you have not sufficient permissions');
         }
@@ -117,23 +118,15 @@ class PostController extends Controller
         //
         $post_id = $request->input('post_id');
         $post = Posts::find($post_id);
-        if ($post && ($post->author_id == $request->user()->id || $request->user()->is_admin())) {
-            $title = $request->input('title');
-            $slug = str_slug($title);
-            $duplicate = Posts::where('slug', $slug)->first();
-            if ($duplicate) {
-                if ($duplicate->id != $post_id) {
-                    return redirect('edit/' . $post->slug)->withErrors('Title already exists.')->withInput();
-                } else {
-                    $post->slug = $slug;
-                }
-            }
-            $post->title = $title;
-            $post->body = $request->input('body');
+        if ($post) {
+            $titleEn = $request->input('titleEn');
+            $titleRu = $request->input('titleRu');
+            $post->titleEn = $titleEn;
+            $post->titleRu = $titleRu;
             if ($request->has('save')) {
                 $post->active = 0;
                 $message = 'Post saved successfully';
-                $landing = 'edit/' . $post->slug;
+                $landing = 'edit/' . $post_id;
             } else {
                 $post->active = 1;
                 $message = 'Post updated successfully';
