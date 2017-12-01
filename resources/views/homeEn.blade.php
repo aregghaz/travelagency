@@ -90,7 +90,7 @@
             <button type="button" data-role="none" class="slick-prev slick-arrow" aria-label="Previous" role="button"
                     style="">Previous
             </button>
-            <div aria-live="polite" class="slick-list">
+            <div aria-live="polite" class="slick-list" >
                 <div class="slick-track" style="opacity: 1; display: -webkit-box;" role="listbox">
                     <div class="slide slick-slide slick-current slick-active"
                          style="background: url('/uploads/7.jpg') no-repeat center center fixed; width: 100%; position: relative; height: 350px;position: fixed"

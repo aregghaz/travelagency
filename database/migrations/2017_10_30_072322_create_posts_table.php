@@ -21,8 +21,8 @@ class CreatePostsTable extends Migration
             $table->string('titleEn')->nullable();
             $table->string('linkEn')->nullable();
             $table->string('linkRu')->nullable();
-            $table->integer('days')->nullable();
-            $table->integer('night')->nullable();
+            $table->string('days')->nullable();
+            $table->string('night')->nullable();
             $table->integer('price')->nullable();
             $table->string('img1')->nullable();
             $table->enum('role',['extreme','heal','all','culture','gastronomy','weekend'])->default('all');
