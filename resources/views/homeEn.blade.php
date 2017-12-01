@@ -93,24 +93,10 @@
             <div aria-live="polite" class="slick-list">
                 <div class="slick-track" style="opacity: 1; display: -webkit-box;" role="listbox">
                     <div class="slide slick-slide slick-current slick-active"
-                         style="background: url('/uploads/media/3f2264cfdb110fbf5cd00c2befc5cf49ebe65c07.gif') center center / cover no-repeat; width: 100%; position: relative; left: 0px; top: 0px; z-index: 999; opacity: 1;"
+                         style="background: url('/uploads/7.jpg') no-repeat center center fixed; width: 100%; position: relative; height: 350px;position: fixed"
                          data-slick-index="0" aria-hidden="false" tabindex="-1" role="option"
                          aria-describedby="slick-slide00">
-                        <div class="container">
-                            <div class="description_block">
-                                <div class="sldie_title">Tours</div>
-                                <div class="description">We are engaged in creating individual and group tours. We offer
-                                    you
-                                    classical, pilgrim, extreme, cooking tours etc. During the tours you will discover
-                                    Armenia from different sides. You will get acquanted with the culture and traditions
-                                    of
-                                    the country.
-                                </div>
-                                <div class="link_button">
-                                    <a href="{{ route('allToursEn') }}" tabindex="0">Read more</a>
-                                </div>
-                            </div>
-                        </div>
+
                     </div>
 
                 </div>
