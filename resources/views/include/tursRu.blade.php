@@ -18,7 +18,7 @@
                             <div class="tours_title_block clear">
                                 <div class="left_block">
                                     <p>{{$post->titleRu}}</p>
-                                    <p>{{$post->days}} / {{$post->night}}гит </p>
+                                    <p>{{$post->days}} / {{$post->night}}</p>
 
                                 </div>
                                 <div class="right_block">
