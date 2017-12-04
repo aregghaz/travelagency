@@ -20,12 +20,12 @@
                         </li>
                         <li>
                             <a href="/en/accommodation/apartment.html">
-                                <span>Apartment</span>
+                                <span>Apartments</span>
                             </a>
                         </li>
                         <li class="last">
                             <a href="/en/accommodation/villa.html">
-                                <span>Villa</span>
+                                <span>Houses</span>
                             </a>
                         </li>
                     </ul>
@@ -38,7 +38,7 @@
                     <ul class="sub-menu clear menu_level_1" style="display: none; opacity: 1;">
                         <li class="first">
                             <a href="/en/transport/car-with-driver.html">
-                                <span>Car with driver</span>
+                                <span>Vehicles with driver</span>
                             </a>
                         </li>
                         <li class="last">
@@ -51,7 +51,7 @@
                 <li>
                     <a href="/en/excursion.html">
                         <img alt="" src="/bundles/damain/images/excursion.png" class="" style="margin-left: -16px;">
-                        <span>Excursion</span>
+                        <span>Excursions</span>
                     </a>
                 </li>
                 <li>
@@ -89,16 +89,17 @@
                             <span>Armenia</span>
                     </span>
                     <ul class="sub-menu clear menu_level_1" style="display: none; opacity: 1;">
-                        <li class="first">
-                            <a href="/en/armenia/culture.html">
-                                <span>Cultur</span>
-                            </a>
-                        </li>
                         <li>
                             <a href="/en/armenia/armenia.html">
                                 <span>Armenia</span>
                             </a>
                         </li>
+                        <li class="first">
+                            <a href="/en/armenia/culture.html">
+                                <span>Culture</span>
+                            </a>
+                        </li>
+
                         <li>
                             <a href="/en/armenia/did-you-know-that.html">
                                 <span>Did you know that...</span>
@@ -139,7 +140,7 @@
                 <li>
                     <a href="/en/company.html">
                         <img alt="" src="/bundles/damain/images/company.png" class="" style="margin-left: 0px;">
-                        <span>Company</span>
+                        <span>About us</span>
                     </a>
                 </li>
                 <li class="last">
