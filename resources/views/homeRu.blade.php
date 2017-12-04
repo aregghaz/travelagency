@@ -7,7 +7,6 @@
 @section('content')
 
 
-
     <style>
         .read-more-state {
             display: none;
@@ -92,31 +91,18 @@
             <button type="button" data-role="none" class="slick-prev slick-arrow" aria-label="Previous" role="button"
                     style="">Previous
             </button>
-            <div aria-live="polite" class="slick-list">
-                <div class="slick-track" style="opacity: 1; display: -webkit-box;" role="listbox">
+            <div aria-live="polite" class="slick-list" >
+                <div class="slick-track" style="opacity: 1; display: -webkit-box; height: 460px" role="listbox">
                     <div class="slide slick-slide slick-current slick-active"
-                         style="background: url('/uploads/media/3f2264cfdb110fbf5cd00c2befc5cf49ebe65c07.gif') center center / cover no-repeat; width: 100%; position: relative; left: 0px; top: 0px; z-index: 999; opacity: 1;"
+                         style="background: url('/uploads/{{ $data['img'] }}') center center / cover no-repeat fixed; width: 100%; position: relative; height: 450px;position: fixed"
                          data-slick-index="0" aria-hidden="false" tabindex="-1" role="option"
                          aria-describedby="slick-slide00">
-                        <div class="container">
-                            <div class="description_block">
-                                <div class="sldie_title">Туры</div>
-                                <div class="description">Мы занимаемся индивидуальными и групповыми турами. Мы предлагаем вы классический, паломнический, экстремальный, кулинарные туры и т. д. Во время туров вы обнаружите Армения с разных сторон. Вы приобретете культуру и традиции из страны.
-                                </div>
-                                <div class="link_button">
-                                    <a href="{{ route('allToursRu') }}" tabindex="0">Читать дальше</a>
-                                </div>
-                            </div>
-                        </div>
+
                     </div>
 
                 </div>
             </div>
 
-            <button type="button" data-role="none" class="slick-next slick-arrow" aria-label="Next" role="button"
-                    style="">
-                Next
-            </button>
 
         </div>
 

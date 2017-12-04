@@ -91,9 +91,9 @@
                     style="">Previous
             </button>
             <div aria-live="polite" class="slick-list" >
-                <div class="slick-track" style="opacity: 1; display: -webkit-box;" role="listbox">
+                <div class="slick-track" style="opacity: 1; display: -webkit-box; height: 460px" role="listbox">
                     <div class="slide slick-slide slick-current slick-active"
-                         style="background: url('/uploads/7.jpg') no-repeat center center fixed; width: 100%; position: relative; height: 350px;position: fixed"
+                         style="background: url('/uploads/{{ $data['img'] }}') center center / cover no-repeat fixed; width: 100%; position: relative; height: 450px;position: fixed"
                          data-slick-index="0" aria-hidden="false" tabindex="-1" role="option"
                          aria-describedby="slick-slide00">
 

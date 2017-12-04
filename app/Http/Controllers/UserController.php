@@ -16,17 +16,25 @@ class UserController extends Controller
     public function homeEn()
     {
 
-        $posts = Posts::all();
+        $data = Array();
+        $imgHome = ['1.jpg','2.jpg','3.jpg','4.jpg','5.jpg','6.jpg','7.jpg','8.jpg','9.jpg','10.jpg'];
+        $number = rand(0, 9);
+        $data['img'] =  $imgHome[$number];
+        $data['posts']  = Posts::all();
 
-        return View::make('homeEn',['posts' => $posts]);
+        return View::make('homeEn',['data' => $data]);
 
     }
 
     public function homeRu()
     {
-        $posts = Posts::all();
+        $data = Array();
+        $imgHome = ['1.jpg','2.jpg','3.jpg','4.jpg','5.jpg','6.jpg','7.jpg','8.jpg','9.jpg','10.jpg'];
+        $number = rand(0, 9);
+        $data['img'] =  $imgHome[$number];
+        $data['posts']  = Posts::all();
 
-        return view('homeRu', ['posts' => $posts]);
+        return view('homeRu', ['data' => $data]);
     }
     public function hotelsEn()
     {
