@@ -1806,7 +1806,7 @@ pre code {
         width: 1200px
     }
     .read-more-wrap {
-        font-size: 18px!important;
+        font-size: 18px;
         text-align: justify;
         color: #878787;
         font-family: system-ui;
