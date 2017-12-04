@@ -4,8 +4,8 @@
     </div>
     <div class="tour_block">
         <div class="container clear">
-            @if(!empty($posts))
-            @foreach($posts as $post)
+            @if(!empty($data['posts']))
+            @foreach($data['posts'] as $post)
                 <div class="tours_box"
                      style="background: url('{{  URL::to("/images/turs/$post->img1") }}') no-repeat;background-size: cover;background-position: center center;">
                     <a href="/images/turs/{{ $post->linkEn }}" target="_blank">
