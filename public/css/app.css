@@ -1806,7 +1806,13 @@ pre code {
         width: 1200px
     }
 }
+.read-more-wrap {
+    font-size: 18px!important;
+    text-align: justify;
+    color: #878787;
+    font-family: system-ui;
 
+}
 .row {
     margin-left: -15px;
     margin-right: -15px
