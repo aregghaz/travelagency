@@ -89,12 +89,12 @@
                             <span>Armenia</span>
                     </span>
                     <ul class="sub-menu clear menu_level_1" style="display: none; opacity: 1;">
-                        <li>
+                        <li class="first">
                             <a href="/en/armenia/armenia.html">
                                 <span>Armenia</span>
                             </a>
                         </li>
-                        <li class="first">
+                        <li >
                             <a href="/en/armenia/culture.html">
                                 <span>Culture</span>
                             </a>
