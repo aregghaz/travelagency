@@ -1803,6 +1803,18 @@ pre code {
 
 @media (min-width: 1200px) {
     .container {
+        width: 1170px
+    }
+    .read-more-wrap {
+        font-size: 18px;
+        text-align: justify;
+        color: #878787;
+        font-family: system-ui;
+
+    }
+}
+@media (min-width: 1400px) {
+    .container {
         width: 1200px
     }
     .read-more-wrap {
