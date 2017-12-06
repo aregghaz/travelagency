@@ -202,17 +202,9 @@
     @include('include.tursEn')
 
     <div class="popular_excursion_block">
-        <div class="title">
-            Popular excursion
-        </div>
-        <div class="accommodation_block excursion_block">
-            <div class="container clear excursion_slider slick-initialized slick-slider">
-                <div aria-live="polite" class="slick-list">
-                    <div class="slick-track" style="opacity: 1; width: 0px; transform: translate3d(0px, 0px, 0px);"
-                         role="listbox"></div>
-                </div>
-            </div>
-        </div>
+
+                        @include('include.excursionEn')
+
     </div>
 
 

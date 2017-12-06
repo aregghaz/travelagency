@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 
 use App\Posts;
 use App\User;
+use App\Excursion;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use View;
@@ -21,6 +22,7 @@ class UserController extends Controller
         $number = rand(0, 9);
         $data['img'] =  $imgHome[$number];
         $data['posts']  = Posts::all();
+        $data['excursion']  = Excursion::all();
 
         return View::make('homeEn',['data' => $data]);
 
@@ -33,7 +35,7 @@ class UserController extends Controller
         $number = rand(0, 9);
         $data['img'] =  $imgHome[$number];
         $data['posts']  = Posts::all();
-
+        $data['excursion']  = Excursion::all();
         return view('homeRu', ['data' => $data]);
     }
     public function hotelsEn()

@@ -30,17 +30,25 @@ Route::get('/carRentEn', ['as' => 'carRentEn', 'uses' => 'UserController@carRent
 // show new post form
 //  Route::get('new-post','PostController@create');
 
+Route::get('tours', 'PostController@index');
+Route::get('excursion', 'ExcursionController@index');
+
+
 // save new post
 Route::post('new-post', ['uses' => 'PostController@store', 'as' => 'new-post']);
+Route::post('new-excursion', ['uses' => 'ExcursionController@store', 'as' => 'new-excursion']);
 
 // edit post form
 Route::get('edit/{id}', 'PostController@edit');
+Route::get('editExcursion/{id}', 'ExcursionController@edit');
 
 // update post
 Route::post('update', 'PostController@update');
+Route::post('updateExcursion', 'ExcursionController@update');
 
 // delete post
 Route::get('delete/{id}', 'PostController@destroy');
+Route::get('deleteExcursion/{id}', 'ExcursionController@destroy');
 
 // display user's all posts
 Route::get('my-all-posts', 'UserController@user_posts_all');
