@@ -10,12 +10,12 @@
                     </li>
                     <li>
                         <a href="/en/hotels.html?slug=villa">
-                            <span>Villa</span>
+                            <span>Houses</span>
                         </a>
                     </li>
                     <li>
                         <a href="/en/transport/car-with-driver.html">
-                            <span>Car with driver</span>
+                            <span>Vehicles with driver</span>
                         </a>
                     </li>
                     <li>
@@ -24,8 +24,8 @@
                         </a>
                     </li>
                     <li>
-                        <a href="/en/excursion.html">
-                            <span>Excursion</span>
+                        <a href="">
+                            <span>Excursions</span>
                         </a>
                     </li>
                     <li>
@@ -35,11 +35,11 @@
                     </li>
                     <li>
                         <a href="/en/company.html">
-                            <span>Company</span>
+                            <span>About Us</span>
                         </a>
                     </li>
                     <li class="last">
-                        <a href="/en/contact.html">
+                        <a href="{{ route('contacusEn') }}">
                             <span>Contact</span>
                         </a>
                     </li>
@@ -59,10 +59,10 @@
             <div class="address_info left_block">
                 <ul>
                     <li>
-                        <p>Yerevan-0076 37 Gay Ave.</p>
+                        <p>37 Gay Ave. Yerevan-0076</p>
                         <p>Discover Armenia</p>
-                        <p>+7(958) 401 28 44</p>
                         <p>+374 55 42 54 52</p>
+                        <p>+7(958) 401 28 44</p>
                         <p>+374 94 12 19 88</p>
                         <p>contact@discoverarmenia.tours</p>
                     </li>

@@ -59,7 +59,7 @@
             <div class="address_info left_block">
                 <ul>
                     <li>
-                        <p>Ереван-0076, пр. Гая 37</p>
+                        <p>пр. Гая 37, Ереван-0076</p>
                         <p>Discover Armenia</p>
                         <p>+7 (958) 401 28 44</p>
                         <p>+374 55 42 54 52</p>

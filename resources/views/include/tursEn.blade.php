@@ -1,6 +1,6 @@
 <div class="tours_block">
     <div class="title">
-        Popular author tours
+        Popular tours
     </div>
     <div class="tour_block">
         <div class="container clear">

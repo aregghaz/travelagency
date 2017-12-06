@@ -1,6 +1,6 @@
 <div class="tours_block">
     <div class="title">
-        Популярные авторские туры
+        Популярные туры
     </div>
     <div class="tour_block">
         <div class="container clear">
