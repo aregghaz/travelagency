@@ -268,10 +268,10 @@ class Swift_Mime_AttachmentTest extends Swift_Mime_AbstractMimeEntityTest
             );
         $this->assertSame($attachment,
             $attachment
-            ->setContentType('application/asd.pdf')
+            ->setContentType('application/pdf')
             ->setEncoder($this->createEncoder())
             ->setId('foo@bar')
-            ->setDescription('my asd.pdf')
+            ->setDescription('my pdf')
             ->setMaxLineLength(998)
             ->setBody('xx')
             ->setBoundary('xyz')

@@ -76,7 +76,7 @@ function generateUpToDateMimeArray()
             'odt' => 'vnd.oasis.opendocument.text',
             'ods' => 'vnd.oasis.opendocument.spreadsheet',
             'ogg' => 'audio/ogg',
-            'asd.pdf' => 'application/asd.pdf',
+            'pdf' => 'application/pdf',
             'ppt' => 'application/vnd.ms-powerpoint',
             'pptx' => 'application/vnd.openxmlformats-officedocument.presentationml.presentation',
             'ps' => 'application/postscript',

@@ -48,11 +48,11 @@
 
         }
         .read-more-state ~ .read-more-trigger:before {
-            content: 'Show more';
+            content: 'Показать больше';
         }
 
         .read-more-state:checked ~ .read-more-trigger:before {
-            content: 'Show less';
+            content: 'Показать меньше';
         }
 
         .read-more-trigger {
@@ -120,6 +120,7 @@
             </div>
 
                 <div class="right_block content block-style" id = "block-style">
+                    <h2>Команда DISCOVER ARMENIA приглашает вас</h2>
                     <h2>Команда DISCOVER ARMENIA приглашает вас</h2>
                     <br>
 
