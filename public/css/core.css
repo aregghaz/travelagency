@@ -497,7 +497,8 @@ header .right_block .group_block .chart_block img {
 .info_block .container .content {
   width: 75%;
   text-align: center;
-  margin-top: 70px;
+  margin-top: 40px;
+
 }
 .info_block .container .content h2 {
   line-height: 23px;
