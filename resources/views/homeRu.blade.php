@@ -121,7 +121,6 @@
 
                 <div class="right_block content block-style" id = "block-style">
                     <h2>Команда DISCOVER ARMENIA приглашает вас</h2>
-                    <h2>Команда DISCOVER ARMENIA приглашает вас</h2>
                     <br>
 
                     <input type="checkbox" class="read-more-state" id="post-1"/>
