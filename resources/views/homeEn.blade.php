@@ -1,60 +1,88 @@
-@extends('page.index')
+﻿@extends('page.index')
+
 @section('title')
 
 @endsection
+
 @section('content')
 
-    <script type="text/javascript">
-        (function (i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r;
-            i[r] = i[r] || function () {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date();
-            a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0];
-            a.async = 1;
-            a.src = g;
-            m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+    <style>
+        .read-more-state {
+            display: none;
+        }
 
-        ga('create', 'UA-88757478-1', 'auto');
-        ga('send', 'pageview');
+        .read-more-target {
+            opacity: 0;
+            max-height: 0;
+            font-size: 0;
+            transition: .25s ease;
+        }
 
+        .read-more-state:checked ~ .read-more-wrap .read-more-target {
+            opacity: 1;
+            font-size: inherit;
+            max-height: 999em;
+        }
+        .gastronomy
+        {
 
-        (function (d, w, c) {
-            (w[c] = w[c] || []).push(function () {
-                try {
-                    w.yaCounter41512739 = new Ya.Metrika({
-                        id: 41512739,
-                        clickmap: true,
-                        trackLinks: true,
-                        accurateTrackBounce: true
-                    });
-                } catch (e) {
-                }
-            });
+            text-align: center;
+            display: list-item;
+            /* text-decoration: none; */
+            list-style-type: none;
 
-            var n = d.getElementsByTagName("script")[0],
-                s = d.createElement("script"),
-                f = function () {
-                    n.parentNode.insertBefore(s, n);
-                };
-            s.type = "text/javascript";
-            s.async = true;
-            s.src = "https://mc.yandex.ru/metrika/watch.js";
+            line-height: 23px;
+            font-size: 32px;
+            font-family: 'AvantGardeCTT-Bold';
+            color: #fca955;
+            margin-bottom: 13px;
+        }
+.read-more-wrap {
+    font-size: 20px;
+    text-align: justify;
 
-            if (w.opera == "[object Opera]") {
-                d.addEventListener("DOMContentLoaded", f, false);
-            } else {
-                f();
-            }
-        })(document, window, "yandex_metrika_callbacks");
-    </script>
-    <noscript>&lt;div&gt;&lt;img src="https://mc.yandex.ru/watch/41512739" style="position:absolute; left:-9999px;"
-        alt="" /&gt;&lt;/div&gt;
-    </noscript>
-    <!-- /Yandex.Metrika counter -->
+    color: #878787;
 
+    font-family: system-ui;
+    font-weight: 250;
+}
+        .read-more-state ~ .read-more-trigger:before {
+            content: 'Show more';
+        }
+
+        .read-more-state:checked ~ .read-more-trigger:before {
+            content: 'Show less';
+        }
+
+        .read-more-trigger {
+            cursor: pointer;
+            display: inline-block;
+            padding: 0 .5em;
+            /* color: #666; */
+            /* font-size: .9em; */
+            line-height: 2;
+            /* border: 1px solid #ddd; */
+            border-radius: .25em;
+        }
+
+        .morecontent span {
+            display: none;
+        }
+
+        .morelink {
+            display: block;
+        }
+        .button-style {
+            position: relative;
+
+        }
+        .block-style{
+
+            height: 235px;
+        }
+    </style>
+
+    @include('script.script')
     @include('include.social')
 
     <div class="home_slider_block">
@@ -62,163 +90,111 @@
             <button type="button" data-role="none" class="slick-prev slick-arrow" aria-label="Previous" role="button"
                     style="">Previous
             </button>
-            <div aria-live="polite" class="slick-list">
-                <div class="slick-track" style="opacity: 1; width: 5380px;" role="listbox">
+            <div aria-live="polite" class="slick-list" >
+                <div class="slick-track" style="opacity: 1; display: -webkit-box; height: 460px" role="listbox">
                     <div class="slide slick-slide slick-current slick-active"
-                         style="background: url(&quot;/uploads/media/3f2264cfdb110fbf5cd00c2befc5cf49ebe65c07.gif&quot;) center center / cover no-repeat; width: 1345px; position: relative; left: 0px; top: 0px; z-index: 999; opacity: 1;"
+                         style="background: url('/uploads/{{ $data['img'] }}') center center / cover no-repeat fixed; width: 100%; position: relative; height: 450px;position: fixed"
                          data-slick-index="0" aria-hidden="false" tabindex="-1" role="option"
                          aria-describedby="slick-slide00">
-                        <div class="container">
-                            <div class="description_block">
-                                <div class="sldie_title">Tours</div>
-                                <div class="description">We are engaged in creating individual and group tours. We offer
-                                    you
-                                    classical, pilgrim, extreme, cooking tours etc. During the tours you will discover
-                                    Armenia from different sides. You will get acquanted with the culture and traditions
-                                    of
-                                    the country.
-                                </div>
-                                <div class="link_button">
-                                    <a href="http://discoverarmenia.tours/en/tours.html" tabindex="0">Read more</a>
-                                </div>
-                            </div>
-                        </div>
+
                     </div>
-                    <div class="slide slick-slide"
-                         style="background: url(&quot;/uploads/media/736e8ed8adba0d7d66ef8b600a74e7a896817314.gif&quot;) center center / cover no-repeat; width: 1345px; position: relative; left: -1345px; top: 0px; z-index: 998; opacity: 0;"
-                         data-slick-index="1" aria-hidden="true" tabindex="-1" role="option"
-                         aria-describedby="slick-slide01">
-                        <div class="container">
-                            <div class="description_block">
-                                <div class="sldie_title">Armenia</div>
-                                <div class="description">Armenia is a country rich of cultural and natural monuments.
-                                    That’s
-                                    why Armenia is called an “open-air museum. A pagan temple of Garni, monastery
-                                    complex
-                                    Gegard, ancient Tatev historical Khor Virap, Noravanq - all these are alive history
-                                    of
-                                    one of the oldest countries in the world.
-                                </div>
-                                <div class="link_button">
-                                    <a href="http://discoverarmenia.tours/en/armenia/armenia.html"
-                                       tabindex="-1">Discover</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slide slick-slide"
-                         style="background: url('uploads/media/f8f4c5a552a9b17879e95070348e771a4d73a2bd.gif') center center / cover no-repeat; width: 1345px; position: relative; left: -2690px; top: 0px; z-index: 998; opacity: 0;"
-                         data-slick-index="2" aria-hidden="true" tabindex="-1" role="option"
-                         aria-describedby="slick-slide02">
-                        <div class="container">
-                            <div class="description_block">
-                                <div class="sldie_title">CAR RENT</div>
-                                <div class="description">The company Discover Armenia provides an opportunity to rent a
-                                    car
-                                    of different classes in different periods at favorable prices.
-                                </div>
-                                <div class="link_button">
-                                    <a href="http://discoverarmenia.tours/en/transport/car-rent.html" tabindex="-1">For
-                                        more</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slide slick-slide"
-                         style="background: url(&quot;/uploads/media/93a3b697462def3a1a0e5839087bf209f8761149.gif&quot;) center center / cover no-repeat; width: 1345px; position: relative; left: -4035px; top: 0px; z-index: 998; opacity: 0;"
-                         data-slick-index="3" aria-hidden="true" tabindex="-1" role="option"
-                         aria-describedby="slick-slide03">
-                        <div class="container">
-                            <div class="description_block">
-                                <div class="sldie_title">Armenia</div>
-                                <div class="description">Moving to Armenia can be your lifetime opportunity for an
-                                    exciting
-                                    and much-needed change in your life.
-                                </div>
-                                <div class="link_button">
-                                    <a href="http://discoverarmenia.tours/en/armenia/armenia.html" tabindex="-1">Learn
-                                        more</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
                 </div>
             </div>
 
-            <button type="button" data-role="none" class="slick-next slick-arrow" aria-label="Next" role="button"
-                    style="">
-                Next
-            </button>
-            <ul class="slick-dots" style="" role="tablist">
-                <li class="slick-active" aria-hidden="false" role="presentation" aria-selected="true"
-                    aria-controls="navigation00" id="slick-slide00"><span class="tab">
-                        <p>Tours</p>
-                        <span><img src="/uploads/media/1345e1b6d8d52dcf2c1572b36db64c9e89ab2357.png"></span>
-                    </span></li>
-                <li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation01"
-                    id="slick-slide01"><span class="tab">
-                        <p>Armenia</p>
-                        <span><img src="/uploads/media/eecc1696cca1e8bbbf45bbdb98e623c44852c23f.png"></span>
-                    </span></li>
-                <li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation02"
-                    id="slick-slide02"><span class="tab">
-                        <p>CAR RENT</p>
-                        <span><img src="/uploads/media/3b02f7de026870f725ab17dab2e53c5f335d1a78.png"></span>
-                    </span></li>
-                <li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation03"
-                    id="slick-slide03"><span class="tab">
-                        <p>Armenia</p>
-                        <span><img src="/uploads/media/be758cbac3331febec87c5aaa9ac781469735464.png"></span>
-                    </span></li>
-            </ul>
+
         </div>
-        <div class="slick-thumbs">
-            <ul>
-                <li>
-                    <p>Tours</p>
-                    <span><img src="/uploads/media/1345e1b6d8d52dcf2c1572b36db64c9e89ab2357.png"></span>
-                </li>
-                <li>
-                    <p>Armenia</p>
-                    <span><img src="/uploads/media/eecc1696cca1e8bbbf45bbdb98e623c44852c23f.png"></span>
-                </li>
-                <li>
-                    <p>CAR RENT</p>
-                    <span><img src="/uploads/media/3b02f7de026870f725ab17dab2e53c5f335d1a78.png"></span>
-                </li>
-                <li>
-                    <p>Armenia</p>
-                    <span><img src="/uploads/media/be758cbac3331febec87c5aaa9ac781469735464.png"></span>
-                </li>
-            </ul>
-        </div>
+
     </div>
 
     <div class="info_block">
         <div class="container clear">
             <div class="left_block image">
-                <img src="/bundles/damain/images/info_img.png" alt="Discover Armenia">
+                <img src="/bundles/damain/images/info_img.png" width="100%" height="100%" alt="Discover Armenia">
             </div>
-            <div class="right_block content">
+            <div class="right_block content block-style" id = "block-style">
                 <h2>Discover the land of mystery with us</h2>
-                <p>Armenia is pleased to welcome you. Armenia is a cultural developed and hospitable country known for
-                    its
-                    extraordinary and individual culinary products. You will nowhere find such kind of dolma, khashlama,
-                    khorovats (barbeque) and khash like in Armenia.
-                    Due to the mountainous relief of Armenia, the air is crystally clear which allows you to feel the
-                    breath
-                    of nature. Visiting Armenia, it is impossible not to notice all the charm, as well as historical and
-                    cultural attractions of Yerevan - one of the oldest cities in the world, the capital of the first
-                    Christian country.
-                    Armenia is a country rich of cultural and natural monuments. That’s why Armenia is called an
-                    “open-air
-                    museum. A pagan temple of Garni, monastery complex Gegard, ancient Tatev historical Khor Virap,
-                    Noravanq
-                    - all these are alive history of one of the oldest countries in the world.
-                    Armenia is especially rich of monuments belonging to the Christian architecture. Among the natural
-                    monuments we should differentiate the ski resort Tsaghkadzor, wooded Dilijan, unique lake Sevan,
-                    waterfall in Jermuk, lake Parz, rocks of Khndzoresk. For the true connoisseurs of alcoholic drinks,
-                    Armenia provides an opportunity to enjoy the legendary Armenian cognac.</p>
+
+                    <input type="checkbox" class="read-more-state" id="post-1"/>
+                    <div class="read-more-wrap">
+                        Armenia is situated at a cultural, historical, and religious intersection and located at the
+                        crossroads between Europe and Asia. The country spans 29,743 square kilometers of mountainous
+                        terrain centered on the Ararat Valley, the heart of the Armenian nation since biblical times.
+                        Ancient geographers called the Armenian Highlands the "Island of Mountains" or the "Rooftop of Asia
+                        Minor." Armenia lies in the highlands surrounding the mountains of Ararat, which was historically
+                        part of Armenia and is the highest mountain in the region. Now located in Turkey, but clearly
+                        visible from Armenia, it is regarded by the Armenians as a symbol of their land. Because of this,
+                        the mountain is present on the Armenian national emblem today.
+                        The Armenians, an ancient people living on an ancient land, call Armenia "Hayastan" and themselves
+                        “Hay." Oral history explains the lineage of the Armenian people as being the direct descendants of
+                        Noah's son Habeth. The indigenous people of the land of Ararat, Armenians forged their national
+                        identity with the rise of powerful Armenian kingdoms, the adoption of Christianity as Armenia's
+                        state religion, and the creation of the Armenian alphabet, which spurred the development of
+                        literature, philosophy, and science.
+                        <br>
+                        <div class="read-more-target ">
+                            There is evidence of an early civilization in Armenia in the Bronze Age and earlier, dating to about
+                            4000 BC. Archaeological surveys have resulted in the discovery of the world's earliest known leather
+                            shoe, skirt, and wine-producing facility.
+                            Presently, the country is landlocked and has no navigable waterways, in contrast to Historic
+                            Armenia, which at its height under King Tigran the Great, stretched from the Caspian Sea to the
+                            Mediterranean Sea and was more than ten times the current size of the present day Republic. Armenia
+                            has borders with Georgia to the north, with Turkey to the west and south, with Azerbaijan to the
+                            east and southwest, and with Iran to the south.
+                            Russian is widely known in Armenia as well as English is increasingly gaining prominence, followed
+                            by French, Spanish and several oriental languages.
+                            Armenia has a relatively large external diaspora (8 million by some estimates, greatly exceeding the
+                            3 million population of Armenia itself), with communities existing across the globe. The largest
+                            Armenian communities outside of Armenia can be found in Russia, France, Iran, Georgia, Ukraine,
+                            Poland, Brazil, Canada, Greece, Cyprus, the United States, etc.
+                            Armenia's landscapes offer boundless beauty. Geographically it is very diverse from high mountain
+                            peaks, fertile valleys, picturesque land formations to basalt columns, rock sculptures, and
+                            waterfalls. More than 200 rivers and streams traverse Armenia, with steep falls, rapids and swift
+                            currents. Armenia has 5 scenic canyons. In addition, there are over 200 therapeutic mineral springs,
+                            differing in composition and temperature.
+                            The climate in Armenia is markedly continental. Summers are dry and sunny, lasting from June to
+                            mid-September. The temperature fluctuates between 22 and 36 °C (72 and 97 °F). However, the low
+                            humidity level mitigates the effect of high temperatures. Evening breezes blowing down the mountains
+                            provide a welcome refreshing and cooling effect. Springs are short, while autumns are long. Autumns
+                            are known for their vibrant and colourful foliage. Winters are quite cold with plenty of snow.
+                            Winter sports enthusiasts enjoy skiing down the hills of Tsakhkadzor, located thirty minutes outside
+                            Yerevan. <br>
+                            <div class="more1"> <br>
+                                <i class="gastronomy">What to do in Armenia</i><br>
+                                This question asks every tourist that visits Armenia. We have good news for everyone. Armenia has a huge variety of things to offer to any kind of tourists. Whether you like architecture, literature, sightseeing, art, science, IT, spa resorts, etc., everything can be satisfied.
+                                One of the preferences of tourists is of course the nightlife. Clubs, bars, booze, parties, and new people this becomes extremely interesting, especially when you visit other countries. In Armenia, nightlife is an inseparable part of young and not young people’s lives.
+                                All clubs, bars and pubs are mostly located in the city center, so Armenian capital does not sleep that early. Clubs are usually full at night a hour, that’s why their number is growing day by day.
+                                Here, you’ll meet quite a large variety of venues which will never let you get bored and you will definitely know what to do in Armenia, especially Armenia nightlife. We’ve collected the top clubs of Yerevan that is worth visiting and partying. So, be ready for sleepless nights and cool hangouts!
+                            </div><br>
+                            <div class="more2"><br>
+                                <i class="gastronomy">Gastronomy</i> <br>
+                                This question asks every tourist that visits Armenia. We have good news for everyone. Armenia has a huge variety of things to offer to any kind of tourists. Whether you like architecture, literature, sightseeing, art, science, IT, spa resorts, etc., everything can be satisfied.
+                                One of the preferences of tourists is of course the nightlife. Clubs, bars, booze, parties, and new people this becomes extremely interesting, especially when you visit other countries. In Armenia, nightlife is an inseparable part of young and not young people’s lives.
+                                All clubs, bars and pubs are mostly located in the city center, so Armenian capital does not sleep that early. Clubs are usually full at night a hour, that’s why their number is growing day by day.
+                                Here, you’ll meet quite a large variety of venues which will never let you get bored and you will definitely know what to do in Armenia, especially Armenia nightlife. We’ve collected the top clubs of Yerevan that is worth visiting and partying. So, be ready for sleepless nights and cool hangouts!
+                            </div>
+                            <div class="more"><br>
+                                 <i class="gastronomy">History</i><br>From ancient times, Armenians have cherished their artistic traditions, which reflect a unique culture and landscape. Aspects of everyday life are expressed in the most artistic fashion, in needlework, embellishments, carvings and design.
+                                Architecture is one of the most interesting art forms in Armenia, as, for example, churches bear artistic illustrations in frescoes and reliefs. Sculpting is everywhere - in nearly every city, town, and village in Armenia.
+                                Armenians love music, and they have been creating exquisite compositions for centuries. Sharakans are traditional Armenian liturgical songs, which are experiencing a revival today. Distinctive musical instruments are used to play Armenian folk songs. Sayat Nova, Komitas, and Aram Khachaturian are among Armenia's best-known musicians and composers. Contemporary music comes in the forms of jazz and pop.
+                                Literature has always played a vital role in Armenia's cultural and national identity. Christian culture and the invention of the Armenian alphabet by Mesrop Mashtots gave new stimuli to the development of unique cultural traditions. There is no better place to view this literary and artistic history than Yerevan's unique Matenadaran (Institute of Ancient Manuscripts), which houses an extraordinary collection of 14,000 complete manuscripts, fragments and miniatures.
+                                The Caucasus region and Armenia in particular have been cited by scholars as the place where rug and carpet weaving originated. Armenians continue this tradition, and one can find many shops specializing in fine new and old rugs and carpets. At the weekend flea market, rug sellers lay out their eye-catching merchandise filled with appealing colors and designs. At the same market you will come across loads of charming handicrafts that will be hard to resist purchase. Visitors to Armenia find handmade crafts, Armenian gold, precious and semi-precious stones which inspire jewelers in many regions. Obsidian stone is used for jewelry desk accessories and decorative items. Carpet making is not only a fine art, but Kilim weaving, for example, is applied to clothing items, bags, and home furnishings. Wood carvings replicate the ancient stone crosses (khachkars) found throughout the country, and no two are exactly alike. Armenian crafts couple elegant utility and delightful whimsy in textiles, ceramics, metal and woodworking.
+                                Armenia is often referred to as an open-air museum. Tourists find over 4,000 historical monuments throughout Armenia, covering various periods of the country's history from prehistoric to Hellenistic times, and from the early to medieval Christian era. The Armenians created their masterpieces during rare periods of peace and relative prosperity over the centuries. Within Yerevan alone there are more than 40 fine arts museums and galleries.
+                                About 94 percent of Armenians consider themselves to be Armenian Christians. Armenia became the first nation to declare Christianity as its state religion in 301 AD.
+                                Traditionally, the Armenian Church recognizes the Catholicos of All Armenians as its leader. He resides in Holy Etchmiadzin, where St. Gregory the Illuminator established the Armenian Church in 301 AD. A National Ecclesiastical Assembly consisting of lay and clergy representatives of Armenian communities around the world elects the Catholicos. There are four hierarchical Sees in the Armenian Church: the Catholicate of All Armenians in Etchmiadzin; the Catholicate of the Great House of Cilicia; the Patriarchate of Jerusalem; and the Patriarchate of Constantinople. Small Roman Catholic and Protestant communities also exist in Armenia. Catholic missionaries began converting Armenians in the Ottoman and Persian empires in the early modern era, and American Protestant missionaries were active in the nineteenth century. The Kurdish population is mostly Yezidi or Muslim. A Russian Orthodox Church also serves its community.
+                                When Armenia became the first country to adopt Christianity as its state religion, the need of an indigenous language arose in order to translate the Bible. A devoted scholar and monk, Mesrop Mashtots, created a distinctly Armenian alphabet after traveling all over Armenia to gather the sounds of Armenian speech. In 405 AD he introduced the thirty-six unique characters that make up the basis of the Armenian alphabet. During the middle Ages, two additional characters were added to write words borrowed from foreign languages.
+                                Russian is widely known in Armenia as well, and English is increasingly gaining prominence, followed by French, Spanish and several oriental languages.
+                                According to the February 2012 report on preliminary results of the 2011 census, Armenia’s de facto population is 2,871,509. The National Statistical Service (NSS) reported that the preliminary operational indicator of enumerated population during the 2011 Population Census is 3,285,767. The previous 2001 census showed Armenia’s population as 3,458,303. Thus, the NSS used two categories: enumerated population and de facto population. 12.6% of enumerated citizens are out of Armenia.
+                            </div>
+                            <br>
+
+
+                        </div>
+                    </div>
+                    <label for="post-1" class="read-more-trigger read-more button-style" id="deletStyle" ></label>
+
+
+
             </div>
         </div>
     </div>
@@ -226,17 +202,9 @@
     @include('include.tursEn')
 
     <div class="popular_excursion_block">
-        <div class="title">
-            Popular excursion
-        </div>
-        <div class="accommodation_block excursion_block">
-            <div class="container clear excursion_slider slick-initialized slick-slider">
-                <div aria-live="polite" class="slick-list">
-                    <div class="slick-track" style="opacity: 1; width: 0px; transform: translate3d(0px, 0px, 0px);"
-                         role="listbox"></div>
-                </div>
-            </div>
-        </div>
+
+                        @include('include.excursionEn')
+
     </div>
 
 
@@ -262,6 +230,130 @@
             }
 
         }
+        $(document).ready(function () {
+
+           var deletStyle = $("#deletStyle");
+            deletStyle.click(function () {
+$('#block-style').removeClass('block-style');
+    deletStyle.removeClass('deletStyle');
+    deletStyle.removeClass('button-style');
+
+});
+
+
+
+
+            $('.more').each(function () {
+                // Configure/customize these variables.
+                var showChar = 15;  // How many characters are shown by default
+                var ellipsestext = "<br>";
+                var moretext = "History of Armenia...";
+
+                var content = $(this).html();
+
+                if (content.length > showChar) {
+
+                    var c = content.substr(0, showChar);
+                    var h = content.substr(showChar, content.length - showChar);
+
+                    var html = c + '<div class="moreellipses">' + ellipsestext + '&nbsp;</div><div class="morecontent"><span>' + h + '</span>&nbsp;&nbsp;<a href="" class="morelink">' + moretext + '</a></div>';
+
+                    $(this).html(html);
+                }
+
+            });
+
+            $(".morelink").click(function () {
+                var moretext = "History of Armenia...";
+                var lesstext = "Show History of Armenia less";
+
+                if ($(this).hasClass("less")) {
+                    $(this).removeClass("less");
+                    $(this).html(moretext);
+                } else {
+                    $(this).addClass("less");
+                    $(this).html(lesstext);
+                }
+                $(this).parent().prev().toggle();
+                $(this).prev().toggle();
+                return false;
+            });
+        });
+
+
+        // Configure/customize these variables.
+            var showChar1 = 15;  // How many characters are shown by default
+            var ellipsestext1 = "<br>";
+            var moretext1 = "What to do in Armenia...";
+        var lesstext1 = " less";
+
+
+            $('.more1').each(function () {
+
+                var content = $(this).html();
+
+                if (content.length > showChar1) {
+
+                    var c = content.substr(0, showChar1);
+                    var h = content.substr(showChar1, content.length - showChar1);
+
+                    var html = c + '<div class="moreellipses">' + ellipsestext1 + '&nbsp;</div><div class="morecontent"><span>' + h + '</span>&nbsp;&nbsp;<a href="" class="morelink1">' + moretext1 + '</a></div>';
+
+                    $(this).html(html);
+                }
+
+
+
+            $(".morelink1").on('click', function () {
+
+                if ($(this).hasClass("less")) {
+                    $(this).removeClass("less");
+                    $(this).html(moretext1);
+                } else {
+                    $(this).addClass("less");
+                    $(this).html(lesstext1);
+                }
+                $(this).parent().prev().toggle();
+                $(this).prev().toggle();
+                return false;
+            });
+        });
+
+            // Configure/customize these variables.
+            var showChar2 = 15;  // How many characters are shown by default
+            var ellipsestext2 = "<br>";
+            var moretext2 = "Gastronomy...";
+            var lesstext2 = "Gastronomy less";
+
+
+            $('.more2').each(function () {
+                var content = $(this).html();
+
+                if (content.length > showChar2) {
+
+                    var c1 = content.substr(0, showChar2);
+                    var h1= content.substr(showChar2, content.length - showChar2);
+
+                    var html = c1 + '<div class="moreellipses">' + ellipsestext2 + '&nbsp;</div><div class="morecontent"><span>' + h1 + '</span>&nbsp;&nbsp;<a href="" class="morelink2">' + moretext2 + '</a></div>';
+
+                    $(this).html(html);
+                }
+
+
+
+            $(".morelink2").on('click', function () {
+                if ($(this).hasClass("less")) {
+                    $(this).removeClass("less");
+                    $(this).html(moretext2);
+                } else {
+                    $(this).addClass("less");
+                    $(this).html(lesstext2);
+                }
+                $(this).parent().prev().toggle();
+                $(this).prev().toggle();
+                return false;
+            });
+        });
     </script>
 
 @endsection

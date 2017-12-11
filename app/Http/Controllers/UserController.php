@@ -3,35 +3,119 @@
 namespace App\Http\Controllers;
 
 
-use App\User;
 use App\Posts;
-use Illuminate\Support\Facades\Auth;
+use App\User;
+use App\Excursion;
 use Illuminate\Http\Request;
-
+use Illuminate\Support\Facades\Auth;
+use View;
+use DB;
 class UserController extends Controller
 {
 
 
     public function homeEn()
     {
-        $posts = Posts::all();
 
-        return view('homeEn', ['posts' => $posts]);
+        $data = Array();
+        $imgHome = ['1.jpg','2.jpg','3.jpg','4.jpg','5.jpg','6.jpg','7.jpg','8.jpg','9.jpg','10.jpg'];
+        $number = rand(0, 9);
+        $data['img'] =  $imgHome[$number];
+        $data['posts']  = Posts::all();
+        $data['excursion']  = Excursion::all();
+
+        return View::make('homeEn',['data' => $data]);
+
     }
 
     public function homeRu()
     {
-        $posts = Posts::all();
-
-        return view('homeRu', ['posts' => $posts]);
+        $data = Array();
+        $imgHome = ['1.jpg','2.jpg','3.jpg','4.jpg','5.jpg','6.jpg','7.jpg','8.jpg','9.jpg','10.jpg'];
+        $number = rand(0, 9);
+        $data['img'] =  $imgHome[$number];
+        $data['posts']  = Posts::all();
+        $data['excursion']  = Excursion::all();
+        return view('homeRu', ['data' => $data]);
     }
- public function tours(Request $request)
+    public function hotelsEn()
+    {
+        $hotels =  DB::table('hotels')->get();
+
+        return view('template.hotelsEn', ['hotels' => $hotels]);
+    }
+ public function hotelsRu()
+    {
+        $hotels =  DB::table('hotels')->get();
+
+
+        return view('template.hotelsRu', ['hotels' => $hotels]);
+    }
+
+
+
+    public function carRentEn()
+    {
+        $carsRents=  DB::table('car_rent')->pluck('price_list');
+
+        // $hotels =  DB::table('hotels')->get();
+        $vowels = array(';;');
+        $onlyconsonants = str_replace($vowels, "", $carsRents);
+        $only = json_decode($onlyconsonants);
+        $onl = $only[0];
+        var_dump($onl);
+        return view('template.carRentEn',['carsRent'=> json_encode($carsRents)]);
+    }
+
+    public function  toursEn(Request $request)
     {
         $id = $request['id'];
         $posts = Posts::findOrFail($id);
 
-        return view('template.tours', ['posts' => $posts]);
+        return view('template.toursEn', ['posts' => $posts]);
     }
+
+    public function toursRu(Request $request)
+    {
+        $id = $request['id'];
+        $posts = Posts::findOrFail($id);
+
+        return view('template.toursRu', ['posts' => $posts]);
+    }
+    public function allToursRu()
+    {
+
+        $posts = Posts::all();
+
+        return view('template.allToursRu', ['posts' => $posts]);
+    }
+ public function contacusEn()
+    {
+
+
+
+        return view('template.contacusEn');
+    }
+ public function contacusRu()
+    {
+
+
+
+        return view('template.contacusRu');
+    }
+
+    public function allToursEn()
+    {
+
+        $posts = Posts::all();
+
+        return view('template.allToursEn', ['posts' => $posts]);
+
+
+
+    }
+
+
 
     public function user_posts($id)
     {
@@ -53,10 +137,11 @@ class UserController extends Controller
         if (Auth::attempt(['email' => $email, 'password' => $password])) {
             $posts = Posts::where('active', '1')->orderBy('created_at', 'desc')->paginate(5);
             $title = 'Latest Posts';
-            return view('admin.home')->withPosts($posts)->withTitle($title);;
+            return view('admin.home')->withPosts($posts)->withTitle($title);
 
         }
-        return view('welcome');
+        $errors['errors'] = 'Whoops! please try again';
+        return view('auth.login', ['errors'=> $errors]);
     }
 
 

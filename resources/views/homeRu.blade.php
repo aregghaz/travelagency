@@ -1,60 +1,94 @@
-@extends('page.index')
+@extends('page.indexRu')
+
 @section('title')
 
 @endsection
+
 @section('content')
 
-    <script type="text/javascript">
-        (function (i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r;
-            i[r] = i[r] || function () {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date();
-            a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0];
-            a.async = 1;
-            a.src = g;
-            m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-        ga('create', 'UA-88757478-1', 'auto');
-        ga('send', 'pageview');
+    <style>
+        .read-more-state {
+            display: none;
+        }
 
+        .read-more-target {
+            opacity: 0;
+            max-height: 0;
+            font-size: 0;
+            transition: .25s ease;
+        }
 
-        (function (d, w, c) {
-            (w[c] = w[c] || []).push(function () {
-                try {
-                    w.yaCounter41512739 = new Ya.Metrika({
-                        id: 41512739,
-                        clickmap: true,
-                        trackLinks: true,
-                        accurateTrackBounce: true
-                    });
-                } catch (e) {
-                }
-            });
+        .read-more-state:checked ~ .read-more-wrap .read-more-target {
+            opacity: 1;
+            font-size: inherit;
+            max-height: 999em;
+        }
+        .gastronomy
+        {
 
-            var n = d.getElementsByTagName("script")[0],
-                s = d.createElement("script"),
-                f = function () {
-                    n.parentNode.insertBefore(s, n);
-                };
-            s.type = "text/javascript";
-            s.async = true;
-            s.src = "https://mc.yandex.ru/metrika/watch.js";
+            text-align: center;
+            display: list-item;
+            /* text-decoration: none; */
+            list-style-type: none;
 
-            if (w.opera == "[object Opera]") {
-                d.addEventListener("DOMContentLoaded", f, false);
-            } else {
-                f();
-            }
-        })(document, window, "yandex_metrika_callbacks");
-    </script>
-    <noscript>&lt;div&gt;&lt;img src="https://mc.yandex.ru/watch/41512739" style="position:absolute; left:-9999px;"
-        alt="" /&gt;&lt;/div&gt;
-    </noscript>
-    <!-- /Yandex.Metrika counter -->
+            line-height: 23px;
+            font-size: 32px;
+            font-family: 'AvantGardeCTT-Bold';
+            color: #fca955;
+            margin-bottom: 13px;
+        }
+        .read-more-wrap {
+            font-size: 20px;
+            text-align: justify;
 
+            color: #878787;
+
+            font-family: system-ui;
+
+        }
+        .read-more-state ~ .read-more-trigger:before {
+            content: 'Показать больше';
+        }
+
+        .read-more-state:checked ~ .read-more-trigger:before {
+            content: 'Показать меньше';
+        }
+
+        .read-more-trigger {
+            cursor: pointer;
+            display: inline-block;
+            padding: 0 .5em;
+            /* color: #666; */
+            /* font-size: .9em; */
+            line-height: 2;
+            /* border: 1px solid #ddd; */
+            border-radius: .25em;
+        }
+
+        .morecontent span {
+            display: none;
+        }
+
+        .morelink {
+            display: block;
+        }
+        .button-style {
+            position: relative;
+
+        }
+        .block-style{
+
+            height: 235px;
+        }
+        .discover-Armenia {
+         color: #0d71bb;
+            font-size: x-large;
+            font-weight: bolder;
+        }
+    </style>
+
+    @include('script.script')
     @include('include.social')
 
     <div class="home_slider_block">
@@ -62,136 +96,21 @@
             <button type="button" data-role="none" class="slick-prev slick-arrow" aria-label="Previous" role="button"
                     style="">Previous
             </button>
-            <div aria-live="polite" class="slick-list">
-                <div class="slick-track" style="opacity: 1; width: 5380px;" role="listbox">
+            <div aria-live="polite" class="slick-list" >
+                <div class="slick-track" style="opacity: 1; display: -webkit-box; height: 460px" role="listbox">
                     <div class="slide slick-slide slick-current slick-active"
-                         style="background: url('/uploads/media/3f2264cfdb110fbf5cd00c2befc5cf49ebe65c07.gif') center center / cover no-repeat; width: 1345px; position: relative; left: 0px; top: 0px; z-index: 999; opacity: 1;"
+                         style="background: url('/uploads/{{ $data['img'] }}') center center / cover no-repeat fixed; width: 100%; position: relative; height: 450px;position: fixed"
                          data-slick-index="0" aria-hidden="false" tabindex="-1" role="option"
                          aria-describedby="slick-slide00">
-                        <div class="container">
-                            <div class="description_block">
-                                <div class="sldie_title">Tours</div>
-                                <div class="description">We are engaged in creating individual and group tours. We offer
-                                    you
-                                    classical, pilgrim, extreme, cooking tours etc. During the tours you will discover
-                                    Armenia from different sides. You will get acquanted with the culture and traditions
-                                    of
-                                    the country.
-                                </div>
-                                <div class="link_button">
-                                    <a href="http://discoverarmenia.tours/en/tours.html" tabindex="0">Read more</a>
-                                </div>
-                            </div>
-                        </div>
+
                     </div>
-                    <div class="slide slick-slide"
-                         style="background: url('/uploads/media/736e8ed8adba0d7d66ef8b600a74e7a896817314.gif') center center / cover no-repeat; width: 1345px; position: relative; left: -1345px; top: 0px; z-index: 998; opacity: 0;"
-                         data-slick-index="1" aria-hidden="true" tabindex="-1" role="option"
-                         aria-describedby="slick-slide01">
-                        <div class="container">
-                            <div class="description_block">
-                                <div class="sldie_title">Armenia</div>
-                                <div class="description">Armenia is a country rich of cultural and natural monuments.
-                                    That’s
-                                    why Armenia is called an “open-air museum. A pagan temple of Garni, monastery
-                                    complex
-                                    Gegard, ancient Tatev historical Khor Virap, Noravanq - all these are alive history
-                                    of
-                                    one of the oldest countries in the world.
-                                </div>
-                                <div class="link_button">
-                                    <a href="http://discoverarmenia.tours/en/armenia/armenia.html"
-                                       tabindex="-1">Discover</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slide slick-slide"
-                         style="background: url('uploads/media/f8f4c5a552a9b17879e95070348e771a4d73a2bd.gif') center center / cover no-repeat; width: 1345px; position: relative; left: -2690px; top: 0px; z-index: 998; opacity: 0;"
-                         data-slick-index="2" aria-hidden="true" tabindex="-1" role="option"
-                         aria-describedby="slick-slide02">
-                        <div class="container">
-                            <div class="description_block">
-                                <div class="sldie_title">CAR RENT</div>
-                                <div class="description">The company Discover Armenia provides an opportunity to rent a
-                                    car
-                                    of different classes in different periods at favorable prices.
-                                </div>
-                                <div class="link_button">
-                                    <a href="http://discoverarmenia.tours/en/transport/car-rent.html" tabindex="-1">For
-                                        more</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slide slick-slide"
-                         style="background: url(&quot;/uploads/media/93a3b697462def3a1a0e5839087bf209f8761149.gif&quot;) center center / cover no-repeat; width: 1345px; position: relative; left: -4035px; top: 0px; z-index: 998; opacity: 0;"
-                         data-slick-index="3" aria-hidden="true" tabindex="-1" role="option"
-                         aria-describedby="slick-slide03">
-                        <div class="container">
-                            <div class="description_block">
-                                <div class="sldie_title">Armenia</div>
-                                <div class="description">Moving to Armenia can be your lifetime opportunity for an
-                                    exciting
-                                    and much-needed change in your life.
-                                </div>
-                                <div class="link_button">
-                                    <a href="http://discoverarmenia.tours/en/armenia/armenia.html" tabindex="-1">Learn
-                                        more</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
                 </div>
             </div>
 
-            <button type="button" data-role="none" class="slick-next slick-arrow" aria-label="Next" role="button"
-                    style="">
-                Next
-            </button>
-            <ul class="slick-dots" style="" role="tablist">
-                <li class="slick-active" aria-hidden="false" role="presentation" aria-selected="true"
-                    aria-controls="navigation00" id="slick-slide00"><span class="tab">
-                        <p>Tours</p>
-                        <span><img src="/uploads/media/1345e1b6d8d52dcf2c1572b36db64c9e89ab2357.png"></span>
-                    </span></li>
-                <li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation01"
-                    id="slick-slide01"><span class="tab">
-                        <p>Armenia</p>
-                        <span><img src="/uploads/media/eecc1696cca1e8bbbf45bbdb98e623c44852c23f.png"></span>
-                    </span></li>
-                <li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation02"
-                    id="slick-slide02"><span class="tab">
-                        <p>CAR RENT</p>
-                        <span><img src="/uploads/media/3b02f7de026870f725ab17dab2e53c5f335d1a78.png"></span>
-                    </span></li>
-                <li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation03"
-                    id="slick-slide03"><span class="tab">
-                        <p>Armenia</p>
-                        <span><img src="/uploads/media/be758cbac3331febec87c5aaa9ac781469735464.png"></span>
-                    </span></li>
-            </ul>
+
         </div>
-        <div class="slick-thumbs">
-            <ul>
-                <li>
-                    <p>Tours</p>
-                    <span><img src="/uploads/media/1345e1b6d8d52dcf2c1572b36db64c9e89ab2357.png"></span>
-                </li>
-                <li>
-                    <p>Armenia</p>
-                    <span><img src="/uploads/media/eecc1696cca1e8bbbf45bbdb98e623c44852c23f.png"></span>
-                </li>
-                <li>
-                    <p>CAR RENT</p>
-                    <span><img src="/uploads/media/3b02f7de026870f725ab17dab2e53c5f335d1a78.png"></span>
-                </li>
-                <li>
-                    <p>Armenia</p>
-                    <span><img src="/uploads/media/be758cbac3331febec87c5aaa9ac781469735464.png"></span>
-                </li>
-            </ul>
-        </div>
+
     </div>
 
     <div class="info_block">
@@ -199,44 +118,44 @@
             <div class="left_block image">
                 <img src="/bundles/damain/images/info_img.png" alt="Discover Armenia">
             </div>
-            <div class="right_block content">
-                <h2>Discover the land of mystery with us</h2>
-                <p>Armenia is pleased to welcome you. Armenia is a cultural developed and hospitable country known for
-                    its
-                    extraordinary and individual culinary products. You will nowhere find such kind of dolma, khashlama,
-                    khorovats (barbeque) and khash like in Armenia.
-                    Due to the mountainous relief of Armenia, the air is crystally clear which allows you to feel the
-                    breath
-                    of nature. Visiting Armenia, it is impossible not to notice all the charm, as well as historical and
-                    cultural attractions of Yerevan - one of the oldest cities in the world, the capital of the first
-                    Christian country.
-                    Armenia is a country rich of cultural and natural monuments. That’s why Armenia is called an
-                    “open-air
-                    museum. A pagan temple of Garni, monastery complex Gegard, ancient Tatev historical Khor Virap,
-                    Noravanq
-                    - all these are alive history of one of the oldest countries in the world.
-                    Armenia is especially rich of monuments belonging to the Christian architecture. Among the natural
-                    monuments we should differentiate the ski resort Tsaghkadzor, wooded Dilijan, unique lake Sevan,
-                    waterfall in Jermuk, lake Parz, rocks of Khndzoresk. For the true connoisseurs of alcoholic drinks,
-                    Armenia provides an opportunity to enjoy the legendary Armenian cognac.</p>
-            </div>
+
+                <div class="right_block content block-style" id = "block-style">
+                    <h2>Команда DISCOVER ARMENIA приглашает вас</h2>
+                    <br>
+
+                    <input type="checkbox" class="read-more-state" id="post-1"/>
+                    <div class="read-more-wrap">
+                        совершить незабываемое и полное приключений путешествие по древнейшей <a href="https://ru.wikipedia.org/wiki/%D0%90%D1%80%D0%BC%D0%B5%D0%BD%D0%B8%D1%8F" target="_blank">горной стране</a>, одной из самых древних на Земле.<br><br>
+                        К гостям мы относимся с теплом и большой любовью. В любом армянском доме вам будут рады, как члену своей семьи. Ведь вы Гость! А у нас каждый хочет показать, что именно его дом самый гостеприимный, а его еда самая вкусная.<br><br>
+                        А теперь окунемся в историю, традиции и быт нашего народа.<br><br>
+                        История Армении-уникальная, это мировая сокровищница. Армения претерпевала множество иноземных нашествий, но смогла сохранить свою веру и язык. Не раз казалось, что имя Армения будет стерто с карты мира, но армянский народ, как птица Феникс,  вновь возрождался из пепла.
+                        <br>
+                        <div class="read-more-target ">
+                            <br><br>Тридцать тысяч квадратных километров, которые занимает сегодня  Армения, составляют лишь крохотную часть той огромной
+                            <a href="https://ru.wikipedia.org/wiki/%D0%98%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%8F_%D0%90%D1%80%D0%BC%D0%B5%D0%BD%D0%B8%D0%B8" target="_blank">исторической Армении</a>, хроники которой стали отдельной главой в мировой истории и культуре.<br><br>
+                            Через Армянское нагорье проходили важнейшие торговые и военные пути древнего мира, связывающие восток и запад.Столь выгодное географическое положение Армении привлекало к ней многочисленных завоевателей. Поэтому границы древней Армении часто изменялись. История Армении богата и бесконечна.<br><br>
+                            Но не только историей и <a href="https://www.tourister.ru/world/asia/armenia/placeofinterest" target="_blank">древними архитектурными достопримечательностями</a> манит к себе Армения, это страна с удивительной и чрезвычайно разнообразной природой. Снежные вершины, скалистые ущелья, высокогорные плато, долины бурных рек и голубая гладь озера Севан. Невозможно передать словами всю красоту природы Армении. Как говориться, лучше один раз увидеть...<br><br>
+                            А еще важно познать уникальную местную <a href="https://ru.wikipedia.org/wiki/%D0%90%D1%80%D0%BC%D1%8F%D0%BD%D1%81%D0%BA%D0%B0%D1%8F_%D0%BA%D1%83%D1%85%D0%BD%D1%8F" target="_blank">кухню!</a> Знаменитый коньяк «Арарат», с библейской горой на этикетке, по праву считается визитной карточкой Армении. Традиции приготовления многих национальных блюд остаются неизменными с древнейших времен. Бастурма, суджух, поджаренный на углях хоровац, долма (мясной фарш в виноградных листьях), ароматный чанах, пити и хаш, гордость армянской кухни-кюфта, разнообразные горные травы и зелень, натуральный овечий сыр и, конечно, сладости. Устоять перед кулинарным искушением просто невозможно!<br><br>
+                            Здесь вы услышите нежные звуки дудука. Вас встретит на лоне природы чабан и угостит «чабан-шашлыком» из мяса ягненка, овечьим сыром, мацуном.На озере Севан мы, вместе с вами, организуем обед на пароме. Вы побываете в традиционной сельской семье и познакомитесь с бытом обычного селянина, а посетив озеро Севан, сможете там же переночевать в палатках.<br><br>
+                            Мы предлагаем множество других туров: экстремальный, эко-туристический, кулинарный, уикенд, экскурсионно-оздоровительный, горнолыжный тур на прекрасном курорте Цахкадзора, экстремальное катание на горе Арагац, комбинированные туры Армения-Грузия и многое другое, а также мероприятия, с которыми вы познакомитесь, путешествуя только с нами.<br><br>
+                            Путешествуя с командой <span class="discover-Armenia">Discover Armenia</span> вы мгновенно окажетесь в другом мире. Увидите много нового и интересного. Узнаете местные традиции и познакомитесь с удивительной армянской культурой. Обретете новых друзей и увезете с собой незабываемые впечатления. Поверьте, вам захочется еще не раз посетить Армению.<br><br>
+                            Мы любим нашу страну и готовы поделиться нашими традициями, обычаями, и всем тем, что унаследовали от наших предков. <br>
+
+
+                        </div>
+                    </div>
+                    <label for="post-1" class="read-more-trigger read-more button-style" id="deletStyle" ></label>
+
+
+
+                </div>
         </div>
     </div>
 
     @include('include.tursRu')
 
     <div class="popular_excursion_block">
-        <div class="title">
-            Popular excursion
-        </div>
-        <div class="accommodation_block excursion_block">
-            <div class="container clear excursion_slider slick-initialized slick-slider">
-                <div aria-live="polite" class="slick-list">
-                    <div class="slick-track" style="opacity: 1; width: 0px; transform: translate3d(0px, 0px, 0px);"
-                         role="listbox"></div>
-                </div>
-            </div>
-        </div>
+        @include('include.excursionRu')
     </div>
 
 
@@ -262,6 +181,130 @@
             }
 
         }
+        $(document).ready(function () {
+
+            var deletStyle = $("#deletStyle");
+            deletStyle.click(function () {
+                $('#block-style').removeClass('block-style');
+                deletStyle.removeClass('deletStyle');
+                deletStyle.removeClass('button-style');
+
+            });
+
+
+
+
+            $('.more').each(function () {
+                // Configure/customize these variables.
+                var showChar = 15;  // How many characters are shown by default
+                var ellipsestext = "<br>";
+                var moretext = "History of Armenia...";
+
+                var content = $(this).html();
+
+                if (content.length > showChar) {
+
+                    var c = content.substr(0, showChar);
+                    var h = content.substr(showChar, content.length - showChar);
+
+                    var html = c + '<div class="moreellipses">' + ellipsestext + '&nbsp;</div><div class="morecontent"><span>' + h + '</span>&nbsp;&nbsp;<a href="" class="morelink">' + moretext + '</a></div>';
+
+                    $(this).html(html);
+                }
+
+            });
+
+            $(".morelink").click(function () {
+                var moretext = "History of Armenia...";
+                var lesstext = "Show History of Armenia less";
+
+                if ($(this).hasClass("less")) {
+                    $(this).removeClass("less");
+                    $(this).html(moretext);
+                } else {
+                    $(this).addClass("less");
+                    $(this).html(lesstext);
+                }
+                $(this).parent().prev().toggle();
+                $(this).prev().toggle();
+                return false;
+            });
+        });
+
+
+        // Configure/customize these variables.
+        var showChar1 = 15;  // How many characters are shown by default
+        var ellipsestext1 = "<br>";
+        var moretext1 = "What to do in Armenia...";
+        var lesstext1 = " less";
+
+
+        $('.more1').each(function () {
+
+            var content = $(this).html();
+
+            if (content.length > showChar1) {
+
+                var c = content.substr(0, showChar1);
+                var h = content.substr(showChar1, content.length - showChar1);
+
+                var html = c + '<div class="moreellipses">' + ellipsestext1 + '&nbsp;</div><div class="morecontent"><span>' + h + '</span>&nbsp;&nbsp;<a href="" class="morelink1">' + moretext1 + '</a></div>';
+
+                $(this).html(html);
+            }
+
+
+
+            $(".morelink1").on('click', function () {
+
+                if ($(this).hasClass("less")) {
+                    $(this).removeClass("less");
+                    $(this).html(moretext1);
+                } else {
+                    $(this).addClass("less");
+                    $(this).html(lesstext1);
+                }
+                $(this).parent().prev().toggle();
+                $(this).prev().toggle();
+                return false;
+            });
+        });
+
+        // Configure/customize these variables.
+        var showChar2 = 15;  // How many characters are shown by default
+        var ellipsestext2 = "<br>";
+        var moretext2 = "Gastronomy...";
+        var lesstext2 = "Gastronomy less";
+
+
+        $('.more2').each(function () {
+            var content = $(this).html();
+
+            if (content.length > showChar2) {
+
+                var c1 = content.substr(0, showChar2);
+                var h1= content.substr(showChar2, content.length - showChar2);
+
+                var html = c1 + '<div class="moreellipses">' + ellipsestext2 + '&nbsp;</div><div class="morecontent"><span>' + h1 + '</span>&nbsp;&nbsp;<a href="" class="morelink2">' + moretext2 + '</a></div>';
+
+                $(this).html(html);
+            }
+
+
+
+            $(".morelink2").on('click', function () {
+                if ($(this).hasClass("less")) {
+                    $(this).removeClass("less");
+                    $(this).html(moretext2);
+                } else {
+                    $(this).addClass("less");
+                    $(this).html(lesstext2);
+                }
+                $(this).parent().prev().toggle();
+                $(this).prev().toggle();
+                return false;
+            });
+        });
     </script>
 
 @endsection

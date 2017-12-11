@@ -1,10 +1,8 @@
 <?php namespace App\Http\Controllers;
 
 use App\Posts;
-use App\User;
-use Redirect;
-use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Redirect;
 
 
 class PostController extends Controller
@@ -15,12 +13,15 @@ class PostController extends Controller
      *
      * @return Request
      */
+
     public function index()
     {
         $posts = Posts::where('active', '1')->orderBy('created_at', 'desc')->paginate(5);
         $title = 'Latest Posts';
-        return view('admin.home')->withPosts($posts)->withTitle($title);
+        return view('admin.tours')->withPosts($posts)->withTitle($title);
     }
+
+
 
     /**
      * Show the form for creating a new resource.
@@ -43,51 +44,36 @@ class PostController extends Controller
         $post = new Posts();
         $post->titleRu = $request->get('titleRu');
         $post->titleEn = $request->get('titleEn');
-        $post->bodyRu = $request->get('bodyRu');
-        $post->bodyEn = $request->get('bodyEn');
+
         $post->days = $request->get('days');
         $post->night = $request->get('night');
         $post->price = $request->get('price');
-        $post->slug = str_slug($post->titleEn);
 
-        $duplicate = Posts::where('slug', $post->slug)->first();
-        if ($duplicate) {
-            return redirect('new-post')->withErrors('Title already exists.')->withInput();
-        }
+
+
+
 
         $post->author_id = $request->user()->id;
         if ($request->has('save')) {
             $post->active = 0;
 
         } else {
+            if ($request->has('fileEn')) {
+
+                $filename1 = time() + 11 .'.pdf';
+                $request->fileEn->storeAs('turs', $filename1, "uploads");
+                $post->linkEn = $filename1;
+            }
+            if ($request->has('fileRu')) {
+
+                $filename1 = time() + 12 .'.pdf';
+                $request->fileRu->storeAs('turs', $filename1, "uploads");
+                $post->linkRu = $filename1;
+            }
             if ($request->has('img1')) {
-                $filename1 = time()+1..'.jpg';
+                $filename1 = time() + 1. . '.jpg';
                 $request->img1->storeAs('turs', $filename1, "uploads");
                 $post->img1 = $filename1;
-            }if ($request->has('img2')) {
-                $filename2 = time()+2..'.jpg';
-                $request->img2->storeAs('turs', $filename2, "uploads");
-                $post->img2 = $filename2;
-            }if ($request->has('img3')) {
-                $filename3 = time()+3..'.jpg';
-                $request->img3->storeAs('turs', $filename3, "uploads");
-                $post->img3 = $filename3;
-            }if ($request->has('img4')) {
-                $filename4 = time()+4..'.jpg';
-                $request->img4->storeAs('turs', $filename4, "uploads");
-                $post->img4 = $filename4;
-            }if ($request->has('img4')) {
-                $filename5 = time()+5..'.jpg';
-                $request->img5->storeAs('turs', $filename5, "uploads");
-                $post->img5 = $filename5;
-            }if ($request->has('img6')) {
-                $filename6 = time()+6..'.jpg';
-                $request->img6->storeAs('turs', $filename6, "uploads");
-                $post->img6 = $filename6;
-            }if ($request->has('img7')) {
-                $filename7 = time()+7..'.jpg';
-                $request->img7->storeAs('turs', $filename7, "uploads");
-                $post->img7 = $filename7;
             }
 
             $post->active = 1;
@@ -100,9 +86,10 @@ class PostController extends Controller
     }
 
 
-    public function show($slug)
+    public function show(Request $request)
     {
-        $post = Posts::where('slug', $slug)->first();
+        $id = $request['id'];
+        $post = Posts::where('id', $id)->first();
         if ($post) {
             if ($post->active == false)
                 return redirect('/')->withErrors('requested page not found');
@@ -114,11 +101,12 @@ class PostController extends Controller
     }
 
 
-    public function edit(Request $request, $slug)
+    public function edit(Request $request)
     {
-        $post = Posts::where('slug', $slug)->first();
-        if ($post && ($request->user()->id == $post->author_id || $request->user()->is_admin()))
-            return view('posts.edit')->with('post', $post);
+        $id = $request['id'];
+        $posts = Posts::where('id', $id)->first();
+        if ($posts)
+            return view('posts.edit')->with('posts', $posts);
         else {
             return redirect('/')->withErrors('you have not sufficient permissions');
         }
@@ -134,27 +122,19 @@ class PostController extends Controller
         //
         $post_id = $request->input('post_id');
         $post = Posts::find($post_id);
-        if ($post && ($post->author_id == $request->user()->id || $request->user()->is_admin())) {
-            $title = $request->input('title');
-            $slug = str_slug($title);
-            $duplicate = Posts::where('slug', $slug)->first();
-            if ($duplicate) {
-                if ($duplicate->id != $post_id) {
-                    return redirect('edit/' . $post->slug)->withErrors('Title already exists.')->withInput();
-                } else {
-                    $post->slug = $slug;
-                }
-            }
-            $post->title = $title;
-            $post->body = $request->input('body');
+        if ($post) {
+            $titleEn = $request->input('titleEn');
+            $titleRu = $request->input('titleRu');
+            $post->titleEn = $titleEn;
+            $post->titleRu = $titleRu;
             if ($request->has('save')) {
                 $post->active = 0;
                 $message = 'Post saved successfully';
-                $landing = 'edit/' . $post->slug;
+                $landing = 'edit/' . $post_id;
             } else {
                 $post->active = 1;
                 $message = 'Post updated successfully';
-                $landing = $post->slug;
+                $landing = $post->id;
             }
             $post->save();
             return redirect($landing)->withMessage($message);

@@ -11,44 +11,57 @@
 |
 */
 
-Route::get('/', ['uses' => 'UserController@homeEn']);
+Route::get('/', ['as' => 'homeEn', 'uses' => 'UserController@homeEn']);
 Route::get('/homeRu', ['as' => 'homeRu', 'uses' => 'UserController@homeRu']);
-Route::get('/home',['as' => 'home', 'uses' => 'PostController@index']);
-Route::get('/login',['as' => 'login', 'uses' => 'UserController@login']);
-Route::post('/auth',['as' => 'auth', 'uses' => 'UserController@auth']);
-Route::get('/tours',['as' => 'tours', 'uses' => 'UserController@tours']);
+Route::get('/home', ['as' => 'home', 'uses' => 'PostController@index']);
+Route::get('/login', ['as' => 'login', 'uses' => 'UserController@login']);
+Route::post('/auth', ['as' => 'auth', 'uses' => 'UserController@auth']);
+Route::get('/toursEn', ['as' => 'toursEn', 'uses' => 'UserController@toursEn']);
+Route::get('/toursRu', ['as' => 'toursRu', 'uses' => 'UserController@toursRu']);
+Route::get('/allToursRu', ['as' => 'allToursRu', 'uses' => 'UserController@allToursRu']);
+Route::get('/allToursEn', ['as' => 'allToursEn', 'uses' => 'UserController@allToursEn']);
+Route::get('/hotelsEn', ['as' => 'hotelsEn', 'uses' => 'UserController@hotelsEn']);
+Route::get('/hotelsRu', ['as' => 'hotelsRu', 'uses' => 'UserController@hotelsRu']);
+Route::get('/contacusEn', ['as' => 'contacusEn', 'uses' => 'UserController@contacusEn']);
+Route::get('/contacusRu', ['as' => 'contacusRu', 'uses' => 'UserController@contacusRu']);
+Route::get('/carRentEn', ['as' => 'carRentEn', 'uses' => 'UserController@carRentEn']);
 
 
+// show new post form
+//  Route::get('new-post','PostController@create');
 
-    // show new post form
-  //  Route::get('new-post','PostController@create');
-
-    // save new post
-    Route::post('new-post',['uses' =>'PostController@store','as' =>'new-post' ]);
-
-    // edit post form
-    Route::get('edit/{slug}','PostController@edit');
-
-    // update post
-    Route::post('update','PostController@update');
-
-    // delete post
-    Route::get('delete/{id}','PostController@destroy');
-
-    // display user's all posts
-    Route::get('my-all-posts','UserController@user_posts_all');
-
-    // display user's drafts
-    Route::get('my-drafts','UserController@user_posts_draft');
+Route::get('tours', 'PostController@index');
+Route::get('excursion', 'ExcursionController@index');
 
 
+// save new post
+Route::post('new-post', ['uses' => 'PostController@store', 'as' => 'new-post']);
+Route::post('new-excursion', ['uses' => 'ExcursionController@store', 'as' => 'new-excursion']);
+
+// edit post form
+Route::get('edit/{id}', 'PostController@edit');
+Route::get('editExcursion/{id}', 'ExcursionController@edit');
+
+// update post
+Route::post('update', 'PostController@update');
+Route::post('updateExcursion', 'ExcursionController@update');
+
+// delete post
+Route::get('delete/{id}', 'PostController@destroy');
+Route::get('deleteExcursion/{id}', 'ExcursionController@destroy');
+
+// display user's all posts
+Route::get('my-all-posts', 'UserController@user_posts_all');
+
+// display user's drafts
+Route::get('my-drafts', 'UserController@user_posts_draft');
 
 
 //users profile
-Route::get('user/{id}','UserController@profile')->where('id', '[0-9]+');
+Route::get('user/{id}', 'UserController@profile')->where('id', '[0-9]+');
 
 // display list of posts
-Route::get('user/{id}/posts','UserController@user_posts')->where('id', '[0-9]+');
+Route::get('user/{id}/posts', 'UserController@user_posts')->where('id', '[0-9]+');
 
-// display single post
-Route::get('/{slug}',['as' => 'post', 'uses' => 'PostController@show'])->where('slug', '[A-Za-z0-9-_]+');
+//// display single post
+//Route::get('/{slug}',['as' => 'post', 'uses' => 'PostController@show'])->where('slug', '[A-Za-z0-9-_]+');

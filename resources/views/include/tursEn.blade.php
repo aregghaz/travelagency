@@ -1,19 +1,19 @@
 <div class="tours_block">
     <div class="title">
-        Popular author tours
+        Popular tours
     </div>
     <div class="tour_block">
         <div class="container clear">
-            @if(!empty($posts))
-            @foreach($posts as $post)
+            @if(!empty($data['posts']))
+            @foreach($data['posts'] as $post)
                 <div class="tours_box"
                      style="background: url('{{  URL::to("/images/turs/$post->img1") }}') no-repeat;background-size: cover;background-position: center center;">
-                    <a href="{{ route('tours', ['id'=> $post->id]) }}">
+                    <a href="/images/turs/{{ $post->linkEn }}" target="_blank">
                         <div class="overlay">
                             <div class="see_more home">
                                 <p>{{$post->titleEn}}</p>
                                 <p>{{$post->days}} days / {{$post->night}} nights</p>
-                                <p>{{$post->bodyEn}}</p>
+
                             </div>
                             <div class="tours_title_block clear">
                                 <div class="left_block">
@@ -22,7 +22,7 @@
 
                                 </div>
                                 <div class="right_block">
-                                    <p class="USD">{{$post->price}}$</p>
+                                    <p class="USD">{{$post->price}} AMD</p>
                                 </div>
                             </div>
                         </div>
@@ -31,7 +31,7 @@
             @endforeach
             @endif
             <div class="link_button">
-                <a href="/en/tours.html">See all tours</a>
+                <a href="{{ route('allToursEn') }}">See all tours</a>
             </div>
         </div>
     </div>
