@@ -30,7 +30,7 @@
             @foreach($posts as $post)
             <div class="col-md-3 col-sm-6 col-xs-12 mix {{ $post->role }}" style="display: inline-block;">
                 <div class="portfolio-item">
-                    <img src="{{  URL::to("/images/turs/".$post->img1) }}" alt="">
+                    <img src="{{  URL::to("/images/turs/".$post->img1) }}" height="250px" alt="">
                     <div class="overlay">
                         <div class="icon">
                             <a href="/images/turs/{{ $post->linkEn }}" target="_blank"><i class="icon-link left"></i></a>
