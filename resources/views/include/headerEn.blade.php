@@ -49,7 +49,7 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="/en/excursion.html">
+                    <a href="{{ route("allExcursionsEn") }}">
                         <img alt="" src="/bundles/damain/images/excursion.png" class="" style="margin-left: -16px;">
                         <span>Excursions</span>
                     </a>
@@ -231,7 +231,7 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="/en/excursion.html">
+                    <a href="{{ route("allExcursionsEn") }}">
                         <img alt="" src="/bundles/damain/images/excursion.png">
                         <span>Excursion</span>
                     </a>

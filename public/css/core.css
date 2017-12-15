@@ -3110,11 +3110,17 @@ footer .bottom_block .social ul li a i {
   margin-bottom: 5px;
   font-size: 20px;
 margin-left: 20px;
-}.read-more-wrap-list li{
+}
+.read-more-wrap-list li{
   margin-bottom: 5px;
   font-size: 20px;
 
 }
  .word-type{
    color: black;
+ }
+ .discover-armenia{
+   color: blue;
+   font-size: 23px;
+   font-family: system-ui;
  }

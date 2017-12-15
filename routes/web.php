@@ -30,6 +30,8 @@ Route::get('/brandingOfArmeniaEn', ['as' => 'brandingOfArmeniaEn', 'uses' => 'Us
 Route::get('/servicesEn', ['as' => 'servicesEn', 'uses' => 'UserController@servicesEn']);
 Route::get('/resourcesEn', ['as' => 'resourcesEn', 'uses' => 'UserController@resourcesEn']);
 Route::get('/aboutUsEn', ['as' => 'aboutUsEn', 'uses' => 'UserController@aboutUsEn']);
+Route::get('/allExcursionsEn', ['as' => 'allExcursionsEn', 'uses' => 'UserController@allExcursionsEn']);
+Route::get('/allExcursionsRu', ['as' => 'allExcursionsRu', 'uses' => 'UserController@allExcursionsRu']);
 
 
 // show new post form

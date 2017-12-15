@@ -68,20 +68,22 @@ class UserController extends Controller
 
         return view('template.brandingOfArmeniaEn');
     }
+
     public function servicesEn()
     {
 
 
         return view('template.servicesEn');
     }
- public function resourcesEn()
+
+    public function resourcesEn()
     {
 
 
         return view('template.resourcesEn');
     }
 
-public function aboutUsEn()
+    public function aboutUsEn()
     {
 
 
@@ -124,6 +126,20 @@ public function aboutUsEn()
         $posts = Posts::all();
 
         return view('template.allToursRu', ['posts' => $posts]);
+    }
+ public function allExcursionsEn()
+    {
+
+        $posts = Excursion::all();
+
+        return view('template.allExcursionsEn', ['posts' => $posts]);
+    }
+public function allExcursionsRu()
+    {
+
+        $posts = Excursion::all();
+
+        return view('template.allExcursionsRu', ['posts' => $posts]);
     }
 
     public function contacusEn()
