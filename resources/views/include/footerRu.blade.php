@@ -1,52 +1,5 @@
 <footer>
-    <div class="top_block">
-        <div class="container">
-            <div class="footer_menu">
-                <ul>
-                    <li class="first">
-                        <a href="{{ route('hotelsRu') }}">
-                            <span>Отели</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/en/hotels.html?slug=villa">
-                            <span>Вилла</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/en/transport/car-with-driver.html">
-                            <span>Автомобиль с водителем</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/en/transport/car-rent.html">
-                            <span>Прокат автомобилей</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/en/excursion.html">
-                            <span>Экскурсия</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="{{ route('allToursRu') }}">
-                            <span>Туры</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/en/company.html">
-                            <span>Компании</span>
-                        </a>
-                    </li>
-                    <li class="last">
-                        <a href="/en/contact.html">
-                            <span>контакт</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
+
     <div class="bottom_block clear">
         <div class="container">
             <div class="logo left_block">

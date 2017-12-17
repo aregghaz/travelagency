@@ -7,7 +7,7 @@
         <div class="col-md-2">
 
         </div>
-        <div class="col-md-8">
+        <div class="col-md-8 bg-color">
             <br>
             <br>
             <h1 class="text-header"><strong>Armenia</strong></h1>
