@@ -1810,6 +1810,7 @@ pre code {
         text-align: justify;
         color: black;
         font-family: system-ui;
+        font-weight: 600;
 
     }
 }
