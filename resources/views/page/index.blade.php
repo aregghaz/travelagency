@@ -32,12 +32,15 @@
     <link rel="stylesheet" type="text/css" href="{{ URL::to('css/flag-icon.min.css')}}">
     <link rel="stylesheet" type="text/css" href="{{ URL::to('css/lightgallery/lightgallery.css')}}">
     <link rel="stylesheet" type="text/css" media="all" href="{{ URL::to('css/core.css')}}">
+    <link rel="stylesheet" type="text/css" media="all" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
 
 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
     <link rel="stylesheet" type="text/css" media="all" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/components/icon.css">
 
+    <script type="text/javascript" async="" src="//code.jquery.com/jquery-1.12.4.js"></script>
+    <script type="text/javascript" async="" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
     <script type="text/javascript" async="" src="https://mc.yandex.ru/metrika/watch.js"></script>
     <script async="" src="https://www.google-analytics.com/analytics.js"></script>
     <!-- Latest compiled and minified CSS -->
@@ -66,5 +69,7 @@
 
 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script type="text/javascript" async="" src="//code.jquery.com/jquery-1.12.4.js"></script>
+<script type="text/javascript" async="" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
 
 </html>
