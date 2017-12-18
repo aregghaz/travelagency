@@ -3,7 +3,7 @@
 
 @endsection
 @section('content')
-    <div class="row">
+    <div class="row asd">
         <div class="col-md-2">
 
         </div>

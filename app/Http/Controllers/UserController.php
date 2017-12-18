@@ -61,6 +61,18 @@ class UserController extends Controller
 
         return view('template.armeniaEn');
     }
+public function videoEn()
+    {
+
+
+        return view('template.videoEn');
+    }
+public function videoRu()
+    {
+
+
+        return view('template.videoRu');
+    }
 
     public function brandingOfArmeniaEn()
     {

@@ -3,11 +3,11 @@
 
 @endsection
 @section('content')
-    <div class="row">
+    <div class="row asd">
         <div class="col-md-2">
 
         </div>
-        <div class="col-md-8">
+        <div class="col-md-8  bg-color">
             <br><br>
             <h3 class="text-header"><strong>Resources</strong></h3>
             <br><br>

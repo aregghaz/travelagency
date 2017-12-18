@@ -90,8 +90,8 @@
                             </a>
                         </li>
                         <li>
-                            <a href="/en/armenia/taj-mahal-armenian-girl-as-a-soul-of-indian-symbol.html">
-                                <span>Taj Mahal:Armenian girl as a soul of Indian symbol.</span>
+                            <a href="{{ route('videoEn') }}">
+                                <span>Video</span>
                             </a>
                         </li>
                         <li>

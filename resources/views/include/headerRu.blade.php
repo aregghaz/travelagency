@@ -105,8 +105,8 @@
                             </a>
                         </li>
                         <li>
-                            <a href="/en/armenia/5-interesting-facts-about-armenia-that-you-should-know.html">
-                                <span>5 Интересные факты об Армении, которые вы должны знать</span>
+                            <a href="{{ route('videoRu') }}">
+                                <span>Видео</span>
                             </a>
                         </li>
                         <li>
