@@ -12,17 +12,18 @@
                         <div class="overlay">
                             <div class="see_more home">
                                 <p>{{$post->titleEn}}</p>
-                                <p>{{$post->days}} days / {{$post->night}} nights</p>
+                                <p>{{ floatval($post->days)}} days / {{ floatval($post->night)}} nights</p>
 
                             </div>
                             <div class="tours_title_block clear">
                                 <div class="left_block">
                                     <p>{{$post->titleEn}}</p>
-                                    <p>{{$post->days}} days / {{$post->night}} nights</p>
+                                    <p>{{ floatval($post->days)}} days / {{ floatval($post->night)}} nights</p>
 
                                 </div>
                                 <div class="right_block">
-                                    <p class="USD">{{$post->price}} AMD</p>
+                                    <p class="USD">
+                                        <script></script>{{ number_format($post->price)}} AMD</p>
                                 </div>
                             </div>
                         </div>
