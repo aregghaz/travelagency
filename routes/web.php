@@ -39,7 +39,7 @@ Route::post('new-post', ['uses' => 'PostController@store', 'as' => 'new-post']);
 Route::post('new-excursion', ['uses' => 'ExcursionController@store', 'as' => 'new-excursion']);
 
 // edit post form
-Route::get('edit/{id}', 'PostController@edit');
+Route::get('edit/{id}', ['as' => 'edit', 'uses' => 'PostController@edit']);
 Route::get('editExcursion/{id}', 'ExcursionController@edit');
 
 // update post

@@ -23,6 +23,7 @@
             opacity: 1;
             font-size: inherit;
             max-height: 999em;
+            f
         }
         .gastronomy
         {
