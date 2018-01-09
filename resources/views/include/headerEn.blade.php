@@ -49,7 +49,7 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="/en/excursion.html">
+                    <a href="{{ route("allExcursionsEn") }}">
                         <img alt="" src="/bundles/damain/images/excursion.png" class="" style="margin-left: -16px;">
                         <span>Excursions</span>
                     </a>
@@ -61,27 +61,11 @@
                     </a>
                 </li>
                 <li class="dropdown">
-                    <span>
+                    <a href="{{ route('servicesEn') }}">
                     <img alt="" src="/bundles/damain/images/services.png" class="" style="margin-left: 0px;">
                         <span>Services</span>
-                    </span>
-                    <ul class="sub-menu clear menu_level_1" style="display: none; opacity: 1;">
-                        <li class="first">
-                            <a href="/en/service/riestorany.html">
-                                <span>Restaurants</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/en/service/orghanizatsiia-mieropriiatii.html">
-                                <span>Organization of Events</span>
-                            </a>
-                        </li>
-                        <li class="last">
-                            <a href="/en/service/other.html">
-                                <span>Others</span>
-                            </a>
-                        </li>
-                    </ul>
+                    </a>
+
                 </li>
                 <li class="dropdown">
                     <span>
@@ -90,29 +74,24 @@
                     </span>
                     <ul class="sub-menu clear menu_level_1" style="display: none; opacity: 1;">
                         <li class="first">
-                            <a href="/en/armenia/armenia.html">
+                            <a href="{{ route('armeniaEn') }}">
                                 <span>Armenia</span>
-                            </a>
-                        </li>
-                        <li >
-                            <a href="/en/armenia/culture.html">
-                                <span>Culture</span>
                             </a>
                         </li>
 
                         <li>
-                            <a href="/en/armenia/did-you-know-that.html">
-                                <span>Did you know that...</span>
+                            <a href="{{ route('brandingOfArmeniaEn') }}">
+                                <span>Branding of Armenia</span>
                             </a>
                         </li>
                         <li>
-                            <a href="/en/armenia/5-interesting-facts-about-armenia-that-you-should-know.html">
-                                <span>5 Interesting Facts About Armenia That You Should Know</span>
+                            <a href="{{ route('resourcesEn') }}">
+                                <span>Resources</span>
                             </a>
                         </li>
                         <li>
-                            <a href="/en/armenia/taj-mahal-armenian-girl-as-a-soul-of-indian-symbol.html">
-                                <span>Taj Mahal:Armenian girl as a soul of Indian symbol.</span>
+                            <a href="{{ route('videoEn') }}">
+                                <span>Video</span>
                             </a>
                         </li>
                         <li>
@@ -138,7 +117,7 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="/en/company.html">
+                    <a href="{{ route('aboutUsEn') }}">
                         <img alt="" src="/bundles/damain/images/company.png" class="" style="margin-left: 0px;">
                         <span>About us</span>
                     </a>
@@ -252,7 +231,7 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="/en/excursion.html">
+                    <a href="{{ route("allExcursionsEn") }}">
                         <img alt="" src="/bundles/damain/images/excursion.png">
                         <span>Excursion</span>
                     </a>
@@ -292,11 +271,7 @@
                         <span>Armenia</span>
                     </span>
                     <ul class="sub-menu clear menu_level_1">
-                        <li class="first">
-                            <a href="/en/armenia/culture.html">
-                                <span>Culture</span>
-                            </a>
-                        </li>
+
                         <li>
                             <a href="/en/armenia/armenia.html">
                                 <span>Armenia</span>

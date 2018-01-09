@@ -1808,8 +1808,9 @@ pre code {
     .read-more-wrap {
         font-size: 18px;
         text-align: justify;
-        color: #878787;
+        color: black;
         font-family: system-ui;
+        font-weight: 600;
 
     }
 }
@@ -6761,4 +6762,7 @@ button.close {
 }
 .hotels-table {
     margin-top: 30px;
+}
+.bg-color{
+    background-color: #eeeeee;
 }

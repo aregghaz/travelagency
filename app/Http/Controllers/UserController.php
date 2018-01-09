@@ -10,6 +10,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use View;
 use DB;
+
 class UserController extends Controller
 {
 
@@ -18,45 +19,93 @@ class UserController extends Controller
     {
 
         $data = Array();
-        $imgHome = ['1.jpg','2.jpg','3.jpg','4.jpg','5.jpg','6.jpg','7.jpg','8.jpg','9.jpg','10.jpg'];
+        $imgHome = ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg', '8.jpg', '9.jpg', '10.jpg'];
         $number = rand(0, 9);
-        $data['img'] =  $imgHome[$number];
-        $data['posts']  = Posts::all();
-        $data['excursion']  = Excursion::all();
+        $data['img'] = $imgHome[$number];
+        $data['posts'] = Posts::orderBy('price', 'asc')->get();
+        $data['excursion'] = Excursion::all();
 
-        return View::make('homeEn',['data' => $data]);
+        return View::make('homeEn', ['data' => $data]);
 
     }
 
     public function homeRu()
     {
         $data = Array();
-        $imgHome = ['1.jpg','2.jpg','3.jpg','4.jpg','5.jpg','6.jpg','7.jpg','8.jpg','9.jpg','10.jpg'];
+        $imgHome = ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg', '8.jpg', '9.jpg', '10.jpg'];
         $number = rand(0, 9);
-        $data['img'] =  $imgHome[$number];
-        $data['posts']  = Posts::all();
-        $data['excursion']  = Excursion::all();
+        $data['img'] = $imgHome[$number];
+        $data['posts'] = Posts::all();
+        $data['excursion'] = Excursion::all();
         return view('homeRu', ['data' => $data]);
     }
+
     public function hotelsEn()
     {
-        $hotels =  DB::table('hotels')->get();
+        $hotels = DB::table('hotels')->get();
 
         return view('template.hotelsEn', ['hotels' => $hotels]);
     }
- public function hotelsRu()
+
+    public function hotelsRu()
     {
-        $hotels =  DB::table('hotels')->get();
+        $hotels = DB::table('hotels')->get();
 
 
         return view('template.hotelsRu', ['hotels' => $hotels]);
     }
 
+    public function armeniaEn()
+    {
+
+
+        return view('template.armeniaEn');
+    }
+public function videoEn()
+    {
+
+
+        return view('template.videoEn');
+    }
+public function videoRu()
+    {
+
+
+        return view('template.videoRu');
+    }
+
+    public function brandingOfArmeniaEn()
+    {
+
+
+        return view('template.brandingOfArmeniaEn');
+    }
+
+    public function servicesEn()
+    {
+
+
+        return view('template.servicesEn');
+    }
+
+    public function resourcesEn()
+    {
+
+
+        return view('template.resourcesEn');
+    }
+
+    public function aboutUsEn()
+    {
+
+
+        return view('template.aboutUsEn');
+    }
 
 
     public function carRentEn()
     {
-        $carsRents=  DB::table('car_rent')->pluck('price_list');
+        $carsRents = DB::table('car_rent')->pluck('price_list');
 
         // $hotels =  DB::table('hotels')->get();
         $vowels = array(';;');
@@ -64,10 +113,10 @@ class UserController extends Controller
         $only = json_decode($onlyconsonants);
         $onl = $only[0];
         var_dump($onl);
-        return view('template.carRentEn',['carsRent'=> json_encode($carsRents)]);
+        return view('template.carRentEn', ['carsRent' => json_encode($carsRents)]);
     }
 
-    public function  toursEn(Request $request)
+    public function toursEn(Request $request)
     {
         $id = $request['id'];
         $posts = Posts::findOrFail($id);
@@ -82,6 +131,7 @@ class UserController extends Controller
 
         return view('template.toursRu', ['posts' => $posts]);
     }
+
     public function allToursRu()
     {
 
@@ -89,16 +139,30 @@ class UserController extends Controller
 
         return view('template.allToursRu', ['posts' => $posts]);
     }
- public function contacusEn()
+ public function allExcursionsEn()
     {
 
+        $posts = Excursion::all();
+
+        return view('template.allExcursionsEn', ['posts' => $posts]);
+    }
+public function allExcursionsRu()
+    {
+
+        $posts = Excursion::all();
+
+        return view('template.allExcursionsRu', ['posts' => $posts]);
+    }
+
+    public function contacusEn()
+    {
 
 
         return view('template.contacusEn');
     }
- public function contacusRu()
-    {
 
+    public function contacusRu()
+    {
 
 
         return view('template.contacusRu');
@@ -112,9 +176,7 @@ class UserController extends Controller
         return view('template.allToursEn', ['posts' => $posts]);
 
 
-
     }
-
 
 
     public function user_posts($id)
@@ -141,7 +203,7 @@ class UserController extends Controller
 
         }
         $errors['errors'] = 'Whoops! please try again';
-        return view('auth.login', ['errors'=> $errors]);
+        return view('auth.login', ['errors' => $errors]);
     }
 
 

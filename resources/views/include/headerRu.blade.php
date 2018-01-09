@@ -49,7 +49,7 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="/en/excursion.html">
+                    <a href="{{ route("allExcursionsRu") }}">
                         <img alt="" src="/bundles/damain/images/excursion.png" class="" style="margin-left: -16px;">
                         <span>Экскурсия</span>
                     </a>
@@ -105,8 +105,8 @@
                             </a>
                         </li>
                         <li>
-                            <a href="/en/armenia/5-interesting-facts-about-armenia-that-you-should-know.html">
-                                <span>5 Интересные факты об Армении, которые вы должны знать</span>
+                            <a href="{{ route('videoRu') }}">
+                                <span>Видео</span>
                             </a>
                         </li>
                         <li>
@@ -252,7 +252,7 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="/en/excursion.html">
+                    <a href="{{ route("allExcursionsRu") }}">
                         <img alt="" src="/bundles/damain/images/excursion.png">
                         <span>Экскурсия</span>
                     </a>

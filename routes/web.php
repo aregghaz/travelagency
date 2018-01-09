@@ -25,6 +25,15 @@ Route::get('/hotelsRu', ['as' => 'hotelsRu', 'uses' => 'UserController@hotelsRu'
 Route::get('/contacusEn', ['as' => 'contacusEn', 'uses' => 'UserController@contacusEn']);
 Route::get('/contacusRu', ['as' => 'contacusRu', 'uses' => 'UserController@contacusRu']);
 Route::get('/carRentEn', ['as' => 'carRentEn', 'uses' => 'UserController@carRentEn']);
+Route::get('/armeniaEn', ['as' => 'armeniaEn', 'uses' => 'UserController@armeniaEn']);
+Route::get('/brandingOfArmeniaEn', ['as' => 'brandingOfArmeniaEn', 'uses' => 'UserController@brandingOfArmeniaEn']);
+Route::get('/servicesEn', ['as' => 'servicesEn', 'uses' => 'UserController@servicesEn']);
+Route::get('/resourcesEn', ['as' => 'resourcesEn', 'uses' => 'UserController@resourcesEn']);
+Route::get('/aboutUsEn', ['as' => 'aboutUsEn', 'uses' => 'UserController@aboutUsEn']);
+Route::get('/videoEn', ['as' => 'videoEn', 'uses' => 'UserController@videoEn']);
+Route::get('/videoRu', ['as' => 'videoRu', 'uses' => 'UserController@videoRu']);
+Route::get('/allExcursionsEn', ['as' => 'allExcursionsEn', 'uses' => 'UserController@allExcursionsEn']);
+Route::get('/allExcursionsRu', ['as' => 'allExcursionsRu', 'uses' => 'UserController@allExcursionsRu']);
 
 
 // show new post form
