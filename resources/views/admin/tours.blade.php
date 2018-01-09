@@ -17,10 +17,10 @@
                             <a href="{{ url('/'.$post->slug) }}">{{ $post->titleRu }}</a>
                             @if(!Auth::guest() && ($post->author_id == Auth::user()->id || Auth::user()->is_admin()))
                                 @if($post->active == '1')
-                                    <button class="btn" style="float: right"><a href="{{ url('/edit', ['id' => $post->id])}}">Edit
-                                            Post</a></button>
+                                    <a class="btn" style="float: right" href="{{ url('/edit', ['id' => $post->id])}}">Edit
+                                            Post</a>
                                 @else
-                                    <button class="btn" style="float: right"><a href="{{ url('edit/'.$post->slug)}}">Edit
+                                    <button class="btn" style="float: right"><a href="{{ url('edit/'.$post->id)}}">Edit
                                             Draft</a></button>
                                 @endif
                             @endif

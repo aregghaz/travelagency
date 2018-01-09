@@ -5,16 +5,8 @@ Edit Post
 @endsection
 
 @section('content')
-<script type="text/javascript" src="{{ asset('/js/tinymce/tinymce.min.js') }}"></script>
-<script type="text/javascript">
-	tinymce.init({
-		selector : "textarea",
-		plugins : ["advlist autolink lists link image charmap print preview anchor", "searchreplace visualblocks code fullscreen", "insertdatetime media table contextmenu paste jbimages"],
-		toolbar : "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image jbimages"
-	}); 
-</script>
 
-<form method="post" action='{{ url("/update") }}'>
+<form method="post" action='{{ url("/update") }}'  enctype="multipart/form-data">
 	<input type="hidden" name="_token" value="{{ csrf_token() }}">
 	<input type="hidden" name="post_id" value="{{ $posts->id }}{{ old('post_id') }}">
 	<div class="form-group">
@@ -25,7 +17,8 @@ Edit Post
 		<img src="http://discoverarmenia.tours/images/turs/{{ $posts->img1 }}" width="290px" height="180px" alt="">
 	</div>
 	<div class="form-group">
-		<select name="" id="">
+		<select name="role" id="">
+			<option value="{{ $posts->role }}">{{ $posts->role }}</option>
 			<option value="all">All</option>
 			<option value="extreme">extreme</option>
 			<option value="heal">heal</option>
@@ -36,8 +29,19 @@ Edit Post
 
 	</div>
 	<div class="form-group">
-		<a href="/images/turs/{{ $posts->linkEn }}">english link</a><br>
+		<a href="/images/turs/{{ $posts->linkEn }}">english link</a>
+		<br>
+		<div class="form-group">
+			<label for="fileEn">upload PDF file in English</label>
+			<input type="file" multiple="multiple" placeholder="pdf file in ENglish" id="fileEn" name="fileEn" class="form-control">
+		</div>
+		<hr>
 		<a href="/images/turs/{{ $posts->linkRu }}">Russian link</a>
+		<br>
+		<div class="form-group">
+			<label for="fileRu">upload PDF file in Russian</label>
+			<input type="file" id="fileRu" multiple="multiple" placeholder="pdf file in Russian" name="fileRu" class="form-control">
+		</div>
 	</div>
 	@if($posts->active == '1')
 	<input type="submit" name='publish' class="btn btn-success" value = "Update"/>
