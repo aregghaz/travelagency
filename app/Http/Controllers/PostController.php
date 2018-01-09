@@ -3,7 +3,7 @@
 use App\Posts;
 use Illuminate\Http\Request;
 use Redirect;
-
+use File;
 
 class PostController extends Controller
 {
@@ -125,8 +125,30 @@ class PostController extends Controller
         if ($post) {
             $titleEn = $request->input('titleEn');
             $titleRu = $request->input('titleRu');
+            $role =  $request->input('role');
+
             $post->titleEn = $titleEn;
             $post->titleRu = $titleRu;
+            $post->role = $role;
+            if ($request->has('fileEn')) {
+                File::delete('images/turs/' . $post->linkEn);
+
+                $filename1 = time() + 11 .'.pdf';
+                $request->fileEn->storeAs('turs', $filename1, "uploads");
+                $post->linkEn = $filename1;
+            }
+            if ($request->has('fileRu')) {
+                File::delete('images/turs/' . $post->linkRu);
+                $filename1 = time() + 12 .'.pdf';
+                $request->fileRu->storeAs('turs', $filename1, "uploads");
+                $post->linkRu = $filename1;
+            }
+            if ($request->has('img1')) {
+                $filename1 = time() + 1. . '.jpg';
+                $request->img1->storeAs('turs', $filename1, "uploads");
+                $post->img1 = $filename1;
+            }
+
             if ($request->has('save')) {
                 $post->active = 0;
                 $message = 'Post saved successfully';
