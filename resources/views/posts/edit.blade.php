@@ -5,7 +5,7 @@ Edit Post
 @endsection
 
 @section('content')
-git
+
 <form method="post" action='{{ url("/update") }}'  enctype="multipart/form-data">
 	<input type="hidden" name="_token" value="{{ csrf_token() }}">
 	<input type="hidden" name="post_id" value="{{ $posts->id }}{{ old('post_id') }}">
