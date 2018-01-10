@@ -10,7 +10,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use View;
 use DB;
-
+use App;
 class UserController extends Controller
 {
 
