@@ -2638,6 +2638,10 @@ footer .bottom_block .social ul li a i {
   .info_block{
     height: 600px;
   }
+  h2 {
+
+    font-size: 28px;
+  }
   .info_block .container .image {
     width: 33%;
     margin-top: 47px;
