@@ -2868,6 +2868,12 @@ footer .bottom_block .social ul li a i {
   .tours_block .container .link_button {
     width: 100%;
   }
+  .info_block .container .content {
+    min-height: 900px;
+  }
+  .info_block {
+    height: auto;
+  }
 }
 .btn-primary {
   color: #fff;
