@@ -2868,6 +2868,18 @@ footer .bottom_block .social ul li a i {
   .tours_block .container .link_button {
     width: 100%;
   }
+  .tours_box .tours_title_block .left_block p {
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+  .tours_box .tours_title_block .left_block p:nth-of-type(2) {
+    font-size: 13px;
+    font-family: 'Fregat';
+  }
+  .tours_title_block div {
+    margin: 0!important;
+  }
+}
   .info_block .container .content {
     min-height: 800px;
   }
