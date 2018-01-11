@@ -61,6 +61,7 @@
 
 <script src="{{ URL::to('js/init.js')}}"></script>
 <script src="{{ URL::to('js/jquery.js')}}"></script>
+<script src="{{ URL::to('js/script.js')}}"></script>
 
 
 
