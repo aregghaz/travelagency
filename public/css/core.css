@@ -2525,7 +2525,7 @@ footer .bottom_block .social ul li a i {
 .res_menu {
   display: none;
   width: 100%;
-  clear: both;
+  margin-top: 20px;
 }
 .res_menu img {
   display: none;
@@ -2549,6 +2549,7 @@ footer .bottom_block .social ul li a i {
   }
   .menuCont {
     width: 100%;
+      margin-bottom: 10px;
   }
   .general_menu {
     display: none;
