@@ -48,7 +48,10 @@
                     </li>
                 </ul>
             </div>
+            <div style="display: none">
+                <script type="text/javascript" src="http://www.rate.am/informer/rate/script/default.aspx?uid=UI-65293587&width=215&height=132&cb=0&bgcolor=FFFFFF&lang=en"></script>
 
+            </div>
         </div>
     </div>
 

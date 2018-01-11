@@ -160,17 +160,18 @@
                 <div class="currency_block">
                     <ul>
                         <li class="current">
-                            <span>
-                                <span>RUB</span>
-                            </span>
+
+                            <span id="changeUsd">USD</span>
+
                             <ul class="sub_currency">
+
                                 <li>
-                                    <a href="/soap/RUB">
+                                    <a id="changeRub">
                                         <span>RUB</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="">
+                                    <a>
                                         <span>EUR</span>
                                     </a>
                                 </li>

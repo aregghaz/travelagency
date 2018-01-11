@@ -28,9 +28,9 @@
                                 <div class="right_block">
                                     <p class="USD">
                                         {{ number_format($post->price)  }} AMD
-                                        <input type="hidden" name="price" class="price" value="{{$post->price}}">
-
                                     </p>
+                                    <input type="hidden" name="price" class="price" value="{{$post->price}}">
+                                    <input type="hidden" name="price" class="priceRub" value="{{$post->price}}">
                                 </div>
                             </div>
                         </div>
@@ -55,8 +55,10 @@
                                         <div class="right_block">
                                             <p class="USD">
                                                 {{ number_format($post->price)}} AMD
-                                                <input type="hidden" name="price" class="price" value="{{$post->price}}">
                                             </p>
+                                            <input type="hidden" name="price" class="price" value="{{$post->price}}">
+                                            <input type="hidden" name="price" class="priceRub" value="{{$post->price}}">
+
                                         </div>
                                     </div>
                                 </div>

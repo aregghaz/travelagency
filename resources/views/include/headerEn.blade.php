@@ -9,7 +9,8 @@
             <menu id="top_menu">
                 <li class="dropdown first">
                     <span>
-                        <img alt="" src="/bundles/damain/images/accommodation.png" class="" style="margin-left: -15.5px;">
+                        <img alt="" src="/bundles/damain/images/accommodation.png" class=""
+                             style="margin-left: -15.5px;">
                         <span>Accommodation</span>
                     </span>
                     <ul class="sub-menu clear menu_level_1" style="display: none; opacity: 1;">
@@ -62,7 +63,7 @@
                 </li>
                 <li class="dropdown">
                     <a href="{{ route('servicesEn') }}">
-                    <img alt="" src="/bundles/damain/images/services.png" class="" style="margin-left: 0px;">
+                        <img alt="" src="/bundles/damain/images/services.png" class="" style="margin-left: 0px;">
                         <span>Services</span>
                     </a>
 
@@ -139,18 +140,19 @@
             <div class="group_block clear">
                 <div class="currency_block">
                     <ul>
-                        <li class="current">
-                            <span>
-                                <span>USD</span>
-                            </span>
+                        <li class="current" id="current">
+                            <a id="changeUsd">
+                                <span id="changeUsd">USD</span>
+                            </a>
                             <ul class="sub_currency">
+
                                 <li>
-                                    <a href="/soap/RUB">
+                                    <a id="changeRub">
                                         <span>RUB</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="/soap/EUR">
+                                    <a id="changeEur">
                                         <span>EUR</span>
                                     </a>
                                 </li>
