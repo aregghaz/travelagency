@@ -2869,11 +2869,30 @@ footer .bottom_block .social ul li a i {
     width: 100%;
   }
   .info_block .container .content {
-    min-height: 900px;
+    min-height: 800px;
   }
   .info_block {
     height: auto;
   }
+  .res_menu {
+    display: inline-block;
+    width: 100%;
+  }
+  .logo {
+    margin: 0;
+
+  }
+  .left_block {
+    text-align: center!important;
+    margin-bottom: 15px;
+  }
+
+  footer .bottom_block .address_info ul li:first-of-type {
+    margin: 0;
+  }
+  .read-more-trigger {
+    font-size: 15px;
+    width: 105px;
 }
 .btn-primary {
   color: #fff;

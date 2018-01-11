@@ -6,7 +6,7 @@
 
 
 
-            <div class="col-md-4 col-sm-4 col-xs-4 address_info left_block">
+            <div class="col-md-4 col-sm-4 col-xs-12 address_info left_block">
                 <ul>
                     <li>
                         <p>37 Gay Ave. Yerevan-0076</p>
@@ -18,7 +18,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-md-4 col-sm-4 col-xs-4 social left_block">
+            <div class="col-md-4 col-sm-4 col-xs-12 social left_block">
                 <ul>
                     <li class="fb">
                         <a target="_blank"
@@ -45,8 +45,8 @@
                     </li>
                 </ul>
             </div>
+            <div class="col-md-4 col-sm-4 col-xs-12 logo left_block">
 
-            <div class="col-md-4 col-sm-4 col-xs-4 logo left_block">
                 <a href="#">
                     <img src="/bundles/damain/images/logo_f.png" alt="Discover Armenia">
                 </a>
