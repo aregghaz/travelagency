@@ -2880,9 +2880,7 @@ footer .bottom_block .social ul li a i {
     margin: 0!important;
   }
 }
-  .info_block .container .content {
-    min-height: 800px;
-  }
+
   .info_block {
     height: auto;
   }
@@ -2896,7 +2894,7 @@ footer .bottom_block .social ul li a i {
   }
   .left_block {
     text-align: center!important;
-    margin-bottom: 15px;
+
   }
 
   footer .bottom_block .address_info ul li:first-of-type {
