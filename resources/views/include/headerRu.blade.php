@@ -159,7 +159,7 @@
             <div class="group_block clear">
                 <div class="currency_block">
                     <ul>
-                        <li class="current">
+                        <li class="current" id="current">
 
                             <span id="changeUsd">USD</span>
 

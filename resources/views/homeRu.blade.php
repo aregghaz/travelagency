@@ -87,6 +87,10 @@
             font-size: x-large;
             font-weight: bolder;
         }
+        .read-more-trigger {
+            font-size: 22px;
+            width: 190px;
+        }
     </style>
 
     @include('script.script')
