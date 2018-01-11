@@ -2,14 +2,11 @@
 
     <div class="bottom_block clear">
         <div class="container">
-            <div class="logo left_block">
-                <a href="#">
-                    <img src="/bundles/damain/images/logo_f.png" alt="Discover Armenia">
-                </a>
-                <br>
-                <sapn>2017 all rights reserved</sapn>
-            </div>
-            <div class="address_info left_block">
+
+
+
+
+            <div class="col-md-4 col-sm-4 col-xs-4 address_info left_block">
                 <ul>
                     <li>
                         <p>37 Gay Ave. Yerevan-0076</p>
@@ -21,7 +18,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="social left_block">
+            <div class="col-md-4 col-sm-4 col-xs-4 social left_block">
                 <ul>
                     <li class="fb">
                         <a target="_blank"
@@ -48,6 +45,15 @@
                     </li>
                 </ul>
             </div>
+            <div class="col-md-4 col-sm-4 col-xs-4 logo left_block">
+                <a href="#">
+                    <img src="/bundles/damain/images/logo_f.png" alt="Discover Armenia">
+                </a>
+                <br>
+                <sapn>2017 all rights reserved</sapn>
+            </div>
+
+
             <div style="display: none">
                 <script type="text/javascript" src="http://www.rate.am/informer/rate/script/default.aspx?uid=UI-65293587&width=215&height=132&cb=0&bgcolor=FFFFFF&lang=en"></script>
 

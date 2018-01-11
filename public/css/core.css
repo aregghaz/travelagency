@@ -2039,10 +2039,9 @@ footer .bottom_block {
 }
 footer .bottom_block .logo {
   color: #fff;
+  text-align: end;
 }
-footer .bottom_block .address_info {
-  margin-left: 50px;
-}
+
 footer .bottom_block .address_info ul li {
   display: inline-block;
 }
@@ -2058,8 +2057,7 @@ footer .bottom_block .address_info ul li p:first-of-type {
 }
 footer .bottom_block .social {
   text-align: center;
-  margin-left: 100px;
-  margin-top: 30px;
+
 }
 footer .bottom_block .social ul li {
   display: inline-block;
@@ -2564,7 +2562,7 @@ footer .bottom_block .social ul li a i {
     top: 165px;
   }
   .logo {
-    width: 100%;
+
     text-align: center;
   }
   header .right_block {
