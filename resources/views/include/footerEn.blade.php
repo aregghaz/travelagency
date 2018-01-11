@@ -45,8 +45,7 @@
                     </li>
                 </ul>
             </div>
-<<<<<<< HEAD
-=======
+
             <div class="col-md-4 col-sm-4 col-xs-4 logo left_block">
                 <a href="#">
                     <img src="/bundles/damain/images/logo_f.png" alt="Discover Armenia">
@@ -54,8 +53,6 @@
                 <br>
                 <sapn>2017 all rights reserved</sapn>
             </div>
-
->>>>>>> a6a9558b44baade678bb8b1e3c83e2d85e869277
 
             <div style="display: none">
 
