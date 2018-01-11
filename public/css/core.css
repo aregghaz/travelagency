@@ -2741,6 +2741,10 @@ footer .bottom_block .social ul li a i {
   .read-more-trigger {
     font-size: 18px;
   }
+  h2 {
+
+    font-size: 28px;
+  }
 }
 @media all and (max-width: 768px) {
   .logo {
