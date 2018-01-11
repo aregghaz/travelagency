@@ -2726,6 +2726,12 @@ footer .bottom_block .social ul li a i {
     margin: 0 auto;
   }
 }
+
+@media all and (max-width: 900px) {
+  .info_block{
+    height: 700px;
+  }
+}
 @media all and (max-width: 768px) {
   .logo {
     width: auto;
