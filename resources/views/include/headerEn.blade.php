@@ -141,9 +141,9 @@
                 <div class="currency_block">
                     <ul>
                         <li class="current" id="current">
-                            <a id="changeUsd">
+
                                 <span id="changeUsd">USD</span>
-                            </a>
+
                             <ul class="sub_currency">
 
                                 <li>
