@@ -2635,6 +2635,9 @@ footer .bottom_block .social ul li a i {
   .home_slider_block .home_slider .slick-dots {
     right: calc((100% - 720px) / 2);
   }
+  .info_block{
+    height: 700px;
+  }
   .info_block .container .image {
     width: 35%;
     margin-top: 47px;
