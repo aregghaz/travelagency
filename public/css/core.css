@@ -2641,8 +2641,7 @@ footer .bottom_block .social ul li a i {
   .info_block .container .image {
     width: 33%;
     margin-top: 47px;
-    position: absolute;
-    bottom: 0;
+
   }
   .info_block .container .content {
     width: 60%;
