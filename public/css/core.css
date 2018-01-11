@@ -2636,7 +2636,7 @@ footer .bottom_block .social ul li a i {
     right: calc((100% - 720px) / 2);
   }
   .info_block{
-    height: 700px;
+    height: 600px;
   }
   .info_block .container .image {
     width: 35%;
@@ -2725,11 +2725,17 @@ footer .bottom_block .social ul li a i {
     float: none;
     margin: 0 auto;
   }
+  .read-more-trigger {
+    font-size: 18px;
+  }
 }
 
 @media all and (max-width: 900px) {
   .info_block{
-    height: 700px;
+    height: 650px;
+  }
+  .read-more-trigger {
+    font-size: 18px;
   }
 }
 @media all and (max-width: 768px) {
