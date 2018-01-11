@@ -2742,7 +2742,7 @@ footer .bottom_block .social ul li a i {
 }
 @media all and (max-width: 768px) {
   .logo {
-    width: auto;
+
     text-align: center;
     margin-left: 11px;
   }
