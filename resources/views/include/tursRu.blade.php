@@ -29,6 +29,7 @@
                                     <p class="USD">{{$post->price}} AMD</p>
                                     <input type="hidden" name="price" class="price" value="{{$post->price}}">
                                     <input type="hidden" name="price" class="priceRub" value="{{$post->price}}">
+                                    <input type="hidden" name="price" class="priceEur" value="{{$post->price}}">
 
                                 </div>
                             </div>

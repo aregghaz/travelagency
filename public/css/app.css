@@ -6766,3 +6766,9 @@ button.close {
 .bg-color{
     background-color: #eeeeee;
 }
+#current {
+    text-transform: none;
+    height: 100%;
+    background-color: white;
+    border: none;
+}
