@@ -135,6 +135,8 @@ $(document).ready(function () {
 
     var usd = $("#tab_buy_content tbody tr td:last-child").first().text();
     var rub = $("#tab_buy_content tbody tr td:last-child").eq(2).text();
+    var eur = $("#tab_buy_content tbody tr td:last-child").eq(1).text();
+
 
 
     var change = $('.price');
@@ -148,6 +150,11 @@ $(document).ready(function () {
     changeRub.each(function () {
         this.value = this.value / rub
     });
+    var changeEur = $('.priceEur');
+
+    changeEur.each(function () {
+        this.value = this.value / eur
+    });
 
 
     var amdPrice = $('.USD');
@@ -160,40 +167,47 @@ $(document).ready(function () {
 
 
 
+var current = $('.current');
+    current.on('change', function () {
+      var selectedVal = $('#current').val()
+        if(selectedVal == 'USD'){
+            for (var i = 0; i < change.length; i++) {
+                var amdPriceTours = change[i].value;
+                var usdPrice = parseInt(amdPriceTours).toFixed();
+                amdPrice.eq(i).text(usdPrice + ' $');
+            }
 
-    $('#changeUsd').on('click', function () {
-        for (var i = 0; i < change.length; i++) {
-            var amdPriceTours = change[i].value;
-            var usdPrice = parseInt(amdPriceTours).toFixed();
-            amdPrice.eq(i).text(usdPrice + ' $');
+
+        } else if(selectedVal == 'RUB') {
+
+            for (var j = 0; j < changeRub.length; j++) {
+                var amdPriceTours = changeRub[j].value;
+                var rubPrice = parseInt(amdPriceTours).toFixed();
+                amdPrice.eq(j).text(rubPrice + ' ₽');
+            }
+
+
+        } else if(selectedVal == 'EUR') {
+
+
+            for (var a = 0; a < changeEur.length; a++) {
+                var amdPriceTours = changeEur[a].value;
+                var usdPrice = parseInt(amdPriceTours).toFixed();
+                amdPrice.eq(a).text(usdPrice + ' €');
+            }
+
+
         }
-        var current =$('#current');
-        var currencyChild =current.children().first();
-        var usdDiv = $('.sub_currency').children().first().children();
-        $('.sub_currency').children().first().prepend(currencyChild);
-        current.prepend(usdDiv)
-    });
 
 
 
-    $('#changeRub').on('click', function () {
 
-        var amdPrice = $('.USD');
-        for (var i = 0; i < changeRub.length; i++) {
-            var amdPriceTours = changeRub[i].value;
-            var usdPrice = parseInt(amdPriceTours).toFixed();
-            amdPrice.eq(i).text(usdPrice + ' ₽');
-        }
-        var current =$('#current');
-       var currencyChild =current.children().first();
-        var rubDiv = $('.sub_currency').children().first().children();
-        $('.sub_currency').children().first().prepend(currencyChild);
 
-        current.prepend(rubDiv)
+
+
 
 
     });
-
 
 
 

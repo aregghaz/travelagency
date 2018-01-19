@@ -139,26 +139,18 @@
             </div>
             <div class="group_block clear">
                 <div class="currency_block">
-                    <ul>
-                        <li class="current" id="current">
 
-                                <span id="changeUsd">USD</span>
+                        <select class="current" id="current" title="">
 
-                            <ul class="sub_currency">
+                            <option value="USD" id="changeUsd">USD</option>
 
-                                <li>
-                                    <a id="changeRub">
-                                        <span>RUB</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a id="changeEur">
-                                        <span>EUR</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
+                            <option value="RUB" id="changeRub">RUB</option>
+
+
+                            <option value="EUR" id="changeEur">EUR</option>
+
+                        </select>
+
                 </div>
                 <div class="languages_block">
                     <ul>
