@@ -39,7 +39,7 @@
                         </div>
                         <div class="content">
                             <h3><a href="#">{{ $post->titleRu }}</a></h3>
-                            <p>{{$post->days}} дней / {{$post->night}} ночьей <br> Цена: {{ $post->price }} AMD</p>
+                            <p class="USD">{{$post->days}} дней / {{$post->night}} ночьей <br> Цена: {{ $post->price }} AMD</p>
                         </div>
                     </div>
                 </div>
@@ -51,6 +51,11 @@
 
                     </div>
                 </div>
+                <input type="hidden" name="price" class="price" value="{{$post->price}}">
+                <input type="hidden" name="price" class="priceRub" value="{{$post->price}}">
+                <input type="hidden" name="price" class="priceEur" value="{{$post->price}}">
+
+
             @endforeach
         </div>
         <!-- End Portfolio  -->
