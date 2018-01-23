@@ -6,6 +6,6 @@
 
 @section('content')
 
-    <a href="{{ url('/tours') }}">Add tours</a>
-    <a href="{{ url('/excursion') }}">Add excursion</a>
+    <a  class="btn btn-info" href="{{ url('/tours') }}">Add tours</a>
+    <a  class="btn btn-info" href="{{ url('/excursion') }}">Add excursion</a>
 @endsection

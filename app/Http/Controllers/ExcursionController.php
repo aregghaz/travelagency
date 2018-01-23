@@ -18,7 +18,7 @@ class ExcursionController extends Controller
         $post = new Excursion();
         $post->titleRu = $request->get('titleRu');
         $post->titleEn = $request->get('titleEn');
-        $post->days = $request->get('days');
+
         $post->price = $request->get('price');
         $post->author_id = $request->user()->id;
         if ($request->has('save')) {
@@ -28,25 +28,25 @@ class ExcursionController extends Controller
             if ($request->has('fileEn')) {
 
                 $filename1 = time() + 11 .'.pdf';
-                $request->fileEn->storeAs('excursion', $filename1, "uploads");
+                $request->fileEn->storeAs('turs', $filename1, "uploads");
                 $post->linkEn = $filename1;
             }
             if ($request->has('fileRu')) {
 
                 $filename1 = time() + 12 .'.pdf';
-                $request->fileRu->storeAs('excursion', $filename1, "uploads");
+                $request->fileRu->storeAs('turs', $filename1, "uploads");
                 $post->linkRu = $filename1;
             }
             if ($request->has('img1')) {
                 $filename1 = time() + 1. . '.jpg';
-                $request->img1->storeAs('excursion', $filename1, "uploads");
+                $request->img1->storeAs('turs', $filename1, "uploads");
                 $post->img1 = $filename1;
             }
 
             $post->active = 1;
 
         }
-        $posts = Excursion::where('active', '1')->orderBy('created_at', 'desc')->paginate(5);
+        $posts = Posts::where('active', '1')->orderBy('created_at', 'desc')->paginate(5);
         $title = 'Latest Posts';
         $post->save();
         return view('admin.home')->withPosts($posts)->withTitle($title);
@@ -79,14 +79,40 @@ class ExcursionController extends Controller
     }
     public function update(Request $request)
     {
-        //
         $post_id = $request->input('post_id');
         $post = Excursion::find($post_id);
         if ($post) {
             $titleEn = $request->input('titleEn');
             $titleRu = $request->input('titleRu');
+            $role =  $request->input('role');
+            $days =  $request->input('days');
+            $night =  $request->input('night');
+
             $post->titleEn = $titleEn;
             $post->titleRu = $titleRu;
+            $post->role = $role;
+            $post->days = $days;
+            $post->night = $night;
+            if ($request->has('fileEn')) {
+                File::delete('images/turs/' . $post->linkEn);
+
+                $filename1 = time() + 11 .'.pdf';
+                $request->fileEn->storeAs('turs', $filename1, "uploads");
+                $post->linkEn = $filename1;
+            }
+            if ($request->has('fileRu')) {
+                File::delete('images/turs/' . $post->linkRu);
+                $filename1 = time() + 12 .'.pdf';
+                $request->fileRu->storeAs('turs', $filename1, "uploads");
+                $post->linkRu = $filename1;
+            }
+            if ($request->has('img1')) {
+                $filename1 = time() + 1. . '.jpg';
+                File::delete('images/turs/' . $post->img1);
+                $request->img1->storeAs('turs', $filename1, "uploads");
+                $post->img1 = $filename1;
+            }
+
             if ($request->has('save')) {
                 $post->active = 0;
                 $message = 'Post saved successfully';
@@ -94,7 +120,7 @@ class ExcursionController extends Controller
             } else {
                 $post->active = 1;
                 $message = 'Post updated successfully';
-                $landing = $post->id;
+                $landing = '/edit/'.$post->id;
             }
             $post->save();
             return redirect($landing)->withMessage($message);

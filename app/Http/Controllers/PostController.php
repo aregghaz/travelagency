@@ -112,10 +112,6 @@ class PostController extends Controller
         }
     }
 
-    /*
-     *
-     *
-     * */
 
     public function update(Request $request)
     {
@@ -128,7 +124,6 @@ class PostController extends Controller
             $role =  $request->input('role');
             $days =  $request->input('days');
             $night =  $request->input('night');
-            $img =  $request->input('img1');
 
             $post->titleEn = $titleEn;
             $post->titleRu = $titleRu;
