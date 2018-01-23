@@ -107,7 +107,7 @@
                         SEND US A MESSAGE
                     </h2>
                     <!-- Form -->
-                    <form id="contactForm" class="contact-form" data-toggle="validator" novalidate="true">
+                    <form id="contactForm" class="contact-form" data-toggle="validator" method="post" action="{{route('sendEmail')  }}">
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="row">
@@ -147,6 +147,7 @@
                                     </div>
                                 </div>
                             </div>
+                            <input type="hidden" name="_token" value="{{  Session::token() }}">
                             <div class="col-md-12">
                                 <button type="submit" id="submit" class="btn btn-common disabled" style="pointer-events: all;cursor: pointer;color: white;opacity: 1;">Send message</button>
                                 <div id="msgSubmit" class="h3 text-center hidden"></div>

@@ -11,6 +11,7 @@ use Illuminate\Support\Facades\Auth;
 use View;
 use DB;
 use App;
+use Mail;
 class UserController extends Controller
 {
 
@@ -248,4 +249,20 @@ public function allExcursionsRu()
         return view('admin.profile', $data);
     }
 
+    public function sendEmail() {
+
+        $data = array(
+            'name' => "Learning Laravel",
+        );
+
+        Mail::send('include.email', $data, function ($message) {
+
+            $message->from('yourEmail@domain.com', 'Learning Laravel');
+
+            $message->to('yourEmail@domain.com')->subject('Learning Laravel test email');
+
+        });
+die('asdsadsa');
+        return "Your email has been sent successfully";
+    }
 }

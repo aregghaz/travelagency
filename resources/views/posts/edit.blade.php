@@ -17,6 +17,14 @@ Edit Post
 		<img src="http://discoverarmenia.tours/images/turs/{{ $posts->img1 }}" width="290px" height="180px" alt="">
 	</div>
 	<div class="form-group">
+		<label for="img">upload PDF file in Russian</label>
+		<input type="file" id="img" multiple="multiple" placeholder="pdf file in Russian" name="img1" class="form-control">
+	</div>
+	<div class="form-group">
+		<input required="required" placeholder="Days" type="text" name = "days" class="form-control" value="@if(!old('days')){{$posts->days }}@endif{{ old('days') }}"/>
+		<input required="required" placeholder="Night" type="text" name = "night" class="form-control" value="@if(!old('night')){{$posts->night}}@endif{{ old('night') }}"/>
+	</div>
+	<div class="form-group">
 		<select name="role" id="">
 			<option value="{{ $posts->role }}">{{ $posts->role }}</option>
 			<option value="all">All</option>

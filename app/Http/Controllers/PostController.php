@@ -126,10 +126,15 @@ class PostController extends Controller
             $titleEn = $request->input('titleEn');
             $titleRu = $request->input('titleRu');
             $role =  $request->input('role');
+            $days =  $request->input('days');
+            $night =  $request->input('night');
+            $img =  $request->input('img1');
 
             $post->titleEn = $titleEn;
             $post->titleRu = $titleRu;
             $post->role = $role;
+            $post->days = $days;
+            $post->night = $night;
             if ($request->has('fileEn')) {
                 File::delete('images/turs/' . $post->linkEn);
 
@@ -145,6 +150,7 @@ class PostController extends Controller
             }
             if ($request->has('img1')) {
                 $filename1 = time() + 1. . '.jpg';
+                File::delete('images/turs/' . $post->img1);
                 $request->img1->storeAs('turs', $filename1, "uploads");
                 $post->img1 = $filename1;
             }

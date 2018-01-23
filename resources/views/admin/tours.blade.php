@@ -18,10 +18,11 @@
                             @if(!Auth::guest() && ($post->author_id == Auth::user()->id || Auth::user()->is_admin()))
                                 @if($post->active == '1')
                                     <a class="btn" style="float: right" href="{{ url('/edit', ['id' => $post->id])}}">Edit
-                                            Post</a>
+                                        Post</a>
                                 @else
                                     <button class="btn" style="float: right"><a href="{{ url('edit/'.$post->id)}}">Edit
-                                            Draft</a></button>
+                                            Draft</a>
+                                    </button>
                                 @endif
                             @endif
                         </h3>
@@ -78,10 +79,13 @@
 
             <div class="form-group">
                 <label for="fileEn">upload PDF file in English</label>
-                <input type="file" multiple="multiple" placeholder="pdf file in ENglish" id="fileEn" name="fileEn" class="form-control">
-            </div>   <div class="form-group">
+                <input type="file" multiple="multiple" placeholder="pdf file in ENglish" id="fileEn" name="fileEn"
+                       class="form-control">
+            </div>
+            <div class="form-group">
                 <label for="fileRu">upload PDF file in Russian</label>
-                <input type="file" id="fileRu" multiple="multiple" placeholder="pdf file in Russian" name="fileRu" class="form-control">
+                <input type="file" id="fileRu" multiple="multiple" placeholder="pdf file in Russian" name="fileRu"
+                       class="form-control">
             </div>
             <input type="submit" name='post_comment' class="btn btn-success" value="Post"/>
         </form>
