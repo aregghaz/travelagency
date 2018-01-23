@@ -162,7 +162,7 @@ class PostController extends Controller
             } else {
                 $post->active = 1;
                 $message = 'Post updated successfully';
-                $landing = $post->id;
+                $landing = '/edit/'.$post->id;
             }
             $post->save();
             return redirect($landing)->withMessage($message);
