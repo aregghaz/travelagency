@@ -13,7 +13,7 @@
                 </div>
                 <!-- End Heading -->
                 <!-- Portfolio controls -->
-                @if($hotTours)
+                @if($hotTours == '1')
                 <div class="controls text-center">
                     <a class="filter" data-filter="all">All</a>
                     <a class="filter" data-filter=".heal">Healing</a>
@@ -40,7 +40,7 @@
         </div>
 
         <!-- Portfolio Recent Projects -->
-        <div id="portfolio-list">
+        <div id=" row portfolio-list">
             @foreach($posts as $post)
             <div class="col-md-3 col-sm-6 col-xs-12 mix {{ $post->role }}" style="display: inline-block;">
                 <div class="portfolio-item">
@@ -58,13 +58,7 @@
                 </div>
             </div>
 
-                <div class="modal fade {{$post->id}}" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-                    <div class="modal-dialog modal-lg" role="document">
 
-                        <img src="{{  URL::to("/images/turs/$post->img1") }}" alt="">
-
-                    </div>
-                </div>
 
                 <input type="hidden" name="price" class="price" value="{{$post->price}}">
                 <input type="hidden" name="price" class="priceRub" value="{{$post->price}}">

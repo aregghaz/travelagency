@@ -165,7 +165,7 @@ class UserController extends Controller
 
         $posts = Posts::all();
 
-        return view('template.allToursEn', ['posts' => $posts,'hotTours' =>$hotTours]);
+        return view('template.allToursEn', ['posts' => $posts,'hotTours' => $hotTours]);
 
 
     }
