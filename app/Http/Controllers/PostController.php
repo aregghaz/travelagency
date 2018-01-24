@@ -112,10 +112,6 @@ class PostController extends Controller
         }
     }
 
-    /*
-     *
-     *
-     * */
 
     public function update(Request $request)
     {
@@ -126,10 +122,14 @@ class PostController extends Controller
             $titleEn = $request->input('titleEn');
             $titleRu = $request->input('titleRu');
             $role =  $request->input('role');
+            $days =  $request->input('days');
+            $night =  $request->input('night');
 
             $post->titleEn = $titleEn;
             $post->titleRu = $titleRu;
             $post->role = $role;
+            $post->days = $days;
+            $post->night = $night;
             if ($request->has('fileEn')) {
                 File::delete('images/turs/' . $post->linkEn);
 
@@ -145,6 +145,7 @@ class PostController extends Controller
             }
             if ($request->has('img1')) {
                 $filename1 = time() + 1. . '.jpg';
+                File::delete('images/turs/' . $post->img1);
                 $request->img1->storeAs('turs', $filename1, "uploads");
                 $post->img1 = $filename1;
             }
@@ -156,7 +157,7 @@ class PostController extends Controller
             } else {
                 $post->active = 1;
                 $message = 'Post updated successfully';
-                $landing = $post->id;
+                $landing = '/edit/'.$post->id;
             }
             $post->save();
             return redirect($landing)->withMessage($message);
