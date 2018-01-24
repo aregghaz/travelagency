@@ -12,6 +12,7 @@ use View;
 use DB;
 use App;
 use Mail;
+
 class UserController extends Controller
 {
 
@@ -62,13 +63,15 @@ class UserController extends Controller
 
         return view('template.armeniaEn');
     }
-public function videoEn()
+
+    public function videoEn()
     {
 
 
         return view('template.videoEn');
     }
-public function videoRu()
+
+    public function videoRu()
     {
 
 
@@ -140,19 +143,31 @@ public function videoRu()
 
         return view('template.allToursRu', ['posts' => $posts]);
     }
- public function allExcursionsEn()
+
+    public function allExcursionsEn()
     {
 
         $posts = Excursion::all();
 
         return view('template.allExcursionsEn', ['posts' => $posts]);
     }
-public function allExcursionsRu()
+
+    public function allExcursionsRu()
     {
 
         $posts = Excursion::all();
 
         return view('template.allExcursionsRu', ['posts' => $posts]);
+    }
+
+    public function allToursEn(Request $request)
+    {  $hotTours =$request['hotTours'];
+
+        $posts = Posts::all();
+
+        return view('template.allToursEn', ['posts' => $posts,'hotTours' =>$hotTours]);
+
+
     }
 
     public function contacusEn()
@@ -167,16 +182,6 @@ public function allExcursionsRu()
 
 
         return view('template.contacusRu');
-    }
-
-    public function allToursEn()
-    {
-
-        $posts = Posts::all();
-
-        return view('template.allToursEn', ['posts' => $posts]);
-
-
     }
 
 
@@ -249,7 +254,8 @@ public function allExcursionsRu()
         return view('admin.profile', $data);
     }
 
-    public function sendEmail() {
+    public function sendEmail()
+    {
 
         $data = array(
             'name' => "Learning Laravel",
@@ -262,7 +268,7 @@ public function allExcursionsRu()
             $message->to('yourEmail@domain.com')->subject('Learning Laravel test email');
 
         });
-die('asdsadsa');
+        die('asdsadsa');
         return "Your email has been sent successfully";
     }
 }
