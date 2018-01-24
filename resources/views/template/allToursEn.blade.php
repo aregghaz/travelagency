@@ -13,7 +13,7 @@
                 </div>
                 <!-- End Heading -->
                 <!-- Portfolio controls -->
-                @if($hotTours == '1')
+                @if($hotTours == 1)
                 <div class="controls text-center">
                     <a class="filter" data-filter="all">All</a>
                     <a class="filter" data-filter=".heal">Healing</a>
@@ -40,7 +40,7 @@
         </div>
 
         <!-- Portfolio Recent Projects -->
-        <div id=" row portfolio-list">
+        <div id="portfolio-list">
             @foreach($posts as $post)
             <div class="col-md-3 col-sm-6 col-xs-12 mix {{ $post->role }}" style="display: inline-block;">
                 <div class="portfolio-item">
