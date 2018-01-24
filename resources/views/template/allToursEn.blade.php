@@ -22,7 +22,7 @@
                         <a class="filter" data-filter=".culture">Culture</a>
                         <a class="filter" data-filter=".gastronomy">Gastronomy</a>
                         <a class="filter" data-filter=".weekend">Weekend</a>
-                        <a class="filter" data-filter="hotTours">Hot Tours</a>
+                        <a class="filter" data-filter=".hotTours">Hot Tours</a>
                     </div>
 
             </div>
