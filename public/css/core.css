@@ -263,10 +263,13 @@ header .right_block {
   min-width: 150px;
   text-align: center;
 }
+#hotTours{
+  background-color: #4b659d;
+}
 header .right_block .login_block a {
   font-size: 13px;
   color: #fff;
-  background: #4b659d;
+
   padding: 7px;
   display: block;
   text-transform: uppercase;

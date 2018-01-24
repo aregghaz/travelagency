@@ -25,7 +25,7 @@ class CreatePostsTable extends Migration
             $table->string('night')->nullable();
             $table->integer('price')->nullable();
             $table->string('img1')->nullable();
-            $table->enum('role',['extreme','heal','all','culture','gastronomy','weekend'])->default('all');
+            $table->enum('role',['extreme','heal','all','culture','gastronomy','weekend','hotTours'])->default('all');
             $table->boolean('active');
             $table->timestamps();
         });

@@ -20,12 +20,12 @@
                             </a>
                         </li>
                         <li>
-                            <a href="/en/accommodation/apartment.html">
+                            <a href="">
                                 <span>Apartments</span>
                             </a>
                         </li>
                         <li class="last">
-                            <a href="/en/accommodation/villa.html">
+                            <a href="">
                                 <span>Houses</span>
                             </a>
                         </li>
@@ -38,7 +38,7 @@
                     </span>
                     <ul class="sub-menu clear menu_level_1" style="display: none; opacity: 1;">
                         <li class="first">
-                            <a href="/en/transport/car-with-driver.html">
+                            <a href="">
                                 <span>Vehicles with driver</span>
                             </a>
                         </li>
@@ -96,22 +96,22 @@
                             </a>
                         </li>
                         <li>
-                            <a href="/en/armenia/duduk-is-the-soul-of-armenian-nation.html">
+                            <a href="">
                                 <span>Duduk is the soul of Armenian nation</span>
                             </a>
                         </li>
                         <li>
-                            <a href="/en/armenia/yerevan-traveling-for-gourmet.html">
+                            <a href="">
                                 <span>Yerevan: Traveling for gourmet</span>
                             </a>
                         </li>
                         <li>
-                            <a href="/en/armenia/armenians-for-all-the-world.html">
+                            <a href="">
                                 <span>Armenians for All The World</span>
                             </a>
                         </li>
                         <li class="last">
-                            <a href="/en/armenia/armenian-people.html">
+                            <a href="">
                                 <span>Armenian people</span>
                             </a>
                         </li>
@@ -133,8 +133,8 @@
         </div>
         <div class="right_block">
             <div class="login_block">
-                <a href="/en/register/">
-                    For tour-operator
+                <a href="{{ route('allToursEn', ['hotTours' => true]) }}" id="hotTours">
+                    HOT TOURS
                 </a>
             </div>
             <div class="group_block clear">
@@ -324,3 +324,27 @@
         </div>
     </div>
 </header>
+<script>
+    $( document ).ready(function() {
+
+        var elem = $("#hotTours");
+
+        function frame() {
+
+            if (elem.css('background-color') == ' #4b659d') {
+                elem.css('background-color', 'rgb(255, 0, 0)')
+            } else if(elem.css('background-color') == 'rgb(75, 101, 157)')  {
+                elem.css('background-color', 'rgb(255, 0, 0)')
+            }else if(elem.attr('style') == 'background-color: rgb(255, 0, 0);') {
+                elem.css('background-color','#4b659d')
+            }
+
+
+        }
+        function myFunction() {
+            setInterval(frame, 1000);
+        }
+        myFunction()
+    });
+
+</script>

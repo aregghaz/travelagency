@@ -13,6 +13,18 @@
                 </div>
                 <!-- End Heading -->
                 <!-- Portfolio controls -->
+                @if($hotTours)
+                <div class="controls text-center">
+                    <a class="filter" data-filter="all">All</a>
+                    <a class="filter" data-filter=".heal">Healing</a>
+                    <a class="filter" data-filter=".extreme">Extreme</a>
+                    <a class="filter" data-filter=".culture">Culture</a>
+                    <a class="filter" data-filter=".gastronomy">Gastronomy</a>
+                    <a class="filter" data-filter=".weekend">Weekend</a>
+                    <a class="filter active" data-filter=".hotTours">Hot Tours</a>
+                </div>
+                @else
+
                 <div class="controls text-center">
                     <a class="filter active" data-filter="all">All</a>
                     <a class="filter" data-filter=".heal">Healing</a>
@@ -20,7 +32,9 @@
                     <a class="filter" data-filter=".culture">Culture</a>
                     <a class="filter" data-filter=".gastronomy">Gastronomy</a>
                     <a class="filter" data-filter=".weekend">Weekend</a>
+                    <a class="filter" data-filter=".hotTours">Hot Tours</a>
                 </div>
+                @endif
                 <!-- End Portfolio Controls -->
             </div>
         </div>
