@@ -20,6 +20,7 @@
                     <a class="filter" data-filter=".culture">Культура</a>
                     <a class="filter" data-filter=".gastronomy">Гастрономия</a>
                     <a class="filter" data-filter=".weekend">Выходные</a>
+                    <a class="filter" data-filter=".hotTours">ГОРЯЧИЕ ТУРЫ</a>
                 </div>
                 <!-- End Portfolio Controls -->
             </div>
