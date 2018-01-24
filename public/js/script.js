@@ -230,3 +230,24 @@ var current = $('.current');
         $('.link_button').html('<a href="\allToursEn" class=\'moreTours\'>See all tours</a>')
     })
 });
+$( document ).ready(function() {
+
+    var elem = $("#hotTours");
+
+    function frame() {
+
+        if (elem.css('background-color') == ' #4b659d') {
+            elem.css('background-color', 'rgb(255, 0, 0)')
+        } else if(elem.css('background-color') == 'rgb(75, 101, 157)')  {
+            elem.css('background-color', 'rgb(255, 0, 0)')
+        }else if(elem.attr('style') == 'background-color: rgb(255, 0, 0);') {
+            elem.css('background-color','#4b659d')
+        }
+
+
+    }
+    function myFunction() {
+        setInterval(frame, 1000);
+    }
+    myFunction()
+});
