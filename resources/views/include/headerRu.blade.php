@@ -152,7 +152,7 @@
         </div>
         <div class="right_block">
             <div class="login_block">
-                <a href="{{ route('allToursEn', ['hotTours' => true]) }}" id="hotTours">
+                <a href="{{ route('allToursRu', ['hotTours' => true]) }}" id="hotTours">
 
                     ГОРЯЧИЕ ТУРЫ
                 </a>

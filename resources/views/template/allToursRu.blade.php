@@ -31,7 +31,7 @@
             @foreach($posts as $post)
                 <div class="col-md-3 col-sm-6 col-xs-12 mix {{ $post->role }}" style="display: inline-block;">
                     <div class="portfolio-item">
-                        <img src="{{  URL::to("/images/turs/".$post->img1) }}" alt="">
+                        <img src="{{  URL::to("/images/turs/".$post->img1) }}" height="250px" alt="">
                         <div class="overlay">
                             <div class="icon">
                                 <a href="/images/turs/{{ $post->linkRu }}" target="_blank"><i class="icon-link left"></i></a>
@@ -45,13 +45,6 @@
                     </div>
                 </div>
 
-                <div class="modal fade {{$post->id}}" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-                    <div class="modal-dialog modal-lg" role="document">
-
-                        <img src="{{  URL::to("/images/turs/$post->img1") }}" alt="">
-
-                    </div>
-                </div>
                 <input type="hidden" name="price" class="price" value="{{$post->price}}">
                 <input type="hidden" name="price" class="priceRub" value="{{$post->price}}">
                 <input type="hidden" name="price" class="priceEur" value="{{$post->price}}">
@@ -60,7 +53,6 @@
             @endforeach
         </div>
         <!-- End Portfolio  -->
-
 
 
     </section>
