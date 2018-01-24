@@ -13,47 +13,36 @@
                 </div>
                 <!-- End Heading -->
                 <!-- Portfolio controls -->
-                @if($hotTours == 1)
-                <div class="controls text-center">
-                    <a class="filter" data-filter="all">All</a>
-                    <a class="filter" data-filter=".heal">Healing</a>
-                    <a class="filter" data-filter=".extreme">Extreme</a>
-                    <a class="filter" data-filter=".culture">Culture</a>
-                    <a class="filter" data-filter=".gastronomy">Gastronomy</a>
-                    <a class="filter" data-filter=".weekend">Weekend</a>
-                    <a class="filter active" data-filter=".hotTours">Hot Tours</a>
-                </div>
-                @else
 
-                <div class="controls text-center">
-                    <a class="filter active" data-filter="all">All</a>
-                    <a class="filter" data-filter=".heal">Healing</a>
-                    <a class="filter" data-filter=".extreme">Extreme</a>
-                    <a class="filter" data-filter=".culture">Culture</a>
-                    <a class="filter" data-filter=".gastronomy">Gastronomy</a>
-                    <a class="filter" data-filter=".weekend">Weekend</a>
-                    <a class="filter" data-filter=".hotTours">Hot Tours</a>
-                </div>
-                @endif
-                <!-- End Portfolio Controls -->
+
+                    <div class="col-md-12 controls text-center">
+                        <a class="filter  active" data-filter="all">All</a>
+                        <a class="filter" data-filter=".heal">Healing</a>
+                        <a class="filter" data-filter=".extreme">Extreme</a>
+                        <a class="filter" data-filter=".culture">Culture</a>
+                        <a class="filter" data-filter=".gastronomy">Gastronomy</a>
+                        <a class="filter" data-filter=".weekend">Weekend</a>
+                        <a class="filter" data-filter="hotTours">Hot Tours</a>
+                    </div>
+
             </div>
         </div>
 
         <!-- Portfolio Recent Projects -->
-        <div id="portfolio-list">
+        <div class='row' id="portfolio-list">
             @foreach($posts as $post)
-            <div class="col-md-3 col-sm-6 col-xs-12 mix {{ $post->role }}" style="display: inline-block;">
+            <div class="col-md-4 col-sm-6 col-xs-6 mix {{ $post->role }}" style="display: inline-block;">
                 <div class="portfolio-item">
                     <img src="{{  URL::to("/images/turs/".$post->img1) }}" height="250px" alt="">
                     <div class="overlay">
                         <div class="icon">
-                            <a href="/images/turs/{{ $post->linkEn }}" target="_blank"><i class="icon-link left"></i></a>
-                            <a  data-toggle="modal" data-target=".{{$post->id}}" ><i class="icon-eye right"></i></a>
+                            <a href="/images/turs/{{ $post->linkEn }}" target="_blank"></a>
                         </div>
                     </div>
                     <div class="content">
-                        <h3><a href="#">{{ $post->titleEn }}</a></h3>
-                        <p class="USD">{{$post->days}} days / {{$post->night}} nights <br> Price: {{ $post->price }} AMD</p>
+                        <h3><a href="#">{{ $post->titleEn }}</a></h3><br>
+                        <p>{{floatval($post->days)}} days / {{ floatval($post->night)}} nights</p>
+                        <p class="USD"> Price: {{ $post->price }} AMD</p>
                     </div>
                 </div>
             </div>
@@ -76,4 +65,6 @@
     <script type="text/javascript" src="{{ URL::to('assets/js/jquery.themepunch.revolution.min.js') }}"></script>
     <script type="text/javascript" src="{{ URL::to('assets/js/jquery.slicknav.js') }}"></script>
     <script src="{{ URL::to('assets/js/bootstrap-select.min.js') }}"></script>
+
+
 @endsection

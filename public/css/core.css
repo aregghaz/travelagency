@@ -2959,7 +2959,9 @@ footer .bottom_block .social ul li a i {
 }
 #contnet {
   padding: 60px 0;
-  display: inline-block;
+  display: block;
+  min-height: 680px;
+
 }
 .controls {
   margin: 25px 0;
@@ -3178,7 +3180,7 @@ margin-left: 20px;
  }
  .bg-color{
    background-color: #f6f6f6;
-   opacity: 0.5;
+   opacity: 0.9;
  }
  .asd {
 

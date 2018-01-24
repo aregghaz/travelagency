@@ -67,12 +67,12 @@
                     </span>
                     <ul class="sub-menu clear menu_level_1" style="display: none; opacity: 1;">
                         <li class="first">
-                            <a href="/en/service/riestorany.html">
+                            <a href="">
                                 <span>Ресторан</span>
                             </a>
                         </li>
                         <li>
-                            <a href="/en/service/orghanizatsiia-mieropriiatii.html">
+                            <a href="">
                                 <span>Организация мероприятий</span>
                             </a>
                         </li>
@@ -90,17 +90,17 @@
                     </span>
                     <ul class="sub-menu clear menu_level_1" style="display: none; opacity: 1;">
                         <li class="first">
-                            <a href="/en/armenia/culture.html">
-                                <span>Культура</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/en/armenia/armenia.html">
+                            <a href="{{ route('armeniaEn') }}">
                                 <span>Армения</span>
                             </a>
                         </li>
                         <li>
-                            <a href="/en/armenia/did-you-know-that.html">
+                            <a href="{{ route('brandingOfArmeniaEn') }}">
+                                <span>Брендинг Армении</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{ route('resourcesEn') }}">
                                 <span>Знаете ли вы, что ...</span>
                             </a>
                         </li>
@@ -110,34 +110,34 @@
                             </a>
                         </li>
                         <li>
-                            <a href="/en/armenia/taj-mahal-armenian-girl-as-a-soul-of-indian-symbol.html">
+                            <a href="">
                                 <span>Тадж-Махал: армянская девушка как душа индийского символа.</span>
                             </a>
                         </li>
                         <li>
-                            <a href="/en/armenia/duduk-is-the-soul-of-armenian-nation.html">
+                            <a href="">
                                 <span>Дудук - душа армянской нации</span>
                             </a>
                         </li>
                         <li>
-                            <a href="/en/armenia/yerevan-traveling-for-gourmet.html">
+                            <a href="">
                                 <span>Ереван: Путешествие для гурманов</span>
                             </a>
                         </li>
                         <li>
-                            <a href="/en/armenia/armenians-for-all-the-world.html">
+                            <a href="">
                                 <span>Армяне для всего мира</span>
                             </a>
                         </li>
                         <li class="last">
-                            <a href="/en/armenia/armenian-people.html">
+                            <a href="">
                                 <span>Армянский народ</span>
                             </a>
                         </li>
                     </ul>
                 </li>
                 <li>
-                    <a href="/en/company.html">
+                    <a href="{{ route('aboutUsEn') }}">
                         <img alt="" src="/bundles/damain/images/company.png" class="" style="margin-left: 0px;">
                         <span>Компании</span>
                     </a>
@@ -152,8 +152,9 @@
         </div>
         <div class="right_block">
             <div class="login_block">
-                <a href="/en/register/">
-                    Для туроператора
+                <a href="{{ route('allToursEn', ['hotTours' => true]) }}" id="hotTours">
+
+                    ГОРЯЧИЕ ТУРЫ
                 </a>
             </div>
             <div class="group_block clear">
