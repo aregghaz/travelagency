@@ -1,7 +1,7 @@
 <header>
     <div class="container menuCont clear">
         <div class="logo left_block">
-            <a href="/">
+            <a href="{{ route('homeRu') }}">
                 <img alt="Discover Aremnia" src="/bundles/damain/images/company_logo.png">
             </a>
         </div>
