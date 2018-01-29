@@ -14,17 +14,17 @@
                     </span>
                     <ul class="sub-menu clear menu_level_1" style="display: none; opacity: 1;">
                         <li class="first">
-                            <a href="/en/hotels.html">
+                            <a href="{{ route('hotelsRu') }}">
                                 <span>Отели</span>
                             </a>
                         </li>
                         <li>
-                            <a href="/en/accommodation/apartment.html">
+                            <a href="">
                                 <span>Квартира</span>
                             </a>
                         </li>
                         <li class="last">
-                            <a href="/en/accommodation/villa.html">
+                            <a href="">
                                 <span>Вилла</span>
                             </a>
                         </li>
@@ -37,12 +37,12 @@
                     </span>
                     <ul class="sub-menu clear menu_level_1" style="display: none; opacity: 1;">
                         <li class="first">
-                            <a href="/en/transport/car-with-driver.html">
+                            <a href="{{ route('carRentRu') }}">
                                 <span>Автомобиль с водителем</span>
                             </a>
                         </li>
                         <li class="last">
-                            <a href="/en/transport/car-rent.html">
+                            <a href="">
                                 <span>Аренда автомобиля</span>
                             </a>
                         </li>
@@ -55,33 +55,19 @@
                     </a>
                 </li>
                 <li>
-                    <a href="{{ route('allToursEn') }}">
+                    <a href="{{ route('allToursRu') }}">
                         <img alt="" src="/bundles/damain/images/tours.png" class="" style="margin-left: 0px;">
                         <span>Туры</span>
                     </a>
                 </li>
                 <li class="dropdown">
                     <span>
+                   <a href="{{ route('servicesRu') }}">
                     <img alt="" src="/bundles/damain/images/services.png" class="" style="margin-left: 0px;">
                         <span>Услуги</span>
+                   </a>
                     </span>
-                    <ul class="sub-menu clear menu_level_1" style="display: none; opacity: 1;">
-                        <li class="first">
-                            <a href="">
-                                <span>Ресторан</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <span>Организация мероприятий</span>
-                            </a>
-                        </li>
-                        <li class="last">
-                            <a href="/en/service/other.html">
-                                <span>другие</span>
-                            </a>
-                        </li>
-                    </ul>
+
                 </li>
                 <li class="dropdown">
                     <span>
@@ -90,17 +76,17 @@
                     </span>
                     <ul class="sub-menu clear menu_level_1" style="display: none; opacity: 1;">
                         <li class="first">
-                            <a href="{{ route('armeniaEn') }}">
+                            <a href="{{ route('armeniaRu') }}">
                                 <span>Армения</span>
                             </a>
                         </li>
                         <li>
-                            <a href="{{ route('brandingOfArmeniaEn') }}">
+                            <a href="{{ route('brandingOfArmeniaRu') }}">
                                 <span>Брендинг Армении</span>
                             </a>
                         </li>
                         <li>
-                            <a href="{{ route('resourcesEn') }}">
+                            <a href="{{ route('resourcesRu') }}">
                                 <span>Знаете ли вы, что ...</span>
                             </a>
                         </li>
@@ -137,7 +123,7 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="{{ route('aboutUsEn') }}">
+                    <a href="{{ route('aboutUsRu') }}">
                         <img alt="" src="/bundles/damain/images/company.png" class="" style="margin-left: 0px;">
                         <span>Компании</span>
                     </a>
@@ -182,7 +168,7 @@
                             </span>
                             <ul class="sub_lang">
                                 <li>
-                                    <a href="{{ route('homeEn') }}"><span class="flag-icon flag-icon-gb"></span></a>
+                                    <a href="{{ route('homeRu') }}"><span class="flag-icon flag-icon-gb"></span></a>
                                 </li>
                             </ul>
                         </li>
