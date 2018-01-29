@@ -25,11 +25,17 @@ Route::get('/hotelsRu', ['as' => 'hotelsRu', 'uses' => 'UserController@hotelsRu'
 Route::get('/contacusEn', ['as' => 'contacusEn', 'uses' => 'UserController@contacusEn']);
 Route::get('/contacusRu', ['as' => 'contacusRu', 'uses' => 'UserController@contacusRu']);
 Route::get('/carRentEn', ['as' => 'carRentEn', 'uses' => 'UserController@carRentEn']);
+Route::get('/carRentRu', ['as' => 'carRentRu', 'uses' => 'UserController@carRentRu']);
 Route::get('/armeniaEn', ['as' => 'armeniaEn', 'uses' => 'UserController@armeniaEn']);
+Route::get('/armeniaRu', ['as' => 'armeniaRu', 'uses' => 'UserController@armeniaRu']);
 Route::get('/brandingOfArmeniaEn', ['as' => 'brandingOfArmeniaEn', 'uses' => 'UserController@brandingOfArmeniaEn']);
+Route::get('/brandingOfArmeniaRu', ['as' => 'brandingOfArmeniaRu', 'uses' => 'UserController@brandingOfArmeniaRu']);
 Route::get('/servicesEn', ['as' => 'servicesEn', 'uses' => 'UserController@servicesEn']);
+Route::get('/servicesRu', ['as' => 'servicesRu', 'uses' => 'UserController@servicesRu']);
 Route::get('/resourcesEn', ['as' => 'resourcesEn', 'uses' => 'UserController@resourcesEn']);
+Route::get('/resourcesRu', ['as' => 'resourcesRu', 'uses' => 'UserController@resourcesRu']);
 Route::get('/aboutUsEn', ['as' => 'aboutUsEn', 'uses' => 'UserController@aboutUsEn']);
+Route::get('/aboutUsRu', ['as' => 'aboutUsRu', 'uses' => 'UserController@aboutUsRu']);
 Route::get('/videoEn', ['as' => 'videoEn', 'uses' => 'UserController@videoEn']);
 Route::get('/videoRu', ['as' => 'videoRu', 'uses' => 'UserController@videoRu']);
 Route::get('/allExcursionsEn', ['as' => 'allExcursionsEn', 'uses' => 'UserController@allExcursionsEn']);

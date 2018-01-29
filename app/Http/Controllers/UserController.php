@@ -62,6 +62,11 @@ class UserController extends Controller
 
 
         return view('template.armeniaEn');
+    }  public function armeniaRu()
+    {
+
+
+        return view('template.armeniaRu');
     }
 
     public function videoEn()
@@ -83,6 +88,11 @@ class UserController extends Controller
 
 
         return view('template.brandingOfArmeniaEn');
+    }  public function brandingOfArmeniaRu()
+    {
+
+
+        return view('template.brandingOfArmeniaRu');
     }
 
     public function servicesEn()
@@ -91,12 +101,23 @@ class UserController extends Controller
 
         return view('template.servicesEn');
     }
+  public function servicesRu()
+    {
+
+
+        return view('template.servicesRu');
+    }
 
     public function resourcesEn()
     {
 
 
         return view('template.resourcesEn');
+    } public function resourcesRu()
+    {
+
+
+        return view('template.resourcesRu');
     }
 
     public function aboutUsEn()
@@ -104,6 +125,13 @@ class UserController extends Controller
 
 
         return view('template.aboutUsEn');
+    }
+
+    public function aboutUsRu()
+    {
+
+
+        return view('template.aboutUsRu');
     }
 
 
@@ -118,6 +146,18 @@ class UserController extends Controller
         $onl = $only[0];
         var_dump($onl);
         return view('template.carRentEn', ['carsRent' => json_encode($carsRents)]);
+    }
+    public function carRentRu()
+    {
+        $carsRents = DB::table('car_rent')->pluck('price_list');
+
+        // $hotels =  DB::table('hotels')->get();
+        $vowels = array(';;');
+        $onlyconsonants = str_replace($vowels, "", $carsRents);
+        $only = json_decode($onlyconsonants);
+        $onl = $only[0];
+        var_dump($onl);
+        return view('template.carRentRu', ['carsRent' => json_encode($carsRents)]);
     }
 
     public function toursEn(Request $request)

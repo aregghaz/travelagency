@@ -1,4 +1,4 @@
-@extends('page.index')
+@extends('page.indexRu')
 @section('title')
 
 @endsection
@@ -12,9 +12,9 @@
                 <thead>
                 <tr>
                     <th>#</th>
-                    <th>Name</th>
-                    <th>Stars</th>
-                    <th>LInk</th>
+                    <th>Имя</th>
+                    <th>Звезды</th>
+                    <th>Ссылка</th>
                 </tr>
                 </thead>
                 @foreach($hotels as $hotel)
