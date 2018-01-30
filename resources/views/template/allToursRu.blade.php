@@ -44,7 +44,7 @@
                         </div>
                         <a href="/images/turs/{{ $post->linkRu }}">
                             <div class="content">
-                                <h3>{{ $post->titleEn }}</h3><br>
+                                <h3>{{ $post->titleRu }}</h3><br>
                                 <p>{{  $post->days  }} / {{  $post->night   }}</p>
                                 <p class="USD"> Цена: {{ $post->price }} AMD</p>
                             </div>
