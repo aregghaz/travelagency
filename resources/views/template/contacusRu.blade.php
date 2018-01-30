@@ -14,6 +14,7 @@
         .support-inner h4 {
             font-size: 20px;
             font-weight: normal;
+            text-align: center;
         }
         .support-inner .support-info {
             position: relative;
@@ -64,7 +65,7 @@
             <div class="row">
                 <div class="support-inner">
                     <div class="col-md-4 col-sm-6 col-xs-12">
-                        <h4>контактные телефоны</h4>
+                        <h4>Контактные телефоны</h4>
                         <div class="support-info">
                             <div class="info-title">
                                 <i class="volume control phone icon"></i>
@@ -85,7 +86,7 @@
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-6 col-xs-12">
-                        <h4>электронный адрес</h4>
+                        <h4>Электронный адрес</h4>
                         <div class="support-info">
                             <div class="info-title">
                                 <i class="mail outline icon"></i>

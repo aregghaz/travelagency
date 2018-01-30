@@ -9,7 +9,8 @@
             <menu id="top_menu">
                 <li class="dropdown first">
                     <span>
-                        <img alt="" src="/bundles/damain/images/accommodation.png" class="" style="margin-left: -15.5px;">
+                        <img alt="" src="/bundles/damain/images/accommodation.png" class=""
+                             style="margin-left: -15.5px;">
                         <span>Жилье</span>
                     </span>
                     <ul class="sub-menu clear menu_level_1" style="display: none; opacity: 1;">
@@ -163,7 +164,8 @@
                         <li class="current">
                             <span>
 
-                                <a href=""><span class="flag-icon flag-icon-ru"></span>
+                                <a href="{{ route('homeEn') }}">
+                                    <span class="flag-icon flag-icon-ru"></span>
                                     </a>
                             </span>
                             <ul class="sub_lang">

@@ -321,6 +321,6 @@ class UserController extends Controller
         });
 
 
-        return redirect('contacusEn')->with('status', 'Ваше сообщение отправлено');
+        return redirect('contacusRu')->with('status', 'Ваше сообщение отправлено');
     }
 }
