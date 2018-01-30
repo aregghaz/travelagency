@@ -62,12 +62,12 @@
                     </a>
                 </li>
                 <li class="dropdown">
-                    <span>
+
                    <a href="{{ route('servicesRu') }}">
                     <img alt="" src="/bundles/damain/images/services.png" class="" style="margin-left: 0px;">
                         <span>Услуги</span>
                    </a>
-                    </span>
+
 
                 </li>
                 <li class="dropdown">
@@ -126,7 +126,7 @@
                 <li>
                     <a href="{{ route('aboutUsRu') }}">
                         <img alt="" src="/bundles/damain/images/company.png" class="" style="margin-left: 0px;">
-                        <span>Компании</span>
+                        <span>О Компании</span>
                     </a>
                 </li>
                 <li class="last">
@@ -250,23 +250,7 @@
                         <img alt="" src="/bundles/damain/images/services.png">
                         <span>Услуги</span>
                     </span>
-                    <ul class="sub-menu clear menu_level_1">
-                        <li class="first">
-                            <a href="/en/service/riestorany.html">
-                                <span>Ресторан</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/en/service/orghanizatsiia-mieropriiatii.html">
-                                <span>Организация мероприятий</span>
-                            </a>
-                        </li>
-                        <li class="last">
-                            <a href="/en/service/other.html">
-                                <span>Другие</span>
-                            </a>
-                        </li>
-                    </ul>
+
                 </li>
                 <li class="dropdown">
                     <span>
@@ -324,7 +308,7 @@
                 <li>
                     <a href="/en/company.html">
                         <img alt="" src="/bundles/damain/images/company.png">
-                        <span>Компании</span>
+                        <span>О Компании</span>
                     </a>
                 </li>
                 <li class="last">
