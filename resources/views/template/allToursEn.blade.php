@@ -3,7 +3,11 @@
 
 @endsection
 @section('content')
-
+    <style>
+        .portfolio-item .content h3 {
+            color: white;!important;
+        }
+    </style>
     <section id="contnet">
         <div class="container">
             <div class="row">
@@ -31,20 +35,26 @@
         <!-- Portfolio Recent Projects -->
         <div class='row' id="portfolio-list">
             @foreach($posts as $post)
-            <div class="col-md-4 col-sm-6 col-xs-6 mix {{ $post->role }}" style="display: inline-block;">
+
+                <div class="col-md-4 col-sm-6 col-xs-6 mix {{ $post->role }}" style="display: inline-block;">
                 <div class="portfolio-item">
+
                     <img src="{{  URL::to("/images/turs/".$post->img1) }}" height="250px" alt="">
                     <div class="overlay">
                         <div class="icon">
                             <a href="/images/turs/{{ $post->linkEn }}" target="_blank"></a>
                         </div>
                     </div>
+                    <a href="/images/turs/{{ $post->linkEn }}">
                     <div class="content">
-                        <h3><a href="#">{{ $post->titleEn }}</a></h3><br>
+                        <h3>{{ $post->titleEn }}</h3><br>
                         <p>{{floatval($post->days)}} days / {{ floatval($post->night)}} nights</p>
                         <p class="USD"> Price: {{ $post->price }} AMD</p>
                     </div>
+                    </a>
+
                 </div>
+
             </div>
 
                 <input type="hidden" name="price" class="price" value="{{$post->price}}">

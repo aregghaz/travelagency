@@ -3,7 +3,11 @@
 
 @endsection
 @section('content')
-
+    <style>
+        .portfolio-item .content h3 {
+            color: white;!important;
+        }
+    </style>
     <section id="contnet">
         <div class="container">
             <div class="row">
@@ -31,18 +35,23 @@
             @foreach($posts as $post)
                 <div class="col-md-3 col-sm-6 col-xs-12 mix {{ $post->role }}" style="display: inline-block;">
                     <div class="portfolio-item">
+
                         <img src="{{  URL::to("/images/turs/".$post->img1) }}" height="250px" alt="">
                         <div class="overlay">
                             <div class="icon">
-                                <a href="/images/turs/{{ $post->linkRu }}" target="_blank"><i class="icon-link left"></i></a>
-                                <a  data-toggle="modal" data-target=".{{$post->id}}" ><i class="icon-eye right"></i></a>
+                                <a href="/images/turs/{{ $post->linkRu }}" target="_blank"></a>
                             </div>
                         </div>
-                        <div class="content">
-                            <h3><a href="#">{{ $post->titleRu }}</a></h3>
-                            <p class="USD">{{$post->days}} дней / {{$post->night}} ночьей <br> Цена: {{ $post->price }} AMD</p>
-                        </div>
+                        <a href="/images/turs/{{ $post->linkRu }}">
+                            <div class="content">
+                                <h3>{{ $post->titleEn }}</h3><br>
+                                <p>{{  $post->days  }} / {{  $post->night   }}</p>
+                                <p class="USD"> Цена: {{ $post->price }} AMD</p>
+                            </div>
+                        </a>
+
                     </div>
+
                 </div>
 
                 <input type="hidden" name="price" class="price" value="{{$post->price}}">
@@ -53,7 +62,7 @@
             @endforeach
         </div>
         <!-- End Portfolio  -->
-
+        <div class="clearfix"></div>
 
     </section>
 
