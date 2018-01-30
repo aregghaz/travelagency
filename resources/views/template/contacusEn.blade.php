@@ -14,6 +14,7 @@
         .support-inner h4 {
             font-size: 20px;
             font-weight: normal;
+            text-align: center;
         }
         .support-inner .support-info {
             position: relative;
