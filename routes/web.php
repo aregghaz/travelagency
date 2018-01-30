@@ -40,7 +40,8 @@ Route::get('/videoEn', ['as' => 'videoEn', 'uses' => 'UserController@videoEn']);
 Route::get('/videoRu', ['as' => 'videoRu', 'uses' => 'UserController@videoRu']);
 Route::get('/allExcursionsEn', ['as' => 'allExcursionsEn', 'uses' => 'UserController@allExcursionsEn']);
 Route::get('/allExcursionsRu', ['as' => 'allExcursionsRu', 'uses' => 'UserController@allExcursionsRu']);
-Route::post('/sendEmail', ['as' => 'sendEmail', 'uses' => 'UserController@sendEmail']);
+Route::any('/sendEmailEn', ['as' => 'sendEmailEn', 'uses' => 'UserController@sendEmailEn']);
+Route::any('/sendEmailRu', ['as' => 'sendEmailRu', 'uses' => 'UserController@sendEmailRu']);
 
 
 // show new post form

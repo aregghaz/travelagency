@@ -64,19 +64,18 @@
             <div class="row">
                 <div class="support-inner">
                     <div class="col-md-4 col-sm-6 col-xs-12">
-                        <h4>Звонок по телефону</h4>
+                        <h4>контактные телефоны</h4>
                         <div class="support-info">
                             <div class="info-title">
                                 <i class="volume control phone icon"></i>
-                                +7(958) 401 28 44<br>
+                                +7 (958) 401 28 44<br>
                                 +374 55 42 54 52<br>
-                                +7(958) 401 28 44<br>
                                 +374 91 28 28 88<br>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-6 col-xs-12">
-                        <h4>Адрес местонахождения</h4>
+                        <h4>Адрес</h4>
                         <div class="support-info">
                             <div class="info-title">
                                 <i class="location arrow icon"></i>
@@ -86,12 +85,12 @@
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-6 col-xs-12">
-                        <h4>Location Address</h4>
+                        <h4>электронный адрес</h4>
                         <div class="support-info">
                             <div class="info-title">
                                 <i class="mail outline icon"></i>
                                 contact@discoverarmenia.tours
-                                <span>Помогите нам улучшить!</span>
+
                             </div>
                         </div>
                     </div>
@@ -107,7 +106,7 @@
                         ОТПРАВИТЬ СООБЩЕНИЕ
                     </h2>
                     <!-- Form -->
-                    <form id="contactForm" class="contact-form" data-toggle="validator" novalidate="true">
+                    <form id="contactForm" class="contact-form"  action="{{route('sendEmailRu')  }}" method="post" >
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="row">
@@ -119,7 +118,7 @@
                                     </div>
                                     <div class="col-md-12">
                                         <div class="form-group">
-                                            <input type="email" class="form-control" id="email" placeholder="Введите адрес электронной почты" required="" data-error="Введите адрес электронной почты">
+                                            <input type="email" class="form-control" id="email" name="email" placeholder="Введите адрес электронной почты" required="" data-error="Введите адрес электронной почты">
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div>
@@ -141,13 +140,14 @@
                                 <div class="row">
                                     <div class="col-md-12">
                                         <div class="form-group">
-                                            <textarea class="form-control" placeholder="сообщение" rows="10" data-error="Write your message" required=""></textarea>
+                                            <textarea class="form-control" placeholder="сообщение" name="message" rows="10" data-error="Write your message" required=""></textarea>
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-12">
+                                <input type="hidden" name="_token" value="{{  Session::token() }}">
                                 <button type="submit" id="submit" class="btn btn-common disabled" style="pointer-events: all;cursor: pointer;color: white;opacity: 1;">Отправить сообщение</button>
                                 <div id="msgSubmit" class="h3 text-center hidden"></div>
                                 <div class="clearfix"></div>

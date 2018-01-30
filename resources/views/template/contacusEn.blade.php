@@ -70,7 +70,6 @@
                                 <i class="volume control phone icon"></i>
                                 +7(958) 401 28 44<br>
                                 +374 55 42 54 52<br>
-                                +7(958) 401 28 44<br>
                                 +374 91 28 28 88<br>
                             </div>
                         </div>
@@ -91,7 +90,7 @@
                             <div class="info-title">
                                 <i class="mail outline icon"></i>
                                 contact@discoverarmenia.tours
-                                <span>Help Us improve!</span>
+
                             </div>
                         </div>
                     </div>
@@ -107,7 +106,7 @@
                         SEND US A MESSAGE
                     </h2>
                     <!-- Form -->
-                    <form id="contactForm" class="contact-form" data-toggle="validator" method="post" action="{{route('sendEmail')  }}">
+                    <form id="contactForm" class="contact-form"  method="post" action="{{route('sendEmailEn')  }}">
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="row">
@@ -119,7 +118,7 @@
                                     </div>
                                     <div class="col-md-12">
                                         <div class="form-group">
-                                            <input type="email" class="form-control" id="email" placeholder="mail@sitename.com" required="" data-error="Please enter your email">
+                                            <input type="email" class="form-control" id="email" name="email2" placeholder="mail@sitename.com" required="" data-error="Please enter your email">
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div>
@@ -141,7 +140,7 @@
                                 <div class="row">
                                     <div class="col-md-12">
                                         <div class="form-group">
-                                            <textarea class="form-control" placeholder="Massage" rows="10" data-error="Write your message" required=""></textarea>
+                                            <textarea class="form-control" placeholder="Massage" name="message" rows="10" data-error="Write your message" required=""></textarea>
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div>
@@ -158,6 +157,20 @@
                 </div>
             </div>
         </div>
+        @if (session('status'))
+            <div class="col-md-4">
+
+            </div>
+        <div class="col-md-4">
+            <div class="alert alert-success">
+                {{ session('status') }}
+            </div>
+        </div>
+        <div class="col-md-4">
+
+        </div>
+
+        @endif
     </section>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHo_WtZ2nIYCgCLf7sINZaqcrpqSDio9o"></script>
     <script type="text/javascript">

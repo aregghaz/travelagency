@@ -62,7 +62,9 @@ class UserController extends Controller
 
 
         return view('template.armeniaEn');
-    }  public function armeniaRu()
+    }
+
+    public function armeniaRu()
     {
 
 
@@ -88,7 +90,9 @@ class UserController extends Controller
 
 
         return view('template.brandingOfArmeniaEn');
-    }  public function brandingOfArmeniaRu()
+    }
+
+    public function brandingOfArmeniaRu()
     {
 
 
@@ -101,7 +105,8 @@ class UserController extends Controller
 
         return view('template.servicesEn');
     }
-  public function servicesRu()
+
+    public function servicesRu()
     {
 
 
@@ -113,7 +118,9 @@ class UserController extends Controller
 
 
         return view('template.resourcesEn');
-    } public function resourcesRu()
+    }
+
+    public function resourcesRu()
     {
 
 
@@ -138,8 +145,6 @@ class UserController extends Controller
     public function carRentEn()
     {
         $carsRents = DB::table('car_rent')->pluck('price_list');
-
-        // $hotels =  DB::table('hotels')->get();
         $vowels = array(';;');
         $onlyconsonants = str_replace($vowels, "", $carsRents);
         $only = json_decode($onlyconsonants);
@@ -147,6 +152,7 @@ class UserController extends Controller
         var_dump($onl);
         return view('template.carRentEn', ['carsRent' => json_encode($carsRents)]);
     }
+
     public function carRentRu()
     {
         $carsRents = DB::table('car_rent')->pluck('price_list');
@@ -164,7 +170,6 @@ class UserController extends Controller
     {
         $id = $request['id'];
         $posts = Posts::findOrFail($id);
-
         return view('template.toursEn', ['posts' => $posts]);
     }
 
@@ -172,55 +177,41 @@ class UserController extends Controller
     {
         $id = $request['id'];
         $posts = Posts::findOrFail($id);
-
         return view('template.toursRu', ['posts' => $posts]);
     }
 
     public function allToursRu()
     {
-
         $posts = Posts::all();
-
         return view('template.allToursRu', ['posts' => $posts]);
     }
 
     public function allExcursionsEn()
     {
-
         $posts = Excursion::all();
-
         return view('template.allExcursionsEn', ['posts' => $posts]);
     }
 
     public function allExcursionsRu()
     {
-
         $posts = Excursion::all();
-
         return view('template.allExcursionsRu', ['posts' => $posts]);
     }
 
     public function allToursEn(Request $request)
-    {  $hotTours =$request['hotTours'];
-
+    {
+        $hotTours = $request['hotTours'];
         $posts = Posts::all();
-
-        return view('template.allToursEn', ['posts' => $posts,'hotTours' => $hotTours]);
-
-
+        return view('template.allToursEn', ['posts' => $posts, 'hotTours' => $hotTours]);
     }
 
     public function contacusEn()
     {
-
-
         return view('template.contacusEn');
     }
 
     public function contacusRu()
     {
-
-
         return view('template.contacusRu');
     }
 
@@ -294,21 +285,42 @@ class UserController extends Controller
         return view('admin.profile', $data);
     }
 
-    public function sendEmail()
+    public function sendEmailEn(Request $request)
     {
+        $data['name'] = $request['name'];
+        $data['email'] = $request['email2'];
 
-        $data = array(
-            'name' => "Learning Laravel",
-        );
+        $data['phone'] = $request['phone'];
+        $data['message'] = $request['message'];
+        $data['subject'] = $request['subject'];
 
-        Mail::send('include.email', $data, function ($message) {
+        Mail::send('include.email',['data' => $data], function ($message)  use ($request) {
+            $message->from('contact@discoverarmenia.tours',  $request['name']);
 
-            $message->from('yourEmail@domain.com', 'Learning Laravel');
-
-            $message->to('yourEmail@domain.com')->subject('Learning Laravel test email');
+            $message->to('contact@discoverarmenia.tours')->subject( $request['subject']);
 
         });
-        die('asdsadsa');
-        return "Your email has been sent successfully";
+
+
+        return redirect('contacusEn')->with('status', 'Your message sent');
+    }
+    public function sendEmailRu(Request $request)
+    {
+        $data['name'] = $request['name'];
+        $data['email'] = $request['email2'];
+
+        $data['phone'] = $request['phone'];
+        $data['message'] = $request['message'];
+        $data['subject'] = $request['subject'];
+
+        Mail::send('include.email',['data' => $data], function ($message)  use ($request) {
+            $message->from('contact@discoverarmenia.tours',  $request['name']);
+
+            $message->to('contact@discoverarmenia.tours')->subject( $request['subject']);
+
+        });
+
+
+        return redirect('contacusEn')->with('status', 'Ваше сообщение отправлено');
     }
 }
