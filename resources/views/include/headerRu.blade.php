@@ -96,31 +96,8 @@
                                 <span>Видео</span>
                             </a>
                         </li>
-                        <li>
-                            <a href="">
-                                <span>Тадж-Махал: армянская девушка как душа индийского символа.</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <span>Дудук - душа армянской нации</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <span>Ереван: Путешествие для гурманов</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <span>Армяне для всего мира</span>
-                            </a>
-                        </li>
-                        <li class="last">
-                            <a href="">
-                                <span>Армянский народ</span>
-                            </a>
-                        </li>
+
+
                     </ul>
                 </li>
                 <li>
@@ -278,31 +255,13 @@
                                 <span>5 Интересные факты об Армении, которые вы должны знать</span>
                             </a>
                         </li>
-                        <li>
-                            <a href="/en/armenia/taj-mahal-armenian-girl-as-a-soul-of-indian-symbol.html">
-                                <span>Тадж-Махал: армянская девушка как душа индийского символа.</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/en/armenia/duduk-is-the-soul-of-armenian-nation.html">
-                                <span>Дудук - душа армянской нации</span>
-                            </a>
-                        </li>
+
                         <li>
                             <a href="/en/armenia/yerevan-traveling-for-gourmet.html">
                                 <span>Ереван: Путешествие для гурманов</span>
                             </a>
                         </li>
-                        <li>
-                            <a href="/en/armenia/armenians-for-all-the-world.html">
-                                <span>рмяне для всего мира</span>
-                            </a>
-                        </li>
-                        <li class="last">
-                            <a href="/en/armenia/armenian-people.html">
-                                <span>Армянский народ</span>
-                            </a>
-                        </li>
+
                     </ul>
                 </li>
                 <li>
