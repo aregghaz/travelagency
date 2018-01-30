@@ -95,26 +95,6 @@
                                 <span>Video</span>
                             </a>
                         </li>
-                        <li>
-                            <a href="">
-                                <span>Duduk is the soul of Armenian nation</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <span>Yerevan: Traveling for gourmet</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <span>Armenians for All The World</span>
-                            </a>
-                        </li>
-                        <li class="last">
-                            <a href="">
-                                <span>Armenian people</span>
-                            </a>
-                        </li>
                     </ul>
                 </li>
                 <li>
