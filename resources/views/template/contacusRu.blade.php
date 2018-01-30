@@ -113,7 +113,7 @@
                                 <div class="row">
                                     <div class="col-md-12">
                                         <div class="form-group">
-                                            <input type="text" class="form-control" id="name" name="name" placeholder="Пожалуйста, введите Ваше имя" required="" data-error="Введите Ваше имя">
+                                            <input type="text" class="form-control" id="name" name="name" placeholder="Введите Ваше имя" required="" data-error="Введите Ваше имя">
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div>
@@ -125,13 +125,13 @@
                                     </div>
                                     <div class="col-md-12">
                                         <div class="form-group">
-                                            <input type="text" class="form-control" id="msg_phone" name="phone" placeholder="Пожалуйста введите ваш номер телефона" required="" data-error="Введите ваш номер телефона">
+                                            <input type="text" class="form-control" id="msg_phone" name="phone" placeholder="Введите ваш номер телефона" required="" data-error="Введите ваш номер телефона">
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div>
                                     <div class="col-md-12">
                                         <div class="form-group">
-                                            <input type="text" class="form-control" id="subject" name="subject" placeholder="Пожалуйста, введите свой вопрос" required="" data-error="Введите свой вопрос">
+                                            <input type="text" class="form-control" id="subject" name="subject" placeholder="Тема" required="" data-error="Введите свой вопрос">
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div>
