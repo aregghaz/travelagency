@@ -29,7 +29,7 @@ return [
     |
     */
 
-    'host' => env('MAIL_HOST', 'smtp.gmail.com'),
+    'host' => env('MAIL_HOST', 'smtp.yandex.com'),
 
     /*
     |--------------------------------------------------------------------------
@@ -42,7 +42,7 @@ return [
     |
     */
 
-    'port' => env('MAIL_PORT', 587),
+    'port' => env('MAIL_PORT', 465),
 
     /*
     |--------------------------------------------------------------------------
@@ -55,10 +55,10 @@ return [
     |
     */
 
-    'from' => [
-        'address' => env('aregghaz@gmail.com', 'hello@example.com'),
-        'name' => env('MAIL_FROM_NAME', 'Example'),
-    ],
+    'from' =>array(
+        'address' => env('contact@discoverarmenia.tours', 'contact@discoverarmenia.tours'),
+        'name' => env('MAIL_FROM_NAME', 'discoverarmenia'))
+    ,
 
     /*
     |--------------------------------------------------------------------------
@@ -71,7 +71,7 @@ return [
     |
     */
 
-    'encryption' => env('MAIL_ENCRYPTION', 'tls'),
+    'encryption' => env('MAIL_ENCRYPTION', 'SSL'),
 
     /*
     |--------------------------------------------------------------------------
@@ -84,10 +84,9 @@ return [
     |
     */
 
-    'username' => env('aregghaz'),
 
-    'password' => env('gagushik'),
-
+    'username' => env('MAIL_USERNAME'),
+    'password' => env('MAIL_PASSWORD'),
     /*
     |--------------------------------------------------------------------------
     | Sendmail System Path
