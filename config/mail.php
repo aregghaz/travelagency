@@ -86,7 +86,7 @@ return [
 
     'username' => env('aregghaz'),
 
-    'password' => env('gagulik014'),
+    'password' => env('gagushik'),
 
     /*
     |--------------------------------------------------------------------------
