@@ -170,17 +170,17 @@
                     </span>
                     <ul class="sub-menu clear menu_level_1">
                         <li class="first">
-                            <a href="/en/hotels.html">
+                            <a  href="{{ route('hotelsEn') }}">
                                 <span>Hotels</span>
                             </a>
                         </li>
                         <li>
-                            <a href="/en/accommodation/apartment.html">
+                            <a href="">
                                 <span>Apartment</span>
                             </a>
                         </li>
                         <li class="last">
-                            <a href="/en/accommodation/villa.html">
+                            <a href="">
                                 <span>Villa</span>
                             </a>
                         </li>
@@ -198,7 +198,7 @@
                             </a>
                         </li>
                         <li class="last">
-                            <a href="/en/transport/car-rent.html">
+                            <a href="{{ route('carRentEn') }}">
                                 <span>Car rent</span>
                             </a>
                         </li>
@@ -211,85 +211,49 @@
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a href="{{ route('allToursEn') }}">
                         <img alt="" src="/bundles/damain/images/tours.png">
                         <span>Tours</span>
                     </a>
                 </li>
                 <li class="dropdown">
-                    <span>
-                        <img alt="" src="/bundles/damain/images/services.png">
+                    <a href="{{ route('servicesEn') }}">
+                        <img alt="" src="/bundles/damain/images/services.png" class="" style="margin-left: 0px;">
                         <span>Services</span>
-                    </span>
-                    <ul class="sub-menu clear menu_level_1">
-                        <li class="first">
-                            <a href="/en/service/riestorany.html">
-                                <span>Restaurants</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/en/service/orghanizatsiia-mieropriiatii.html">
-                                <span>Organization of Events</span>
-                            </a>
-                        </li>
-                        <li class="last">
-                            <a href="/en/service/other.html">
-                                <span>Others</span>
-                            </a>
-                        </li>
-                    </ul>
+                    </a>
+
                 </li>
                 <li class="dropdown">
                     <span>
                         <img alt="" src="/bundles/damain/images/armenia.png">
                         <span>Armenia</span>
                     </span>
-                    <ul class="sub-menu clear menu_level_1">
-
-                        <li>
-                            <a href="/en/armenia/armenia.html">
+                    <ul class="sub-menu clear menu_level_1" style="display: none; opacity: 1;">
+                        <li class="first">
+                            <a href="{{ route('armeniaEn') }}">
                                 <span>Armenia</span>
                             </a>
                         </li>
+
                         <li>
-                            <a href="/en/armenia/did-you-know-that.html">
-                                <span>Did you know that...</span>
+                            <a href="{{ route('brandingOfArmeniaEn') }}">
+                                <span>Branding of Armenia</span>
                             </a>
                         </li>
                         <li>
-                            <a href="/en/armenia/5-interesting-facts-about-armenia-that-you-should-know.html">
-                                <span>5 Interesting Facts About Armenia That You Should Know</span>
+                            <a href="{{ route('resourcesEn') }}">
+                                <span>Resources</span>
                             </a>
                         </li>
                         <li>
-                            <a href="/en/armenia/taj-mahal-armenian-girl-as-a-soul-of-indian-symbol.html">
-                                <span>Taj Mahal:Armenian girl as a soul of Indian symbol.</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/en/armenia/duduk-is-the-soul-of-armenian-nation.html">
-                                <span>Duduk is the soul of Armenian nation</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/en/armenia/yerevan-traveling-for-gourmet.html">
-                                <span>Yerevan: Traveling for gourmet</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/en/armenia/armenians-for-all-the-world.html">
-                                <span>Armenians for All The World</span>
-                            </a>
-                        </li>
-                        <li class="last">
-                            <a href="/en/armenia/armenian-people.html">
-                                <span>Armenian people</span>
+                            <a href="{{ route('videoEn') }}">
+                                <span>Video</span>
                             </a>
                         </li>
                     </ul>
                 </li>
                 <li>
-                    <a href="/en/company.html">
+                    <a href="{{route('contacusEn')}}">
                         <img alt="" src="/bundles/damain/images/company.png">
                         <span>Company</span>
                     </a>

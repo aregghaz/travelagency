@@ -16,17 +16,17 @@
                     <ul class="sub-menu clear menu_level_1" style="display: none; opacity: 1;">
                         <li class="first">
                             <a href="{{ route('hotelsRu') }}">
-                                <span>Отели</span>
+                                <span>Отелы</span>
                             </a>
                         </li>
                         <li>
                             <a href="">
-                                <span>Квартира</span>
+                                <span>Квартиры</span>
                             </a>
                         </li>
                         <li class="last">
                             <a href="">
-                                <span>Вилла</span>
+                                <span>Виллы</span>
                             </a>
                         </li>
                     </ul>
@@ -103,7 +103,7 @@
                 <li>
                     <a href="{{ route('aboutUsRu') }}">
                         <img alt="" src="/bundles/damain/images/company.png" class="" style="margin-left: 0px;">
-                        <span>О Компании</span>
+                        <span>Об Компании</span>
                     </a>
                 </li>
                 <li class="last">
@@ -176,18 +176,18 @@
                     </span>
                     <ul class="sub-menu clear menu_level_1">
                         <li class="first">
-                            <a href="/en/hotels.html">
-                                <span>Отели</span>
+                            <a  href="{{ route('hotelsEn') }}">
+                                <span>Отелы</span>
                             </a>
                         </li>
                         <li>
-                            <a href="/en/accommodation/apartment.html">
-                                <span>Квартира</span>
+                            <a href="">
+                                <span>Квартиры</span>
                             </a>
                         </li>
                         <li class="last">
-                            <a href="/en/accommodation/villa.html">
-                                <span>Вилла</span>
+                            <a href="">
+                                <span>Виллы</span>
                             </a>
                         </li>
                     </ul>
@@ -199,12 +199,12 @@
                     </span>
                     <ul class="sub-menu clear menu_level_1">
                         <li class="first">
-                            <a href="/en/transport/car-with-driver.html">
+                            <a href="">
                                 <span>Автомобиль с водителем</span>
                             </a>
                         </li>
                         <li class="last">
-                            <a href="/en/transport/car-rent.html">
+                            <a href="">
                                 <span>Аренда автомобиля</span>
                             </a>
                         </li>
@@ -217,16 +217,16 @@
                     </a>
                 </li>
                 <li>
-                    <a href="/en/tours.html">
+                    <a href=" href="{{ route('allToursRu') }}"">
                         <img alt="" src="/bundles/damain/images/tours.png">
                         <span>Туры</span>
                     </a>
                 </li>
                 <li class="dropdown">
-                    <span>
-                        <img alt="" src="/bundles/damain/images/services.png">
+                    <a href="{{ route('servicesRu') }}">
+                        <img alt="" src="/bundles/damain/images/services.png" class="" style="margin-left: 0px;">
                         <span>Услуги</span>
-                    </span>
+                    </a>
 
                 </li>
                 <li class="dropdown">
@@ -234,40 +234,36 @@
                         <img alt="" src="/bundles/damain/images/armenia.png">
                         <span>Армения</span>
                     </span>
-                    <ul class="sub-menu clear menu_level_1">
+                    <ul class="sub-menu clear menu_level_1" style="display: none; opacity: 1;">
                         <li class="first">
-                            <a href="/en/armenia/culture.html">
-                                <span>Култура</span>
+                            <a href="{{ route('armeniaRu') }}">
+                                <span>Армения</span>
                             </a>
                         </li>
                         <li>
-                            <a href="/en/armenia/armenia.html">
-                                <span>Армениая</span>
+                            <a href="{{ route('brandingOfArmeniaRu') }}">
+                                <span>Брендинг Армении</span>
                             </a>
                         </li>
                         <li>
-                            <a href="/en/armenia/did-you-know-that.html">
+                            <a href="{{ route('resourcesRu') }}">
                                 <span>Знаете ли вы, что ...</span>
                             </a>
                         </li>
                         <li>
-                            <a href="/en/armenia/5-interesting-facts-about-armenia-that-you-should-know.html">
-                                <span>5 Интересные факты об Армении, которые вы должны знать</span>
+                            <a href="{{ route('videoRu') }}">
+                                <span>Видео</span>
                             </a>
                         </li>
 
-                        <li>
-                            <a href="/en/armenia/yerevan-traveling-for-gourmet.html">
-                                <span>Ереван: Путешествие для гурманов</span>
-                            </a>
-                        </li>
 
                     </ul>
+
                 </li>
                 <li>
-                    <a href="/en/company.html">
+                    <a href="{{ route('aboutUsRu') }}">
                         <img alt="" src="/bundles/damain/images/company.png">
-                        <span>О Компании</span>
+                        <span>Об Компании</span>
                     </a>
                 </li>
                 <li class="last">
