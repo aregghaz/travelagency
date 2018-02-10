@@ -42,6 +42,7 @@ Route::get('/allExcursionsEn', ['as' => 'allExcursionsEn', 'uses' => 'UserContro
 Route::get('/allExcursionsRu', ['as' => 'allExcursionsRu', 'uses' => 'UserController@allExcursionsRu']);
 Route::any('/sendEmailEn', ['as' => 'sendEmailEn', 'uses' => 'UserController@sendEmailEn']);
 Route::any('/sendEmailRu', ['as' => 'sendEmailRu', 'uses' => 'UserController@sendEmailRu']);
+Route::any('/galeria', ['as' => 'galeria', 'uses' => 'UserController@galeria']);
 
 
 // show new post form

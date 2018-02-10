@@ -140,6 +140,12 @@ class UserController extends Controller
 
         return view('template.aboutUsRu');
     }
+   public function galeria()
+    {
+
+
+        return view('template.galeria');
+    }
 
 
     public function carRentEn()
