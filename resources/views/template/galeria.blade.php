@@ -121,8 +121,8 @@
             var copy = $(this)
             copy.removeClass("positioned active").addClass("postactive");
             $(".gallery").css('height','auto');
-            $("footer").css('display','block')
-            $("footer").css('display','block')
+            $("header").css('display','block');
+            $("footer").css('display','block');
             setTimeout(function() {
                 copy.remove();
             }, 500)
