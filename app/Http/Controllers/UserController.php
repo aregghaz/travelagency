@@ -140,6 +140,26 @@ class UserController extends Controller
 
         return view('template.aboutUsRu');
     }
+   public function galeria()
+    {
+
+        $directory = "uploads/media";
+
+
+        if ($dir = opendir( $directory)) {
+            $images = array();
+            while (false !== ($file = readdir($dir))) {
+                if ($file != "." && $file != "..") {
+                    $images[] = $file;
+                }
+            }
+            closedir($dir);
+        }
+
+
+
+        return view('template.galeria', ['images'=> $images]);
+    }
 
 
     public function carRentEn()
