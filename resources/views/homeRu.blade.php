@@ -27,12 +27,9 @@
         }
         .gastronomy
         {
-
             text-align: center;
             display: list-item;
-            /* text-decoration: none; */
             list-style-type: none;
-
             line-height: 23px;
             font-size: 32px;
             font-family: 'AvantGardeCTT-Bold';
@@ -42,9 +39,7 @@
         .read-more-wrap {
             font-size: 20px;
             text-align: justify;
-
             color: #878787;
-
             font-family: system-ui;
 
         }
@@ -60,10 +55,7 @@
             cursor: pointer;
             display: inline-block;
             padding: 0 .5em;
-            /* color: #666; */
-            /* font-size: .9em; */
             line-height: 2;
-            /* border: 1px solid #ddd; */
             border-radius: .25em;
         }
 
@@ -107,15 +99,10 @@
                          style="background: url('/uploads/{{ $data['img'] }}') center center / cover no-repeat fixed; width: 100%; position: relative; height: 450px;position: fixed"
                          data-slick-index="0" aria-hidden="false" tabindex="-1" role="option"
                          aria-describedby="slick-slide00">
-
                     </div>
-
                 </div>
             </div>
-
-
         </div>
-
     </div>
 
     <div class="info_block">
@@ -123,11 +110,9 @@
             <div class="left_block image">
                 <img src="/bundles/damain/images/info_img.png" alt="Discover Armenia">
             </div>
-
                 <div class="right_block content block-style" id = "block-style">
                     <h2>Команда DISCOVER ARMENIA приглашает вас</h2>
                     <br>
-
                     <input type="checkbox" class="read-more-state" id="post-1"/>
                     <div class="read-more-wrap">
                         совершить незабываемое и полное приключений путешествие по древнейшей <a href="https://ru.wikipedia.org/wiki/%D0%90%D1%80%D0%BC%D0%B5%D0%BD%D0%B8%D1%8F" target="_blank">горной стране</a>, одной из самых древних на Земле.<br><br>
@@ -145,8 +130,6 @@
                             Мы предлагаем множество других туров: экстремальный, эко-туристический, кулинарный, уикенд, экскурсионно-оздоровительный, горнолыжный тур на прекрасном курорте Цахкадзора, экстремальное катание на горе Арагац, комбинированные туры Армения-Грузия и многое другое, а также мероприятия, с которыми вы познакомитесь, путешествуя только с нами.<br><br>
                             Путешествуя с командой <span class="discover-Armenia">Discover Armenia</span> вы мгновенно окажетесь в другом мире. Увидите много нового и интересного. Узнаете местные традиции и познакомитесь с удивительной армянской культурой. Обретете новых друзей и увезете с собой незабываемые впечатления. Поверьте, вам захочется еще не раз посетить Армению.<br><br>
                             Мы любим нашу страну и готовы поделиться нашими традициями, обычаями, и всем тем, что унаследовали от наших предков. <br>
-
-
                         </div>
                     </div>
                     <label for="post-1" class="read-more-trigger read-more button-style" id="deletStyle" ></label>

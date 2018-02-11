@@ -28,9 +28,7 @@
 
             text-align: center;
             display: list-item;
-            /* text-decoration: none; */
             list-style-type: none;
-
             line-height: 23px;
             font-size: 32px;
             font-family: 'AvantGardeCTT-Bold';
@@ -41,9 +39,7 @@
         .read-more-wrap {
             font-size: 20px;
             text-align: justify;
-
             color: #878787;
-
             font-family: system-ui;
             font-weight: 250;
         }
