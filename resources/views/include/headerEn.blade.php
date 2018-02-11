@@ -20,7 +20,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="{{ route('galeria') }}">
+                            <a href="">
                                 <span>Apartments</span>
                             </a>
                         </li>
@@ -93,6 +93,11 @@
                         <li>
                             <a href="{{ route('videoEn') }}">
                                 <span>Video</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{ route('galeriaEn') }}">
+                                <span>Gallery</span>
                             </a>
                         </li>
                     </ul>
