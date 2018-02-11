@@ -104,8 +104,8 @@
                 $(".active").css('top', y - 8);
                 $(".active").css('left', x - 8);
                 $(".gallery").css('height','100%')
-                $("header").css('display','none')
-                $("footer").css('display','none')
+                $("header").css('display','none');
+                $("footer").css('display','none');
                 setTimeout(function() {
                     copy.addClass("positioned")
                 }, 0)
