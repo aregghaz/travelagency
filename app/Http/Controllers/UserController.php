@@ -143,8 +143,22 @@ class UserController extends Controller
    public function galeria()
     {
 
+        $directory = "uploads/media";
 
-        return view('template.galeria');
+
+        if ($dir = opendir( $directory)) {
+            $images = array();
+            while (false !== ($file = readdir($dir))) {
+                if ($file != "." && $file != "..") {
+                    $images[] = $file;
+                }
+            }
+            closedir($dir);
+        }
+
+
+
+        return view('template.galeria', ['images'=> $images]);
     }
 
 
