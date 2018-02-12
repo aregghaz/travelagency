@@ -163,7 +163,7 @@ class UserController extends Controller
    public function galeriaRu()
     {
 
-        $directory = "uploads/media";
+       $directory = "uploads/media";
 
 
         if ($dir = opendir( $directory)) {
