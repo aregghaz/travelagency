@@ -140,7 +140,7 @@ class UserController extends Controller
 
         return view('template.aboutUsRu');
     }
-   public function galeria()
+   public function galeriaEn()
     {
 
         $directory = "uploads/media";
@@ -158,7 +158,27 @@ class UserController extends Controller
 
 
 
-        return view('template.galeria', ['images'=> $images]);
+        return view('template.galeriaEn', ['images'=> $images]);
+    }
+   public function galeriaRu()
+    {
+
+        $directory = "uploads/media";
+
+
+        if ($dir = opendir( $directory)) {
+            $images = array();
+            while (false !== ($file = readdir($dir))) {
+                if ($file != "." && $file != "..") {
+                    $images[] = $file;
+                }
+            }
+            closedir($dir);
+        }
+
+
+
+        return view('template.galeriaRu', ['images'=> $images]);
     }
 
 

@@ -96,7 +96,11 @@
                                 <span>Видео</span>
                             </a>
                         </li>
-
+                        <li>
+                            <a href="{{ route('galeriaRu') }}">
+                                <span>Галерея</span>
+                            </a>
+                        </li>
 
                     </ul>
                 </li>
