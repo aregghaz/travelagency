@@ -163,10 +163,8 @@ class UserController extends Controller
    public function galeriaRu()
     {
 
-
-        $directory = "uploads/media";
-
-
+<<<<<<< HEAD
+        $directory = "uploads/
         if ($dir = opendir( $directory)) {
             $images = array();
             while (false !== ($file = readdir($dir))) {
