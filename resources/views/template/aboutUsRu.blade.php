@@ -27,23 +27,9 @@
 
         </div>
         <div class="col-md-8">
-            <div class="col-md-12">
-                <div class="col-md-2">
-                    <a href="/">
-                        <img alt="Discover Aremnia" src="/bundles/damain/images/company_logo.png">
-                    </a>
-                </div>
-                <div class="col-md-10">
 
-                </div>
-            </div>
             <br><br>
-        <div class="col-md-2">
-
-        </div>
-        <div class="col-md-8">
-            <br><br>
-            <p class="read-more-wrap">
+            <p class="read-more-wrap"><br><br>
                 <span class="discover-Armenia">DISCOVER ARMENIA</span>
                 France-Armenian joint venture tour operator that symbolizing the mixture of Armenian hospitality and
                 France charm offers a wide range of individual and group tours of any category. We cooperate with
@@ -132,5 +118,4 @@
 
         </div>
     </div>
-
 @endsection

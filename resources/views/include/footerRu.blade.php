@@ -48,7 +48,7 @@
                     <img src="/bundles/damain/images/logo_f.png" alt="Discover Armenia">
                 </a>
                 <br>
-                <sapn>2017 все права защищены</sapn>
+                <sapn>2018 все права защищены</sapn>
             </div>
             <div style="display: none">
                 <script type="text/javascript" src="http://www.rate.am/informer/rate/script/default.aspx?uid=UI-65293587&width=215&height=132&cb=0&bgcolor=FFFFFF&lang=en"></script>

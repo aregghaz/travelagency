@@ -51,7 +51,7 @@
                     <img src="/bundles/damain/images/logo_f.png" alt="Discover Armenia">
                 </a>
                 <br>
-                <sapn>2017 all rights reserved</sapn>
+                <sapn>2018 all rights reserved</sapn>
             </div>
 
             <div style="display: none">

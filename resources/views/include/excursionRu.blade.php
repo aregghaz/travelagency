@@ -27,7 +27,7 @@
                 @endforeach
             @endif
             <div class="link_button">
-                <a href="{{ route('allToursRu') }}">Посмотреть все экскурсия</a>
+                <a href="{{ route('allToursRu') }}">Посмотреть все экскурсии</a>
             </div>
         </div>
     </div>
