@@ -11,12 +11,15 @@
             font-size: x-large;
             font-weight: bolder;
         }
-        strong  {
+
+        strong {
             font-weight: bolder;
         }
+
         .read-more-wrap {
             font-weight: 400;
         }
+
         ul {
             line-height: 1.4285em;
             padding-left: 30px;
@@ -30,86 +33,100 @@
 
             <br><br>
             <p class="read-more-wrap"><br><br>
-                <span class="discover-Armenia">DISCOVER ARMENIA</span>
-                France-Armenian joint venture tour operator that symbolizing the mixture of Armenian hospitality and
-                France charm offers a wide range of individual and group tours of any category. We cooperate with
-                reliable and experienced partners to ensure our clients safe, comfortable and unforgettable stay. </p>
+
+                Туристическая компания  <span class="discover-Armenia">DISCOVER ARMENIA</span> является французско-армянским
+                совместным предприятием, сочетающим армянское гостеприимство с
+                французским шармом. Компания представляет возможность выбора
+                индивидуальных и групповых туров любой категории. Мы работаем с
+                надежными и опытными партнерами, чтобы гарантировать нашим клиентам
+                безопасный, комфортный и незабываемый отдых.
+
+            </p>
             <br>
-            <p class="read-more-wrap">The company offers a vast range of services, including: </p><br>
+            <p class="read-more-wrap"> Компания предлагает широкий спектр услуг, в том числе:</p><br>
 
             <ul class="read-more-wrap">
 
-                <li>High standard accommodation at competitive rates,</li>
-                <li>Best tour guides,</li>
-                <li>Escort interpreting,</li>
-                <li>Comfortable transportation and many others.</li>
+                <li>Конкурентные тарифы на размещение в гостиницах любой
+                    категории,</li>
+                <li>Лучших гидов, переводчиков и сопровождающих,</li>
+                <li>Комфортабельный транспорт и многое другое.</li>
 
             </ul>
             <br>
             <p class="read-more-wrap">
-                <span class="discover-Armenia">DISCOVER ARMENIA</span> organizes daily tours customized for your
-                clients, offers the best places for sports and vacation, unique gastronomic events and festivals.
-                Together with our professional instructors for skiing, rock climbing, and mountaineering, you will have
-                a wonderful time, a lot of fun and laughs. </p>
-            <p class="read-more-wrap">We will be glad to become your reliable partner!</p><br>
+                <span class="discover-Armenia">DISCOVER ARMENIA</span>предлагает своим клиентам лучшие места для занятий
+                спортом, отдыхом и оздоровлением, оригинальные гастрономические
+                мероприятия и фестивали. </p>
             <p class="read-more-wrap">
-                Since 2016, we have been helping people to enjoy unforgettable adventures to our homeland, and we do it
-                all with expertise and passion.
+                Наши профессионалы позаботяться, чтобы ваш отдых был содержательным,
+                а проведенное время - радостным и запоминающимся.
             </p>
+
             <p class="read-more-wrap">
-                Because we’re so keen on helping people see the real Armenia and benefit from all of our professional
-                and personal experience.
+                С 2016 года мы помогаем людям из разных стран в организации
+                незабываемых приключений по нашей родине, частичку которой вы
+                обязательно увезете домой, чтобы согреться памятью о проведенном в
+                Армении времени. Потому что мы очень заинтересованы в том, чтобы
+                показать людям настоящую Армению, достойную выгоду нам обеспечат
+                ваше признание нашего профессионализма и традиционного
+                гостеприимства. Мы делаем все, чтобы у каждого гостя оставался поистине
+                незабываемая память о путешествии, и каждый раз мы обеспечиваем это
+                благодаря нашему вниманию к высокому качеству услуг. Из гостиниц и
+                ресторанов мы тщательно выбираем те, которые разделяют нашу страсть и
+                которые, как и мы, руководствуются высокими стандартами. Это
+                единственный путь, гарантирующий успех и положительный опыт
+                пребывания в стране от начала и до конца.
+                Доверьтесь  <span class="discover-Armenia">DISCOVER ARMENIA!</span> и сами создавайте новые яркие страницы
+                своей жизни.
             </p>
-            <p class="read-more-wrap">
-                But we do more than just organize tours and bespoke trips to Armenia, we help people to experience the
-                true beauty of a country, which is steeped in history and culture and one that thrives on a more simple
-                way of life. We want each and every visitor to leave having experienced a truly unforgettable journey
-                and we do that every single time thanks to our focus on quality and service.
-            </p>
-            <p class="read-more-wrap">
-                From hotels and restaurants to tourist camps, we carefully select and monitor third party providers who
-                share our passion and who, like us, strive for the very best standards, because that’s the only way we
-                can guarantee that the entire Armenian experience from start to finish is an entirely positive one.
-            </p>
-            <p class="read-more-wrap">
-                Trust Discover Armenia to deliver the trip of a lifetime.
-            </p>
+
             <br>
             <p class="read-more-wrap" style="text-align: center">
-                <strong>THE ADVANTAGES YOU RECEIVE WHEN CHOOSING</strong>    <br><span class="discover-Armenia">DISCOVER ARMENIA</span>
-            </p><br>
-            <ul class="read-more-wrap">
-                <li>Fast Response: We believe that it is very important to respond our customers immediately. We get
-                    back to you within 1 working day in any emailed questions.
-                </li>
-                <li>
-                    Quality: All amenities and accommodation on your tour has been specially tested and selected
-                    according to the highest standards. Your tour package includes the best hotels, tourist camps,
-                    restaurants, and transportation - just part of our commitment to high quality and authenticity.
-                </li>
-                <li>
-                    Authenticity: Owned & operated by local Armenian people, Discover Armenia Travel is committed to
-                    giving our customers an authentic Armenian experience not just something staged for tourist. We will
-                    take you to authentic local restaurants wherever possible, not to tourist traps that all serve the
-                    same food.
-                </li>
-
-            </ul>
+                <strong>Преимущества, которые вы получаете при выборе</strong> <br><span class="discover-Armenia">DISCOVER ARMENIA</span>
+            </p>
             <br>
             <p class="read-more-wrap">
-                <strong>Value:</strong> We believe when you compare quality and costs, we offer the best value for money
-                for travel in Armenia. You may find that some of our tours cost a little more than what appears to be
-                the same offered by another tour operator. Just reiterate value for money and quality rather than the
-                fact that it may cost more. We, however, will always ensure that our customers receive the best value
-                for their money. </p><br>
+                <strong>Оперативность:</strong>  Мы свяжемся с вами в течении одного рабочего дня
+                по телефону или электронной почте и ответим на любые вопросы,
+                руководствуясь принципами первоочередности ожиданий наших
+                клиентов, скорости и качеству обслуживания. </p><br>
             <p class="read-more-wrap">
-                <strong>Well-designed:</strong> Every component of your trip - including destinations, attractions,
-                services and staff - is chosen according to our special selection and criteria. We want your holiday to
-                become one of the most unforgettable experiences of your life. We will make sure everything you
-                encounter is of the highest quality to make sure you make the best use of your time in Armenia.
+                <strong>Качество:</strong> Все услуги будут проверены и отобраны по самым высоким
+                стандартам. Лучшие отели, рестораны и безопасные средства
+
+                передвижения, включенные в турпакет, два из многих показателей
+                нашей требовательности к высокому качеству.
             </p><br>
             <p class="read-more-wrap">
-                <span class="discover-Armenia">We will be glad to become your reliable partner!</span>
+                <strong>Самобытность:</strong> Наша команда остается верной той идее, что клиенту
+                нужно представлять преимущественно уникальные стороны нашей
+                страны, которую он открывает впервые, дать возможность разгадать
+                ее самобытность и избежать шаблонных для туристов с одинаковым
+                интерьером, содержанием и т.п. В этом ему, несомненно, поможет
+                персонал из местных жителей, знакомые с тонкостями национальной
+                культуры и самобытности.
+            </p><br>
+            <p class="read-more-wrap">
+                <strong>Стоимость:</strong> Мы верим, что сравнивая качество и стоимость, нужно
+                предлагать самое лучшее за сумму, приемлемую в принимающей
+                стране. Вы можете обнаружить, что стоимость некоторых туров выше
+                по сравнению с другими туроператорами. И это неспроста. Мы
+                гарантируем, что наши гости получат то, за что заплатили.
+            </p><br> <p class="read-more-wrap">
+                <strong>Умение слушать:</strong>  Мы внимательны к своим клиентам как вовремя их
+                пребывания в Армении, так и до приезда, когда слушаем их
+                пожелания, учитывая их индивидуальные особенности ожидания.
+            </p><br><p class="read-more-wrap">
+                <strong>Продуманность:</strong>  Каждое мероприятие, место и время поездки
+                тщательно продуманы и подобраны специально для вас. Мы сделаем
+                все возможное, чтобы предложенные нами услуги были самого
+                высокого качества, а ваше время пребывания в Армении было
+                интересным, ярким и запоминающимся, а ваши отзывы–
+                положительными, если не восторженными.
+            </p><br>
+            <p class="read-more-wrap">
+                <span class="discover-Armenia">Мы будем рады стать вашим надежным партнером на многие годы!</span>
             </p>
             <br>
             <br>
