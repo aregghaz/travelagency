@@ -1,6 +1,6 @@
 <header>
     <div class="container menuCont clear">
-        <div class="logo left_block">
+        <div class="logo left_block ">
             <a href="/">
                 <img alt="Discover Aremnia" src="/bundles/damain/images/company_logo.png">
             </a>

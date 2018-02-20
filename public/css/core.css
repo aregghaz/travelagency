@@ -2925,6 +2925,11 @@ footer .bottom_block .social ul li a i {
   .info_block{
     height: 930px;
   }
+  .right_block {
+    position: relative!important;
+    right: 10px;
+    top: 0;
+  }
 }
 @media all and (max-width: 325px) {
 
@@ -2937,9 +2942,14 @@ footer .bottom_block .social ul li a i {
     margin-bottom: 5px;
   }
   .info_block{
-    height: 1500px;
+    height: 1300px;
   }
-}
+  .right_block {
+    position: relative;
+    right: 10px;
+    top: 0;
+  }
+  }
 
 
 
