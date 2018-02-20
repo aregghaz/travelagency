@@ -2893,10 +2893,7 @@ footer .bottom_block .social ul li a i {
   .info_block{
     height: 920px;
   }
-}@media only screen
-and (min-device-width : 320px)
-and (max-device-width : 568px)
-and (orientation : landscape) {
+}@media screen and (device-height: 568px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
 
 
 .left_block {
