@@ -2893,7 +2893,7 @@ footer .bottom_block .social ul li a i {
   .info_block{
     height: 920px;
   }
-}@media screen and (device-aspect-ratio: 40/71) {
+}@media (max-device-width: 320px) {
 
 
 .left_block {
