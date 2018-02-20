@@ -2887,13 +2887,7 @@ footer .bottom_block .social ul li a i {
     height: 840px;
   }
 }
-@media all and (max-width: 370px) {
-
-
-  .info_block{
-    height: 920px;
-  }
-}@media only screen
+@media only screen
 and (min-device-width : 320px)
 and (max-device-width : 568px) {
   .left_block {
