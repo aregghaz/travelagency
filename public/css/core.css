@@ -2887,9 +2887,9 @@ footer .bottom_block .social ul li a i {
     height: 840px;
   }
 }
-@media only screen
-and (min-device-width : 320px)
-and (max-device-width : 568px) {
+@media all and (max-width: 320px) {
+
+
   .left_block {
     text-align: center;
   }
