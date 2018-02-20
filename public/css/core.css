@@ -2833,6 +2833,9 @@ footer .bottom_block .social ul li a i {
     width: 100%;
     margin-top: 20px;
   }
+  .info_block{
+    height: 500px;
+  }
 }
 @media all and (max-width: 750px) {
   .accommodation_block .container .accommodation_box {
@@ -2880,11 +2883,19 @@ footer .bottom_block .social ul li a i {
   .tours_title_block div {
     margin: 0!important;
   }
+  .info_block{
+    height: 840px;
+  }
+}
+@media all and (max-width: 370px) {
+
+
+  .info_block{
+    height: 920px;
+  }
 }
 
-  .info_block {
-    height: auto;
-  }
+
 
   .logo {
     margin: 0;

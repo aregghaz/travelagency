@@ -145,9 +145,9 @@
                         <li class="current">
                             <span>
 
-                                <a href="">
+
                                     <span class="flag-icon flag-icon-ru"></span>
-                                    </a>
+
                             </span>
                             <ul class="sub_lang">
                                 <li>
