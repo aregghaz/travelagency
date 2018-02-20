@@ -2893,6 +2893,19 @@ footer .bottom_block .social ul li a i {
   .info_block{
     height: 920px;
   }
+}@media all and (max-width: 300px) {
+  .left_block {
+    text-align: center;
+  }
+
+  footer .bottom_block .logo {
+    color: #fff;
+    text-align: center;
+  }
+
+  .info_block{
+    height: 1200px;
+  }
 }
 
 
