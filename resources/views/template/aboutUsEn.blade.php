@@ -17,7 +17,7 @@
         .read-more-wrap {
             font-weight: 400;
         }
-        ul {
+        .read-more-wrap-ul {
             line-height: 1.4285em;
             padding-left: 30px;
         }
@@ -43,7 +43,7 @@
           <br>
             <p class="read-more-wrap">The company offers a vast range of services, including: </p><br>
 
-            <ul class="read-more-wrap">
+            <ul class="read-more-wrap read-more-wrap-ul">
 
                 <li>High standard accommodation at competitive rates,</li>
                 <li>Best tour guides,</li>
@@ -91,7 +91,7 @@
             <p class="read-more-wrap" style="text-align: center">
                 <strong>YOUR ADVANTAGES SHOULD YOU CHOOSE </strong>    <br><span class="discover-Armenia">DISCOVER ARMENIA</span>
             </p><br>
-            <ul class="read-more-wrap">
+            <ul class="read-more-wrap read-more-wrap-ul">
                 <li>Fast Response: We believe that it is very important to respond our
                     customers immediately. We get back to you within 1 working day in
                     any emailed questions guided by the principles of swiftness and
