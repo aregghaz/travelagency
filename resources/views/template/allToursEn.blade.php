@@ -7,6 +7,7 @@
         .portfolio-item .content h3 {
             color: white;!important;
         }
+
     </style>
     <section id="contnet">
         <div class="container">
@@ -39,7 +40,7 @@
                 <div class="col-md-4 col-sm-6 col-xs-6 mix {{ $post->role }}" style="display: inline-block;">
                 <div class="portfolio-item">
 
-                    <img src="{{  URL::to("/images/turs/".$post->img1) }}" height="250px" alt="">
+                    <img src="{{  URL::to("/images/turs/".$post->img1) }}" class="img-responsive tours-img"   alt="">
                     <div class="overlay">
                         <div class="icon">
                             <a href="/images/turs/{{ $post->linkEn }}" target="_blank"></a>

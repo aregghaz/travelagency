@@ -2546,6 +2546,21 @@ footer .bottom_block .social ul li a i {
 #top_menu_res {
   display: none;
 }
+@media all and (max-width: 3000px) {
+  .tours-img {
+    height: 400px;
+  }
+}
+@media all and (max-width: 2560px) {
+  .tours-img {
+    height: 375px;
+  }
+}
+@media all and (max-width: 1440px) {
+  .tours-img {
+    height: 335px;
+  }
+}
 @media all and (max-width: 1200px) {
   .container {
     width: 98%;

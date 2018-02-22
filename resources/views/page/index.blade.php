@@ -3,15 +3,14 @@
 <head>
     <title>Discover Armenia</title>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta property="og:title" content="Home">
     <meta property="og:type" content="website">
     <meta property="og:image" content="">
     <meta property="og:url" content="http://discoverarmenia.tours/">
     <meta property="og:description" content="Discover the land of mystery">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:image:width" content="200">
     <meta property="og:image:height" content="200">
     <meta name="description" content="Armenia is pleased to welcome you. Armenia is a cultural developed and hospitable country known for its extraordinary and individual culinary products. You will nowhere find such kind of dolma, khashlama, khorovats (barbeque) and khash like in Armenia. Due to the mountainous relief of Armenia, the air is crystally clear which allows you to feel the breath of nature.">
