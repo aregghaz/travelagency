@@ -56,6 +56,10 @@
             font-size: 15px;
             font-weight: 700;
         }
+        .g-recaptcha div {
+            width: auto!important;
+            height: auto!important;
+        }
     </style>
     <div id="google-map" style="position: relative; overflow: hidden;">
 
