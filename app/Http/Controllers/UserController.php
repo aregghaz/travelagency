@@ -335,27 +335,26 @@ class UserController extends Controller
             'recaptcha-response'=>'required|recaptcha'
         ]);
 
-        if( !$validator->fails() )
+        if( $validator->fails() )
         {
-            $data['name'] = $request['name'];
-            $data['email'] = $request['email2'];
-
-            $data['phone'] = $request['phone'];
-            $data['message'] = $request['message'];
-            $data['subject'] = $request['subject'];
-
-            Mail::send('include.email',['data' => $data], function ($message)  use ($request) {
-                $message->from('contact@discoverarmenia.tours',  $request['name']);
-
-                $message->to('contact@discoverarmenia.tours')->subject( $request['subject']);
-
-            });
-            return redirect('contacusEn')->with('status', 'Your message sent');
+            return redirect('contacusEn')->with('status', 'check');
         }
+        $data['name'] = $request['name'];
+        $data['email'] = $request['email2'];
+
+        $data['phone'] = $request['phone'];
+        $data['message'] = $request['message'];
+        $data['subject'] = $request['subject'];
+
+        Mail::send('include.email',['data' => $data], function ($message)  use ($request) {
+            $message->from('contact@discoverarmenia.tours',  $request['name']);
+
+            $message->to('contact@discoverarmenia.tours')->subject( $request['subject']);
+
+        });
 
 
-
-        return redirect('contacusEn')->with('status', 'check');
+        return redirect('contacusEn')->with('status', 'Your message sent');
     }
     public function sendEmailRu(Request $request)
     {
