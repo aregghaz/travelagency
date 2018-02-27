@@ -358,6 +358,15 @@ class UserController extends Controller
     }
     public function sendEmailRu(Request $request)
     {
+        $validator = Validator::make(Input::all(), [
+
+            'g-recaptcha-response' => 'required|captcha',
+        ]);
+
+        if( $validator->fails() )
+        {
+            return redirect('contacusRu')->with('status', 'check');
+        }
         $data['name'] = $request['name'];
         $data['email'] = $request['email2'];
 
