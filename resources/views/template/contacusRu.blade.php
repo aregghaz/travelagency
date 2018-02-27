@@ -56,6 +56,10 @@
             font-size: 15px;
             font-weight: 700;
         }
+        .g-recaptcha div {
+            width: auto!important;
+            height: auto!important;
+        }
     </style>
     <div id="google-map" style="position: relative; overflow: hidden;">
 
@@ -147,6 +151,7 @@
                                     </div>
                                 </div>
                             </div>
+                            {!! app('captcha')->display() !!}
                             <div class="col-md-12">
                                 <input type="hidden" name="_token" value="{{  Session::token() }}">
                                 <button type="submit" id="submit" class="btn btn-common disabled" style="pointer-events: all;cursor: pointer;color: white;opacity: 1;">Отправить сообщение</button>
