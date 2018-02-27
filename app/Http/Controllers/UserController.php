@@ -12,7 +12,8 @@ use View;
 use DB;
 use App;
 use Mail;
-
+use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\Input;
 class UserController extends Controller
 {
 
@@ -248,6 +249,7 @@ class UserController extends Controller
 
     public function contacusEn()
     {
+
         return view('template.contacusEn');
     }
 
@@ -328,22 +330,32 @@ class UserController extends Controller
 
     public function sendEmailEn(Request $request)
     {
-        $data['name'] = $request['name'];
-        $data['email'] = $request['email2'];
+        $validator = Validator::make(Input::all(), [
 
-        $data['phone'] = $request['phone'];
-        $data['message'] = $request['message'];
-        $data['subject'] = $request['subject'];
+            'recaptcha-response'=>'required|recaptcha'
+        ]);
 
-        Mail::send('include.email',['data' => $data], function ($message)  use ($request) {
-            $message->from('contact@discoverarmenia.tours',  $request['name']);
+        if( !$validator->fails() )
+        {
+            $data['name'] = $request['name'];
+            $data['email'] = $request['email2'];
 
-            $message->to('contact@discoverarmenia.tours')->subject( $request['subject']);
+            $data['phone'] = $request['phone'];
+            $data['message'] = $request['message'];
+            $data['subject'] = $request['subject'];
 
-        });
+            Mail::send('include.email',['data' => $data], function ($message)  use ($request) {
+                $message->from('contact@discoverarmenia.tours',  $request['name']);
+
+                $message->to('contact@discoverarmenia.tours')->subject( $request['subject']);
+
+            });
+            return redirect('contacusEn')->with('status', 'Your message sent');
+        }
 
 
-        return redirect('contacusEn')->with('status', 'Your message sent');
+
+        return redirect('contacusEn')->with('status', 'check');
     }
     public function sendEmailRu(Request $request)
     {
