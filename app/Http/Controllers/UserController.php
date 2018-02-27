@@ -332,7 +332,7 @@ class UserController extends Controller
     {
         $validator = Validator::make(Input::all(), [
 
-            'recaptcha-response'=>'required|recaptcha'
+            'g-recaptcha-response' => 'required|captcha',
         ]);
 
         if( $validator->fails() )

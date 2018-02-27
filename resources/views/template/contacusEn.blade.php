@@ -147,7 +147,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="g-recaptcha" name="recaptcha-response" data-sitekey="6Le2BEkUAAAAAPrq25Pcmt2xP4wsgf0pp967PQ06"></div>
+                            {!! app('captcha')->display() !!}
                             <input type="hidden" name="_token" value="{{  Session::token() }}">
                             <div class="col-md-12">
                                 <button type="submit" id="submit" class="btn btn-common disabled" style="pointer-events: all;cursor: pointer;color: white;opacity: 1;">Send message</button>
