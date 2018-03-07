@@ -20,12 +20,12 @@
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="{{ route('commingSoon') }}">
                                 <span>Apartments</span>
                             </a>
                         </li>
                         <li class="last">
-                            <a href="">
+                            <a href="{{ route('commingSoon') }}">
                                 <span>Houses</span>
                             </a>
                         </li>
@@ -38,12 +38,12 @@
                     </span>
                     <ul class="sub-menu clear menu_level_1" style="display: none; opacity: 1;">
                         <li class="first">
-                            <a href="">
+                            <a href="{{ route('commingSoon') }}">
                                 <span>Vehicles with driver</span>
                             </a>
                         </li>
                         <li class="last">
-                            <a href="{{ route('carRentEn') }}">
+                            <a href="{{ route('commingSoon') }}">
                                 <span>Car rent</span>
                             </a>
                         </li>
@@ -180,12 +180,12 @@
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="{{ route('commingSoon') }}">
                                 <span>Apartment</span>
                             </a>
                         </li>
                         <li class="last">
-                            <a href="">
+                            <a href="{{ route('commingSoon') }}">
                                 <span>Villa</span>
                             </a>
                         </li>
@@ -198,12 +198,12 @@
                     </span>
                     <ul class="sub-menu clear menu_level_1">
                         <li class="first">
-                            <a href="/en/transport/car-with-driver.html">
+                            <a href="{{ route('commingSoon') }}">
                                 <span>Car with driver</span>
                             </a>
                         </li>
                         <li class="last">
-                            <a href="{{ route('carRentEn') }}">
+                            <a href="{{ route('commingSoon') }}">
                                 <span>Car rent</span>
                             </a>
                         </li>

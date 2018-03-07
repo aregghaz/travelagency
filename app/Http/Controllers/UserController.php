@@ -384,4 +384,9 @@ class UserController extends Controller
 
         return redirect('contacusRu')->with('status', 'Ваше сообщение отправлено');
     }
+    public function commingSoon()
+    {
+        return view('template.commingSoon');
+    }
+
 }

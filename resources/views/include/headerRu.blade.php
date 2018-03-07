@@ -20,12 +20,12 @@
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="{{ route('commingSoon') }}">
                                 <span>Квартиры</span>
                             </a>
                         </li>
                         <li class="last">
-                            <a href="">
+                            <a href="{{ route('commingSoon') }}">
                                 <span>Виллы</span>
                             </a>
                         </li>
@@ -38,12 +38,12 @@
                     </span>
                     <ul class="sub-menu clear menu_level_1" style="display: none; opacity: 1;">
                         <li class="first">
-                            <a href="{{ route('carRentRu') }}">
+                            <a href="{{ route('commingSoon') }}">
                                 <span>Автомобиль с водителем</span>
                             </a>
                         </li>
                         <li class="last">
-                            <a href="">
+                            <a href=""{{ route('commingSoon') }}>
                                 <span>Аренда автомобиля</span>
                             </a>
                         </li>
@@ -144,10 +144,7 @@
                     <ul>
                         <li class="current">
                             <span>
-
-
                                     <span class="flag-icon flag-icon-ru"></span>
-
                             </span>
                             <ul class="sub_lang">
                                 <li>
@@ -158,7 +155,7 @@
                     </ul>
                 </div>
                 <div class="chart_block">
-                    <a href="/en/basket.html">
+                    <a href="{{ route('commingSoon') }}">
                         <span class="order_count"></span>
 
                         <img src="/bundles/damain/images/chart.png" alt="">
@@ -180,17 +177,17 @@
                     </span>
                     <ul class="sub-menu clear menu_level_1">
                         <li class="first">
-                            <a  href="{{ route('hotelsEn') }}">
+                            <a  href="{{ route('hotelsRu') }}">
                                 <span>Отелы</span>
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="{{ route('commingSoon') }}">
                                 <span>Квартиры</span>
                             </a>
                         </li>
                         <li class="last">
-                            <a href="">
+                            <a href="{{ route('commingSoon') }}">
                                 <span>Виллы</span>
                             </a>
                         </li>
@@ -203,12 +200,12 @@
                     </span>
                     <ul class="sub-menu clear menu_level_1">
                         <li class="first">
-                            <a href="">
+                            <a href="{{ route('commingSoon') }}">
                                 <span>Автомобиль с водителем</span>
                             </a>
                         </li>
                         <li class="last">
-                            <a href="">
+                            <a href="{{ route('commingSoon') }}">
                                 <span>Аренда автомобиля</span>
                             </a>
                         </li>
@@ -221,7 +218,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href=" href="{{ route('allToursRu') }}"">
+                    <a href="{{ route('allToursRu') }}">
                         <img alt="" src="/bundles/damain/images/tours.png">
                         <span>Туры</span>
                     </a>

@@ -44,6 +44,7 @@ Route::any('/sendEmailEn', ['as' => 'sendEmailEn', 'uses' => 'UserController@sen
 Route::any('/sendEmailRu', ['as' => 'sendEmailRu', 'uses' => 'UserController@sendEmailRu']);
 Route::any('/galeriaEn', ['as' => 'galeriaEn', 'uses' => 'UserController@galeriaEn']);
 Route::any('/galeriaRu', ['as' => 'galeriaRu', 'uses' => 'UserController@galeriaRu']);
+Route::any('/commingSoon', ['as' => 'commingSoon', 'uses' => 'UserController@commingSoon']);
 
 
 // show new post form
