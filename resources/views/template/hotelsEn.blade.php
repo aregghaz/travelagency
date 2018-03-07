@@ -4,24 +4,24 @@
 @endsection
 @section('content')
 
-    <div class="row hotels-table">
+    <div class="row hotels-table" style="height: auto">
         <div class="col-md-3">
 
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6" style="margin-bottom: 50px">
             <table id="example" class="display" cellspacing="0" width="100%">
                 <thead>
                 <tr>
                     <th>#</th>
                     <th>Name</th>
                     <th>Stars</th>
-                    <th>LInk</th>
+                    <th>Link</th>
                 </tr>
                 </thead>
                 <tbody>
-<?php
-$count = 1;
-?>
+                <?php
+                $count = 1;
+                ?>
                 @foreach($hotels as $hotel)
 
                     <tr>
@@ -41,10 +41,10 @@ $count = 1;
         </div>
     </div>
     <script>
-        $(document).ready(function() {
-            $('#example').DataTable( {
-                "order": [[ 3, "desc" ]]
-            } );
-        } );
+        $(document).ready(function () {
+            $('#example').DataTable({
+                "order": [[3, "desc"]]
+            });
+        });
     </script>
 @endsection
