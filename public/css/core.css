@@ -3957,7 +3957,12 @@ footer .bottom_block .address_info ul li:first-of-type {
         padding-right: 0!important;
     }
 }
-
+@media all and (max-width: 376px) {
+    .left_block {
+        width: 100%;
+        margin: 10px auto;
+    }
+}
 
 @media all and (max-width: 325px) {
     .info_block {
