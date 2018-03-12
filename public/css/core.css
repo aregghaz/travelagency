@@ -3867,7 +3867,9 @@ footer .bottom_block .address_info ul li:first-of-type {
         float: none;
         margin: 0 auto;
     }
-
+    .res_menu {
+        width: 100%;
+    }
     .left_block {
         text-align: center;
         margin-bottom: 5px;
