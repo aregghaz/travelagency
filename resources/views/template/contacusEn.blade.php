@@ -73,9 +73,9 @@
                         <div class="support-info">
                             <div class="info-title">
                                 <i class="volume control phone icon"></i>
-                                +7(958) 401 28 44<br>
                                 +374 55 42 54 52<br>
                                 +374 91 28 28 88<br>
+                                +7(958) 401 28 44<br>
                             </div>
                         </div>
                     </div>
