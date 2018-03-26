@@ -4072,7 +4072,10 @@ tbody.collapse.in {
 .nav > li.disabled > a {
     color: #777
 }
-
+.cantact-info {
+    text-align: right;
+    margin-right: 150px;
+}
 .nav > li.disabled > a:focus, .nav > li.disabled > a:hover {
     color: #777;
     text-decoration: none;

@@ -4,7 +4,7 @@
         <div class="container">
 
             <div class="col-md-4 col-sm-4 col-xs-12 address_info left_block">
-                <ul>
+                <ul class="cantact-info">
                     <li>
                         <p>Армения, Ереван-0076, Пр. Гая 37</p>
                         <p>Discover Armenia</p>
