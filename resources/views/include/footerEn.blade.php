@@ -7,7 +7,7 @@
 
 
             <div class="col-md-4 col-sm-4 col-xs-12 address_info left_block">
-                <ul>
+                <ul class="cantact-info">
                     <li>
                         <p>37 Gay Ave. Yerevan-0076</p>
                         <p>Discover Armenia</p>
