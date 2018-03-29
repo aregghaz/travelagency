@@ -15,7 +15,6 @@
                                     </g></g> </svg>
                         </p>
                         <p>+374 55 42 54 52</p>
-                        <p>+374 91 28 28 88</p>
                         <p>contact@discoverarmenia.tours</p>
                         <p><i class="skype icon"></i> Discover Armenia</p>
 

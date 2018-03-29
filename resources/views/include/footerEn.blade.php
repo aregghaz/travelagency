@@ -19,10 +19,7 @@
                                     </g></g> </svg>
 
                             +7 (958) 401 28 44</p>
-                        <p>+374 91 28 28 88</p>
                         <p><i class="skype icon"></i> Discover Armenia</p>
-
-
                         <p>contact@discoverarmenia.tours</p>
                     </li>
                 </ul>
