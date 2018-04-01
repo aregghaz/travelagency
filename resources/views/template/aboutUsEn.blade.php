@@ -11,12 +11,15 @@
             font-size: x-large;
             font-weight: bolder;
         }
-        strong  {
+
+        strong {
             font-weight: bolder;
         }
+
         .read-more-wrap {
             font-weight: 400;
         }
+
         .read-more-wrap-ul {
             line-height: 1.4285em;
             padding-left: 30px;
@@ -29,18 +32,15 @@
 
         </div>
         <div class="col-md-8">
-
             <br><br>
             <p class="read-more-wrap"><br><br>
                 <span class="discover-Armenia">DISCOVER ARMENIA</span>
-                France-Armenian joint venture tour operator
-                symbolizes a mixture of Armenian hospitality and French charm and offers
-                a wide range of individual and group tours of all highest categories. We
+                offers a wide range of individual and group tours of all highest categories. We
                 cooperate with reliable and experienced partners to ensure our clients’
                 safety comfort during the certainly unforgettable stay.
                 The company offers a vast range of services, including:
             </p>
-          <br>
+            <br>
             <p class="read-more-wrap">The company offers a vast range of services, including: </p><br>
 
             <ul class="read-more-wrap read-more-wrap-ul">
@@ -53,7 +53,8 @@
             </ul>
             <br>
             <p class="read-more-wrap">
-                <span class="discover-Armenia">DISCOVER ARMENIA</span> organizes daily tours tailored made for our clients,
+                <span class="discover-Armenia">DISCOVER ARMENIA</span> organizes daily tours tailored made for our
+                clients,
                 offers the best places for sports and vacation, unique gastronomic events
                 and festivals. </p>
             <p class="read-more-wrap">Together with our professional instructors for skiing, rock climbing, and
@@ -83,13 +84,14 @@
                 strive for the very best standards as we view it a safeguard of your
                 Armenian experience being positive from the Day One to the Day of Good-
                 bye.
-                           </p>
+            </p>
             <p class="read-more-wrap">
                 Trust Discover Armenia to deliver the trip of a lifetime.
             </p>
             <br>
             <p class="read-more-wrap" style="text-align: center">
-                <strong>YOUR ADVANTAGES SHOULD YOU CHOOSE </strong>    <br><span class="discover-Armenia">DISCOVER ARMENIA</span>
+                <strong>YOUR ADVANTAGES SHOULD YOU CHOOSE </strong><br><span
+                        class="discover-Armenia">DISCOVER ARMENIA</span>
             </p><br>
             <ul class="read-more-wrap read-more-wrap-ul">
                 <li>Fast Response: We believe that it is very important to respond our
@@ -139,7 +141,7 @@
             </p><br>
             <p class="read-more-wrap">
                 <span class="discover-Armenia">We will be glad to become your reliable partner for a long time from the
-moment we become partners!</span>
+                    moment we become partners!</span>
             </p>
             <br>
             <br>
